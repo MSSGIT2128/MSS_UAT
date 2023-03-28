@@ -1,0 +1,29 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Error": "The business unit you entered doesn't exist. (AR-857621)Enter a valid customer account number for the receipt. (AR-857748)"
+        }
+    ],
+    "required": [
+        "Error"
+    ],
+    "properties": {
+        "Error": {
+            "$id": "#/properties/Error",
+            "type": "string",
+            "title": "The Error schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "The business unit you entered doesn't exist. (AR-857621)Enter a valid customer account number for the receipt. (AR-857748)"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

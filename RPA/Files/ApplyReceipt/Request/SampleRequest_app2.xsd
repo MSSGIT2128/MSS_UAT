@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/types/" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" schemaLocation="SampleRequest_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="SampleRequest.xsd" />
+  <xs:element name="createApplyReceipt" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="applyReceipt" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:AmountApplied" minOccurs="0" />
+              <xs:element ref="app1:Comments" minOccurs="0" />
+              <xs:element ref="app1:Instalment" minOccurs="0" />
+              <xs:element ref="app1:ReceiptId" minOccurs="0" />
+              <xs:element ref="app1:CustomerTrxId" minOccurs="0" />
+              <xs:element ref="app1:CustomerName" minOccurs="0" />
+              <xs:element ref="app1:ApplicationDate" minOccurs="0" />
+              <xs:element ref="app1:AccountingDate" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

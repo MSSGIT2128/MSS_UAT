@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "Response": {
+                "ErrorCode": "P_ENTITY",
+                "ErrorDescription": "103"
+            }
+        }
+    ],
+    "required": [
+        "Response"
+    ],
+    "properties": {
+        "Response": {
+            "$id": "#/properties/Response",
+            "type": "object",
+            "title": "The Response schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "ErrorCode": "P_ENTITY",
+                    "ErrorDescription": "103"
+                }
+            ],
+            "required": [
+                "ErrorCode",
+                "ErrorDescription"
+            ],
+            "properties": {
+                "ErrorCode": {
+                    "$id": "#/properties/Response/properties/ErrorCode",
+                    "type": "string",
+                    "title": "The ErrorCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "P_ENTITY"
+                    ]
+                },
+                "ErrorDescription": {
+                    "$id": "#/properties/Response/properties/ErrorDescription",
+                    "type": "string",
+                    "title": "The ErrorDescription schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "103"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

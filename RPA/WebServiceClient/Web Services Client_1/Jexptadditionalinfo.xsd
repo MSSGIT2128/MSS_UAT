@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptGdf/" xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptGdf/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="BC4JService.xsd" namespace="http://xmlns.oracle.com/adf/svc/types/" />
+  <xsd:include schemaLocation="StandardReceiptGdf.xsd" />
+  <xsd:complexType name="Jexptadditionalinfo">
+    <xsd:annotation>
+      <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+        <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+          <attribute>CashReceiptId</attribute>
+        </key>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="StandardReceiptGdf">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="ReceiptAcknowledgementNumber" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="ReceiptAcknowledgmentDate" nillable="true" type="ns0:date-Date" />
+          <xsd:element minOccurs="0" name="DocumentCategory" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="PaymentType" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="PaymentType_Display" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="SourceBilling" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="SourceBilling_Display" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="jexptadditionalinfo" type="Jexptadditionalinfo" />
+</xsd:schema>

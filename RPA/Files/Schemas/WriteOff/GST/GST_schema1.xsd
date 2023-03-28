@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/types/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="GST_schema2.xsd" namespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" />
+  <xs:element name="createActivityApplication">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="activityApplication">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:q1="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q1:BusinessUnit" />
+              <xs:element xmlns:q2="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q2:ReceiptNumber" />
+              <xs:element xmlns:q3="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q3:ReceivableTrxName" />
+              <xs:element xmlns:q4="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q4:Comments" />
+              <xs:element xmlns:q5="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q5:AmountApplied" />
+              <xs:element xmlns:q6="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q6:ApplyDate" />
+              <xs:element xmlns:q7="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q7:ApplyGlDate" />
+              <xs:element xmlns:q8="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/standardReceiptService/commonService/" ref="q8:AppliedPaymentScheduleId" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

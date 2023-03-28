@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/oxp/service/PublicReportService" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/oxp/service/PublicReportService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="runReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="runReportReturn">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reportBytes" type="xs:base64Binary" />
+              <xs:element name="reportContentType" type="xs:string" />
+              <xs:element name="reportFileID" nillable="true" />
+              <xs:element name="reportLocale" nillable="true" />
+              <xs:element name="metaDataList" nillable="true" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
