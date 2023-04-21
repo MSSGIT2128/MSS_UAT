@@ -1,0 +1,269 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1621500716150,
+            "Operation": "Create",
+            "Type": "INVApplication",
+            "Data": {
+                "createApplyOnAccountCreditMemo": {
+                    "applyOnAccountCreditMemo": [
+                        {
+                            "BusinessUnit": "SXP Group BU",
+                            "CreditMemoTrxNumber": "CN09675",
+                            "InvoiceTrxNumber": "169510",
+                            "AmountApplied": 184.8,
+                            "ApplyDate": "2021-05-30",
+                            "GlDate": "2021-05-30",
+                            "InvoiceLineNumber": 1,
+                            "Comments": "PART CREDIT INVOICE 169510"
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1621500716150
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "INVApplication"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "createApplyOnAccountCreditMemo": {
+                        "applyOnAccountCreditMemo": [
+                            {
+                                "BusinessUnit": "SXP Group BU",
+                                "CreditMemoTrxNumber": "CN09675",
+                                "InvoiceTrxNumber": "169510",
+                                "AmountApplied": 184.8,
+                                "ApplyDate": "2021-05-30",
+                                "GlDate": "2021-05-30",
+                                "InvoiceLineNumber": 1,
+                                "Comments": "PART CREDIT INVOICE 169510"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "createApplyOnAccountCreditMemo"
+            ],
+            "properties": {
+                "createApplyOnAccountCreditMemo": {
+                    "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo",
+                    "type": "object",
+                    "title": "The createApplyOnAccountCreditMemo schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "applyOnAccountCreditMemo": [
+                                {
+                                    "BusinessUnit": "SXP Group BU",
+                                    "CreditMemoTrxNumber": "CN09675",
+                                    "InvoiceTrxNumber": "169510",
+                                    "AmountApplied": 184.8,
+                                    "ApplyDate": "2021-05-30",
+                                    "GlDate": "2021-05-30",
+                                    "InvoiceLineNumber": 1,
+                                    "Comments": "PART CREDIT INVOICE 169510"
+                                }
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "applyOnAccountCreditMemo"
+                    ],
+                    "properties": {
+                        "applyOnAccountCreditMemo": {
+                            "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo",
+                            "type": "array",
+                            "title": "The applyOnAccountCreditMemo schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "BusinessUnit": "SXP Group BU",
+                                        "CreditMemoTrxNumber": "CN09675",
+                                        "InvoiceTrxNumber": "169510",
+                                        "AmountApplied": 184.8,
+                                        "ApplyDate": "2021-05-30",
+                                        "GlDate": "2021-05-30",
+                                        "InvoiceLineNumber": 1,
+                                        "Comments": "PART CREDIT INVOICE 169510"
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "BusinessUnit": "SXP Group BU",
+                                                "CreditMemoTrxNumber": "CN09675",
+                                                "InvoiceTrxNumber": "169510",
+                                                "AmountApplied": 184.8,
+                                                "ApplyDate": "2021-05-30",
+                                                "GlDate": "2021-05-30",
+                                                "InvoiceLineNumber": 1,
+                                                "Comments": "PART CREDIT INVOICE 169510"
+                                            }
+                                        ],
+                                        "required": [
+                                            "BusinessUnit",
+                                            "CreditMemoTrxNumber",
+                                            "InvoiceTrxNumber",
+                                            "AmountApplied",
+                                            "ApplyDate",
+                                            "GlDate",
+                                            "InvoiceLineNumber",
+                                            "Comments"
+                                        ],
+                                        "properties": {
+                                            "BusinessUnit": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/BusinessUnit",
+                                                "type": "string",
+                                                "title": "The BusinessUnit schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "SXP Group BU"
+                                                ]
+                                            },
+                                            "CreditMemoTrxNumber": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/CreditMemoTrxNumber",
+                                                "type": "string",
+                                                "title": "The CreditMemoTrxNumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "CN09675"
+                                                ]
+                                            },
+                                            "InvoiceTrxNumber": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/InvoiceTrxNumber",
+                                                "type": "string",
+                                                "title": "The InvoiceTrxNumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "169510"
+                                                ]
+                                            },
+                                            "AmountApplied": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/AmountApplied",
+                                                "type": "number",
+                                                "title": "The AmountApplied schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 0.0,
+                                                "examples": [
+                                                    184.8
+                                                ]
+                                            },
+                                            "ApplyDate": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/ApplyDate",
+                                                "type": "string",
+                                                "title": "The ApplyDate schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "2021-05-30"
+                                                ]
+                                            },
+                                            "GlDate": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/GlDate",
+                                                "type": "string",
+                                                "title": "The GlDate schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "2021-05-30"
+                                                ]
+                                            },
+                                            "InvoiceLineNumber": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/InvoiceLineNumber",
+                                                "type": "integer",
+                                                "title": "The InvoiceLineNumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": 0,
+                                                "examples": [
+                                                    1
+                                                ]
+                                            },
+                                            "Comments": {
+                                                "$id": "#/properties/Data/properties/createApplyOnAccountCreditMemo/properties/applyOnAccountCreditMemo/items/anyOf/0/properties/Comments",
+                                                "type": "string",
+                                                "title": "The Comments schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "PART CREDIT INVOICE 169510"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

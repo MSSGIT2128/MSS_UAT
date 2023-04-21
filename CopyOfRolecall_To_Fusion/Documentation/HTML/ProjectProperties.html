@@ -1,0 +1,4203 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK rel="stylesheet" type="text/css" href="iBOLTPrint.css">
+  </head>
+  <body>
+    <h1>Project:
+          Rolecall_To_Fusion</h1>
+    <hr>
+    <h2>General</h2>
+    <table>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Rolecall_To_Fusion</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Last Modified</td>
+        <td>12/16/2020 2:22:28 PM</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Owner</td>
+        <td>Magic Software Enterprises Ltd</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">InternalVer</td>
+        <td>1.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Encoding</td>
+        <td>West European</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">ResourceFile</td>
+        <td>resources.xml</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">ServiceFile</td>
+        <td>services.xml</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">CalendarsFile</td>
+        <td>Calendars.xml</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Clear ODS Information</td>
+        <td>Yes</td>
+      </tr>
+    </table>
+    <hr>
+    <div id="User Global Variables"></div>
+    <h2>User Global Variables</h2>
+    <h3>G.AuditLogFlag</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>G.AuditLogFlag</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'TRUE'LOG</td>
+      </tr>
+    </table>
+    <hr>
+    <div id="User Context Variables"></div>
+    <h2>User Context Variables</h2>
+    <h3>C.FlowIdExt</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FlowIdExt</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.StepIdExt</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.StepIdExt</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RelationshipId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RelationshipId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ESSreportStatus</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ESSreportStatus</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.Operations</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Operations</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ModuleName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ModuleName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ObjectType</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ObjectType</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>255</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.TempPayload</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.TempPayload</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.HeaderSeqID</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.HeaderSeqID</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>1</td>
+      </tr>
+    </table>
+    <h3>C.PayloadIDs</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.PayloadIDs</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.IsNew</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.IsNew</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RedoFlow</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RedoFlow</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RedoStep</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RedoStep</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.TimestampUTC</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.TimestampUTC</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.CustomerSite</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CustomerSite</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ContractNumber</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ContractNumber</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.Branch</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Branch</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'8211'</td>
+      </tr>
+    </table>
+    <h3>C.State</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.State</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'902'</td>
+      </tr>
+    </table>
+    <h3>C.Entity</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Entity</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'301'</td>
+      </tr>
+    </table>
+    <h3>C.BusinessType</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.BusinessType</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'999'</td>
+      </tr>
+    </table>
+    <h3>C.CustomerSiteName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CustomerSiteName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ContractName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ContractName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.StartActiveDate</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.StartActiveDate</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'2018-01-01'</td>
+      </tr>
+    </table>
+    <h3>C.FusionLocationID</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FusionLocationID</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.FusionResponseStatusCode</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FusionResponseStatusCode</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ResponseTime</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ResponseTime</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Time</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.FusionResponseStatus</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FusionResponseStatus</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.DATA_DS_Check</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.DATA_DS_Check</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.Report_Blank_Check</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Report_Blank_Check</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.BP_Name</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.BP_Name</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.AuditBk</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.AuditBk</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ARCreditMemoFileId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ARCreditMemoFileId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ARCreditMemoFileContent</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ARCreditMemoFileContent</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ARCreditHeadeFileContent</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ARCreditHeadeFileContent</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ARCreditMemoFileName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ARCreditMemoFileName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RequestXML</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RequestXML</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.CreatedCsvFileName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CreatedCsvFileName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.PartyId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.PartyId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.CustomerAccountId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CustomerAccountId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ContractSegment</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ContractSegment</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.PartySiteNumber</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.PartySiteNumber</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ContractDescription</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ContractDescription</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.LedgerName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.LedgerName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.SIS_Customer_mapping_Resp_Id</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.SIS_Customer_mapping_Resp_Id</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.InvoiceNumber</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.InvoiceNumber</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.SearchTextId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.SearchTextId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.PayloadID</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.PayloadID</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.username</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.username</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>255</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.CLCnt</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CLCnt</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>0</td>
+      </tr>
+    </table>
+    <h3>C.IsSuccess</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.IsSuccess</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.FusionResponseHeaderString</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FusionResponseHeaderString</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.Operation</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Operation</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>255</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.FusionRequest</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FusionRequest</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.FusionResponse</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FusionResponse</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.BAM_Category</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.BAM_Category</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.EmailTemplate</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.EmailTemplate</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.Err_Msg</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Err_Msg</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.IsOk</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.IsOk</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>'TRUE'LOG</td>
+      </tr>
+    </table>
+    <h3>C.RequestDate</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RequestDate</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Date</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.Response</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.Response</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RequestId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RequestId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>15.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ObjectName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ObjectName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.MessageID</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.MessageID</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RequestTime</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RequestTime</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Time</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.AuditLogFilePath</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.AuditLogFilePath</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>255</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RoleCallRequest</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RoleCallRequest</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RoleCallInputFilePath</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RoleCallInputFilePath</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.RoleCallInputFile</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.RoleCallInputFile</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>60</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.CustomerNumber</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CustomerNumber</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.SeqNumber</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.SeqNumber</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>0</td>
+      </tr>
+    </table>
+    <h3>C.ResponseCode</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ResponseCode</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.4</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.TransactionNumber</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.TransactionNumber</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.FileName</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.FileName</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ESSJobStatusID</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ESSJobStatusID</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.UserString</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.UserString</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>Passes alpha-numeric information between components in flows.</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1000</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.UserCode</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.UserCode</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>Passes only numeric information between components in flows.</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.UserBlob</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.UserBlob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>Passes undefined types of information between components in flows.</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.UserXML</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.UserXML</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>Passes information in XML format between components in flows.</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.HTTP_Body</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.HTTP_Body</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>Body of HTTP request.</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Blob</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.CreateContRealtionshipId</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.CreateContRealtionshipId</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Alpha</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>30</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ActiveBill</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ActiveBill</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.ValueNtRealted</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.ValueNtRealted</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.HeaderExistError</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.HeaderExistError</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Logical</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <h3>C.HeaderExistCnt</h3>
+    <table width="100%">
+      <tr>
+        <td class="RowHeader">Name:
+            </td>
+        <td>C.HeaderExistCnt</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Description:
+            </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Type:
+            </td>
+        <td>Numeric</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Length:
+            </td>
+        <td>12.0</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Default Value:
+            </td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <div id="Default Data Format"></div>
+    <h2>Default Data Format</h2>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">External Data Type</th>
+        <th class="FitToContent">Internal Data Type</th>
+        <th class="FitToContent">Format</th>
+      </tr>
+    </table>
+    <hr>
+    <div id="Data Converter"></div>
+    <h2>Data Converter</h2>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">Name</th>
+        <th class="FitToContent">Dynamic Table</th>
+        <th class="FitToContent">File Name</th>
+        <th class="FitToContent">Columns Delimiter</th>
+        <th class="ExtendToMax">Description</th>
+      </tr>
+      <tr>
+        <td>V.ModuleInvokeMaster</td>
+        <td>No</td>
+        <td>conversion\ModuleInvokeMaster.csv</td>
+        <td>,</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>V.SIS_Cust_Detail_Query_Master</td>
+        <td>No</td>
+        <td>conversion\SIS_Cust_Detail_Query_Master.csv</td>
+        <td>,</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>V.CCID_Query_Master</td>
+        <td>No</td>
+        <td>conversion\CCID_Query_Master.csv</td>
+        <td>,</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>V.ModifyInvokeMaster</td>
+        <td>No</td>
+        <td>conversion\ModifyInvokeMaster.txt</td>
+        <td>,</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>V.ValueSet</td>
+        <td>No</td>
+        <td>conversion\ValueSet.csv</td>
+        <td>,</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+    <hr>
+    <div id="User Errors"></div>
+    <h2>User Errors</h2>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">ErrorCode</th>
+        <th class="ExtendToMax">Description</th>
+      </tr>
+    </table>
+    <hr>
+    <div id="Resources"></div>
+    <h2>Resources</h2>
+      <div>
+      <h3>Resource:
+        REST Client_Fusion</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>REST Client_Fusion</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>REST Client</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <h4>Settings</h4>
+        <table width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Server URL</td>
+            <td>Alpha</td>
+            <td>2500</td>
+            <td>https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com</td>
+          </tr>
+          <tr>
+            <td>Security</td>
+            <td>Alpha</td>
+            <td>30</td>
+            <td>HTTP-Basic</td>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Resource:
+        REST Client_Fusion Checks</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>REST Client_Fusion Checks</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>REST Client</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <h4>Settings</h4>
+        <table width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Server URL</td>
+            <td>Alpha</td>
+            <td>2500</td>
+            <td>https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443</td>
+          </tr>
+          <tr>
+            <td>Security</td>
+            <td>Alpha</td>
+            <td>30</td>
+            <td>HTTP-Basic</td>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Resource:
+        Database_MSS(old)</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Database_MSS(old)</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Database</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <h4>Settings</h4>
+        <table width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>DBMS</td>
+            <td>Alpha</td>
+            <td>30</td>
+            <td>Microsoft SQL Server</td>
+          </tr>
+          <tr>
+            <td>User</td>
+            <td>Alpha</td>
+            <td>30</td>
+            <td>sa</td>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Resource:
+        Database_MSS</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Database_MSS</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Database</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <h4>Settings</h4>
+        <table width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>DBMS</td>
+            <td>Alpha</td>
+            <td>30</td>
+            <td>Microsoft SQL Server</td>
+          </tr>
+          <tr>
+            <td>User</td>
+            <td>Alpha</td>
+            <td>30</td>
+            <td>MSS_INTEGRATION</td>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Resource:
+        Email_ErrNotification</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Email_ErrNotification</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Email</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <h4>Settings</h4>
+        <table width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>Server Type</td>
+            <td>Numeric</td>
+            <td>1</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Incoming Mail Server</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Incoming Port</td>
+            <td>Numeric</td>
+            <td>8</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Incoming Secure Connection</td>
+            <td>Numeric</td>
+            <td>1</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Outgoing Mail Server</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>Smtp.office365.com</td>
+          </tr>
+          <tr>
+            <td>Outgoing Port</td>
+            <td>Numeric</td>
+            <td>8</td>
+            <td>587</td>
+          </tr>
+          <tr>
+            <td>Outgoing Secure Connection</td>
+            <td>Numeric</td>
+            <td>1</td>
+            <td>TLS</td>
+          </tr>
+          <tr>
+            <td>From Address</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>%Resource_email%</td>
+          </tr>
+          <tr>
+            <td>Authentication Type</td>
+            <td>Numeric</td>
+            <td>1</td>
+            <td>Basic</td>
+          </tr>
+          <tr>
+            <td>User</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>%Resource_email%</td>
+          </tr>
+          <tr>
+            <td>OAuth Refresh Token Status</td>
+            <td>Alpha</td>
+            <td>10</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Authorization URL</td>
+            <td>Alpha</td>
+            <td>1000</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Access Token URL</td>
+            <td>Alpha</td>
+            <td>1000</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Callback URL</td>
+            <td>Alpha</td>
+            <td>1000</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Client Id</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>Scope</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td>Alpha</td>
+            <td>260</td>
+            <td>
+            </td>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Resource:
+        HTTPCilent_Fusion</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>HTTPCilent_Fusion</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>HTTP</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <h4>Settings</h4>
+        <table width="100%">
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Format</th>
+            <th>Value</th>
+          </tr>
+          <tr>
+            <td>URL</td>
+            <td>Alpha</td>
+            <td>2500</td>
+            <td>https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com</td>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+   <div id="Services"></div>
+    <h2>Services</h2>
+      <div>
+      <h3>Service:
+        Scheduler_Daliy</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Scheduler Type</td>
+            <td>Daily</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Scheduler_Daliy</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Scheduler</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <h4>Scheduler</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>00:01</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Service:
+        Scheduler_Cust_Detail_Report</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Scheduler Type</td>
+            <td>Daily</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Scheduler_Cust_Detail_Report</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Scheduler</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <h4>Scheduler</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>08:00,14:00</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Service:
+        Scheduler_CCID_Report</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Scheduler Type</td>
+            <td>Daily</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Scheduler_CCID_Report</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Scheduler</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <h4>Scheduler</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>08:00,14:00</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Service:
+        Scheduler_Purge</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Scheduler Type</td>
+            <td>Daily</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Scheduler_Purge</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>Scheduler</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <h4>Scheduler</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>01:00</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Day(s)</td>
+            <td>1</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Service:
+        HTTP_temp</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>HTTP_temp</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>HTTP</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>Yes</td>
+          </tr>
+        </table>
+        <h4>Details</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">WebServer</td>
+            <td>MagicXpiSvr01</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Alias</td>
+            <td>Magicxpi4.13</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+      <div>
+      <h3>Service:
+        HTTP_report</h3>
+      <div style="margin-left:3em">
+        <h4>General</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>HTTP_report</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Type</td>
+            <td>HTTP</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Description</td>
+            <td>
+            </td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Default</td>
+            <td>No</td>
+          </tr>
+        </table>
+        <h4>Details</h4>
+        <table>
+          <tr>
+            <td class="RowHeader">WebServer</td>
+            <td>MagicXpiSvr01</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Alias</td>
+            <td>Magicxpi4.13</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+         
+      </div>
+    </div>
+   <div id="Calendars"></div>
+    <h2>Calendars</h2>
+    <div id="User Environment Variables"></div>
+    <h2>User Environment Variables</h2>
+      <div>
+      <h3>Variable:
+        ReportEnv</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>ReportEnv</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>UAT</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        ToEmail</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>ToEmail</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>delta.maurice@msssecurity.com.au</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        CC_Email</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>CC_Email</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>step</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        BCC</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>BCC</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>prajwal_kamthe@magicsoftware.com</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        AuditLogs</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>AuditLogs</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>f:\Magic\AuditLogs\RoleCall_To_Fusion\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        CreateCustFilePath</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>CreateCustFilePath</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\CreateCustomer\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        ARInvoiceFilePath</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>ARInvoiceFilePath</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\ARInvoice\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Resource_email</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Resource_email</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>Mss.smtp@msssecurity.com.au</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        SetId</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>SetId</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>300000000003311</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        ARInvoiceWithAttachFilePath</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>ARInvoiceWithAttachFilePath</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\ARInvoice\Attachment\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Dim_Mastr_S4_attributeFormat</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Dim_Mastr_S4_attributeFormat</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>text</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        LedgerName</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>LedgerName</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>SIS IN PL</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        DynamicInsertion</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>DynamicInsertion</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>Y</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Dim_Mastr_S4_p_entity</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Dim_Mastr_S4_p_entity</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>201</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Dim_Mastr_S4_flattenXML</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Dim_Mastr_S4_flattenXML</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>true</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Dim_Mastr_S4_reportAbsPath</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Dim_Mastr_S4_reportAbsPath</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>/Custom/Integration/Reports/SIS Related Relationship.xdo</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Reports</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Reports</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\Reports\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        ARCreditMemo</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>ARCreditMemo</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\ARCreditMemo\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Alert_CC_Mail</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Alert_CC_Mail</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>'Michael.pickering@msssecurity.com.au,Raj.Daroch@msssecurity.com.au,joe.oliveira@msssecurity.com.au,prajwal_kamthe@magicsoftware.com'</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Mine_Email</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Mine_Email</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>prajwal_kamthe@magicsoftware.com</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        ExistingCustFilePath</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>ExistingCustFilePath</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\ExistingCustomer\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        A</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>A</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>5DC1D544-07AB-448D-808A-01E680A08975</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        B</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>B</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>2021-05-26 14:54:02.8300000</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+      <div>
+      <h3>Variable:
+        Modify</h3>
+      <div style="margin-left:3em">
+        <h4>
+        </h4>
+        <table>
+          <tr>
+            <td class="RowHeader">Name</td>
+            <td>Modify</td>
+          </tr>
+          <tr>
+            <td class="RowHeader">Value</td>
+            <td>c:\RC-Payloads\ModifyCustomer\</td>
+          </tr>
+        </table>
+        <h4>
+        </h4>
+        <table width="100%">
+          <tr>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+            <th>
+            </th>
+          </tr>
+        </table>
+         
+      </div>
+    </div>
+   </body>
+</html>

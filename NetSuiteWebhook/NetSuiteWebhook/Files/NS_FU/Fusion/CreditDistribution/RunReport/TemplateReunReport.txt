@@ -1,0 +1,34 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pub="http://xmlns.oracle.com/oxp/service/PublicReportService">
+	<soap:Header/>
+	<soap:Body>
+		<pub:runReport>
+			<pub:reportRequest>
+				<pub:attributeFormat><!$MG_attributeFormat></pub:attributeFormat>
+				<!-- Flatten XML should always be false when we have XML type of output to display the XML tags as mentioned in BIP Data Model and display XML structure in as expected format -->
+				<pub:flattenXML><!$MG_flattenXML></pub:flattenXML>
+				<pub:parameterNameValues>
+					<pub:item>
+						<pub:name><!$MG_name1></pub:name>
+						<pub:values>
+							<pub:item><!$MG_item1></pub:item>
+						</pub:values>
+					</pub:item>
+					<pub:item>
+						<pub:name><!$MG_name2></pub:name>
+						<pub:values>
+							<!$MGREPEAT>
+
+							<pub:item><!$MG_item2></pub:item>
+							
+							<!$MGENDREPEAT>
+
+						</pub:values>
+					</pub:item>
+				</pub:parameterNameValues>
+				<pub:reportAbsolutePath><!$MG_reportAbsolutePath></pub:reportAbsolutePath>
+				<!-- Setting sizeOfDataChunkDownload to -1 will return the output to the calling client -->
+				<pub:sizeOfDataChunkDownload><!$MG_sizeOfDataChunkDownload></pub:sizeOfDataChunkDownload>
+			</pub:reportRequest>
+		</pub:runReport>
+	</soap:Body>
+</soap:Envelope>

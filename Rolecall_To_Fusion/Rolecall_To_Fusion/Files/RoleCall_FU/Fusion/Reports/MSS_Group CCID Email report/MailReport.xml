@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://xmlns.oracle.com/scheduler" xmlns:typ="http://xmlns.oracle.com/scheduler/types">
+	<soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+		<wsa:Action>submitRequest</wsa:Action>
+		<wsa:MessageID>uuid:26e4b632-ab76-4819-8144-dfed71a4ee91</wsa:MessageID>
+	</soapenv:Header>
+	<soapenv:Body>
+		<sch:submitRequest>
+			<sch:jobDefinitionId>
+				<typ:name>XXFILIX_CUST_CCID_ESS</typ:name>
+				<typ:packageName>/oracle/apps/ess/custom/Integration/Reports</typ:packageName>
+				<typ:type>JOB_DEFINITION</typ:type>
+			</sch:jobDefinitionId>
+			<sch:application>FscmEss</sch:application>
+			<sch:requestedStartTime/>
+			<sch:requestParameters>
+				<typ:parameter>
+					<typ:dataType>STRING</typ:dataType>
+					<typ:name>submit.argument1</typ:name>
+					<typ:value>MSS Security Pty Limited</typ:value>
+				</typ:parameter>
+				<typ:parameter>
+					<typ:dataType>STRING</typ:dataType>
+					<typ:name>submit.argument2</typ:name>
+					<typ:value>MSS Group BU</typ:value>
+				</typ:parameter>
+				<typ:parameter>
+					<typ:dataType>STRING</typ:dataType>
+					<typ:name>submit.argument3</typ:name>
+					<typ:value>2022-01-02 08:00:04</typ:value>
+				</typ:parameter>
+			</sch:requestParameters>
+		</sch:submitRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="schema2.xsd" namespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" />
+  <xs:element name="importJournals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="interfaceRows">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:q1="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q1:BatchName" />
+              <xs:element xmlns:q2="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q2:BatchDescription" />
+              <xs:element xmlns:q3="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q3:LedgerId" />
+              <xs:element xmlns:q4="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q4:AccountingPeriodName" />
+              <xs:element xmlns:q5="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q5:AccountingDate" />
+              <xs:element xmlns:q6="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q6:UserSourceName" />
+              <xs:element xmlns:q7="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q7:UserCategoryName" />
+              <xs:element xmlns:q8="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q8:ErrorToSuspenseFlag" />
+              <xs:element xmlns:q9="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q9:SummaryFlag" />
+              <xs:element xmlns:q10="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q10:ImportDescriptiveFlexField" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" xmlns:q11="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" ref="q11:GlInterface" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

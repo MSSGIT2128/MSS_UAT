@@ -1,0 +1,229 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567898765434,
+            "Operation": "Create",
+            "Type": "MergeOrganizationToSite",
+            "Data": {
+                "PartyId": "300000001771253",
+                "PartySite": {
+                    "PartySiteNumber": "Test4",
+                    "PartySiteName": "TestSiteName",
+                    "LocationId": "300000001771359",
+                    "CreatedByModule": "SIS",
+                    "StartDateActive": "2021-10-01",
+                    "PartySiteUse": {
+                        "SiteUseType": "BILL_TO",
+                        "CreatedByModule": "SIS"
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567898765434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "MergeOrganizationToSite"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "PartyId": "300000001771253",
+                    "PartySite": {
+                        "PartySiteNumber": "Test4",
+                        "PartySiteName": "TestSiteName",
+                        "LocationId": "300000001771359",
+                        "CreatedByModule": "SIS",
+                        "StartDateActive": "2021-10-01",
+                        "PartySiteUse": {
+                            "SiteUseType": "BILL_TO",
+                            "CreatedByModule": "SIS"
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "PartyId",
+                "PartySite"
+            ],
+            "properties": {
+                "PartyId": {
+                    "$id": "#/properties/Data/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000001771253"
+                    ]
+                },
+                "PartySite": {
+                    "$id": "#/properties/Data/properties/PartySite",
+                    "type": "object",
+                    "title": "The PartySite schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "PartySiteNumber": "Test4",
+                            "PartySiteName": "TestSiteName",
+                            "LocationId": "300000001771359",
+                            "CreatedByModule": "SIS",
+                            "StartDateActive": "2021-10-01",
+                            "PartySiteUse": {
+                                "SiteUseType": "BILL_TO",
+                                "CreatedByModule": "SIS"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "PartySiteNumber",
+                        "PartySiteName",
+                        "LocationId",
+                        "CreatedByModule",
+                        "StartDateActive",
+                        "PartySiteUse"
+                    ],
+                    "properties": {
+                        "PartySiteNumber": {
+                            "$id": "#/properties/Data/properties/PartySite/properties/PartySiteNumber",
+                            "type": "string",
+                            "title": "The PartySiteNumber schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Test4"
+                            ]
+                        },
+                        "PartySiteName": {
+                            "$id": "#/properties/Data/properties/PartySite/properties/PartySiteName",
+                            "type": "string",
+                            "title": "The PartySiteName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TestSiteName"
+                            ]
+                        },
+                        "LocationId": {
+                            "$id": "#/properties/Data/properties/PartySite/properties/LocationId",
+                            "type": "string",
+                            "title": "The LocationId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000001771359"
+                            ]
+                        },
+                        "CreatedByModule": {
+                            "$id": "#/properties/Data/properties/PartySite/properties/CreatedByModule",
+                            "type": "string",
+                            "title": "The CreatedByModule schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SIS"
+                            ]
+                        },
+                        "StartDateActive": {
+                            "$id": "#/properties/Data/properties/PartySite/properties/StartDateActive",
+                            "type": "string",
+                            "title": "The StartDateActive schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2021-10-01"
+                            ]
+                        },
+                        "PartySiteUse": {
+                            "$id": "#/properties/Data/properties/PartySite/properties/PartySiteUse",
+                            "type": "object",
+                            "title": "The PartySiteUse schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "SiteUseType": "BILL_TO",
+                                    "CreatedByModule": "SIS"
+                                }
+                            ],
+                            "required": [
+                                "SiteUseType",
+                                "CreatedByModule"
+                            ],
+                            "properties": {
+                                "SiteUseType": {
+                                    "$id": "#/properties/Data/properties/PartySite/properties/PartySiteUse/properties/SiteUseType",
+                                    "type": "string",
+                                    "title": "The SiteUseType schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "BILL_TO"
+                                    ]
+                                },
+                                "CreatedByModule": {
+                                    "$id": "#/properties/Data/properties/PartySite/properties/PartySiteUse/properties/CreatedByModule",
+                                    "type": "string",
+                                    "title": "The CreatedByModule schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "SIS"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

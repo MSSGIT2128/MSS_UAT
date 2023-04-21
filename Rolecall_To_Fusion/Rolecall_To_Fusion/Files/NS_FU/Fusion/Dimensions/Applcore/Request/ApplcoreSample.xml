@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sch="http://xmlns.oracle.com/scheduler" xmlns:typ="http://xmlns.oracle.com/scheduler/types"> 
+      <soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>submitRequest</wsa:Action><wsa:MessageID>uuid:26e4b632-ab76-4819-8144-dfed71a4ee91</wsa:MessageID></soapenv:Header>
+   <soapenv:Body>
+      <sch:submitRequest>
+         <sch:jobDefinitionId>
+            <!--Optional:-->
+            <typ:name>FndApplCoreUploadServiceJob</typ:name>
+            <!--Optional:-->
+            <typ:packageName>/oracle/apps/ess/fnd/applcore/</typ:packageName>
+            <!--Optional:-->
+            <typ:type>JOB_DEFINITION</typ:type>
+         </sch:jobDefinitionId>
+         <sch:application>FscmEss</sch:application>
+         <sch:requestedStartTime/>
+         <sch:requestParameters>
+            <!--0 to 1000 repetitions:-->
+            <typ:parameter>
+               <!--Optional:-->
+               <typ:dataType>STRING</typ:dataType>
+               <!--Optional:-->
+               <typ:name>submit.argument1</typ:name>
+               <!--Optional:-->
+               <typ:value>RELATED_RELATIONSHIP.txt</typ:value>
+            </typ:parameter>
+            <typ:parameter>
+               <!--Optional:-->
+               <typ:dataType>STRING</typ:dataType>
+               <!--Optional:-->
+               <typ:name>submit.argument2</typ:name>
+               <!--Optional:-->
+               <typ:value>crm$/productGroup$/import$</typ:value>
+            </typ:parameter>
+            <typ:parameter>
+               <!--Optional:-->
+               <typ:dataType>STRING</typ:dataType>
+               <!--Optional:-->
+               <typ:name>submit.argument3</typ:name>
+               <!--Optional:-->
+<typ:value>RELATEDVALUESETVALUES</typ:value>
+            </typ:parameter>
+         </sch:requestParameters>
+      </sch:submitRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

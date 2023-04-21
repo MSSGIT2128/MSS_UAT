@@ -1,0 +1,766 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "CustomerAccountId": "100000003513120",
+            "PartyId": "100000003493584",
+            "CustomerNumber": "D590282",
+            "OrganizationName": "333 Choice Properties Pty Ltd",
+            "CreatedByModule": "SIS",
+            "contactPerson": [
+                {
+                    "PersonFirstName": "Michelle",
+                    "PersonLastName": "Accounts Payalbe",
+                    "ContactLevel": "ORG",
+                    "PartySiteNumber": null,
+                    "Relationship": {
+                        "SubjectType": "PERSON",
+                        "SubjectTableName": "HZ_PARTIES",
+                        "ObjectType": "ORGANIZATION",
+                        "ObjectId": "100000003493584",
+                        "ObjectTableName": "HZ_PARTIES",
+                        "RelationshipCode": "CONTACT_OF",
+                        "RelationshipType": "CONTACT",
+                        "StartDate": "2021-09-10",
+                        "OrganizationContact": {
+                            "ContactNumber": "10193",
+                            "RoleType": "CONTACT",
+                            "PrimaryFlag": "true"
+                        },
+                        "Phone": [
+                            {
+                                "OwnerTableName": "HZ_PARTIES",
+                                "PrimaryFlag": "true",
+                                "StartDate": "2021-09-10",
+                                "ContactPointPurpose": "COLLECTIONS",
+                                "PhoneLineType": "GEN",
+                                "PhoneCountryCode": "61",
+                                "PhoneNumber": "392043333"
+                            }
+                        ],
+                        "Email": 
+						[
+						{
+                            "OwnerTableName": "HZ_PARTIES",
+                            "PrimaryFlag": "true",
+                            "ContactPointPurpose": "COLLECTIONS",
+                            "StartDate": "2021-09-10",
+                            "EmailAddress": "michelle@333collins.com"
+                        }
+						],
+                        "RelationshipId": -1,
+                        "CustomerAccountContactRole": {
+                            "ResponsibilityType": "BILL_TO",
+                            "PrimaryFlag": "true"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "required": [
+        "CustomerAccountId",
+        "PartyId",
+        "CustomerNumber",
+        "OrganizationName",
+        "CreatedByModule",
+        "contactPerson"
+    ],
+    "properties": {
+        "CustomerAccountId": {
+            "$id": "#/properties/CustomerAccountId",
+            "type": "string",
+            "title": "The CustomerAccountId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "100000003513120"
+            ]
+        },
+        "PartyId": {
+            "$id": "#/properties/PartyId",
+            "type": "string",
+            "title": "The PartyId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "100000003493584"
+            ]
+        },
+        "CustomerNumber": {
+            "$id": "#/properties/CustomerNumber",
+            "type": "string",
+            "title": "The CustomerNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "D590282"
+            ]
+        },
+        "OrganizationName": {
+            "$id": "#/properties/OrganizationName",
+            "type": "string",
+            "title": "The OrganizationName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "333 Choice Properties Pty Ltd"
+            ]
+        },
+        "CreatedByModule": {
+            "$id": "#/properties/CreatedByModule",
+            "type": "string",
+            "title": "The CreatedByModule schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "SIS"
+            ]
+        },
+        "contactPerson": {
+            "$id": "#/properties/contactPerson",
+            "type": "array",
+            "title": "The contactPerson schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "PersonFirstName": "Michelle",
+                        "PersonLastName": "Accounts Payalbe",
+                        "ContactLevel": "ORG",
+                        "PartySiteNumber": null,
+                        "Relationship": {
+                            "SubjectType": "PERSON",
+                            "SubjectTableName": "HZ_PARTIES",
+                            "ObjectType": "ORGANIZATION",
+                            "ObjectId": "100000003493584",
+                            "ObjectTableName": "HZ_PARTIES",
+                            "RelationshipCode": "CONTACT_OF",
+                            "RelationshipType": "CONTACT",
+                            "StartDate": "2021-09-10",
+                            "OrganizationContact": {
+                                "ContactNumber": "10193",
+                                "RoleType": "CONTACT",
+                                "PrimaryFlag": "true"
+                            },
+                            "Phone": [
+                                {
+                                    "OwnerTableName": "HZ_PARTIES",
+                                    "PrimaryFlag": "true",
+                                    "StartDate": "2021-09-10",
+                                    "ContactPointPurpose": "COLLECTIONS",
+                                    "PhoneLineType": "GEN",
+                                    "PhoneCountryCode": "61",
+                                    "PhoneNumber": "392043333"
+                                }
+                            ],
+                            "Email": [
+								{
+									"OwnerTableName": "HZ_PARTIES",
+									"PrimaryFlag": "true",
+									"ContactPointPurpose": "COLLECTIONS",
+									"StartDate": "2021-09-10",
+									"EmailAddress": "michelle@333collins.com"
+								}
+							],
+                            "RelationshipId": -1,
+                            "CustomerAccountContactRole": {
+                                "ResponsibilityType": "BILL_TO",
+                                "PrimaryFlag": "true"
+                            }
+                        }
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/contactPerson/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/contactPerson/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "PersonFirstName": "Michelle",
+                                "PersonLastName": "Accounts Payalbe",
+                                "ContactLevel": "ORG",
+                                "PartySiteNumber": null,
+                                "Relationship": {
+                                    "SubjectType": "PERSON",
+                                    "SubjectTableName": "HZ_PARTIES",
+                                    "ObjectType": "ORGANIZATION",
+                                    "ObjectId": "100000003493584",
+                                    "ObjectTableName": "HZ_PARTIES",
+                                    "RelationshipCode": "CONTACT_OF",
+                                    "RelationshipType": "CONTACT",
+                                    "StartDate": "2021-09-10",
+                                    "OrganizationContact": {
+                                        "ContactNumber": "10193",
+                                        "RoleType": "CONTACT",
+                                        "PrimaryFlag": "true"
+                                    },
+                                    "Phone": [
+                                        {
+                                            "OwnerTableName": "HZ_PARTIES",
+                                            "PrimaryFlag": "true",
+                                            "StartDate": "2021-09-10",
+                                            "ContactPointPurpose": "COLLECTIONS",
+                                            "PhoneLineType": "GEN",
+                                            "PhoneCountryCode": "61",
+                                            "PhoneNumber": "392043333"
+                                        }
+                                    ],
+                                    "Email": [
+										{
+											"OwnerTableName": "HZ_PARTIES",
+											"PrimaryFlag": "true",
+											"ContactPointPurpose": "COLLECTIONS",
+											"StartDate": "2021-09-10",
+											"EmailAddress": "michelle@333collins.com"
+										}
+									],
+                                    "RelationshipId": -1,
+                                    "CustomerAccountContactRole": {
+                                        "ResponsibilityType": "BILL_TO",
+                                        "PrimaryFlag": "true"
+                                    }
+                                }
+                            }
+                        ],
+                        "required": [
+                            "PersonFirstName",
+                            "PersonLastName",
+                            "ContactLevel",
+                            "PartySiteNumber",
+                            "Relationship"
+                        ],
+                        "properties": {
+                            "PersonFirstName": {
+                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/PersonFirstName",
+                                "type": "string",
+                                "title": "The PersonFirstName schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Michelle"
+                                ]
+                            },
+                            "PersonLastName": {
+                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/PersonLastName",
+                                "type": "string",
+                                "title": "The PersonLastName schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Accounts Payalbe"
+                                ]
+                            },
+                            "ContactLevel": {
+                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/ContactLevel",
+                                "type": "string",
+                                "title": "The ContactLevel schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "ORG"
+                                ]
+                            },
+                            "PartySiteNumber": {
+                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/PartySiteNumber",
+                                "type": "null",
+                                "title": "The PartySiteNumber schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "Relationship": {
+                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship",
+                                "type": "object",
+                                "title": "The Relationship schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "SubjectType": "PERSON",
+                                        "SubjectTableName": "HZ_PARTIES",
+                                        "ObjectType": "ORGANIZATION",
+                                        "ObjectId": "100000003493584",
+                                        "ObjectTableName": "HZ_PARTIES",
+                                        "RelationshipCode": "CONTACT_OF",
+                                        "RelationshipType": "CONTACT",
+                                        "StartDate": "2021-09-10",
+                                        "OrganizationContact": {
+                                            "ContactNumber": "10193",
+                                            "RoleType": "CONTACT",
+                                            "PrimaryFlag": "true"
+                                        },
+                                        "Phone": [
+                                            {
+                                                "OwnerTableName": "HZ_PARTIES",
+                                                "PrimaryFlag": "true",
+                                                "StartDate": "2021-09-10",
+                                                "ContactPointPurpose": "COLLECTIONS",
+                                                "PhoneLineType": "GEN",
+                                                "PhoneCountryCode": "61",
+                                                "PhoneNumber": "392043333"
+                                            }
+                                        ],
+                                        "Email": [
+										],
+                                        "RelationshipId": -1,
+                                        "CustomerAccountContactRole": {
+                                            "ResponsibilityType": "BILL_TO",
+                                            "PrimaryFlag": "true"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "SubjectType",
+                                    "SubjectTableName",
+                                    "ObjectType",
+                                    "ObjectId",
+                                    "ObjectTableName",
+                                    "RelationshipCode",
+                                    "RelationshipType",
+                                    "StartDate",
+                                    "OrganizationContact",
+                                    "Phone",
+                                    "Email",
+                                    "RelationshipId",
+                                    "CustomerAccountContactRole"
+                                ],
+                                "properties": {
+                                    "SubjectType": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/SubjectType",
+                                        "type": "string",
+                                        "title": "The SubjectType schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "PERSON"
+                                        ]
+                                    },
+                                    "SubjectTableName": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/SubjectTableName",
+                                        "type": "string",
+                                        "title": "The SubjectTableName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "HZ_PARTIES"
+                                        ]
+                                    },
+                                    "ObjectType": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/ObjectType",
+                                        "type": "string",
+                                        "title": "The ObjectType schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ORGANIZATION"
+                                        ]
+                                    },
+                                    "ObjectId": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/ObjectId",
+                                        "type": "string",
+                                        "title": "The ObjectId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "100000003493584"
+                                        ]
+                                    },
+                                    "ObjectTableName": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/ObjectTableName",
+                                        "type": "string",
+                                        "title": "The ObjectTableName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "HZ_PARTIES"
+                                        ]
+                                    },
+                                    "RelationshipCode": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/RelationshipCode",
+                                        "type": "string",
+                                        "title": "The RelationshipCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "CONTACT_OF"
+                                        ]
+                                    },
+                                    "RelationshipType": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/RelationshipType",
+                                        "type": "string",
+                                        "title": "The RelationshipType schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "CONTACT"
+                                        ]
+                                    },
+                                    "StartDate": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/StartDate",
+                                        "type": "string",
+                                        "title": "The StartDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2021-09-10"
+                                        ]
+                                    },
+                                    "OrganizationContact": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/OrganizationContact",
+                                        "type": "object",
+                                        "title": "The OrganizationContact schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "ContactNumber": "10193",
+                                                "RoleType": "CONTACT",
+                                                "PrimaryFlag": "true"
+                                            }
+                                        ],
+                                        "required": [
+                                            "ContactNumber",
+                                            "RoleType",
+                                            "PrimaryFlag"
+                                        ],
+                                        "properties": {
+                                            "ContactNumber": {
+                                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/OrganizationContact/properties/ContactNumber",
+                                                "type": "string",
+                                                "title": "The ContactNumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "10193"
+                                                ]
+                                            },
+                                            "RoleType": {
+                                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/OrganizationContact/properties/RoleType",
+                                                "type": "string",
+                                                "title": "The RoleType schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "CONTACT"
+                                                ]
+                                            },
+                                            "PrimaryFlag": {
+                                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/OrganizationContact/properties/PrimaryFlag",
+                                                "type": "string",
+                                                "title": "The PrimaryFlag schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "true"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    },
+                                    "Phone": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone",
+                                        "type": "array",
+                                        "title": "The Phone schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                {
+                                                    "OwnerTableName": "HZ_PARTIES",
+                                                    "PrimaryFlag": "true",
+                                                    "StartDate": "2021-09-10",
+                                                    "ContactPointPurpose": "COLLECTIONS",
+                                                    "PhoneLineType": "GEN",
+                                                    "PhoneCountryCode": "61",
+                                                    "PhoneNumber": "392043333"
+                                                }
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "OwnerTableName": "HZ_PARTIES",
+                                                            "PrimaryFlag": "true",
+                                                            "StartDate": "2021-09-10",
+                                                            "ContactPointPurpose": "COLLECTIONS",
+                                                            "PhoneLineType": "GEN",
+                                                            "PhoneCountryCode": "61",
+                                                            "PhoneNumber": "392043333"
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "OwnerTableName",
+                                                        "PrimaryFlag",
+                                                        "StartDate",
+                                                        "ContactPointPurpose",
+                                                        "PhoneLineType",
+                                                        "PhoneCountryCode",
+                                                        "PhoneNumber"
+                                                    ],
+                                                    "properties": {
+                                                        "OwnerTableName": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/OwnerTableName",
+                                                            "type": "string",
+                                                            "title": "The OwnerTableName schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "HZ_PARTIES"
+                                                            ]
+                                                        },
+                                                        "PrimaryFlag": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/PrimaryFlag",
+                                                            "type": "string",
+                                                            "title": "The PrimaryFlag schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "true"
+                                                            ]
+                                                        },
+                                                        "StartDate": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/StartDate",
+                                                            "type": "string",
+                                                            "title": "The StartDate schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "2021-09-10"
+                                                            ]
+                                                        },
+                                                        "ContactPointPurpose": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/ContactPointPurpose",
+                                                            "type": "string",
+                                                            "title": "The ContactPointPurpose schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "COLLECTIONS"
+                                                            ]
+                                                        },
+                                                        "PhoneLineType": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneLineType",
+                                                            "type": "string",
+                                                            "title": "The PhoneLineType schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "GEN"
+                                                            ]
+                                                        },
+                                                        "PhoneCountryCode": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneCountryCode",
+                                                            "type": "string",
+                                                            "title": "The PhoneCountryCode schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "61"
+                                                            ]
+                                                        },
+                                                        "PhoneNumber": {
+                                                            "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneNumber",
+                                                            "type": "string",
+                                                            "title": "The PhoneNumber schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "392043333"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "Email": {
+                                        "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email",
+                                        "type": "array",
+                                        "title": "The Email schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                {
+                                                    "OwnerTableName": "HZ_PARTIES",
+                                                    "PrimaryFlag": true,
+                                                    "ContactPointPurpose": "COLLECTIONS",
+                                                    "StartDate": "2022-09-19",
+                                                    "EmailAddress": "Chantal.Bird@dovercourt.edu.sg"
+                                                    
+                                                }
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "OwnerTableName": "HZ_PARTIES",
+															"PrimaryFlag": true,
+															"ContactPointPurpose": "COLLECTIONS",
+															"StartDate": "2022-09-19",
+															"EmailAddress": "Chantal.Bird@dovercourt.edu.sg"
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "OwnerTableName",
+                                                        "PrimaryFlag",
+                                                        "ContactPointPurpose",
+                                                        "StartDate",
+                                                        "EmailAddress"
+                                                       
+                                                    ],
+                                                    "properties": {
+                                                        "OwnerTableName": {
+                                                            "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/OwnerTableName",
+                                                            "type": "string",
+                                                            "title": "The OwnerTableName schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "HZ_PARTIES"
+                                                            ]
+                                                        },
+                                                        "PrimaryFlag": {
+                                                            "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/PrimaryFlag",
+                                                            "type": "boolean",
+                                                            "title": "The PrimaryFlag schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": false,
+                                                            "examples": [
+                                                                true
+                                                            ]
+                                                        },
+                                                        "ContactPointPurpose": {
+                                                            "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/ContactPointPurpose",
+                                                            "type": "string",
+                                                            "title": "The ContactPointPurpose schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "COLLECTIONS"
+                                                            ]
+                                                        },
+                                                        "StartDate": {
+                                                            "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneLineType",
+                                                            "type": "string",
+                                                            "title": "The PhoneLineType schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "2022-09-19"
+                                                            ]
+                                                        },
+                                                        "EmailAddress": {
+                                                            "$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Phone/items/anyOf/0/properties/EmailAddress",
+                                                            "type": "string",
+                                                            "title": "The EmailAddress schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "Chantal.Bird@dovercourt.edu.sg"
+                                                            ]
+                                                        }
+                                                        
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "RelationshipId": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/RelationshipId",
+                                        "type": "integer",
+                                        "title": "The RelationshipId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            -1
+                                        ]
+                                    },
+                                    "CustomerAccountContactRole": {
+                                        "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/CustomerAccountContactRole",
+                                        "type": "object",
+                                        "title": "The CustomerAccountContactRole schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "ResponsibilityType": "BILL_TO",
+                                                "PrimaryFlag": "true"
+                                            }
+                                        ],
+                                        "required": [
+                                            "ResponsibilityType",
+                                            "PrimaryFlag"
+                                        ],
+                                        "properties": {
+                                            "ResponsibilityType": {
+                                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/CustomerAccountContactRole/properties/ResponsibilityType",
+                                                "type": "string",
+                                                "title": "The ResponsibilityType schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "BILL_TO"
+                                                ]
+                                            },
+                                            "PrimaryFlag": {
+                                                "$id": "#/properties/contactPerson/items/anyOf/0/properties/Relationship/properties/CustomerAccountContactRole/properties/PrimaryFlag",
+                                                "type": "string",
+                                                "title": "The PrimaryFlag schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "true"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

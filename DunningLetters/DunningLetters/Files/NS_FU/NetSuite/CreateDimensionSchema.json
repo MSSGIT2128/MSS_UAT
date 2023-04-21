@@ -1,0 +1,424 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567891111434,
+            "Operation": "Create",
+            "Type": "MergeCustomerSite",
+            "Data": {
+                "CustomerAccountId": "300000003880357",
+                "CustomerAccountSite": {
+                    "PartySiteId": "300000003880353",
+                    "CreatedByModule": "SIS",
+                    "SetId": "300000000003311",
+                    "StartDate": "2021-10-01",
+                    "CustomerAccountSiteUse": {
+                        "SiteUseCode": "BILL_TO",
+                        "LocationId": "300000003880350",
+                        "CreatedByModule": "SIS",
+                        "SetId": "300000000003311",
+                        "StartDate": "2021-10-01"
+                    }
+                },
+                "Dimension": [
+                    {
+                        "Customer_Site": "Mg028",
+                        "Customer_Site_Name": "TEST003_NAME",
+                        "Contract_number": "MgCO028",
+                        "Contract_Name": "CONT003_NAME",
+                        "Branch": "40009",
+                        "State": "029",
+                        "Entity": "999",
+                        "Business_Type": "999"
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567891111434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "MergeCustomerSite"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CustomerAccountId": "300000003880357",
+                    "CustomerAccountSite": {
+                        "PartySiteId": "300000003880353",
+                        "CreatedByModule": "SIS",
+                        "SetId": "300000000003311",
+                        "StartDate": "2021-10-01",
+                        "CustomerAccountSiteUse": {
+                            "SiteUseCode": "BILL_TO",
+                            "LocationId": "300000003880350",
+                            "CreatedByModule": "SIS",
+                            "SetId": "300000000003311",
+                            "StartDate": "2021-10-01"
+                        }
+                    },
+                    "Dimension": [
+                        {
+                            "Customer_Site": "Mg028",
+                            "Customer_Site_Name": "TEST003_NAME",
+                            "Contract_number": "MgCO028",
+                            "Contract_Name": "CONT003_NAME",
+                            "Branch": "40009",
+                            "State": "029",
+                            "Entity": "999",
+                            "Business_Type": "999"
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "CustomerAccountId",
+                "CustomerAccountSite",
+                "Dimension"
+            ],
+            "properties": {
+                "CustomerAccountId": {
+                    "$id": "#/properties/Data/properties/CustomerAccountId",
+                    "type": "string",
+                    "title": "The CustomerAccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000003880357"
+                    ]
+                },
+                "CustomerAccountSite": {
+                    "$id": "#/properties/Data/properties/CustomerAccountSite",
+                    "type": "object",
+                    "title": "The CustomerAccountSite schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "PartySiteId": "300000003880353",
+                            "CreatedByModule": "SIS",
+                            "SetId": "300000000003311",
+                            "StartDate": "2021-10-01",
+                            "CustomerAccountSiteUse": {
+                                "SiteUseCode": "BILL_TO",
+                                "LocationId": "300000003880350",
+                                "CreatedByModule": "SIS",
+                                "SetId": "300000000003311",
+                                "StartDate": "2021-10-01"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "PartySiteId",
+                        "CreatedByModule",
+                        "SetId",
+                        "StartDate",
+                        "CustomerAccountSiteUse"
+                    ],
+                    "properties": {
+                        "PartySiteId": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/PartySiteId",
+                            "type": "string",
+                            "title": "The PartySiteId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000003880353"
+                            ]
+                        },
+                        "CreatedByModule": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CreatedByModule",
+                            "type": "string",
+                            "title": "The CreatedByModule schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SIS"
+                            ]
+                        },
+                        "SetId": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/SetId",
+                            "type": "string",
+                            "title": "The SetId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000000003311"
+                            ]
+                        },
+                        "StartDate": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/StartDate",
+                            "type": "string",
+                            "title": "The StartDate schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2021-10-01"
+                            ]
+                        },
+                        "CustomerAccountSiteUse": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse",
+                            "type": "object",
+                            "title": "The CustomerAccountSiteUse schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "SiteUseCode": "BILL_TO",
+                                    "LocationId": "300000003880350",
+                                    "CreatedByModule": "SIS",
+                                    "SetId": "300000000003311",
+                                    "StartDate": "2021-10-01"
+                                }
+                            ],
+                            "required": [
+                                "SiteUseCode",
+                                "LocationId",
+                                "CreatedByModule",
+                                "SetId",
+                                "StartDate"
+                            ],
+                            "properties": {
+                                "SiteUseCode": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/SiteUseCode",
+                                    "type": "string",
+                                    "title": "The SiteUseCode schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "BILL_TO"
+                                    ]
+                                },
+                                "LocationId": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/LocationId",
+                                    "type": "string",
+                                    "title": "The LocationId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000003880350"
+                                    ]
+                                },
+                                "CreatedByModule": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/CreatedByModule",
+                                    "type": "string",
+                                    "title": "The CreatedByModule schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "SIS"
+                                    ]
+                                },
+                                "SetId": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/SetId",
+                                    "type": "string",
+                                    "title": "The SetId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000000003311"
+                                    ]
+                                },
+                                "StartDate": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/StartDate",
+                                    "type": "string",
+                                    "title": "The StartDate schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "2021-10-01"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Dimension": {
+                    "$id": "#/properties/Data/properties/Dimension",
+                    "type": "array",
+                    "title": "The Dimension schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "Customer_Site": "Mg028",
+                                "Customer_Site_Name": "TEST003_NAME",
+                                "Contract_number": "MgCO028",
+                                "Contract_Name": "CONT003_NAME",
+                                "Branch": "40009",
+                                "State": "029",
+                                "Entity": "999",
+                                "Business_Type": "999"
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/Dimension/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/Dimension/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "Customer_Site": "Mg028",
+                                        "Customer_Site_Name": "TEST003_NAME",
+                                        "Contract_number": "MgCO028",
+                                        "Contract_Name": "CONT003_NAME",
+                                        "Branch": "40009",
+                                        "State": "029",
+                                        "Entity": "999",
+                                        "Business_Type": "999"
+                                    }
+                                ],
+                                "required": [
+                                    "Customer_Site",
+                                    "Customer_Site_Name",
+                                    "Contract_number",
+                                    "Contract_Name",
+                                    "Branch",
+                                    "State",
+                                    "Entity",
+                                    "Business_Type"
+                                ],
+                                "properties": {
+                                    "Customer_Site": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Customer_Site",
+                                        "type": "string",
+                                        "title": "The Customer_Site schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Mg028"
+                                        ]
+                                    },
+                                    "Customer_Site_Name": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Customer_Site_Name",
+                                        "type": "string",
+                                        "title": "The Customer_Site_Name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "TEST003_NAME"
+                                        ]
+                                    },
+                                    "Contract_number": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Contract_number",
+                                        "type": "string",
+                                        "title": "The Contract_number schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "MgCO028"
+                                        ]
+                                    },
+                                    "Contract_Name": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Contract_Name",
+                                        "type": "string",
+                                        "title": "The Contract_Name schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "CONT003_NAME"
+                                        ]
+                                    },
+                                    "Branch": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Branch",
+                                        "type": "string",
+                                        "title": "The Branch schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "40009"
+                                        ]
+                                    },
+                                    "State": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/State",
+                                        "type": "string",
+                                        "title": "The State schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "029"
+                                        ]
+                                    },
+                                    "Entity": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Entity",
+                                        "type": "string",
+                                        "title": "The Entity schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "999"
+                                        ]
+                                    },
+                                    "Business_Type": {
+                                        "$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Business_Type",
+                                        "type": "string",
+                                        "title": "The Business_Type schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "999"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,2357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Flow id="BP8_Flow54">
+   <Properties>
+      <PropertiesGroup id="General" name="General">
+         <Property id="id" name="ID" value="54" />
+         <Property id="name" name="Name" value="Location" />
+         <Property id="istwophase" name="Two Phase Processing" value="No" />
+         <Property id="hasdbtransaction" name="DB transaction" value="No" />
+         <Property id="dbtransactionstring" name="DB Resources List" value="" />
+         <Property id="isdisabled" name="Disable" value="No" />
+         <Property id="isinactive" name="Inactive" value="No" />
+         <Property id="maxinstances" name="Max Instances" value="0" />
+         <Property id="timeoutpolicy" name="Timeout Policy" value="None" />
+         <Property id="timeoutval" name="Timeout Value" value="0" />
+         <Property id="recoverypolicy" name="Recovery Policy" value="None" />
+         <Property id="enablement" name="Enablement" value="Always" />
+      </PropertiesGroup>
+      <PropertiesGroup id="FlowInvokers" name="Flow Invokers">
+         <Property id="isautostart" name="Auto Start" value="No" />
+         <Property id="isautorepeat" name="Auto Repeat" value="No" />
+      </PropertiesGroup>
+      <PropertiesGroup id="External" name="External">
+         <Property id="psssubscribeonce" name="PSS Subscribe Once" value="No" />
+         <Property id="psssubscribename" name="PSS Subscribe Name" value="" />
+      </PropertiesGroup>
+   </Properties>
+   <Repository Name="Flow Variables" id="flowvariables">
+      <Structure>
+         <Field fieldId="name" widthHint="FitToContent">Name</Field>
+         <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+         <Field fieldId="id" widthHint="FitToContent">ID</Field>
+         <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+         <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+         <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+         <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+      </Structure>
+      <Items>
+         <RepositoryItem>
+            <Property fieldId="name" value="F.Operation" />
+            <Property fieldId="description" value="" />
+            <Property fieldId="id" value="1" />
+            <Property fieldId="variabletype" value="Alpha" />
+            <Property fieldId="picturelength" value="30" />
+            <Property fieldId="defaultvalue" value="" />
+            <Property fieldId="guid" value="83e0178d-7f08-4362-b2f7-541806fb7ee9" />
+         </RepositoryItem>
+         <RepositoryItem>
+            <Property fieldId="name" value="F.LocationID" />
+            <Property fieldId="description" value="" />
+            <Property fieldId="id" value="2" />
+            <Property fieldId="variabletype" value="Numeric" />
+            <Property fieldId="picturelength" value="12.4" />
+            <Property fieldId="defaultvalue" value="" />
+            <Property fieldId="guid" value="3b3349c1-31c4-46ff-951b-970f6ce3821d" />
+         </RepositoryItem>
+      </Items>
+   </Repository>
+   <Triggers />
+   <Steps>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="7" />
+               <Property id="name" name="Name" value="Fusion_Location" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.FusionResponse,C.AuditLogFilePath&amp;'FusionResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.UserXML,C.AuditLogFilePath&amp;'FusionRESTRequest_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.FusionResponseStatusCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="200" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.ResponseTime" />
+                  <Property fieldId="datatype" value="Time" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="Time ()" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="8" />
+               <Property id="name" name="Name" value="Create Location  Mapping" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Data Mapper.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Mappings>
+            <Structure>
+               <Field fieldId="destinationnodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="sourcenodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="destinationidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="sourceidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="destinationtype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourcetype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourceinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourceexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourcenillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="destinationdescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="sourcedescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="destinationnillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="sourcecondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationcondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationpicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcepicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcealwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="destinationalwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="sourceschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="sourceadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="destinationschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationcalculatedvalue" widthHint="FitToContent">Calculated  Value</Field>
+               <Field fieldId="destinationlogerror" widthHint="FitToContent">Log Error</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Complex" />
+                  <Property fieldId="sourcenodetype" value="Complex" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="" />
+                  <Property fieldId="destinationexternalfieldtype" value="" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:LocationId" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/LocationId" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="String" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="Trim (Src.JSON&quot;S1/The root schema/LocationId&quot;)" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:Address1" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/Address1" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="String" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:City" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/City" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="String" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:Address2" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/Address2" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="String" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:Address3" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/Address3" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="String" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:PostalCode" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/PostalCode" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Numeric" />
+                  <Property fieldId="sourceinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="9" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="Trim (Str (Src.JSON&quot;S1/The root schema/PostalCode&quot;,''))" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/soapenv:Envelope/soapenv:Body/app2:updateLocation/app2:location/ns2:State" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/The root schema/State" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="string" />
+                  <Property fieldId="sourceexternalfieldtype" value="String" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="JSON_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="destinationschemaname" value="XML_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+            </Items>
+         </Mappings>
+         <Schemas Name="Destinations">
+            <Item>
+               <Property id="xsdfilename" name="File Name" value="Files\RoleCall_FU\Fusion\Location\Update\Request\UpdateLocation.xsd" />
+               <Property id="rootselected" name="XML Root" value="Envelope" />
+               <Property id="xsdsubtypeui" name="XSD Sub Type" value="File" />
+               <Property id="ifcmodel" name="IFC Model" value="" />
+               <Property id="xmlposforwarding" name="XML Position Forwarding" value="" />
+               <Property id="datadestination" name="Destination Type" value="Variable" />
+               <Property id="datadestinationexp" name="Data Source" value="C.RequestXML" />
+               <Property id="appenddata" name="Append Data" value="No" />
+               <Property id="validatexml" name="XML Validation" value="Yes" />
+               <Property id="recursiondepth" name="Recursion Depth" value="1" />
+               <Property id="alwayscreatenodes" name="Always Create Nodes" value="Yes" />
+               <Property id="xmlencodingui" name="XML Encoding" value="Project Encoding" />
+               <Property id="streamingparserui" name="Streaming Parser" value="No" />
+               <Property id="schemaid" name="ID" value="2" />
+               <Property id="schemaname" name="Name" value="XML_2" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="XSD" />
+            </Item>
+         </Schemas>
+         <Schemas Name="Sources">
+            <Item>
+               <Property id="jsonfilenameui" name="JSON Schema File" value="Files\RoleCall_FU\RoleCall\ModifyPayloads\ModifyLocation.json" />
+               <Property id="datadestination" name="Source Type" value="Variable" />
+               <Property id="datadestinationexpobj" name="DataDestinationExpObj" value="C.RoleCallRequest" />
+               <Property id="validatejsonui" name="JSON Validation" value="No" />
+               <Property id="streamingparserui" name="Streaming Parser" value="No" />
+               <Property id="alwayscreatenodesui" name="Always Create Nodes" value="No" />
+               <Property id="schemaid" name="ID" value="1" />
+               <Property id="schemaname" name="Name" value="JSON_1" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="JSON" />
+            </Item>
+         </Schemas>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="19" />
+               <Property id="name" name="Name" value="Create_Location_Mapping_Log" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.RequestTime" />
+                  <Property fieldId="datatype" value="Time" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="Time ()" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.RequestXML,C.AuditLogFilePath&amp;'FusionRequest_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="23" />
+               <Property id="name" name="Name" value="Parse Fusion Edit Response" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Data Mapper.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Mappings>
+            <Structure>
+               <Field fieldId="destinationnodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="sourcenodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="destinationidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="sourceidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="destinationtype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourcetype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourceinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourceexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourcenillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="destinationdescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="sourcedescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="destinationnillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="sourcecondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationcondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationpicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcepicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcealwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="destinationalwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="sourceschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="sourceadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="destinationschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationcalculatedvalue" widthHint="FitToContent">Calculated  Value</Field>
+               <Field fieldId="destinationlogerror" widthHint="FitToContent">Log Error</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/Instance/C.MessageID" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/Envelope/Header/MessageID" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="Alpha" />
+                  <Property fieldId="sourceexternalfieldtype" value="string" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="100" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="XML_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="Variable_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Complex" />
+                  <Property fieldId="sourcenodetype" value="Complex" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/Instance" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/Envelope/Body/updateLocationResponse/result" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="" />
+                  <Property fieldId="destinationexternalfieldtype" value="" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="" />
+                  <Property fieldId="sourceschemaname" value="XML_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="Variable_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/Instance/C.FusionLocationID" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/Envelope/Body/updateLocationResponse/result/Value/LocationId" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="Alpha" />
+                  <Property fieldId="sourceexternalfieldtype" value="string" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="100" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="XML_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="Variable_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="Simple" />
+                  <Property fieldId="destinationidentifier" value="Src.S2/Instance/C.FusionResponseStatus" />
+                  <Property fieldId="sourceidentifier" value="Src.S1/Envelope/Body/updateLocationResponse/result/Value/StatusFlag" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="Alpha" />
+                  <Property fieldId="sourceinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="Alpha" />
+                  <Property fieldId="sourceexternalfieldtype" value="string" />
+                  <Property fieldId="sourcenillable" value="False" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="30" />
+                  <Property fieldId="sourcepicture" value="1000" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="No" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="XML_1" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="Variable_2" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+            </Items>
+         </Mappings>
+         <Schemas Name="Destinations">
+            <Item>
+               <Property id="schemaid" name="ID" value="2" />
+               <Property id="schemaname" name="Name" value="Variable_2" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="Variable" />
+            </Item>
+         </Schemas>
+         <Schemas Name="Sources">
+            <Item>
+               <Property id="xsdfilename" name="File Name" value="Files\RoleCall_FU\Fusion\Location\Update\Response\UpdateLocatioResponse.xsd" />
+               <Property id="rootselected" name="XML Root" value="Envelope" />
+               <Property id="xsdsubtypeui" name="XSD Sub Type" value="File" />
+               <Property id="ifcmodel" name="IFC Model" value="" />
+               <Property id="xmlposforwarding" name="XML Position Forwarding" value="" />
+               <Property id="datadestination" name="Source Type" value="Variable" />
+               <Property id="datadestinationexp" name="Data Source" value="C.FusionResponse" />
+               <Property id="appenddata" name="Append Data" value="No" />
+               <Property id="validatexml" name="XML Validation" value="No" />
+               <Property id="recursiondepth" name="Recursion Depth" value="1" />
+               <Property id="alwayscreatenodes" name="Always Create Nodes" value="No" />
+               <Property id="xmlencodingui" name="XML Encoding" value="" />
+               <Property id="streamingparserui" name="Streaming Parser" value="No" />
+               <Property id="schemaid" name="ID" value="1" />
+               <Property id="schemaname" name="Name" value="XML_1" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="XSD" />
+            </Item>
+         </Schemas>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="25" />
+               <Property id="name" name="Name" value="NOP" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\NOP.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="30" />
+               <Property id="name" name="Name" value="Err_Create_Location_Mapping" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.Err_Msg" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'Invaild Rollecall Request'" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.RequestXML,C.AuditLogFilePath&amp;'FusionRequest_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.Err_Msg,C.AuditLogFilePath&amp;'Error_MgResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="31" />
+               <Property id="name" name="Name" value="Generate Response" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="C.sys.ErrorCode&gt;0" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Data Mapper.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Mappings>
+            <Structure>
+               <Field fieldId="destinationnodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="sourcenodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="destinationidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="sourceidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="destinationtype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourcetype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourceinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourceexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourcenillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="destinationdescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="sourcedescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="destinationnillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="sourcecondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationcondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationpicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcepicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcealwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="destinationalwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="sourceschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="sourceadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="destinationschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationcalculatedvalue" widthHint="FitToContent">Calculated  Value</Field>
+               <Field fieldId="destinationlogerror" widthHint="FitToContent">Log Error</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/RequestId" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="15" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="Yes" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.RequestId" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Success" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Logical" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Logical" />
+                  <Property fieldId="destinationexternalfieldtype" value="Boolean" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="5" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: False; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'FALSE'LOG" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Error/Code" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="9" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="999" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Error/Message" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="String" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: 300000; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'Invaild Rollecall Request'" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+            </Items>
+         </Mappings>
+         <Schemas Name="Destinations">
+            <Item>
+               <Property id="jsonfilenameui" name="JSON Schema File" value="C:\Magicxpi412\Runtime\projects\NetSuiteWebhook\NetSuiteWebhook\Files\NS_FU\NetSuite\ErrorSchema.json" />
+               <Property id="datadestination" name="Destination Type" value="Variable" />
+               <Property id="datadestinationexpobj" name="DataDestinationExpObj" value="C.Response" />
+               <Property id="validatejsonui" name="JSON Validation" value="No" />
+               <Property id="streamingparserui" name="Streaming Parser" value="No" />
+               <Property id="alwayscreatenodesui" name="Always Create Nodes" value="No" />
+               <Property id="schemaid" name="ID" value="1" />
+               <Property id="schemaname" name="Name" value="JSON_1" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="JSON" />
+            </Item>
+         </Schemas>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="39" />
+               <Property id="name" name="Name" value="InvaildFusionResponse" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="C.sys.ErrorCode&gt;0 OR   BlobSize (Trim (C.FusionResponse))=0 OR  C.UserCode &lt;&gt; 0 OR InStr (C.UserString,'200 OK')=0" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Data Mapper.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Mappings>
+            <Structure>
+               <Field fieldId="destinationnodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="sourcenodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="destinationidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="sourceidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="destinationtype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourcetype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourceinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourceexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourcenillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="destinationdescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="sourcedescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="destinationnillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="sourcecondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationcondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationpicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcepicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcealwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="destinationalwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="sourceschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="sourceadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="destinationschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationcalculatedvalue" widthHint="FitToContent">Calculated  Value</Field>
+               <Field fieldId="destinationlogerror" widthHint="FitToContent">Log Error</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/RequestId" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="15" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="Yes" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.RequestId" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Success" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Logical" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Logical" />
+                  <Property fieldId="destinationexternalfieldtype" value="Boolean" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="5" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: False; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'FALSE'LOG" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Error/Code" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="9" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="999" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Error/Message" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="String" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: 300000; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="IF (Trim (IF (Trim (C.UserString)='' OR C.sys.ErrorCode&gt;0,'Error occured while connecting with Fusion system - '&amp;IF (Trim (C.sys.ErrorDescription)&lt;&gt;'',Trim (C.sys.ErrorDescription),'NA'),IF (BlobSize (C.FusionResponse)&gt;0,C.FusionResponse, StrToken (StrToken (C.UserString,2,'&lt;faultstring&gt;'),1,'&lt;/faultstring&gt;'))))='',Trim (C.sys.LastErrorDescription),'LastErrorDescription is empty')" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+            </Items>
+         </Mappings>
+         <Schemas Name="Destinations">
+            <Item>
+               <Property id="jsonfilenameui" name="JSON Schema File" value="Files\RoleCall_FU\RoleCall\ErrorSchema.json" />
+               <Property id="datadestination" name="Destination Type" value="Variable" />
+               <Property id="datadestinationexpobj" name="DataDestinationExpObj" value="C.Response" />
+               <Property id="validatejsonui" name="JSON Validation" value="No" />
+               <Property id="streamingparserui" name="Streaming Parser" value="No" />
+               <Property id="alwayscreatenodesui" name="Always Create Nodes" value="No" />
+               <Property id="schemaid" name="ID" value="1" />
+               <Property id="schemaname" name="Name" value="JSON_1" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="JSON" />
+            </Item>
+         </Schemas>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="40" />
+               <Property id="name" name="Name" value="Err_Fusion_Location" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.Err_Msg" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Trim (IF (Trim (C.UserString)='' OR C.sys.ErrorCode&gt;0,'Error occured while connecting with Fusion system - '&amp;IF (Trim (C.sys.ErrorDescription)&lt;&gt;'',Trim (C.sys.ErrorDescription),'NA'),IF (BlobSize (C.FusionResponse)&gt;0,StrToken (StrToken (C.FusionResponse,2,'&lt;faultstring&gt;'),1,'&lt;/faultstring&gt;'), StrToken (StrToken (C.UserString,2,'&lt;faultstring&gt;'),1,'&lt;/faultstring&gt;'))))='','LastErrorDescription is empty',Trim (IF (Trim (C.UserString)='' OR C.sys.ErrorCode&gt;0,'Error occured while connecting with Fusion system - '&amp;IF (Trim (C.sys.ErrorDescription)&lt;&gt;'',Trim (C.sys.ErrorDescription),'NA'),IF (BlobSize (C.FusionResponse)&gt;0,StrToken (StrToken (C.FusionResponse,2,'&lt;faultstring&gt;'),1,'&lt;/faultstring&gt;'), StrToken (StrToken (C.UserString,2,'&lt;faultstring&gt;'),1,'&lt;/faultstring&gt;')))))" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.FusionResponse,C.AuditLogFilePath&amp;'FusionResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.UserString,C.AuditLogFilePath&amp;'FusionResponseUser_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.UserXML,C.AuditLogFilePath&amp;'FusionRESTRequest_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.Err_Msg,C.AuditLogFilePath&amp;'Error_MgResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'_'&amp;DStr (BlobSize (C.FusionResponse),'N12')&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.RequestTime" />
+                  <Property fieldId="datatype" value="Time" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="Time ()" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.FusionResponseStatusCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="999" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.FusionResponseStatus" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'false'" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.IsOk" />
+                  <Property fieldId="datatype" value="Logical" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'FALSE'LOG" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="72" />
+               <Property id="name" name="Name" value="Invalid Operation" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="C.sys.ErrorCode&gt;0" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Data Mapper.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Mappings>
+            <Structure>
+               <Field fieldId="destinationnodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="sourcenodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="destinationidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="sourceidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="destinationtype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourcetype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourceinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourceexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourcenillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="destinationdescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="sourcedescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="destinationnillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="sourcecondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationcondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationpicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcepicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcealwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="destinationalwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="sourceschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="sourceadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="destinationschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationcalculatedvalue" widthHint="FitToContent">Calculated  Value</Field>
+               <Field fieldId="destinationlogerror" widthHint="FitToContent">Log Error</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/RequestId" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="15" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="Yes" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.RequestId" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Success" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Logical" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Logical" />
+                  <Property fieldId="destinationexternalfieldtype" value="Boolean" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="5" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: False; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'FALSE'LOG" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Error/Code" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="Integer" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="9" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: 0; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="999" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/The root schema/Error/Message" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="String" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="MaxLength: ; MinItems: ; MaxItems: ; Default: ; EnumValues: " />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="JSON_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'Error occured while parsing fusion response'" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+            </Items>
+         </Mappings>
+         <Schemas Name="Destinations">
+            <Item>
+               <Property id="jsonfilenameui" name="JSON Schema File" value="C:\Magicxpi412\Runtime\projects\NetSuiteWebhook\NetSuiteWebhook\Files\NS_FU\NetSuite\ErrorSchema.json" />
+               <Property id="datadestination" name="Destination Type" value="Variable" />
+               <Property id="datadestinationexpobj" name="DataDestinationExpObj" value="C.Response" />
+               <Property id="validatejsonui" name="JSON Validation" value="No" />
+               <Property id="streamingparserui" name="Streaming Parser" value="No" />
+               <Property id="alwayscreatenodesui" name="Always Create Nodes" value="No" />
+               <Property id="schemaid" name="ID" value="1" />
+               <Property id="schemaname" name="Name" value="JSON_1" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="JSON" />
+            </Item>
+         </Schemas>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="74" />
+               <Property id="name" name="Name" value="Err_Fusion_Response_Parsing" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+               <Property id="stepcondition" name="Condition" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.Err_Msg" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'Error occured while parsing fusion response'" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.FusionResponse,C.AuditLogFilePath&amp;'FusionResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.UserString,C.AuditLogFilePath&amp;'FusionResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.UserXML,C.AuditLogFilePath&amp;'FusionRESTRequest_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.UserCode" />
+                  <Property fieldId="datatype" value="Numeric" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="IF (Blb2File (C.Err_Msg,C.AuditLogFilePath&amp;'Error_MgResponse_'&amp;Trim (Str (C.RequestId,''))&amp;'_'&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;GetObjectName (5)&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'.txt'),0,1)" />
+                  <Property fieldId="conditionexpression" value="G.AuditLogFlag" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="76" />
+               <Property id="name" name="Name" value="Loaction call" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="interface" name="Interface" value="Method" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="ressername" name="Resource Name" value="HTTPCilent_Fusion" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Logging" name="Logging">
+               <Property id="displayloggingscope" name="Logging Scope" value="No" />
+               <Property id="displayloggingoptions" name="Step Logging Options" value="Before" />
+               <Property id="message" name="Message" value="" />
+               <Property id="blob" name="BLOB" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Http.png" />
+            </PropertiesGroup>
+         </Properties>
+         <DAM>
+            <Structure>
+               <Field fieldId="name" widthHint="FitToContent">DAM Method</Field>
+               <Field fieldId="condition" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="name" value="REST" />
+                  <Property fieldId="condition" value="" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="HTTP Verb" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="1" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="POST" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="URL Dynamic Addition" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="20000" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="'/crmService/FoundationPartiesLocationService'" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Header Information" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="1000" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Header Set" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="10000" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="'Authorization:Basic U0lTX0lOVEVHUkFUSU9OX05FVzpEZWxoaUF1c0AyMDIyJGlzSW5kaWE=,Content-Type:text/xml'" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Data BLOB" />
+                              <Property fieldId="parametertype" value="Blob" />
+                              <Property fieldId="parameterpicture" value="" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="C.RequestXML" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Encoding" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="1" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="Keep existing" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Output BLOB" />
+                              <Property fieldId="parametertype" value="Blob" />
+                              <Property fieldId="parameterpicture" value="" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="C.FusionResponse" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Output Header" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="1000" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="C.UserString" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Error Code" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="C.UserCode" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+            </Items>
+         </DAM>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="241" />
+               <Property id="name" name="Name" value="Update Variables" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.AuditLogFilePath" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'F:\Magic\AuditLogs\RoleCall_To_Fusion\2021\Jun\16-06-2021\FUSION_MODIFY_PROCESS\'" />
+                  <Property fieldId="conditionexpression" value="'FALSE'LOG" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.AuditLogFilePath" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="Trim (C.AuditLogFilePath)&amp;Trim (GetObjectName (3))&amp;EnvVal ('sl')" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.BP_Name" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'Modify location'" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.Operation" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'Modify'" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.RoleCallRequest" />
+                  <Property fieldId="datatype" value="Blob" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'{&#xD;&#xA;  &quot;LocationId&quot;: 300000003167472, &#xD;&#xA;  &quot;Address1&quot;: &quot;Level 10, Suite 7&quot;,&#xD;&#xA;  &quot;Address2&quot;: &quot;Zenith Centre Tower B&quot;,&#xD;&#xA;  &quot;Address3&quot;: &quot;821 Pacific Highway&quot;,&#xD;&#xA;  &quot;City&quot;: &quot;Chatswood&quot;,&#xD;&#xA;  &quot;PostalCode&quot;: 2067,&#xD;&#xA;  &quot;State&quot;: &quot;NSW&quot;&#xD;&#xA;}'" />
+                  <Property fieldId="conditionexpression" value="'FALSE'LOG" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="533" />
+               <Property id="name" name="Name" value="DB_History" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Data Mapper.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Mappings>
+            <Structure>
+               <Field fieldId="destinationnodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="sourcenodetype" widthHint="FitToContent">Node Type</Field>
+               <Field fieldId="destinationidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="sourceidentifier" widthHint="FitToContent">Path</Field>
+               <Field fieldId="destinationtype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourcetype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="sourceinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationinternalattribute" widthHint="FitToContent">Internal Data Type</Field>
+               <Field fieldId="destinationexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourceexternalfieldtype" widthHint="FitToContent">External Data Type</Field>
+               <Field fieldId="sourcenillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="destinationdescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="sourcedescription" widthHint="FitToContent">Description</Field>
+               <Field fieldId="destinationnillable" widthHint="FitToContent">Nillable</Field>
+               <Field fieldId="sourcecondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationcondition" widthHint="FitToContent">Condition</Field>
+               <Field fieldId="destinationpicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcepicture" widthHint="FitToContent">Picture</Field>
+               <Field fieldId="sourcealwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="destinationalwaysusecustompicture" widthHint="FitToContent">Always Use Custom Picture</Field>
+               <Field fieldId="sourceschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="sourceadditionaljsonproperties" widthHint="FitToContent">Additional JSON Properties</Field>
+               <Field fieldId="destinationschemaname" widthHint="FitToContent">Schema</Field>
+               <Field fieldId="destinationcalculatedvalue" widthHint="FitToContent">Calculated  Value</Field>
+               <Field fieldId="destinationlogerror" widthHint="FitToContent">Log Error</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.headerSeqID" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="INTEGER" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="N10" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.HeaderSeqID" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.messageID" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="VARCHAR" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="100" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.MessageID" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.payloadTypeID" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="INTEGER" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="N10" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.PayloadID" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.requestPayload" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Blob" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Blob" />
+                  <Property fieldId="destinationexternalfieldtype" value="TEXT" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="-1" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.FusionRequest" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.origin" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="CHAR" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="2" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'RC'" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.createdAt" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Date" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Date" />
+                  <Property fieldId="destinationexternalfieldtype" value="DATE" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="YYYY/MM/DD" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.RequestDate" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.queueStatus" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="TINYINT" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="False" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="N3" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="1" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.sentAt" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Time" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Time" />
+                  <Property fieldId="destinationexternalfieldtype" value="TIME" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="HH:MM:SS" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="C.RequestTime" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.responsePayload" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Blob" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Blob" />
+                  <Property fieldId="destinationexternalfieldtype" value="TEXT" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="-1" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="IF (BlobSize (C.FusionResponse)&gt;0,C.FusionResponse,C.UserString)" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.receivedDate" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Date" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Date" />
+                  <Property fieldId="destinationexternalfieldtype" value="DATE" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="YYYY/MM/DD" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="DVal (DStr (Date (),'YYYY/MM/DD'),'YYYY/MM/DD')" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.receivedAt" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Time" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Time" />
+                  <Property fieldId="destinationexternalfieldtype" value="TIME" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="HH:MM:SS" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="Time ()" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.httpRespCode" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="SMALLINT" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="N5" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="200" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.httpRespStatusText" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Alpha" />
+                  <Property fieldId="destinationexternalfieldtype" value="VARCHAR" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="1000" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="'true'" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Simple" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages/TB_OutboundMessages.RequestId" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Numeric" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="Numeric" />
+                  <Property fieldId="destinationexternalfieldtype" value="NUMERIC" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="True" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="N16" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="No" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="Val (C.CustomerNumber,'')" />
+                  <Property fieldId="destinationlogerror" value="No" />
+                  <SubItems />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="destinationnodetype" value="Complex" />
+                  <Property fieldId="sourcenodetype" value="" />
+                  <Property fieldId="destinationidentifier" value="Src.S1/dbo.TB_OutboundMessages" />
+                  <Property fieldId="sourceidentifier" value="" />
+                  <Property fieldId="destinationtype" value="Alpha" />
+                  <Property fieldId="sourcetype" value="" />
+                  <Property fieldId="sourceinternalattribute" value="" />
+                  <Property fieldId="destinationinternalattribute" value="" />
+                  <Property fieldId="destinationexternalfieldtype" value="" />
+                  <Property fieldId="sourceexternalfieldtype" value="" />
+                  <Property fieldId="sourcenillable" value="" />
+                  <Property fieldId="destinationdescription" value="" />
+                  <Property fieldId="sourcedescription" value="" />
+                  <Property fieldId="destinationnillable" value="" />
+                  <Property fieldId="sourcecondition" value="" />
+                  <Property fieldId="destinationcondition" value="" />
+                  <Property fieldId="destinationpicture" value="" />
+                  <Property fieldId="sourcepicture" value="" />
+                  <Property fieldId="sourcealwaysusecustompicture" value="" />
+                  <Property fieldId="destinationalwaysusecustompicture" value="" />
+                  <Property fieldId="sourceschemaname" value="" />
+                  <Property fieldId="destinationadditionaljsonproperties" value="" />
+                  <Property fieldId="sourceadditionaljsonproperties" value="" />
+                  <Property fieldId="destinationschemaname" value="DataBase_1" />
+                  <Property fieldId="destinationcalculatedvalue" value="" />
+                  <Property fieldId="destinationlogerror" value="" />
+                  <SubItems />
+               </RepositoryItem>
+            </Items>
+         </Mappings>
+         <Schemas Name="Destinations">
+            <Item>
+               <Property id="upsert_ui" name="UPSERT" value="No" />
+               <Property id="dynamicsqlstatementui" name="Dynamic SQL Statement" value="No" />
+               <Property id="dbresourceui" name="Database Definition" value="Database_MSS" />
+               <Property id="statementui" name="SQL Statement" value="INSERT INTO dbo.[TB_OutboundMessages] (  [TB_OutboundMessages].headerSeqID,[TB_OutboundMessages].messageID,[TB_OutboundMessages].payloadTypeID,[TB_OutboundMessages].optionalSearchText,[TB_OutboundMessages].requestPayload,[TB_OutboundMessages].origin,[TB_OutboundMessages].createdAt,[TB_OutboundMessages].queueStatus,[TB_OutboundMessages].sentAt,[TB_OutboundMessages].responsePayload,[TB_OutboundMessages].receivedDate,[TB_OutboundMessages].receivedAt,[TB_OutboundMessages].httpRespCode,[TB_OutboundMessages].httpRespStatusText,[TB_OutboundMessages].RequestId )" />
+               <Property id="schemaid" name="ID" value="1" />
+               <Property id="schemaname" name="Name" value="DataBase_1" />
+               <Property id="descriptionui" name="Description" value="" />
+               <Property id="schematype" name="Schema Type" value="DataBase" />
+            </Item>
+         </Schemas>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="534" />
+               <Property id="name" name="Name" value="Invoke Flow" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="isbyexp" name="Invoke by Expression" value="No" />
+               <Property id="bpexp" name="Target BP ID expression" value="" />
+               <Property id="flowexp" name="Target flow ID expression" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Invoke Flow.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="535" />
+               <Property id="name" name="Name" value="File Management" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="interface" name="Interface" value="Method" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="ressername" name="Resource Name" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Logging" name="Logging">
+               <Property id="displayloggingscope" name="Logging Scope" value="No" />
+               <Property id="displayloggingoptions" name="Step Logging Options" value="Before" />
+               <Property id="message" name="Message" value="" />
+               <Property id="blob" name="BLOB" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\File Management.png" />
+            </PropertiesGroup>
+         </Properties>
+         <DAM>
+            <Structure>
+               <Field fieldId="name" widthHint="FitToContent">DAM Method</Field>
+               <Field fieldId="condition" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Create Folder" />
+                  <Property fieldId="condition" value="NOT (FileExist (Left (Trim (C.AuditLogFilePath),Len (Trim (C.AuditLogFilePath))-1)))" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Folder Name" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="Left (Trim (C.AuditLogFilePath),Len (Trim (C.AuditLogFilePath))-1)" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Error Code" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+            </Items>
+         </DAM>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="537" />
+               <Property id="name" name="Name" value="Invoke Flow" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="isbyexp" name="Invoke by Expression" value="No" />
+               <Property id="bpexp" name="Target BP ID expression" value="" />
+               <Property id="flowexp" name="Target flow ID expression" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Invoke Flow.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="537" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="icon-clock" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+   </Steps>
+   <LocalizationTable>
+      <FlowDiagram>Graphical View</FlowDiagram>
+      <Trigger>Trigger</Trigger>
+      <Step>Step</Step>
+   </LocalizationTable>
+</Flow>

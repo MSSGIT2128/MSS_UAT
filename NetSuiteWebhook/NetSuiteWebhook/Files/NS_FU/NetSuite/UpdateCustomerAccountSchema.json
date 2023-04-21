@@ -1,0 +1,1017 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567898765434,
+            "Operation": "Create",
+            "Type": "CustomerAccount",
+            "FusionId": "83838383838383",
+            "Data": {
+                "PartyId": "300000001771253",
+                "AccountNumber": "TestAccount",
+                "CustomerClassCode": "PUBLIC SECTOR COMPANIES",
+                "AccountName": "TestAccount",
+                "CreatedByModule": "SIS",
+                "CustomerAccountSite": [
+                    {
+                        "PartySiteId": "300000001771254",
+                        "CreatedByModule": "SIS",
+                        "SetId": "300000000003311",
+                        "StartDateActive": "2020-09-25",
+                        "CustomerAccountSiteUse": [
+                            {
+                                "SiteUseCode": "BILL_TO",
+                                "StartDate": "2020-09-25",
+                                "CreatedByModule": "SIS",
+                                "OriginalSystemReference": {
+                                    "OrigSystem": "SIS",
+                                    "OrigSystemReference": "300000001771255",
+                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                    "CreatedByModule": "SIS"
+                                }
+                            },
+                            {
+                                "SiteUseCode": "SHIP_TO",
+                                "StartDate": "2020-09-25",
+                                "CreatedByModule": "SIS",
+                                "OriginalSystemReference": {
+                                    "OrigSystem": "SIS",
+                                    "OrigSystemReference": "300000001771256",
+                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                    "CreatedByModule": "SIS"
+                                }
+                            }
+                        ],
+                        "OriginalSystemReference": {
+                            "OrigSystem": "SIS",
+                            "OrigSystemReference": "300000001771254",
+                            "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                            "CreatedByModule": "SIS"
+                        }
+                    },
+                    {
+                        "PartySiteId": "300000001771257",
+                        "CreatedByModule": "SIS",
+                        "SetId": "300000000003311",
+                        "StartDateActive": "2020-09-25",
+                        "CustomerAccountSiteUse": [
+                            {
+                                "SiteUseCode": "BILL_TO",
+                                "StartDate": "2020-09-25",
+                                "CreatedByModule": "SIS",
+                                "OriginalSystemReference": {
+                                    "OrigSystem": "SIS",
+                                    "OrigSystemReference": "300000001771258",
+                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                    "CreatedByModule": "SIS"
+                                }
+                            },
+                            {
+                                "SiteUseCode": "SHIP_TO",
+                                "StartDate": "2020-09-25",
+                                "CreatedByModule": "SIS",
+                                "OriginalSystemReference": {
+                                    "OrigSystem": "SIS",
+                                    "OrigSystemReference": "300000001771259",
+                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                    "CreatedByModule": "SIS"
+                                }
+                            }
+                        ],
+                        "OriginalSystemReference": {
+                            "OrigSystem": "SIS",
+                            "OrigSystemReference": "300000001771257",
+                            "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                            "CreatedByModule": "SIS"
+                        }
+                    }
+                ],
+                "OriginalSystemReference": {
+                    "OrigSystem": "SIS",
+                    "OrigSystemReference": "300000001771253",
+                    "OwnerTableName": "HZ_CUST_ACCOUNTS",
+                    "CreatedByModule": "SIS"
+                },
+                "CustAcctInformation": {
+                    "CustAccountId": "",
+                    "cinNum": "",
+                    "customerProvidedCode": "",
+                    "CreatedByModule": "",
+                    "customerGroup": "",
+                    "wthTaxCode": "",
+                    "defaultTdsRate": "",
+                    "concessional": "",
+                    "validityPeriod": "",
+                    "thresholdLimit": "",
+                    "virtualAccountNum": "",
+                    "salesRep": "TestSalesRep",
+                    "warehouse": "1",
+                    "marketing": "1",
+                    "paymentTerms": ""
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "FusionId",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567898765434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "CustomerAccount"
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "string",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "83838383838383"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "PartyId": "300000001771253",
+                    "AccountNumber": "TestAccount",
+                    "CustomerClassCode": "PUBLIC SECTOR COMPANIES",
+                    "AccountName": "TestAccount",
+                    "CreatedByModule": "SIS",
+                    "CustomerAccountSite": [
+                        {
+                            "PartySiteId": "300000001771254",
+                            "CreatedByModule": "SIS",
+                            "SetId": "300000000003311",
+                            "StartDateActive": "2020-09-25",
+                            "CustomerAccountSiteUse": [
+                                {
+                                    "SiteUseCode": "BILL_TO",
+                                    "StartDate": "2020-09-25",
+                                    "CreatedByModule": "SIS",
+                                    "OriginalSystemReference": {
+                                        "OrigSystem": "SIS",
+                                        "OrigSystemReference": "300000001771255",
+                                        "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                        "CreatedByModule": "SIS"
+                                    }
+                                },
+                                {
+                                    "SiteUseCode": "SHIP_TO",
+                                    "StartDate": "2020-09-25",
+                                    "CreatedByModule": "SIS",
+                                    "OriginalSystemReference": {
+                                        "OrigSystem": "SIS",
+                                        "OrigSystemReference": "300000001771256",
+                                        "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                        "CreatedByModule": "SIS"
+                                    }
+                                }
+                            ],
+                            "OriginalSystemReference": {
+                                "OrigSystem": "SIS",
+                                "OrigSystemReference": "300000001771254",
+                                "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                                "CreatedByModule": "SIS"
+                            }
+                        },
+                        {
+                            "PartySiteId": "300000001771257",
+                            "CreatedByModule": "SIS",
+                            "SetId": "300000000003311",
+                            "StartDateActive": "2020-09-25",
+                            "CustomerAccountSiteUse": [
+                                {
+                                    "SiteUseCode": "BILL_TO",
+                                    "StartDate": "2020-09-25",
+                                    "CreatedByModule": "SIS",
+                                    "OriginalSystemReference": {
+                                        "OrigSystem": "SIS",
+                                        "OrigSystemReference": "300000001771258",
+                                        "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                        "CreatedByModule": "SIS"
+                                    }
+                                },
+                                {
+                                    "SiteUseCode": "SHIP_TO",
+                                    "StartDate": "2020-09-25",
+                                    "CreatedByModule": "SIS",
+                                    "OriginalSystemReference": {
+                                        "OrigSystem": "SIS",
+                                        "OrigSystemReference": "300000001771259",
+                                        "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                        "CreatedByModule": "SIS"
+                                    }
+                                }
+                            ],
+                            "OriginalSystemReference": {
+                                "OrigSystem": "SIS",
+                                "OrigSystemReference": "300000001771257",
+                                "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                                "CreatedByModule": "SIS"
+                            }
+                        }
+                    ],
+                    "OriginalSystemReference": {
+                        "OrigSystem": "SIS",
+                        "OrigSystemReference": "300000001771253",
+                        "OwnerTableName": "HZ_CUST_ACCOUNTS",
+                        "CreatedByModule": "SIS"
+                    },
+                    "CustAcctInformation": {
+                        "CustAccountId": "",
+                        "cinNum": "",
+                        "customerProvidedCode": "",
+                        "CreatedByModule": "",
+                        "customerGroup": "",
+                        "wthTaxCode": "",
+                        "defaultTdsRate": "",
+                        "concessional": "",
+                        "validityPeriod": "",
+                        "thresholdLimit": "",
+                        "virtualAccountNum": "",
+                        "salesRep": "TestSalesRep",
+                        "warehouse": "1",
+                        "marketing": "1",
+                        "paymentTerms": ""
+                    }
+                }
+            ],
+            "required": [
+                "PartyId",
+                "AccountNumber",
+                "CustomerClassCode",
+                "AccountName",
+                "CreatedByModule",
+                "CustomerAccountSite",
+                "OriginalSystemReference",
+                "CustAcctInformation"
+            ],
+            "properties": {
+                "PartyId": {
+                    "$id": "#/properties/Data/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000001771253"
+                    ]
+                },
+                "AccountNumber": {
+                    "$id": "#/properties/Data/properties/AccountNumber",
+                    "type": "string",
+                    "title": "The AccountNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TestAccount"
+                    ]
+                },
+                "CustomerClassCode": {
+                    "$id": "#/properties/Data/properties/CustomerClassCode",
+                    "type": "string",
+                    "title": "The CustomerClassCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "PUBLIC SECTOR COMPANIES"
+                    ]
+                },
+                "AccountName": {
+                    "$id": "#/properties/Data/properties/AccountName",
+                    "type": "string",
+                    "title": "The AccountName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TestAccount"
+                    ]
+                },
+                "CreatedByModule": {
+                    "$id": "#/properties/Data/properties/CreatedByModule",
+                    "type": "string",
+                    "title": "The CreatedByModule schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SIS"
+                    ]
+                },
+                "CustomerAccountSite": {
+                    "$id": "#/properties/Data/properties/CustomerAccountSite",
+                    "type": "array",
+                    "title": "The CustomerAccountSite schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "PartySiteId": "300000001771254",
+                                "CreatedByModule": "SIS",
+                                "SetId": "300000000003311",
+                                "StartDateActive": "2020-09-25",
+                                "CustomerAccountSiteUse": [
+                                    {
+                                        "SiteUseCode": "BILL_TO",
+                                        "StartDate": "2020-09-25",
+                                        "CreatedByModule": "SIS",
+                                        "OriginalSystemReference": {
+                                            "OrigSystem": "SIS",
+                                            "OrigSystemReference": "300000001771255",
+                                            "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    },
+                                    {
+                                        "SiteUseCode": "SHIP_TO",
+                                        "StartDate": "2020-09-25",
+                                        "CreatedByModule": "SIS",
+                                        "OriginalSystemReference": {
+                                            "OrigSystem": "SIS",
+                                            "OrigSystemReference": "300000001771256",
+                                            "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    }
+                                ],
+                                "OriginalSystemReference": {
+                                    "OrigSystem": "SIS",
+                                    "OrigSystemReference": "300000001771254",
+                                    "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                                    "CreatedByModule": "SIS"
+                                }
+                            },
+                            {
+                                "PartySiteId": "300000001771257",
+                                "CreatedByModule": "SIS",
+                                "SetId": "300000000003311",
+                                "StartDateActive": "2020-09-25",
+                                "CustomerAccountSiteUse": [
+                                    {
+                                        "SiteUseCode": "BILL_TO",
+                                        "StartDate": "2020-09-25",
+                                        "CreatedByModule": "SIS",
+                                        "OriginalSystemReference": {
+                                            "OrigSystem": "SIS",
+                                            "OrigSystemReference": "300000001771258",
+                                            "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    },
+                                    {
+                                        "SiteUseCode": "SHIP_TO",
+                                        "StartDate": "2020-09-25",
+                                        "CreatedByModule": "SIS",
+                                        "OriginalSystemReference": {
+                                            "OrigSystem": "SIS",
+                                            "OrigSystemReference": "300000001771259",
+                                            "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    }
+                                ],
+                                "OriginalSystemReference": {
+                                    "OrigSystem": "SIS",
+                                    "OrigSystemReference": "300000001771257",
+                                    "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                                    "CreatedByModule": "SIS"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/CustomerAccountSite/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "PartySiteId": "300000001771254",
+                                        "CreatedByModule": "SIS",
+                                        "SetId": "300000000003311",
+                                        "StartDateActive": "2020-09-25",
+                                        "CustomerAccountSiteUse": [
+                                            {
+                                                "SiteUseCode": "BILL_TO",
+                                                "StartDate": "2020-09-25",
+                                                "CreatedByModule": "SIS",
+                                                "OriginalSystemReference": {
+                                                    "OrigSystem": "SIS",
+                                                    "OrigSystemReference": "300000001771255",
+                                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                                    "CreatedByModule": "SIS"
+                                                }
+                                            },
+                                            {
+                                                "SiteUseCode": "SHIP_TO",
+                                                "StartDate": "2020-09-25",
+                                                "CreatedByModule": "SIS",
+                                                "OriginalSystemReference": {
+                                                    "OrigSystem": "SIS",
+                                                    "OrigSystemReference": "300000001771256",
+                                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                                    "CreatedByModule": "SIS"
+                                                }
+                                            }
+                                        ],
+                                        "OriginalSystemReference": {
+                                            "OrigSystem": "SIS",
+                                            "OrigSystemReference": "300000001771254",
+                                            "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "PartySiteId",
+                                    "CreatedByModule",
+                                    "SetId",
+                                    "StartDateActive",
+                                    "CustomerAccountSiteUse",
+                                    "OriginalSystemReference"
+                                ],
+                                "properties": {
+                                    "PartySiteId": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/PartySiteId",
+                                        "type": "string",
+                                        "title": "The PartySiteId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001771254"
+                                        ]
+                                    },
+                                    "CreatedByModule": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CreatedByModule",
+                                        "type": "string",
+                                        "title": "The CreatedByModule schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "SIS"
+                                        ]
+                                    },
+                                    "SetId": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/SetId",
+                                        "type": "string",
+                                        "title": "The SetId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000000003311"
+                                        ]
+                                    },
+                                    "StartDateActive": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/StartDateActive",
+                                        "type": "string",
+                                        "title": "The StartDateActive schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-09-25"
+                                        ]
+                                    },
+                                    "CustomerAccountSiteUse": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse",
+                                        "type": "array",
+                                        "title": "The CustomerAccountSiteUse schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                {
+                                                    "SiteUseCode": "BILL_TO",
+                                                    "StartDate": "2020-09-25",
+                                                    "CreatedByModule": "SIS",
+                                                    "OriginalSystemReference": {
+                                                        "OrigSystem": "SIS",
+                                                        "OrigSystemReference": "300000001771255",
+                                                        "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                                        "CreatedByModule": "SIS"
+                                                    }
+                                                },
+                                                {
+                                                    "SiteUseCode": "SHIP_TO",
+                                                    "StartDate": "2020-09-25",
+                                                    "CreatedByModule": "SIS",
+                                                    "OriginalSystemReference": {
+                                                        "OrigSystem": "SIS",
+                                                        "OrigSystemReference": "300000001771256",
+                                                        "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                                        "CreatedByModule": "SIS"
+                                                    }
+                                                }
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "SiteUseCode": "BILL_TO",
+                                                            "StartDate": "2020-09-25",
+                                                            "CreatedByModule": "SIS",
+                                                            "OriginalSystemReference": {
+                                                                "OrigSystem": "SIS",
+                                                                "OrigSystemReference": "300000001771255",
+                                                                "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                                                "CreatedByModule": "SIS"
+                                                            }
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "SiteUseCode",
+                                                        "StartDate",
+                                                        "CreatedByModule",
+                                                        "OriginalSystemReference"
+                                                    ],
+                                                    "properties": {
+                                                        "SiteUseCode": {
+                                                            "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/SiteUseCode",
+                                                            "type": "string",
+                                                            "title": "The SiteUseCode schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "BILL_TO"
+                                                            ]
+                                                        },
+                                                        "StartDate": {
+                                                            "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/StartDate",
+                                                            "type": "string",
+                                                            "title": "The StartDate schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "2020-09-25"
+                                                            ]
+                                                        },
+                                                        "CreatedByModule": {
+                                                            "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/CreatedByModule",
+                                                            "type": "string",
+                                                            "title": "The CreatedByModule schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "SIS"
+                                                            ]
+                                                        },
+                                                        "OriginalSystemReference": {
+                                                            "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/OriginalSystemReference",
+                                                            "type": "object",
+                                                            "title": "The OriginalSystemReference schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": {},
+                                                            "examples": [
+                                                                {
+                                                                    "OrigSystem": "SIS",
+                                                                    "OrigSystemReference": "300000001771255",
+                                                                    "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+                                                                    "CreatedByModule": "SIS"
+                                                                }
+                                                            ],
+                                                            "required": [
+                                                                "OrigSystem",
+                                                                "OrigSystemReference",
+                                                                "OwnerTableName",
+                                                                "CreatedByModule"
+                                                            ],
+                                                            "properties": {
+                                                                "OrigSystem": {
+                                                                    "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/OriginalSystemReference/properties/OrigSystem",
+                                                                    "type": "string",
+                                                                    "title": "The OrigSystem schema",
+                                                                    "description": "An explanation about the purpose of this instance.",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "SIS"
+                                                                    ]
+                                                                },
+                                                                "OrigSystemReference": {
+                                                                    "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/OriginalSystemReference/properties/OrigSystemReference",
+                                                                    "type": "string",
+                                                                    "title": "The OrigSystemReference schema",
+                                                                    "description": "An explanation about the purpose of this instance.",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "300000001771255"
+                                                                    ]
+                                                                },
+                                                                "OwnerTableName": {
+                                                                    "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/OriginalSystemReference/properties/OwnerTableName",
+                                                                    "type": "string",
+                                                                    "title": "The OwnerTableName schema",
+                                                                    "description": "An explanation about the purpose of this instance.",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "HZ_CUST_SITE_USES_ALL"
+                                                                    ]
+                                                                },
+                                                                "CreatedByModule": {
+                                                                    "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/CustomerAccountSiteUse/items/anyOf/0/properties/OriginalSystemReference/properties/CreatedByModule",
+                                                                    "type": "string",
+                                                                    "title": "The CreatedByModule schema",
+                                                                    "description": "An explanation about the purpose of this instance.",
+                                                                    "default": "",
+                                                                    "examples": [
+                                                                        "SIS"
+                                                                    ]
+                                                                }
+                                                            },
+                                                            "additionalProperties": true
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "OriginalSystemReference": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/OriginalSystemReference",
+                                        "type": "object",
+                                        "title": "The OriginalSystemReference schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "OrigSystem": "SIS",
+                                                "OrigSystemReference": "300000001771254",
+                                                "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+                                                "CreatedByModule": "SIS"
+                                            }
+                                        ],
+                                        "required": [
+                                            "OrigSystem",
+                                            "OrigSystemReference",
+                                            "OwnerTableName",
+                                            "CreatedByModule"
+                                        ],
+                                        "properties": {
+                                            "OrigSystem": {
+                                                "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/OriginalSystemReference/properties/OrigSystem",
+                                                "type": "string",
+                                                "title": "The OrigSystem schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "SIS"
+                                                ]
+                                            },
+                                            "OrigSystemReference": {
+                                                "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/OriginalSystemReference/properties/OrigSystemReference",
+                                                "type": "string",
+                                                "title": "The OrigSystemReference schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "300000001771254"
+                                                ]
+                                            },
+                                            "OwnerTableName": {
+                                                "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/OriginalSystemReference/properties/OwnerTableName",
+                                                "type": "string",
+                                                "title": "The OwnerTableName schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "HZ_CUST_ACCT_SITES_ALL"
+                                                ]
+                                            },
+                                            "CreatedByModule": {
+                                                "$id": "#/properties/Data/properties/CustomerAccountSite/items/anyOf/0/properties/OriginalSystemReference/properties/CreatedByModule",
+                                                "type": "string",
+                                                "title": "The CreatedByModule schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "SIS"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "OriginalSystemReference": {
+                    "$id": "#/properties/Data/properties/OriginalSystemReference",
+                    "type": "object",
+                    "title": "The OriginalSystemReference schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "OrigSystem": "SIS",
+                            "OrigSystemReference": "300000001771253",
+                            "OwnerTableName": "HZ_CUST_ACCOUNTS",
+                            "CreatedByModule": "SIS"
+                        }
+                    ],
+                    "required": [
+                        "OrigSystem",
+                        "OrigSystemReference",
+                        "OwnerTableName",
+                        "CreatedByModule"
+                    ],
+                    "properties": {
+                        "OrigSystem": {
+                            "$id": "#/properties/Data/properties/OriginalSystemReference/properties/OrigSystem",
+                            "type": "string",
+                            "title": "The OrigSystem schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SIS"
+                            ]
+                        },
+                        "OrigSystemReference": {
+                            "$id": "#/properties/Data/properties/OriginalSystemReference/properties/OrigSystemReference",
+                            "type": "string",
+                            "title": "The OrigSystemReference schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000001771253"
+                            ]
+                        },
+                        "OwnerTableName": {
+                            "$id": "#/properties/Data/properties/OriginalSystemReference/properties/OwnerTableName",
+                            "type": "string",
+                            "title": "The OwnerTableName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "HZ_CUST_ACCOUNTS"
+                            ]
+                        },
+                        "CreatedByModule": {
+                            "$id": "#/properties/Data/properties/OriginalSystemReference/properties/CreatedByModule",
+                            "type": "string",
+                            "title": "The CreatedByModule schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SIS"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "CustAcctInformation": {
+                    "$id": "#/properties/Data/properties/CustAcctInformation",
+                    "type": "object",
+                    "title": "The CustAcctInformation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "CustAccountId": "",
+                            "cinNum": "",
+                            "customerProvidedCode": "",
+                            "CreatedByModule": "",
+                            "customerGroup": "",
+                            "wthTaxCode": "",
+                            "defaultTdsRate": "",
+                            "concessional": "",
+                            "validityPeriod": "",
+                            "thresholdLimit": "",
+                            "virtualAccountNum": "",
+                            "salesRep": "TestSalesRep",
+                            "warehouse": "1",
+                            "marketing": "1",
+                            "paymentTerms": ""
+                        }
+                    ],
+                    "required": [
+                        "CustAccountId",
+                        "cinNum",
+                        "customerProvidedCode",
+                        "CreatedByModule",
+                        "customerGroup",
+                        "wthTaxCode",
+                        "defaultTdsRate",
+                        "concessional",
+                        "validityPeriod",
+                        "thresholdLimit",
+                        "virtualAccountNum",
+                        "salesRep",
+                        "warehouse",
+                        "marketing",
+                        "paymentTerms"
+                    ],
+                    "properties": {
+                        "CustAccountId": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/CustAccountId",
+                            "type": "string",
+                            "title": "The CustAccountId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "cinNum": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/cinNum",
+                            "type": "string",
+                            "title": "The cinNum schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "customerProvidedCode": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/customerProvidedCode",
+                            "type": "string",
+                            "title": "The customerProvidedCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "CreatedByModule": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/CreatedByModule",
+                            "type": "string",
+                            "title": "The CreatedByModule schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "customerGroup": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/customerGroup",
+                            "type": "string",
+                            "title": "The customerGroup schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "wthTaxCode": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/wthTaxCode",
+                            "type": "string",
+                            "title": "The wthTaxCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "defaultTdsRate": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/defaultTdsRate",
+                            "type": "string",
+                            "title": "The defaultTdsRate schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "concessional": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/concessional",
+                            "type": "string",
+                            "title": "The concessional schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "validityPeriod": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/validityPeriod",
+                            "type": "string",
+                            "title": "The validityPeriod schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "thresholdLimit": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/thresholdLimit",
+                            "type": "string",
+                            "title": "The thresholdLimit schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "virtualAccountNum": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/virtualAccountNum",
+                            "type": "string",
+                            "title": "The virtualAccountNum schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        },
+                        "salesRep": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/salesRep",
+                            "type": "string",
+                            "title": "The salesRep schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TestSalesRep"
+                            ]
+                        },
+                        "warehouse": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/warehouse",
+                            "type": "string",
+                            "title": "The warehouse schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1"
+                            ]
+                        },
+                        "marketing": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/marketing",
+                            "type": "string",
+                            "title": "The marketing schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1"
+                            ]
+                        },
+                        "paymentTerms": {
+                            "$id": "#/properties/Data/properties/CustAcctInformation/properties/paymentTerms",
+                            "type": "string",
+                            "title": "The paymentTerms schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                ""
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

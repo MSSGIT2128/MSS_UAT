@@ -1,0 +1,401 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"ExistingCustomerNumber": {
+			"type": "string"
+		},
+		"ExistingOrganizationName": {
+			"type": "string"
+		},
+		"PartyId": {
+			"type": "string"
+		},
+		"CustomerAccountId": {
+			"type": "string"
+		},
+		"EntitySegment": {
+			"type": "string"
+		},
+		"ContractSegment": {
+			"type": "string"
+		},
+		"ContractDescription": {
+			"type": "string"
+		},
+		"BusinessTypeSegment": {
+			"type": "string"
+		},
+		"LedgerName": {
+			"type": "string"
+		},
+		"CreatedByModule": {
+			"type": "string"
+		},
+		"CustomerAccountSiteUse_OrigSysRef": {
+			"type": "object",
+			"properties": {
+				"OrigSystem": {
+					"type": "string"
+				},
+				"OwnerTableName": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"OrigSystem",
+				"OwnerTableName"
+			]
+		},
+		"AddNewSites": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"PartySiteNumber": {
+							"type": "string"
+						},
+						"PartySiteName": {
+							"type": "string"
+						},
+						"TerritorySegment": {
+							"type": "string"
+						},
+						"StateSegment": {
+							"type": "string"
+						},
+						"EnabledFlag": {
+							"type": "string"
+						},
+						"SummaryFlag": {
+							"type": "string"
+						},
+						"DetailPostingAllowed": {
+							"type": "string"
+						},
+						"DetailBudgetingAllowed": {
+							"type": "string"
+						},
+						"StartDateActive": {
+							"type": "string"
+						},
+						"SiteUseType": {
+							"type": "string"
+						},
+						"PartyUsageCode": {
+							"type": "string"
+						},
+						"Address1": {
+							"type": "string"
+						},
+						"Address2": {
+							"type": "string"
+						},
+						"Address3": {
+							"type": "string"
+						},
+						"City": {
+							"type": "string"
+						},
+						"PostalCode": {
+							"type": "string"
+						},
+						"State": {
+							"type": "string"
+						},
+						"Country": {
+							"type": "string"
+						},
+						"AddressEffectiveDate": {
+							"type": "string"
+						},
+						"EffectiveDate": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"PartySiteNumber",
+						"PartySiteName",
+						"TerritorySegment",
+						"StateSegment",
+						"EnabledFlag",
+						"SummaryFlag",
+						"DetailPostingAllowed",
+						"DetailBudgetingAllowed",
+						"StartDateActive",
+						"SiteUseType",
+						"PartyUsageCode",
+						"Address1",
+						"Address2",
+						"Address3",
+						"City",
+						"PostalCode",
+						"State",
+						"Country",
+						"AddressEffectiveDate",
+						"EffectiveDate"
+					]
+				}
+			]
+		},
+		"ReferenceAccountsForBillToSites": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"CustomerAccountNumber": {
+							"type": "string"
+						},
+						"CustomerSiteNumber": {
+							"type": "string"
+						},
+						"BusinessUnit": {
+							"type": "string"
+						},
+						"RevenueAccountCodeCombination": {
+							"type": "string"
+						},
+						"ReceivableAccountCodeCombination": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"CustomerAccountNumber",
+						"CustomerSiteNumber",
+						"BusinessUnit",
+						"RevenueAccountCodeCombination",
+						"ReceivableAccountCodeCombination"
+					]
+				}
+			]
+		},
+		"TaxRegistrations": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"PartyTypeCode": {
+							"type": "string"
+						},
+						"PartyName": {
+							"type": "string"
+						},
+						"PartyNumber": {
+							"type": "string"
+						},
+						"PartySiteNumber": {
+							"type": "string"
+						},
+						"TaxRegimeCode": {
+							"type": "string"
+						},
+						"EffectiveFrom": {
+							"type": "string"
+						},
+						"RegistrationNumber": {
+							"type": "string"
+						},
+						"RegistrationStatusCode": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"PartyTypeCode",
+						"PartyName",
+						"PartyNumber",
+						"PartySiteNumber",
+						"TaxRegimeCode",
+						"EffectiveFrom",
+						"RegistrationNumber",
+						"RegistrationStatusCode"
+					]
+				}
+			]
+		},
+		"CustomerProfile": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"AccountNumber": {
+							"type": "string"
+						},
+						"SiteNumber": {
+							"type": "string"
+						},
+						"EffectiveStartDate": {
+							"type": "string"
+						},
+						"PaymentTerms": {
+							"type": "string"
+						}
+					},
+					"required": [
+						"AccountNumber",
+						"SiteNumber",
+						"EffectiveStartDate",
+						"PaymentTerms"
+					]
+				}
+			]
+		},
+		"ContactPersons": {
+			"type": "array",
+			"items": [
+				{
+					"type": "object",
+					"properties": {
+						"PersonFirstName": {
+							"type": "string"
+						},
+						"PersonLastName": {
+							"type": "string"
+						},
+						"ContactLevel": {
+							"type": "string"
+						},
+						"PartySiteNumber": {
+							"type": "string"
+						},
+						"Relationship": {
+							"type": "object",
+							"properties": {
+								"SubjectType": {
+									"type": "string"
+								},
+								"SubjectTableName": {
+									"type": "string"
+								},
+								"ObjectType": {
+									"type": "string"
+								},
+								"ObjectId": {
+									"type": "string"
+								},
+								"ObjectTableName": {
+									"type": "string"
+								},
+								"RelationshipCode": {
+									"type": "string"
+								},
+								"RelationshipType": {
+									"type": "string"
+								},
+								"StartDate": {
+									"type": "string"
+								},
+								"RelationshipId": {
+									"type": "string"
+								},
+								"OrganizationContact": {
+									"type": "object",
+									"properties": {
+										"ContactNumber": {
+											"type": "string"
+										},
+										"RoleType": {
+											"type": "string"
+										},
+										"PrimaryFlag": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"ContactNumber",
+										"RoleType",
+										"PrimaryFlag"
+									]
+								},
+								"Email": {
+									"type": "object",
+									"properties": {
+										"OwnerTableName": {
+											"type": "string"
+										},
+										"PrimaryFlag": {
+											"type": "string"
+										},
+										"ContactPointPurpose": {
+											"type": "string"
+										},
+										"StartDate": {
+											"type": "string"
+										},
+										"EmailAddress": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"OwnerTableName",
+										"PrimaryFlag",
+										"ContactPointPurpose",
+										"StartDate",
+										"EmailAddress"
+									]
+								},
+								"CustomerAccountContactRole": {
+									"type": "object",
+									"properties": {
+										"ResponsibilityType": {
+											"type": "string"
+										},
+										"PrimaryFlag": {
+											"type": "string"
+										}
+									},
+									"required": [
+										"ResponsibilityType",
+										"PrimaryFlag"
+									]
+								}
+							},
+							"required": [
+								"SubjectType",
+								"SubjectTableName",
+								"ObjectType",
+								"ObjectId",
+								"ObjectTableName",
+								"RelationshipCode",
+								"RelationshipType",
+								"StartDate",
+								"RelationshipId",
+								"OrganizationContact",
+								"Email",
+								"CustomerAccountContactRole"
+							]
+						}
+					},
+					"required": [
+						"PersonFirstName",
+						"PersonLastName",
+						"ContactLevel",
+						"PartySiteNumber",
+						"Relationship"
+					]
+				}
+			]
+		}
+	},
+	"required": [
+		"ExistingCustomerNumber",
+		"ExistingOrganizationName",
+		"PartyId",
+		"CustomerAccountId",
+		"EntitySegment",
+		"ContractSegment",
+		"ContractDescription",
+		"BusinessTypeSegment",
+		"LedgerName",
+		"CreatedByModule",
+		"CustomerAccountSiteUse_OrigSysRef",
+		"AddNewSites",
+		"ReferenceAccountsForBillToSites",
+		"TaxRegistrations",
+		"CustomerProfile",
+		"ContactPersons"
+	]
+}

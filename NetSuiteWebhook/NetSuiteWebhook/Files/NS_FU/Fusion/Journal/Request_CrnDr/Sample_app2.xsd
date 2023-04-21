@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/" xmlns:app1="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" schemaLocation="Sample_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Sample.xsd" />
+  <xs:element name="importJournals" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="interfaceRows" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:BatchName" minOccurs="0" />
+              <xs:element ref="app1:BatchDescription" minOccurs="0" />
+              <xs:element ref="app1:LedgerId" minOccurs="0" />
+              <xs:element ref="app1:AccountingPeriodName" minOccurs="0" />
+              <xs:element ref="app1:AccountingDate" minOccurs="0" />
+              <xs:element ref="app1:UserSourceName" minOccurs="0" />
+              <xs:element ref="app1:UserCategoryName" minOccurs="0" />
+              <xs:element ref="app1:ErrorToSuspenseFlag" minOccurs="0" />
+              <xs:element ref="app1:SummaryFlag" minOccurs="0" />
+              <xs:element ref="app1:ImportDescriptiveFlexField" minOccurs="0" />
+              <xs:element ref="app1:GlInterface" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

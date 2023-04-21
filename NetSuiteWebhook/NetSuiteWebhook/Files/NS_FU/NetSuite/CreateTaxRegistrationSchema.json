@@ -1,0 +1,176 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567898765434,
+            "Operation": "Create",
+            "Type": "TaxRegistration",
+            "Data": {
+                "PartyTypeCode": "THIRD_PARTY_SITE",
+                "PartyName": "91 Springboard Business Hub Pvt. Ltd-Test",
+                "PartyNumber": "TestAccount",
+                "PartySiteNumber": "Test2",
+                "TaxRegimeCode": "INDIA GST REGIME",
+                "EffectiveFrom": "2020-09-24",
+                "RegistrationNumber": "06AAACZ8912H1Z6",
+                "RegistrationStatusCode": "REGISTERED"
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567898765434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "TaxRegistration"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "PartyTypeCode": "THIRD_PARTY_SITE",
+                    "PartyName": "91 Springboard Business Hub Pvt. Ltd-Test",
+                    "PartyNumber": "TestAccount",
+                    "PartySiteNumber": "Test2",
+                    "TaxRegimeCode": "INDIA GST REGIME",
+                    "EffectiveFrom": "2020-09-24",
+                    "RegistrationNumber": "06AAACZ8912H1Z6",
+                    "RegistrationStatusCode": "REGISTERED"
+                }
+            ],
+            "required": [
+                "PartyTypeCode",
+                "PartyName",
+                "PartyNumber",
+                "PartySiteNumber",
+                "TaxRegimeCode",
+                "EffectiveFrom",
+                "RegistrationNumber",
+                "RegistrationStatusCode"
+            ],
+            "properties": {
+                "PartyTypeCode": {
+                    "$id": "#/properties/Data/properties/PartyTypeCode",
+                    "type": "string",
+                    "title": "The PartyTypeCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "THIRD_PARTY_SITE"
+                    ]
+                },
+                "PartyName": {
+                    "$id": "#/properties/Data/properties/PartyName",
+                    "type": "string",
+                    "title": "The PartyName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "91 Springboard Business Hub Pvt. Ltd-Test"
+                    ]
+                },
+                "PartyNumber": {
+                    "$id": "#/properties/Data/properties/PartyNumber",
+                    "type": "string",
+                    "title": "The PartyNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TestAccount"
+                    ]
+                },
+                "PartySiteNumber": {
+                    "$id": "#/properties/Data/properties/PartySiteNumber",
+                    "type": "string",
+                    "title": "The PartySiteNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Test2"
+                    ]
+                },
+                "TaxRegimeCode": {
+                    "$id": "#/properties/Data/properties/TaxRegimeCode",
+                    "type": "string",
+                    "title": "The TaxRegimeCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "INDIA GST REGIME"
+                    ]
+                },
+                "EffectiveFrom": {
+                    "$id": "#/properties/Data/properties/EffectiveFrom",
+                    "type": "string",
+                    "title": "The EffectiveFrom schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-09-24"
+                    ]
+                },
+                "RegistrationNumber": {
+                    "$id": "#/properties/Data/properties/RegistrationNumber",
+                    "type": "string",
+                    "title": "The RegistrationNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "06AAACZ8912H1Z6"
+                    ]
+                },
+                "RegistrationStatusCode": {
+                    "$id": "#/properties/Data/properties/RegistrationStatusCode",
+                    "type": "string",
+                    "title": "The RegistrationStatusCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "REGISTERED"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

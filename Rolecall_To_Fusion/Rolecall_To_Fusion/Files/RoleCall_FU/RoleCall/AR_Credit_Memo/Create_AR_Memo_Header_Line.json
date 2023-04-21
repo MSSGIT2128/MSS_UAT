@@ -1,0 +1,567 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "processInterfaceLine": {
+                "changeOperation": "Create",
+                "interfaceLine": [
+                    {
+                        "OrgId": "300000002313021",
+                        "BillCustomerAccountNumber": "D573134",
+                        "BillCustomerSiteNumber": "A21723",
+                        "BatchSourceName": "SIS_AR_IMPORT",
+                        "CurrencyCode": "AUD",
+                        "CustomerTrxTypeName": "Credit Memo",
+                        "Description": "Remove account no, credit testing",
+                        "LineType": "LINE",
+                        "Quantity": 1,
+                        "TrxNumber": "70404808CM",
+                        "TrxDate": "2021-03-22",
+                        "GlDate": "2021-03-22",
+                        "UnitSellingPrice": -65644.65,
+                        "AmountIncludesTax": "N",
+                        "TaxJurisdictionCode": "AU GST",
+                        "Tax": "AU GST",
+                        "TaxCode": "AU GST 10%",
+                        "TaxRegimeCode": "AU GST REGIME",
+                        "Taxable": "Y",
+                        "ReasonCodeMeaning": "Additional Details Required",
+                        "Comments": "",
+                        "LegalEntityId": "300000002335928",
+                        "ConversionRateType": "Spot",
+                        "ConversionDate": "2021-09-06",
+                        "TransactionInterfaceLineDff": {
+                            "FLEX_Context": "OtherInvoiceDetails",
+                            "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                            "otherinvoicedetails": "70404808CM_1"
+                        },
+                        "TransactionInterfaceHeaderDff": {
+                            "batchtrxnumber": "1502213205"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "processInterfaceLine"
+    ],
+    "properties": {
+        "processInterfaceLine": {
+            "$id": "#/properties/processInterfaceLine",
+            "type": "object",
+            "title": "The processInterfaceLine schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "changeOperation": "Create",
+                    "interfaceLine": [
+                        {
+                            "OrgId": "300000002313021",
+                            "BillCustomerAccountNumber": "D573134",
+                            "BillCustomerSiteNumber": "A21723",
+                            "BatchSourceName": "SIS_AR_IMPORT",
+                            "CurrencyCode": "AUD",
+                            "CustomerTrxTypeName": "Credit Memo",
+                            "Description": "Remove account no, credit testing",
+                            "LineType": "LINE",
+                            "Quantity": 1,
+                            "TrxNumber": "70404808CM",
+                            "TrxDate": "2021-03-22",
+                            "GlDate": "2021-03-22",
+                            "UnitSellingPrice": -65644.65,
+                            "AmountIncludesTax": "N",
+                            "TaxJurisdictionCode": "AU GST",
+                            "Tax": "AU GST",
+                            "TaxCode": "AU GST 10%",
+                            "TaxRegimeCode": "AU GST REGIME",
+                            "Taxable": "Y",
+                            "ReasonCodeMeaning": "Additional Details Required",
+                            "Comments": "",
+                            "LegalEntityId": "300000002335928",
+                            "ConversionRateType": "Spot",
+                            "ConversionDate": "2021-09-06",
+                            "TransactionInterfaceLineDff": {
+                                "FLEX_Context": "OtherInvoiceDetails",
+                                "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                "otherinvoicedetails": "70404808CM_1"
+                            },
+                            "TransactionInterfaceHeaderDff": {
+                                "batchtrxnumber": "1502213205"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "changeOperation",
+                "interfaceLine"
+            ],
+            "properties": {
+                "changeOperation": {
+                    "$id": "#/properties/processInterfaceLine/properties/changeOperation",
+                    "type": "string",
+                    "title": "The changeOperation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Create"
+                    ]
+                },
+                "interfaceLine": {
+                    "$id": "#/properties/processInterfaceLine/properties/interfaceLine",
+                    "type": "array",
+                    "title": "The interfaceLine schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "OrgId": "300000002313021",
+                                "BillCustomerAccountNumber": "D573134",
+                                "BillCustomerSiteNumber": "A21723",
+                                "BatchSourceName": "SIS_AR_IMPORT",
+                                "CurrencyCode": "AUD",
+                                "CustomerTrxTypeName": "Credit Memo",
+                                "Description": "Remove account no, credit testing",
+                                "LineType": "LINE",
+                                "Quantity": 1,
+                                "TrxNumber": "70404808CM",
+                                "TrxDate": "2021-03-22",
+                                "GlDate": "2021-03-22",
+                                "UnitSellingPrice": -65644.65,
+                                "AmountIncludesTax": "N",
+                                "TaxJurisdictionCode": "AU GST",
+                                "Tax": "AU GST",
+                                "TaxCode": "AU GST 10%",
+                                "TaxRegimeCode": "AU GST REGIME",
+                                "Taxable": "Y",
+                                "ReasonCodeMeaning": "Additional Details Required",
+                                "Comments": "",
+                                "LegalEntityId": "300000002335928",
+                                "ConversionRateType": "Spot",
+                                "ConversionDate": "2021-09-06",
+                                "TransactionInterfaceLineDff": {
+                                    "FLEX_Context": "OtherInvoiceDetails",
+                                    "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                    "otherinvoicedetails": "70404808CM_1"
+                                },
+                                "TransactionInterfaceHeaderDff": {
+                                    "batchtrxnumber": "1502213205"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "OrgId": "300000002313021",
+                                        "BillCustomerAccountNumber": "D573134",
+                                        "BillCustomerSiteNumber": "A21723",
+                                        "BatchSourceName": "SIS_AR_IMPORT",
+                                        "CurrencyCode": "AUD",
+                                        "CustomerTrxTypeName": "Credit Memo",
+                                        "Description": "Remove account no, credit testing",
+                                        "LineType": "LINE",
+                                        "Quantity": 1,
+                                        "TrxNumber": "70404808CM",
+                                        "TrxDate": "2021-03-22",
+                                        "GlDate": "2021-03-22",
+                                        "UnitSellingPrice": -65644.65,
+                                        "AmountIncludesTax": "N",
+                                        "TaxJurisdictionCode": "AU GST",
+                                        "Tax": "AU GST",
+                                        "TaxCode": "AU GST 10%",
+                                        "TaxRegimeCode": "AU GST REGIME",
+                                        "Taxable": "Y",
+                                        "ReasonCodeMeaning": "Additional Details Required",
+                                        "Comments": "",
+                                        "LegalEntityId": "300000002335928",
+                                        "ConversionRateType": "Spot",
+                                        "ConversionDate": "2021-09-06",
+                                        "TransactionInterfaceLineDff": {
+                                            "FLEX_Context": "OtherInvoiceDetails",
+                                            "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                            "otherinvoicedetails": "70404808CM_1"
+                                        },
+                                        "TransactionInterfaceHeaderDff": {
+                                            "batchtrxnumber": "1502213205"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "OrgId",
+                                    "BillCustomerAccountNumber",
+                                    "BillCustomerSiteNumber",
+                                    "BatchSourceName",
+                                    "CurrencyCode",
+                                    "CustomerTrxTypeName",
+                                    "Description",
+                                    "LineType",
+                                    "Quantity",
+                                    "TrxNumber",
+                                    "TrxDate",
+                                    "GlDate",
+                                    "UnitSellingPrice",
+                                    "AmountIncludesTax",
+                                    "TaxJurisdictionCode",
+                                    "Tax",
+                                    "TaxCode",
+                                    "TaxRegimeCode",
+                                    "Taxable",
+                                    "ReasonCodeMeaning",
+                                    "Comments",
+                                    "LegalEntityId",
+                                    "ConversionRateType",
+                                    "ConversionDate",
+                                    "TransactionInterfaceLineDff",
+                                    "TransactionInterfaceHeaderDff"
+                                ],
+                                "properties": {
+                                    "OrgId": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/OrgId",
+                                        "type": "string",
+                                        "title": "The OrgId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000002313021"
+                                        ]
+                                    },
+                                    "BillCustomerAccountNumber": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/BillCustomerAccountNumber",
+                                        "type": "string",
+                                        "title": "The BillCustomerAccountNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "D573134"
+                                        ]
+                                    },
+                                    "BillCustomerSiteNumber": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/BillCustomerSiteNumber",
+                                        "type": "string",
+                                        "title": "The BillCustomerSiteNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "A21723"
+                                        ]
+                                    },
+                                    "BatchSourceName": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/BatchSourceName",
+                                        "type": "string",
+                                        "title": "The BatchSourceName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "SIS_AR_IMPORT"
+                                        ]
+                                    },
+                                    "CurrencyCode": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/CurrencyCode",
+                                        "type": "string",
+                                        "title": "The CurrencyCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AUD"
+                                        ]
+                                    },
+                                    "CustomerTrxTypeName": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/CustomerTrxTypeName",
+                                        "type": "string",
+                                        "title": "The CustomerTrxTypeName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Credit Memo"
+                                        ]
+                                    },
+                                    "Description": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/Description",
+                                        "type": "string",
+                                        "title": "The Description schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Remove account no, credit testing"
+                                        ]
+                                    },
+                                    "LineType": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/LineType",
+                                        "type": "string",
+                                        "title": "The LineType schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "LINE"
+                                        ]
+                                    },
+                                    "Quantity": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/Quantity",
+                                        "type": "integer",
+                                        "title": "The Quantity schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "TrxNumber": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TrxNumber",
+                                        "type": "string",
+                                        "title": "The TrxNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "70404808CM"
+                                        ]
+                                    },
+                                    "TrxDate": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TrxDate",
+                                        "type": "string",
+                                        "title": "The TrxDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2021-03-22"
+                                        ]
+                                    },
+                                    "GlDate": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/GlDate",
+                                        "type": "string",
+                                        "title": "The GlDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2021-03-22"
+                                        ]
+                                    },
+                                    "UnitSellingPrice": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/UnitSellingPrice",
+                                        "type": "number",
+                                        "title": "The UnitSellingPrice schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            -65644.65
+                                        ]
+                                    },
+                                    "AmountIncludesTax": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/AmountIncludesTax",
+                                        "type": "string",
+                                        "title": "The AmountIncludesTax schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "N"
+                                        ]
+                                    },
+                                    "TaxJurisdictionCode": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TaxJurisdictionCode",
+                                        "type": "string",
+                                        "title": "The TaxJurisdictionCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST"
+                                        ]
+                                    },
+                                    "Tax": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/Tax",
+                                        "type": "string",
+                                        "title": "The Tax schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST"
+                                        ]
+                                    },
+                                    "TaxCode": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TaxCode",
+                                        "type": "string",
+                                        "title": "The TaxCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST 10%"
+                                        ]
+                                    },
+                                    "TaxRegimeCode": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TaxRegimeCode",
+                                        "type": "string",
+                                        "title": "The TaxRegimeCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST REGIME"
+                                        ]
+                                    },
+                                    "Taxable": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/Taxable",
+                                        "type": "string",
+                                        "title": "The Taxable schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Y"
+                                        ]
+                                    },
+                                    "ReasonCodeMeaning": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/ReasonCodeMeaning",
+                                        "type": "string",
+                                        "title": "The ReasonCodeMeaning schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Additional Details Required"
+                                        ]
+                                    },
+                                    "Comments": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/Comments",
+                                        "type": "string",
+                                        "title": "The Comments schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            ""
+                                        ]
+                                    },
+                                    "LegalEntityId": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/LegalEntityId",
+                                        "type": "string",
+                                        "title": "The LegalEntityId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000002335928"
+                                        ]
+                                    },
+                                    "ConversionRateType": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/ConversionRateType",
+                                        "type": "string",
+                                        "title": "The ConversionRateType schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Spot"
+                                        ]
+                                    },
+                                    "ConversionDate": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/ConversionDate",
+                                        "type": "string",
+                                        "title": "The ConversionDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2021-09-06"
+                                        ]
+                                    },
+                                    "TransactionInterfaceLineDff": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TransactionInterfaceLineDff",
+                                        "type": "object",
+                                        "title": "The TransactionInterfaceLineDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "FLEX_Context": "OtherInvoiceDetails",
+                                                "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                                "otherinvoicedetails": "70404808CM_1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "FLEX_Context",
+                                            "FLEX_Context_DisplayValue",
+                                            "otherinvoicedetails"
+                                        ],
+                                        "properties": {
+                                            "FLEX_Context": {
+                                                "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/FLEX_Context",
+                                                "type": "string",
+                                                "title": "The FLEX_Context schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "FLEX_Context_DisplayValue": {
+                                                "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/FLEX_Context_DisplayValue",
+                                                "type": "string",
+                                                "title": "The FLEX_Context_DisplayValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "otherinvoicedetails": {
+                                                "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/otherinvoicedetails",
+                                                "type": "string",
+                                                "title": "The otherinvoicedetails schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "70404808CM_1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    },
+                                    "TransactionInterfaceHeaderDff": {
+                                        "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TransactionInterfaceHeaderDff",
+                                        "type": "object",
+                                        "title": "The TransactionInterfaceHeaderDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "batchtrxnumber": "1502213205"
+                                            }
+                                        ],
+                                        "required": [
+                                            "batchtrxnumber"
+                                        ],
+                                        "properties": {
+                                            "batchtrxnumber": {
+                                                "$id": "#/properties/processInterfaceLine/properties/interfaceLine/items/anyOf/0/properties/TransactionInterfaceHeaderDff/properties/batchtrxnumber",
+                                                "type": "string",
+                                                "title": "The batchtrxnumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "1502213205"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

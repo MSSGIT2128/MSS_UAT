@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/" xmlns:app2="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/types/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/types/" schemaLocation="Request_app2.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:element name="Source" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="OperatingUnit" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="VendorName" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="VendorSiteCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="ApplicationId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="GlDate" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="GroupId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="InvoiceCurrencyCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="InvoiceDate" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="InvoiceNumber" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="InvoiceTypeLookupCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="ExchangeRateType" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="ExchangeDate" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Description" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="LegalEntityId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="InvoiceAmount" msdata:Prefix="inv" nillable="true">
+    <xs:complexType>
+      <xs:simpleContent msdata:Prefix="inv" msdata:ColumnName="InvoiceAmount_Text" msdata:Ordinal="1">
+        <xs:extension base="xs:string">
+          <xs:attribute name="currencyCode" form="unqualified" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InvoiceInterfaceLine" msdata:Prefix="inv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="LineNumber" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="AccountingDate" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="DistCodeConcatenated" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="TaxClassificationCode" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="LineTypeLookupCode" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="Description" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="Attribute2" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="Attribute1" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="PrimaryIntendedUse" msdata:Prefix="inv" type="xs:string" minOccurs="0" />
+        <xs:element name="Amount" msdata:Prefix="inv" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent msdata:Prefix="inv" msdata:ColumnName="Amount_Text" msdata:Ordinal="1">
+              <xs:extension base="xs:string">
+                <xs:attribute name="currencyCode" form="unqualified" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

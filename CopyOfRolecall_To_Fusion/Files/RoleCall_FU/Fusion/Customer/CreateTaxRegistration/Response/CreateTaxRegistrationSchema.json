@@ -1,0 +1,791 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": "123456789874564",
+            "PartyTypeCode": "THIRD_PARTY_SITE",
+            "PartyName": "91 Springboard Business Hub Pvt. Ltd-Test",
+            "PartyNumber": "Test1",
+            "PartySiteNumber": "Test2",
+            "TaxRegimeCode": "INDIA GST REGIME",
+            "Tax": null,
+            "TaxJurisdictionCode": null,
+            "TaxPointBasis": null,
+            "RegistrationTypeCode": null,
+            "RegistrationStatusCode": "REGISTERED",
+            "RepresentativePartyTaxName": null,
+            "RegistrationReasonCode": null,
+            "EffectiveFrom": "2020-09-24",
+            "EffectiveTo": null,
+            "LegalRegistrationAddress": null,
+            "ValidationType": "ORA_IN_GST",
+            "ValidationLevel": "WARNING",
+            "ValidationRule": null,
+            "RegistrationNumber": "06AAACZ8912H1Z6",
+            "RegistrationSourceCode": null,
+            "IssuingTaxAuthority": null,
+            "DefaultRegistrationFlag": false,
+            "RoundingRuleCode": "NEAREST",
+            "InclusiveTaxFlag": null,
+            "BankAccountNumber": null,
+            "TaxClassificationCode": null,
+            "UniquenessValidationLevel": "NONE",
+            "Country": "India",
+            "PartyCountryCode": "IN",
+            "BankBranchId": null,
+            "BankId": null,
+            "CollTaxAuthorityId": null,
+            "LegalLocationId": null,
+            "PartyTaxProfileId": 300000002137190,
+            "RoundingLevelCode": null,
+            "TaxAuthorityId": null,
+            "RegistrationId": 300000002137191,
+            "PartyTaxAllowOffsetTaxFlag": null,
+            "PartyTaxRoundingLevelCode": null,
+            "PartyTaxInclusiveTaxFlag": null,
+            "PartyTaxClassificationCode": null,
+            "PartyTaxRoundingRuleCode": null,
+            "PartyTaxProcessForApplicabilityFlag": null,
+            "CountryCode": null,
+            "links": [
+                {
+                    "rel": "self",
+                    "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191",
+                    "name": "taxRegistrations",
+                    "kind": "item",
+                    "properties": {
+                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                    }
+                },
+                {
+                    "rel": "canonical",
+                    "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191",
+                    "name": "taxRegistrations",
+                    "kind": "item"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191/lov/roundingRules",
+                    "name": "roundingRules",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191/lov/taxClassifications",
+                    "name": "taxClassifications",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191/lov/legalLocations",
+                    "name": "legalLocations",
+                    "kind": "collection"
+                },
+                {
+                    "rel": "lov",
+                    "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191/lov/taxAuthorityProfiles",
+                    "name": "taxAuthorityProfiles",
+                    "kind": "collection"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "RequestId",
+        "PartyTypeCode",
+        "PartyName",
+        "PartyNumber",
+        "PartySiteNumber",
+        "TaxRegimeCode",
+        "Tax",
+        "TaxJurisdictionCode",
+        "TaxPointBasis",
+        "RegistrationTypeCode",
+        "RegistrationStatusCode",
+        "RepresentativePartyTaxName",
+        "RegistrationReasonCode",
+        "EffectiveFrom",
+        "EffectiveTo",
+        "LegalRegistrationAddress",
+        "ValidationType",
+        "ValidationLevel",
+        "ValidationRule",
+        "RegistrationNumber",
+        "RegistrationSourceCode",
+        "IssuingTaxAuthority",
+        "DefaultRegistrationFlag",
+        "RoundingRuleCode",
+        "InclusiveTaxFlag",
+        "BankAccountNumber",
+        "TaxClassificationCode",
+        "UniquenessValidationLevel",
+        "Country",
+        "PartyCountryCode",
+        "BankBranchId",
+        "BankId",
+        "CollTaxAuthorityId",
+        "LegalLocationId",
+        "PartyTaxProfileId",
+        "RoundingLevelCode",
+        "TaxAuthorityId",
+        "RegistrationId",
+        "PartyTaxAllowOffsetTaxFlag",
+        "PartyTaxRoundingLevelCode",
+        "PartyTaxInclusiveTaxFlag",
+        "PartyTaxClassificationCode",
+        "PartyTaxRoundingRuleCode",
+        "PartyTaxProcessForApplicabilityFlag",
+        "CountryCode",
+        "links"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "string",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "123456789874564"
+            ]
+        },
+        "PartyTypeCode": {
+            "$id": "#/properties/PartyTypeCode",
+            "type": "string",
+            "title": "The PartyTypeCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "THIRD_PARTY_SITE"
+            ]
+        },
+        "PartyName": {
+            "$id": "#/properties/PartyName",
+            "type": "string",
+            "title": "The PartyName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "91 Springboard Business Hub Pvt. Ltd-Test"
+            ]
+        },
+        "PartyNumber": {
+            "$id": "#/properties/PartyNumber",
+            "type": "string",
+            "title": "The PartyNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Test1"
+            ]
+        },
+        "PartySiteNumber": {
+            "$id": "#/properties/PartySiteNumber",
+            "type": "string",
+            "title": "The PartySiteNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Test2"
+            ]
+        },
+        "TaxRegimeCode": {
+            "$id": "#/properties/TaxRegimeCode",
+            "type": "string",
+            "title": "The TaxRegimeCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "INDIA GST REGIME"
+            ]
+        },
+        "Tax": {
+            "$id": "#/properties/Tax",
+            "type": "null",
+            "title": "The Tax schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "TaxJurisdictionCode": {
+            "$id": "#/properties/TaxJurisdictionCode",
+            "type": "null",
+            "title": "The TaxJurisdictionCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "TaxPointBasis": {
+            "$id": "#/properties/TaxPointBasis",
+            "type": "null",
+            "title": "The TaxPointBasis schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "RegistrationTypeCode": {
+            "$id": "#/properties/RegistrationTypeCode",
+            "type": "null",
+            "title": "The RegistrationTypeCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "RegistrationStatusCode": {
+            "$id": "#/properties/RegistrationStatusCode",
+            "type": "string",
+            "title": "The RegistrationStatusCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "REGISTERED"
+            ]
+        },
+        "RepresentativePartyTaxName": {
+            "$id": "#/properties/RepresentativePartyTaxName",
+            "type": "null",
+            "title": "The RepresentativePartyTaxName schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "RegistrationReasonCode": {
+            "$id": "#/properties/RegistrationReasonCode",
+            "type": "null",
+            "title": "The RegistrationReasonCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "EffectiveFrom": {
+            "$id": "#/properties/EffectiveFrom",
+            "type": "string",
+            "title": "The EffectiveFrom schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-09-24"
+            ]
+        },
+        "EffectiveTo": {
+            "$id": "#/properties/EffectiveTo",
+            "type": "null",
+            "title": "The EffectiveTo schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "LegalRegistrationAddress": {
+            "$id": "#/properties/LegalRegistrationAddress",
+            "type": "null",
+            "title": "The LegalRegistrationAddress schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "ValidationType": {
+            "$id": "#/properties/ValidationType",
+            "type": "string",
+            "title": "The ValidationType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "ORA_IN_GST"
+            ]
+        },
+        "ValidationLevel": {
+            "$id": "#/properties/ValidationLevel",
+            "type": "string",
+            "title": "The ValidationLevel schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "WARNING"
+            ]
+        },
+        "ValidationRule": {
+            "$id": "#/properties/ValidationRule",
+            "type": "null",
+            "title": "The ValidationRule schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "RegistrationNumber": {
+            "$id": "#/properties/RegistrationNumber",
+            "type": "string",
+            "title": "The RegistrationNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "06AAACZ8912H1Z6"
+            ]
+        },
+        "RegistrationSourceCode": {
+            "$id": "#/properties/RegistrationSourceCode",
+            "type": "null",
+            "title": "The RegistrationSourceCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "IssuingTaxAuthority": {
+            "$id": "#/properties/IssuingTaxAuthority",
+            "type": "null",
+            "title": "The IssuingTaxAuthority schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "DefaultRegistrationFlag": {
+            "$id": "#/properties/DefaultRegistrationFlag",
+            "type": "boolean",
+            "title": "The DefaultRegistrationFlag schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "RoundingRuleCode": {
+            "$id": "#/properties/RoundingRuleCode",
+            "type": "string",
+            "title": "The RoundingRuleCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "NEAREST"
+            ]
+        },
+        "InclusiveTaxFlag": {
+            "$id": "#/properties/InclusiveTaxFlag",
+            "type": "null",
+            "title": "The InclusiveTaxFlag schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "BankAccountNumber": {
+            "$id": "#/properties/BankAccountNumber",
+            "type": "null",
+            "title": "The BankAccountNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "TaxClassificationCode": {
+            "$id": "#/properties/TaxClassificationCode",
+            "type": "null",
+            "title": "The TaxClassificationCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "UniquenessValidationLevel": {
+            "$id": "#/properties/UniquenessValidationLevel",
+            "type": "string",
+            "title": "The UniquenessValidationLevel schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "NONE"
+            ]
+        },
+        "Country": {
+            "$id": "#/properties/Country",
+            "type": "string",
+            "title": "The Country schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "India"
+            ]
+        },
+        "PartyCountryCode": {
+            "$id": "#/properties/PartyCountryCode",
+            "type": "string",
+            "title": "The PartyCountryCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "IN"
+            ]
+        },
+        "BankBranchId": {
+            "$id": "#/properties/BankBranchId",
+            "type": "null",
+            "title": "The BankBranchId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "BankId": {
+            "$id": "#/properties/BankId",
+            "type": "null",
+            "title": "The BankId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "CollTaxAuthorityId": {
+            "$id": "#/properties/CollTaxAuthorityId",
+            "type": "null",
+            "title": "The CollTaxAuthorityId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "LegalLocationId": {
+            "$id": "#/properties/LegalLocationId",
+            "type": "null",
+            "title": "The LegalLocationId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "PartyTaxProfileId": {
+            "$id": "#/properties/PartyTaxProfileId",
+            "type": "integer",
+            "title": "The PartyTaxProfileId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                300000002137190
+            ]
+        },
+        "RoundingLevelCode": {
+            "$id": "#/properties/RoundingLevelCode",
+            "type": "null",
+            "title": "The RoundingLevelCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "TaxAuthorityId": {
+            "$id": "#/properties/TaxAuthorityId",
+            "type": "null",
+            "title": "The TaxAuthorityId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "RegistrationId": {
+            "$id": "#/properties/RegistrationId",
+            "type": "integer",
+            "title": "The RegistrationId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                300000002137191
+            ]
+        },
+        "PartyTaxAllowOffsetTaxFlag": {
+            "$id": "#/properties/PartyTaxAllowOffsetTaxFlag",
+            "type": "null",
+            "title": "The PartyTaxAllowOffsetTaxFlag schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "PartyTaxRoundingLevelCode": {
+            "$id": "#/properties/PartyTaxRoundingLevelCode",
+            "type": "null",
+            "title": "The PartyTaxRoundingLevelCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "PartyTaxInclusiveTaxFlag": {
+            "$id": "#/properties/PartyTaxInclusiveTaxFlag",
+            "type": "null",
+            "title": "The PartyTaxInclusiveTaxFlag schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "PartyTaxClassificationCode": {
+            "$id": "#/properties/PartyTaxClassificationCode",
+            "type": "null",
+            "title": "The PartyTaxClassificationCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "PartyTaxRoundingRuleCode": {
+            "$id": "#/properties/PartyTaxRoundingRuleCode",
+            "type": "null",
+            "title": "The PartyTaxRoundingRuleCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "PartyTaxProcessForApplicabilityFlag": {
+            "$id": "#/properties/PartyTaxProcessForApplicabilityFlag",
+            "type": "null",
+            "title": "The PartyTaxProcessForApplicabilityFlag schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "CountryCode": {
+            "$id": "#/properties/CountryCode",
+            "type": "null",
+            "title": "The CountryCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "links": {
+            "$id": "#/properties/links",
+            "type": "array",
+            "title": "The links schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "rel": "self",
+                        "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191",
+                        "name": "taxRegistrations",
+                        "kind": "item",
+                        "properties": {
+                            "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                        }
+                    },
+                    {
+                        "rel": "canonical",
+                        "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191",
+                        "name": "taxRegistrations",
+                        "kind": "item"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/links/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/links/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "rel": "self",
+                                "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191",
+                                "name": "taxRegistrations",
+                                "kind": "item",
+                                "properties": {
+                                    "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                                }
+                            }
+                        ],
+                        "required": [
+                            "rel",
+                            "href",
+                            "name",
+                            "kind",
+                            "properties"
+                        ],
+                        "properties": {
+                            "rel": {
+                                "$id": "#/properties/links/items/anyOf/0/properties/rel",
+                                "type": "string",
+                                "title": "The rel schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "self"
+                                ]
+                            },
+                            "href": {
+                                "$id": "#/properties/links/items/anyOf/0/properties/href",
+                                "type": "string",
+                                "title": "The href schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191"
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/links/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "taxRegistrations"
+                                ]
+                            },
+                            "kind": {
+                                "$id": "#/properties/links/items/anyOf/0/properties/kind",
+                                "type": "string",
+                                "title": "The kind schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "item"
+                                ]
+                            },
+                            "properties": {
+                                "$id": "#/properties/links/items/anyOf/0/properties/properties",
+                                "type": "object",
+                                "title": "The properties schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "changeIndicator": "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                                    }
+                                ],
+                                "required": [
+                                    "changeIndicator"
+                                ],
+                                "properties": {
+                                    "changeIndicator": {
+                                        "$id": "#/properties/links/items/anyOf/0/properties/properties/properties/changeIndicator",
+                                        "type": "string",
+                                        "title": "The changeIndicator schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "ACED0005737200136A6176612E7574696C2E41727261794C6973747881D21D99C7619D03000149000473697A65787000000001770400000001737200116A6176612E6C616E672E496E746567657212E2A0A4F781873802000149000576616C7565787200106A6176612E6C616E672E4E756D62657286AC951D0B94E08B02000078700000000178"
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    {
+                        "$id": "#/properties/links/items/anyOf/1",
+                        "type": "object",
+                        "title": "The second anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "rel": "canonical",
+                                "href": "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191",
+                                "name": "taxRegistrations",
+                                "kind": "item"
+                            }
+                        ],
+                        "required": [
+                            "rel",
+                            "href",
+                            "name",
+                            "kind"
+                        ],
+                        "properties": {
+                            "rel": {
+                                "$id": "#/properties/links/items/anyOf/1/properties/rel",
+                                "type": "string",
+                                "title": "The rel schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "canonical"
+                                ]
+                            },
+                            "href": {
+                                "$id": "#/properties/links/items/anyOf/1/properties/href",
+                                "type": "string",
+                                "title": "The href schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443/fscmRestApi/resources/11.13.18.05/taxRegistrations/300000002137191"
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/links/items/anyOf/1/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "taxRegistrations"
+                                ]
+                            },
+                            "kind": {
+                                "$id": "#/properties/links/items/anyOf/1/properties/kind",
+                                "type": "string",
+                                "title": "The kind schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "item"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

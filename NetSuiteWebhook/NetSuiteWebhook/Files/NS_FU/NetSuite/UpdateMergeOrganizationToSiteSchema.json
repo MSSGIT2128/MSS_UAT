@@ -1,0 +1,449 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1633183456747,
+            "Operation": "Edit",
+            "Type": "ContactAssignmentToSiteRequest",
+            "FusionId": 300000015729237,
+            "Data": {
+                "CustomerAccountId": "300000015729242",
+                "PartyId": "300000015729237",
+                "CustomerAccountSite": {
+                    "CustomerAccountSiteId": "300000015729243",
+                    "CustomerAccountId": "300000015729242",
+                    "PartySiteId": "300000015729238",
+                    "CustomerAccountContact": {
+                        "CustomerAccountId": "300000015729242",
+                        "CustomerAccountSiteId": "300000015729243",
+                        "PrimaryFlag": false,
+                        "RoleType": "CONTACT",
+                        "CreatedByModule": "SIS",
+                        "RelationshipId": "300000015730191",
+                        "CustomerAccountRoleId": "300000015730191",
+                        "CustomerAccountContactRoles": [
+                            {
+                                "ResponsibilityType": "BILL_TO",
+                                "PrimaryFlag": true,
+                                "CreatedByModule": "SIS"
+                            },
+                            {
+                                "ResponsibilityType": "DUN",
+                                "PrimaryFlag": false,
+                                "CreatedByModule": "SIS"
+                            },
+                            {
+                                "ResponsibilityType": "STMTS",
+                                "PrimaryFlag": false,
+                                "CreatedByModule": "SIS"
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "FusionId",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1633183456747
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Edit"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "ContactAssignmentToSiteRequest"
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "integer",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                300000015729237
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CustomerAccountId": "300000015729242",
+                    "PartyId": "300000015729237",
+                    "CustomerAccountSite": {
+                        "CustomerAccountSiteId": "300000015729243",
+                        "CustomerAccountId": "300000015729242",
+                        "PartySiteId": "300000015729238",
+                        "CustomerAccountContact": {
+                            "CustomerAccountId": "300000015729242",
+                            "CustomerAccountSiteId": "300000015729243",
+                            "PrimaryFlag": false,
+                            "RoleType": "CONTACT",
+                            "CreatedByModule": "SIS",
+                            "RelationshipId": "300000015730191",
+                            "CustomerAccountRoleId": "300000015730191",
+                            "CustomerAccountContactRoles": [
+                                {
+                                    "ResponsibilityType": "BILL_TO",
+                                    "PrimaryFlag": true,
+                                    "CreatedByModule": "SIS"
+                                },
+                                {
+                                    "ResponsibilityType": "DUN",
+                                    "PrimaryFlag": false,
+                                    "CreatedByModule": "SIS"
+                                },
+                                {
+                                    "ResponsibilityType": "STMTS",
+                                    "PrimaryFlag": false,
+                                    "CreatedByModule": "SIS"
+                                }
+                            ]
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "CustomerAccountId",
+                "PartyId",
+                "CustomerAccountSite"
+            ],
+            "properties": {
+                "CustomerAccountId": {
+                    "$id": "#/properties/Data/properties/CustomerAccountId",
+                    "type": "string",
+                    "title": "The CustomerAccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000015729242"
+                    ]
+                },
+                "PartyId": {
+                    "$id": "#/properties/Data/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000015729237"
+                    ]
+                },
+                "CustomerAccountSite": {
+                    "$id": "#/properties/Data/properties/CustomerAccountSite",
+                    "type": "object",
+                    "title": "The CustomerAccountSite schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "CustomerAccountSiteId": "300000015729243",
+                            "CustomerAccountId": "300000015729242",
+                            "PartySiteId": "300000015729238",
+                            "CustomerAccountContact": {
+                                "CustomerAccountId": "300000015729242",
+                                "CustomerAccountSiteId": "300000015729243",
+                                "PrimaryFlag": false,
+                                "RoleType": "CONTACT",
+                                "CreatedByModule": "SIS",
+                                "RelationshipId": "300000015730191",
+                                "CustomerAccountRoleId": "300000015730191",
+                                "CustomerAccountContactRoles": [
+                                    {
+                                        "ResponsibilityType": "BILL_TO",
+                                        "PrimaryFlag": true,
+                                        "CreatedByModule": "SIS"
+                                    },
+                                    {
+                                        "ResponsibilityType": "DUN",
+                                        "PrimaryFlag": false,
+                                        "CreatedByModule": "SIS"
+                                    },
+                                    {
+                                        "ResponsibilityType": "STMTS",
+                                        "PrimaryFlag": false,
+                                        "CreatedByModule": "SIS"
+                                    }
+                                ]
+                            }
+                        }
+                    ],
+                    "required": [
+                        "CustomerAccountSiteId",
+                        "CustomerAccountId",
+                        "PartySiteId",
+                        "CustomerAccountContact"
+                    ],
+                    "properties": {
+                        "CustomerAccountSiteId": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteId",
+                            "type": "string",
+                            "title": "The CustomerAccountSiteId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015729243"
+                            ]
+                        },
+                        "CustomerAccountId": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountId",
+                            "type": "string",
+                            "title": "The CustomerAccountId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015729242"
+                            ]
+                        },
+                        "PartySiteId": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/PartySiteId",
+                            "type": "string",
+                            "title": "The PartySiteId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015729238"
+                            ]
+                        },
+                        "CustomerAccountContact": {
+                            "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact",
+                            "type": "object",
+                            "title": "The CustomerAccountContact schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "CustomerAccountId": "300000015729242",
+                                    "CustomerAccountSiteId": "300000015729243",
+                                    "PrimaryFlag": false,
+                                    "RoleType": "CONTACT",
+                                    "CreatedByModule": "SIS",
+                                    "RelationshipId": "300000015730191",
+                                    "CustomerAccountRoleId": "300000015730191",
+                                    "CustomerAccountContactRoles": [
+                                        {
+                                            "ResponsibilityType": "BILL_TO",
+                                            "PrimaryFlag": true,
+                                            "CreatedByModule": "SIS"
+                                        },
+                                        {
+                                            "ResponsibilityType": "DUN",
+                                            "PrimaryFlag": false,
+                                            "CreatedByModule": "SIS"
+                                        },
+                                        {
+                                            "ResponsibilityType": "STMTS",
+                                            "PrimaryFlag": false,
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "required": [
+                                "CustomerAccountId",
+                                "CustomerAccountSiteId",
+                                "PrimaryFlag",
+                                "RoleType",
+                                "CreatedByModule",
+                                "RelationshipId",
+                                "CustomerAccountRoleId",
+                                "CustomerAccountContactRoles"
+                            ],
+                            "properties": {
+                                "CustomerAccountId": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountId",
+                                    "type": "string",
+                                    "title": "The CustomerAccountId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000015729242"
+                                    ]
+                                },
+                                "CustomerAccountSiteId": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountSiteId",
+                                    "type": "string",
+                                    "title": "The CustomerAccountSiteId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000015729243"
+                                    ]
+                                },
+                                "PrimaryFlag": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/PrimaryFlag",
+                                    "type": "boolean",
+                                    "title": "The PrimaryFlag schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": false,
+                                    "examples": [
+                                        false
+                                    ]
+                                },
+                                "RoleType": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/RoleType",
+                                    "type": "string",
+                                    "title": "The RoleType schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "CONTACT"
+                                    ]
+                                },
+                                "CreatedByModule": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CreatedByModule",
+                                    "type": "string",
+                                    "title": "The CreatedByModule schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "SIS"
+                                    ]
+                                },
+                                "RelationshipId": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/RelationshipId",
+                                    "type": "string",
+                                    "title": "The RelationshipId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000015730191"
+                                    ]
+                                },
+                                "CustomerAccountRoleId": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountRoleId",
+                                    "type": "string",
+                                    "title": "The CustomerAccountRoleId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000015730191"
+                                    ]
+                                },
+                                "CustomerAccountContactRoles": {
+                                    "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountContactRoles",
+                                    "type": "array",
+                                    "title": "The CustomerAccountContactRoles schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": [],
+                                    "examples": [
+                                        [
+                                            {
+                                                "ResponsibilityType": "BILL_TO",
+                                                "PrimaryFlag": true,
+                                                "CreatedByModule": "SIS"
+                                            },
+                                            {
+                                                "ResponsibilityType": "DUN",
+                                                "PrimaryFlag": false,
+                                                "CreatedByModule": "SIS"
+                                            }
+                                        ]
+                                    ],
+                                    "additionalItems": true,
+                                    "items": {
+                                        "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountContactRoles/items",
+                                        "anyOf": [
+                                            {
+                                                "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountContactRoles/items/anyOf/0",
+                                                "type": "object",
+                                                "title": "The first anyOf schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "ResponsibilityType": "BILL_TO",
+                                                        "PrimaryFlag": true,
+                                                        "CreatedByModule": "SIS"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "ResponsibilityType",
+                                                    "PrimaryFlag",
+                                                    "CreatedByModule"
+                                                ],
+                                                "properties": {
+                                                    "ResponsibilityType": {
+                                                        "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountContactRoles/items/anyOf/0/properties/ResponsibilityType",
+                                                        "type": "string",
+                                                        "title": "The ResponsibilityType schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "BILL_TO"
+                                                        ]
+                                                    },
+                                                    "PrimaryFlag": {
+                                                        "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountContactRoles/items/anyOf/0/properties/PrimaryFlag",
+                                                        "type": "boolean",
+                                                        "title": "The PrimaryFlag schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": false,
+                                                        "examples": [
+                                                            true
+                                                        ]
+                                                    },
+                                                    "CreatedByModule": {
+                                                        "$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountContact/properties/CustomerAccountContactRoles/items/anyOf/0/properties/CreatedByModule",
+                                                        "type": "string",
+                                                        "title": "The CreatedByModule schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "SIS"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": true
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

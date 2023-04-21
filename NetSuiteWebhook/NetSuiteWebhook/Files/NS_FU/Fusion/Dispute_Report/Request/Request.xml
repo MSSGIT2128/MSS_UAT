@@ -1,0 +1,36 @@
+<soap:Envelope xmlns:pub="http://xmlns.oracle.com/oxp/service/PublicReportService" xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+	<soap:Body>
+		<pub:runReport>
+			<pub:reportRequest>
+				<pub:attributeFormat>csv</pub:attributeFormat>
+				<pub:flattenXML>true</pub:flattenXML>
+				<pub:parameterNameValues>
+					<pub:item>
+						<pub:name>P_TRX_NUM</pub:name>
+						<pub:values>
+							<pub:item/>
+						</pub:values>
+					</pub:item>
+					<pub:item>
+						<pub:name>P_FROM_DATE</pub:name>
+						<pub:values>
+							<pub:item>2021-09-01 01:00:00</pub:item>
+						</pub:values>
+					</pub:item>
+					<pub:item>
+						<pub:name>P_TO_DATE</pub:name>
+						<pub:values>
+							<pub:item/>
+						</pub:values>
+					</pub:item>
+				</pub:parameterNameValues>
+				<pub:reportAbsolutePath>/Custom/Integration/Reports/MSS Dispute Outbound Report.xdo</pub:reportAbsolutePath>
+				<!--Setting sizeOfDataChunkDownload to -1 will return the output to the calling client-->
+				<pub:sizeOfDataChunkDownload>-1</pub:sizeOfDataChunkDownload>
+			</pub:reportRequest>
+
+      </pub:runReport>
+
+   </soap:Body>
+
+</soap:Envelope>

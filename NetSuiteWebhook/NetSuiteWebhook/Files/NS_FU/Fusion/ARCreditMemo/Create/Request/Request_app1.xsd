@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:app4="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/" xmlns:app3="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/" schemaLocation="Request_app3.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/" schemaLocation="Request_app4.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" schemaLocation="Request_app2.xsd" />
+  <xs:element name="OrgId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="BillCustomerAccountNumber" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="BillCustomerSiteNumber" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="BatchSourceName" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="CurrencyCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="CustomerTrxTypeName" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Description" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="LineType" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Quantity" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="TrxNumber" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="TrxDate" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="GlDate" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="UnitSellingPrice" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="AmountIncludesTax" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="TaxJurisdictionCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Tax" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="TaxRateCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="TaxRegimeCode" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Taxable" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="ReasonCodeMeaning" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Comments" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="LegalEntityId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="TransactionInterfaceLineDff" msdata:Prefix="inv" >
+    <xs:complexType>
+	
+      <xs:sequence>
+	  
+        <xs:element ref="app3:__FLEX_Context" minOccurs="0" />
+        <xs:element ref="app3:__FLEX_Context_DisplayValue" minOccurs="0" />
+        <xs:element ref="app3:otherinvoicedetails" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TransactionInterfaceHeaderDff" msdata:Prefix="inv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app4:batchtrxnumber" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

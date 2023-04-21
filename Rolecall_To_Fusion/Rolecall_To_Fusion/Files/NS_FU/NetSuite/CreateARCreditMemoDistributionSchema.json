@@ -1,0 +1,499 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": "1612253023774",
+            "Operation": "Create",
+            "Type": "CreditDistribution",
+            "Data": {
+                "Lines": [
+                    {
+                        "AccountClass": "REC",
+                        "OrgId": "300000001939869",
+                        "Percent": "100",
+                        "AccountCombination": "300000001949875",
+                        "DistributionInterfacLineDff": {
+                            "Type": "Otherinvoicedetails",
+                            "Context": "OtherInvoiceDetails",
+                            "ContextDisplayValue": "OtherInvoiceDetails",
+                            "OtherInvoiceDetails": "0710202003CM-1"
+                        }
+                    },
+                    {
+                        "AccountClass": "REV",
+                        "OrgId": "300000001939869",
+                        "Amount": "-225",
+                        "AccountCombination": "300000001949875",
+                        "DistributionInterfacLineDff": {
+                            "Type": "Otherinvoicedetails",
+                            "Context": "OtherInvoiceDetails",
+                            "ContextDisplayValue": "OtherInvoiceDetails",
+                            "OtherInvoiceDetails": "0710202003CM-1"
+                        }
+                    }
+                ],
+                "processControl": {
+                    "returnMode": "?",
+                    "exceptionReturnMode": "?",
+                    "partialFailureAllowed": "false"
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "string",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "1612253023774"
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "CreditDistribution"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Lines": [
+                        {
+                            "AccountClass": "REC",
+                            "OrgId": "300000001939869",
+                            "Percent": "100",
+                            "AccountCombination": "300000001949875",
+                            "DistributionInterfacLineDff": {
+                                "Type": "Otherinvoicedetails",
+                                "Context": "OtherInvoiceDetails",
+                                "ContextDisplayValue": "OtherInvoiceDetails",
+                                "OtherInvoiceDetails": "0710202003CM-1"
+                            }
+                        },
+                        {
+                            "AccountClass": "REV",
+                            "OrgId": "300000001939869",
+                            "Amount": "-225",
+                            "AccountCombination": "300000001949875",
+                            "DistributionInterfacLineDff": {
+                                "Type": "Otherinvoicedetails",
+                                "Context": "OtherInvoiceDetails",
+                                "ContextDisplayValue": "OtherInvoiceDetails",
+                                "OtherInvoiceDetails": "0710202003CM-1"
+                            }
+                        }
+                    ],
+                    "processControl": {
+                        "returnMode": "?",
+                        "exceptionReturnMode": "?",
+                        "partialFailureAllowed": "false"
+                    }
+                }
+            ],
+            "required": [
+                "Lines",
+                "processControl"
+            ],
+            "properties": {
+                "Lines": {
+                    "$id": "#/properties/Data/properties/Lines",
+                    "type": "array",
+                    "title": "The Lines schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "AccountClass": "REC",
+                                "OrgId": "300000001939869",
+                                "Percent": "100",
+                                "AccountCombination": "300000001949875",
+                                "DistributionInterfacLineDff": {
+                                    "Type": "Otherinvoicedetails",
+                                    "Context": "OtherInvoiceDetails",
+                                    "ContextDisplayValue": "OtherInvoiceDetails",
+                                    "OtherInvoiceDetails": "0710202003CM-1"
+                                }
+                            },
+                            {
+                                "AccountClass": "REV",
+                                "OrgId": "300000001939869",
+                                "Amount": "-225",
+                                "AccountCombination": "300000001949875",
+                                "DistributionInterfacLineDff": {
+                                    "Type": "Otherinvoicedetails",
+                                    "Context": "OtherInvoiceDetails",
+                                    "ContextDisplayValue": "OtherInvoiceDetails",
+                                    "OtherInvoiceDetails": "0710202003CM-1"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/Lines/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "AccountClass": "REC",
+                                        "OrgId": "300000001939869",
+                                        "Percent": "100",
+                                        "AccountCombination": "300000001949875",
+                                        "DistributionInterfacLineDff": {
+                                            "Type": "Otherinvoicedetails",
+                                            "Context": "OtherInvoiceDetails",
+                                            "ContextDisplayValue": "OtherInvoiceDetails",
+                                            "OtherInvoiceDetails": "0710202003CM-1"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "AccountClass",
+                                    "OrgId",
+                                    "Percent",
+                                    "AccountCombination",
+                                    "DistributionInterfacLineDff"
+                                ],
+                                "properties": {
+                                    "AccountClass": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/AccountClass",
+                                        "type": "string",
+                                        "title": "The AccountClass schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "REC"
+                                        ]
+                                    },
+                                    "OrgId": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/OrgId",
+                                        "type": "string",
+                                        "title": "The OrgId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001939869"
+                                        ]
+                                    },
+                                    "Percent": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/Percent",
+                                        "type": "string",
+                                        "title": "The Percent schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "100"
+                                        ]
+                                    },
+                                    "AccountCombination": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/AccountCombination",
+                                        "type": "string",
+                                        "title": "The AccountCombination schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001949875"
+                                        ]
+                                    },
+                                    "DistributionInterfacLineDff": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/DistributionInterfacLineDff",
+                                        "type": "object",
+                                        "title": "The DistributionInterfacLineDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "Type": "Otherinvoicedetails",
+                                                "Context": "OtherInvoiceDetails",
+                                                "ContextDisplayValue": "OtherInvoiceDetails",
+                                                "OtherInvoiceDetails": "0710202003CM-1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "Type",
+                                            "Context",
+                                            "ContextDisplayValue",
+                                            "OtherInvoiceDetails"
+                                        ],
+                                        "properties": {
+                                            "Type": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/DistributionInterfacLineDff/properties/Type",
+                                                "type": "string",
+                                                "title": "The Type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Otherinvoicedetails"
+                                                ]
+                                            },
+                                            "Context": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/DistributionInterfacLineDff/properties/Context",
+                                                "type": "string",
+                                                "title": "The Context schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "ContextDisplayValue": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/DistributionInterfacLineDff/properties/ContextDisplayValue",
+                                                "type": "string",
+                                                "title": "The ContextDisplayValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "OtherInvoiceDetails": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/DistributionInterfacLineDff/properties/OtherInvoiceDetails",
+                                                "type": "string",
+                                                "title": "The OtherInvoiceDetails schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "0710202003CM-1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            {
+                                "$id": "#/properties/Data/properties/Lines/items/anyOf/1",
+                                "type": "object",
+                                "title": "The second anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "AccountClass": "REV",
+                                        "OrgId": "300000001939869",
+                                        "Amount": "-225",
+                                        "AccountCombination": "300000001949875",
+                                        "DistributionInterfacLineDff": {
+                                            "Type": "Otherinvoicedetails",
+                                            "Context": "OtherInvoiceDetails",
+                                            "ContextDisplayValue": "OtherInvoiceDetails",
+                                            "OtherInvoiceDetails": "0710202003CM-1"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "AccountClass",
+                                    "OrgId",
+                                    "Amount",
+                                    "AccountCombination",
+                                    "DistributionInterfacLineDff"
+                                ],
+                                "properties": {
+                                    "AccountClass": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/AccountClass",
+                                        "type": "string",
+                                        "title": "The AccountClass schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "REV"
+                                        ]
+                                    },
+                                    "OrgId": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/OrgId",
+                                        "type": "string",
+                                        "title": "The OrgId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001939869"
+                                        ]
+                                    },
+                                    "Amount": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/Amount",
+                                        "type": "string",
+                                        "title": "The Amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "-225"
+                                        ]
+                                    },
+                                    "AccountCombination": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/AccountCombination",
+                                        "type": "string",
+                                        "title": "The AccountCombination schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001949875"
+                                        ]
+                                    },
+                                    "DistributionInterfacLineDff": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/DistributionInterfacLineDff",
+                                        "type": "object",
+                                        "title": "The DistributionInterfacLineDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "Type": "Otherinvoicedetails",
+                                                "Context": "OtherInvoiceDetails",
+                                                "ContextDisplayValue": "OtherInvoiceDetails",
+                                                "OtherInvoiceDetails": "0710202003CM-1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "Type",
+                                            "Context",
+                                            "ContextDisplayValue",
+                                            "OtherInvoiceDetails"
+                                        ],
+                                        "properties": {
+                                            "Type": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/DistributionInterfacLineDff/properties/Type",
+                                                "type": "string",
+                                                "title": "The Type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Otherinvoicedetails"
+                                                ]
+                                            },
+                                            "Context": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/DistributionInterfacLineDff/properties/Context",
+                                                "type": "string",
+                                                "title": "The Context schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "ContextDisplayValue": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/DistributionInterfacLineDff/properties/ContextDisplayValue",
+                                                "type": "string",
+                                                "title": "The ContextDisplayValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "OtherInvoiceDetails": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/1/properties/DistributionInterfacLineDff/properties/OtherInvoiceDetails",
+                                                "type": "string",
+                                                "title": "The OtherInvoiceDetails schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "0710202003CM-1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "processControl": {
+                    "$id": "#/properties/Data/properties/processControl",
+                    "type": "object",
+                    "title": "The processControl schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "returnMode": "?",
+                            "exceptionReturnMode": "?",
+                            "partialFailureAllowed": "false"
+                        }
+                    ],
+                    "required": [
+                        "returnMode",
+                        "exceptionReturnMode",
+                        "partialFailureAllowed"
+                    ],
+                    "properties": {
+                        "returnMode": {
+                            "$id": "#/properties/Data/properties/processControl/properties/returnMode",
+                            "type": "string",
+                            "title": "The returnMode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "?"
+                            ]
+                        },
+                        "exceptionReturnMode": {
+                            "$id": "#/properties/Data/properties/processControl/properties/exceptionReturnMode",
+                            "type": "string",
+                            "title": "The exceptionReturnMode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "?"
+                            ]
+                        },
+                        "partialFailureAllowed": {
+                            "$id": "#/properties/Data/properties/processControl/properties/partialFailureAllowed",
+                            "type": "string",
+                            "title": "The partialFailureAllowed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "false"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,615 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "InvoiceNumber": "INTEGRATION_CK_Dummy5",
+            "InvoiceCurrency": "AUD",
+            "InvoiceAmount": 22.0,
+            "InvoiceDate": "2020-12-18",
+            "BusinessUnit": "MSS Security Pty Limited",
+            "Supplier": "AAA SECURITY MANAGEMENT P/L",
+            "SupplierSite": "MSS",
+            "InvoiceGroup": "Redmap 20201214 01",
+            "ConversionRateType": "Corporate",
+            "ConversionDate": "2020-12-18",
+            "GoodsReceivedDate": "2020-12-18",
+            "Description": "Test Invoice From API 15122020",
+            "InvoiceType": "Standard",
+            "invoiceLines": [
+                {
+                    "LineNumber": 1,
+                    "Description": "Test Line Desc1.",
+                    "LineAmount": 20.0,
+                    "ShipToLocation": null,
+                    "ProductFiscalClassification": null,
+                    "ProductFiscalClassificationCode": null,
+                    "ProductFiscalClassificationType": null,
+                    "Withholding": null,
+                    "MultiperiodAccountingStartDate": null,
+                    "MultiperiodAccountingEndDate": null,
+                    "MultiperiodAccountingAccrualAccount": null,
+                    "TrackAsAssetFlag": "true",
+                    "TaxClassification": "AU_GST_10%",
+                    "IntendedUse": "GST Taxable",
+                    "IntendedUseCode": "GST_TAX",
+                    "invoiceDistributions": [
+                        {
+                            "DistributionLineNumber": 1,
+                            "DistributionLineType": "Item",
+                            "DistributionAmount": 20.0,
+                            "DistributionCombination": "201.999.3147110.999.999.9999.999999999.999999999.999.999.9999"
+                        }
+                    ],
+                    "invoiceLineDff": [
+                        {
+                            "assetStartDate": "2020-01-01",
+                            "assetLife": "5 to 7 years"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "required": [
+        "InvoiceNumber",
+        "InvoiceCurrency",
+        "InvoiceAmount",
+        "InvoiceDate",
+        "BusinessUnit",
+        "Supplier",
+        "SupplierSite",
+        "InvoiceGroup",
+        "ConversionRateType",
+        "ConversionDate",
+        "GoodsReceivedDate",
+        "Description",
+        "InvoiceType",
+        "invoiceLines"
+    ],
+    "properties": {
+        "InvoiceNumber": {
+            "$id": "#/properties/InvoiceNumber",
+            "type": "string",
+            "title": "The InvoiceNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "INTEGRATION_CK_Dummy5"
+            ]
+        },
+        "InvoiceCurrency": {
+            "$id": "#/properties/InvoiceCurrency",
+            "type": "string",
+            "title": "The InvoiceCurrency schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "AUD"
+            ]
+        },
+        "InvoiceAmount": {
+            "$id": "#/properties/InvoiceAmount",
+            "type": "number",
+            "title": "The InvoiceAmount schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                22.0
+            ]
+        },
+        "InvoiceDate": {
+            "$id": "#/properties/InvoiceDate",
+            "type": "string",
+            "title": "The InvoiceDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-12-18"
+            ]
+        },
+        "BusinessUnit": {
+            "$id": "#/properties/BusinessUnit",
+            "type": "string",
+            "title": "The BusinessUnit schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "MSS Security Pty Limited"
+            ]
+        },
+        "Supplier": {
+            "$id": "#/properties/Supplier",
+            "type": "string",
+            "title": "The Supplier schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "AAA SECURITY MANAGEMENT P/L"
+            ]
+        },
+        "SupplierSite": {
+            "$id": "#/properties/SupplierSite",
+            "type": "string",
+            "title": "The SupplierSite schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "MSS"
+            ]
+        },
+        "InvoiceGroup": {
+            "$id": "#/properties/InvoiceGroup",
+            "type": "string",
+            "title": "The InvoiceGroup schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Redmap 20201214 01"
+            ]
+        },
+        "ConversionRateType": {
+            "$id": "#/properties/ConversionRateType",
+            "type": "string",
+            "title": "The ConversionRateType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Corporate"
+            ]
+        },
+        "ConversionDate": {
+            "$id": "#/properties/ConversionDate",
+            "type": "string",
+            "title": "The ConversionDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-12-18"
+            ]
+        },
+        "GoodsReceivedDate": {
+            "$id": "#/properties/GoodsReceivedDate",
+            "type": "string",
+            "title": "The GoodsReceivedDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "2020-12-18"
+            ]
+        },
+        "Description": {
+            "$id": "#/properties/Description",
+            "type": "string",
+            "title": "The Description schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Test Invoice From API 15122020"
+            ]
+        },
+        "InvoiceType": {
+            "$id": "#/properties/InvoiceType",
+            "type": "string",
+            "title": "The InvoiceType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Standard"
+            ]
+        },
+        "invoiceLines": {
+            "$id": "#/properties/invoiceLines",
+            "type": "array",
+            "title": "The invoiceLines schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "LineNumber": 1,
+                        "Description": "Test Line Desc1.",
+                        "LineAmount": 20.0,
+                        "ShipToLocation": null,
+                        "ProductFiscalClassification": null,
+                        "ProductFiscalClassificationCode": null,
+                        "ProductFiscalClassificationType": null,
+                        "Withholding": null,
+                        "MultiperiodAccountingStartDate": null,
+                        "MultiperiodAccountingEndDate": null,
+                        "MultiperiodAccountingAccrualAccount": null,
+                        "TrackAsAssetFlag": "true",
+                        "TaxClassification": "AU_GST_10%",
+                        "IntendedUse": "GST Taxable",
+                        "IntendedUseCode": "GST_TAX",
+                        "invoiceDistributions": [
+                            {
+                                "DistributionLineNumber": 1,
+                                "DistributionLineType": "Item",
+                                "DistributionAmount": 20.0,
+                                "DistributionCombination": "201.999.3147110.999.999.9999.999999999.999999999.999.999.9999"
+                            }
+                        ],
+                        "invoiceLineDff": [
+                            {
+                                "assetStartDate": "2020-01-01",
+                                "assetLife": "5 to 7 years"
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/invoiceLines/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/invoiceLines/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "LineNumber": 1,
+                                "Description": "Test Line Desc1.",
+                                "LineAmount": 20.0,
+                                "ShipToLocation": null,
+                                "ProductFiscalClassification": null,
+                                "ProductFiscalClassificationCode": null,
+                                "ProductFiscalClassificationType": null,
+                                "Withholding": null,
+                                "MultiperiodAccountingStartDate": null,
+                                "MultiperiodAccountingEndDate": null,
+                                "MultiperiodAccountingAccrualAccount": null,
+                                "TrackAsAssetFlag": "true",
+                                "TaxClassification": "AU_GST_10%",
+                                "IntendedUse": "GST Taxable",
+                                "IntendedUseCode": "GST_TAX",
+                                "invoiceDistributions": [
+                                    {
+                                        "DistributionLineNumber": 1,
+                                        "DistributionLineType": "Item",
+                                        "DistributionAmount": 20.0,
+                                        "DistributionCombination": "201.999.3147110.999.999.9999.999999999.999999999.999.999.9999"
+                                    }
+                                ],
+                                "invoiceLineDff": [
+                                    {
+                                        "assetStartDate": "2020-01-01",
+                                        "assetLife": "5 to 7 years"
+                                    }
+                                ]
+                            }
+                        ],
+                        "required": [
+                            "LineNumber",
+                            "Description",
+                            "LineAmount",
+                            "ShipToLocation",
+                            "ProductFiscalClassification",
+                            "ProductFiscalClassificationCode",
+                            "ProductFiscalClassificationType",
+                            "Withholding",
+                            "MultiperiodAccountingStartDate",
+                            "MultiperiodAccountingEndDate",
+                            "MultiperiodAccountingAccrualAccount",
+                            "TrackAsAssetFlag",
+                            "TaxClassification",
+                            "IntendedUse",
+                            "IntendedUseCode",
+                            "invoiceDistributions",
+                            "invoiceLineDff"
+                        ],
+                        "properties": {
+                            "LineNumber": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/LineNumber",
+                                "type": "integer",
+                                "title": "The LineNumber schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "Description": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/Description",
+                                "type": "string",
+                                "title": "The Description schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Test Line Desc1."
+                                ]
+                            },
+                            "LineAmount": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/LineAmount",
+                                "type": "number",
+                                "title": "The LineAmount schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0.0,
+                                "examples": [
+                                    20.0
+                                ]
+                            },
+                            "ShipToLocation": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/ShipToLocation",
+                                "type": "null",
+                                "title": "The ShipToLocation schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "ProductFiscalClassification": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/ProductFiscalClassification",
+                                "type": "null",
+                                "title": "The ProductFiscalClassification schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "ProductFiscalClassificationCode": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/ProductFiscalClassificationCode",
+                                "type": "null",
+                                "title": "The ProductFiscalClassificationCode schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "ProductFiscalClassificationType": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/ProductFiscalClassificationType",
+                                "type": "null",
+                                "title": "The ProductFiscalClassificationType schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "Withholding": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/Withholding",
+                                "type": "null",
+                                "title": "The Withholding schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "MultiperiodAccountingStartDate": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/MultiperiodAccountingStartDate",
+                                "type": "null",
+                                "title": "The MultiperiodAccountingStartDate schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "MultiperiodAccountingEndDate": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/MultiperiodAccountingEndDate",
+                                "type": "null",
+                                "title": "The MultiperiodAccountingEndDate schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "MultiperiodAccountingAccrualAccount": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/MultiperiodAccountingAccrualAccount",
+                                "type": "null",
+                                "title": "The MultiperiodAccountingAccrualAccount schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": null,
+                                "examples": [
+                                    null
+                                ]
+                            },
+                            "TrackAsAssetFlag": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/TrackAsAssetFlag",
+                                "type": "string",
+                                "title": "The TrackAsAssetFlag schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "true"
+                                ]
+                            },
+                            "TaxClassification": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/TaxClassification",
+                                "type": "string",
+                                "title": "The TaxClassification schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "AU_GST_10%"
+                                ]
+                            },
+                            "IntendedUse": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/IntendedUse",
+                                "type": "string",
+                                "title": "The IntendedUse schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "GST Taxable"
+                                ]
+                            },
+                            "IntendedUseCode": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/IntendedUseCode",
+                                "type": "string",
+                                "title": "The IntendedUseCode schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "GST_TAX"
+                                ]
+                            },
+                            "invoiceDistributions": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions",
+                                "type": "array",
+                                "title": "The invoiceDistributions schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "DistributionLineNumber": 1,
+                                            "DistributionLineType": "Item",
+                                            "DistributionAmount": 20.0,
+                                            "DistributionCombination": "201.999.3147110.999.999.9999.999999999.999999999.999.999.9999"
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "DistributionLineNumber": 1,
+                                                    "DistributionLineType": "Item",
+                                                    "DistributionAmount": 20.0,
+                                                    "DistributionCombination": "201.999.3147110.999.999.9999.999999999.999999999.999.999.9999"
+                                                }
+                                            ],
+                                            "required": [
+                                                "DistributionLineNumber",
+                                                "DistributionLineType",
+                                                "DistributionAmount",
+                                                "DistributionCombination"
+                                            ],
+                                            "properties": {
+                                                "DistributionLineNumber": {
+                                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions/items/anyOf/0/properties/DistributionLineNumber",
+                                                    "type": "integer",
+                                                    "title": "The DistributionLineNumber schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 0,
+                                                    "examples": [
+                                                        1
+                                                    ]
+                                                },
+                                                "DistributionLineType": {
+                                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions/items/anyOf/0/properties/DistributionLineType",
+                                                    "type": "string",
+                                                    "title": "The DistributionLineType schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "Item"
+                                                    ]
+                                                },
+                                                "DistributionAmount": {
+                                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions/items/anyOf/0/properties/DistributionAmount",
+                                                    "type": "number",
+                                                    "title": "The DistributionAmount schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": 0.0,
+                                                    "examples": [
+                                                        20.0
+                                                    ]
+                                                },
+                                                "DistributionCombination": {
+                                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceDistributions/items/anyOf/0/properties/DistributionCombination",
+                                                    "type": "string",
+                                                    "title": "The DistributionCombination schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "201.999.3147110.999.999.9999.999999999.999999999.999.999.9999"
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "invoiceLineDff": {
+                                "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceLineDff",
+                                "type": "array",
+                                "title": "The invoiceLineDff schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": [],
+                                "examples": [
+                                    [
+                                        {
+                                            "assetStartDate": "2020-01-01",
+                                            "assetLife": "5 to 7 years"
+                                        }
+                                    ]
+                                ],
+                                "additionalItems": true,
+                                "items": {
+                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceLineDff/items",
+                                    "anyOf": [
+                                        {
+                                            "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceLineDff/items/anyOf/0",
+                                            "type": "object",
+                                            "title": "The first anyOf schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": {},
+                                            "examples": [
+                                                {
+                                                    "assetStartDate": "2020-01-01",
+                                                    "assetLife": "5 to 7 years"
+                                                }
+                                            ],
+                                            "required": [
+                                                "assetStartDate",
+                                                "assetLife"
+                                            ],
+                                            "properties": {
+                                                "assetStartDate": {
+                                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceLineDff/items/anyOf/0/properties/assetStartDate",
+                                                    "type": "string",
+                                                    "title": "The assetStartDate schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "2020-01-01"
+                                                    ]
+                                                },
+                                                "assetLife": {
+                                                    "$id": "#/properties/invoiceLines/items/anyOf/0/properties/invoiceLineDff/items/anyOf/0/properties/assetLife",
+                                                    "type": "string",
+                                                    "title": "The assetLife schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": "",
+                                                    "examples": [
+                                                        "5 to 7 years"
+                                                    ]
+                                                }
+                                            },
+                                            "additionalProperties": true
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

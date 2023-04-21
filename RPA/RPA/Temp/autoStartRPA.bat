@@ -1,0 +1,1 @@
+cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" "C:\Magicxpi413\Runtime\projects\RPA\RPA\Start.lnk""

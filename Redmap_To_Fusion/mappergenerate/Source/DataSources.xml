@@ -1,0 +1,2140 @@
+ <Application>
+ 
+<Header>
+
+  <Version val="14060.00"/>
+
+  <WithIsn val="Y"/>
+
+  <Exe comp="-1"/>
+
+  <LastIsn val="11"/>
+
+  <LastIsnFolder val="0"/>
+
+</Header>
+
+<DataRepositoryProperties/>
+ <DataSourceRepository>
+  <DataObjects>
+ 
+<DataObject PhysicalName="[TB_OutboundMessages]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_2_3_141_1" id="1" name="[TB_OutboundMessages]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="seqID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;seqID&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;seqID&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="headerSeqID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;headerSeqID&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;headerSeqID&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="messageID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="100"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;messageID&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;messageID&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="payloadTypeID">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;payloadTypeID&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;payloadTypeID&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="optionalSearchText">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1000"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;optionalSearchText&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;optionalSearchText&quot;" PIC_U="1000" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="requestPayload">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_BLOB" id="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="33"/>
+        <Size id="174" val="28"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;requestPayload&quot;"/>
+        <Type id="179" val="TEXT"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;requestPayload&quot;" allowed_null="Y" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="33" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+        <Content id="434"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="origin">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="2"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;origin&quot;"/>
+        <Type id="179" val="CHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;origin&quot;" PIC_U="2" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="createdAt">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;createdAt&quot;"/>
+        <Type id="179" val="DATE"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;createdAt&quot;" PIC_U="YYYY/MM/DD" Size="8" allowed_null="Y" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="queueStatus">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N3"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;queueStatus&quot;"/>
+        <Type id="179" val="TINYINT"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="3"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;queueStatus&quot;" PIC_U="N3" Size="2" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="sentAt">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="16"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="32"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;sentAt&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;sentAt&quot;" PIC_U="16" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="responsePayload">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_BLOB" id="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="33"/>
+        <Size id="174" val="28"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;responsePayload&quot;"/>
+        <Type id="179" val="TEXT"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;responsePayload&quot;" allowed_null="Y" attribute="B" context_cookies="Y" database_definition="2" id="231" storage="33" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+        <Content id="434"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="receivedDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_DATE" id="1"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="19"/>
+        <Size id="174" val="8"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;receivedDate&quot;"/>
+        <Type id="179" val="DATE"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;receivedDate&quot;" PIC_U="YYYY/MM/DD" Size="8" allowed_null="Y" attribute="D" context_cookies="Y" database_definition="2" id="231" storage="19" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="receivedAt">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="16"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="32"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;receivedAt&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;receivedAt&quot;" PIC_U="16" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="14" name="httpRespCode">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N5"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="2"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;httpRespCode&quot;"/>
+        <Type id="179" val="SMALLINT"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="5"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;httpRespCode&quot;" PIC_U="N5" Size="2" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="15" name="httpRespStatusText">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="1000"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;httpRespStatusText&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;httpRespStatusText&quot;" PIC_U="1000" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="16" name="RequestId">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N16"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="12"/>
+        <Size id="174" val="20"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;RequestId&quot;"/>
+        <Type id="179" val="NUMERIC"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="16"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;RequestId&quot;" PIC_U="N16" Size="20" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="12" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_15_34_1" id="2" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[MSS_Currency_rate_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_19_4_4" id="3" name="[MSS_Currency_rate_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="FromCurrency">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;FromCurrency&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;FromCurrency&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="ToCurrency">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ToCurrency&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ToCurrency&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="UserConversionType">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;UserConversionType&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;UserConversionType&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ConversionDate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ConversionDate&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ConversionDate&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="ConversionRate">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ConversionRate&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ConversionRate&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="timestamps">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;timestamps&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;timestamps&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[MSS_Trial_Balance_TM1_Report_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_20_37_2" id="4" name="[MSS_Trial_Balance_TM1_Report_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="LedgerName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;LedgerName&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;LedgerName&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="PeriodName">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PeriodName&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PeriodName&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="BeginningBalance">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;BeginningBalance&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;BeginningBalance&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="EndingBalance">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;EndingBalance&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;EndingBalance&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="AmountType">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;AmountType&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;AmountType&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="BatchUniqueNo">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;BatchUniqueNo&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;BatchUniqueNo&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="unit">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;unit&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;unit&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="unit_Desc">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="300"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="600"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;unit_Desc&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;unit_Desc&quot;" PIC_U="300" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="9" name="Parent_Acc">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;Parent_Acc&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;Parent_Acc&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="10" name="Parent_Desc">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="300"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="600"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;Parent_Desc&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;Parent_Desc&quot;" PIC_U="300" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="11" name="GL_acct">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;GL_acct&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;GL_acct&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="12" name="Period_DR">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;Period_DR&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;Period_DR&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="13" name="Period_CR">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;Period_CR&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;Period_CR&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_24_34_1" id="5" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_25_34_1" id="6" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_27_34_1" id="7" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_28_34_1" id="8" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_29_34_1" id="9" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_30_34_1" id="10" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_31_34_1" id="11" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject> 
+<DataObject PhysicalName="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]" Resident="N" UniqueISNConvState="12" data_source="DestinationDB_6_32_34_1" id="12" name="[COA_Segment_Hierarchy_values_TM1_Report_Links_tbl]">
+
+  <Encrypt val="N"/>
+
+  <Cache val="D"/>
+
+  <IdentifyRowModifications val="U"/>
+
+  <HasHint val="Y"/>
+
+  <Cursor val="D"/>
+
+  <CheckExistence val="D"/>
+
+  <ObjectType val="T"/>
+
+  <Owner val="dbo"/>
+
+  <Position val="D"/>
+
+  <Columns>
+    <Column id="1" name="SEGMENT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_NUMERIC" id="1"/>
+        <Picture id="157" valUnicode="N10"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170" val="0"/>
+        <StoredAs id="173" val="4"/>
+        <Size id="174" val="4"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_NO&quot;"/>
+        <Type id="179" val="INTEGER"/>
+        <_Dec id="181"/>
+        <_Whole id="182" val="10"/>
+        <_Negative id="192" val="Y"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_NO&quot;" PIC_U="N10" Size="4" allowed_null="Y" attribute="N" context_cookies="Y" database_definition="2" id="231" storage="4" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="2" name="SEGMENT_DESRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;SEGMENT_DESRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;SEGMENT_DESRIPTION&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="3" name="ACCOUNT_NO">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_NO&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_NO&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="4" name="ACCOUNT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="500"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="1000"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;ACCOUNT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;ACCOUNT_DESCRIPTION&quot;" PIC_U="500" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="5" name="HIERARCHY_LEVEL">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;HIERARCHY_LEVEL&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;HIERARCHY_LEVEL&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="6" name="PARENT">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="255"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="510"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT&quot;" PIC_U="255" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="7" name="PARENT_DESCRIPTION">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_UNICODE" id="1"/>
+        <Picture id="157" valUnicode="100"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="32"/>
+        <Size id="174" val="200"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;PARENT_DESCRIPTION&quot;"/>
+        <Type id="179" val="NVARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;PARENT_DESCRIPTION&quot;" PIC_U="100" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="32" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+    <Column id="8" name="mg_timestamp">
+      <PropertyList model="FIELD">
+        <Model attr_obj="FIELD_ALPHA" id="1"/>
+        <Picture id="157" valUnicode="30"/>
+        <NullAllowed id="166" val="Y"/>
+        <DefaultValue id="170"/>
+        <StoredAs id="173" val="3"/>
+        <Size id="174" val="30"/>
+        <Definition id="175" val="2"/>
+        <DbColumnName id="178" val="&quot;mg_timestamp&quot;"/>
+        <Type id="179" val="VARCHAR"/>
+        <_Flip id="194"/>
+        <_FieldPhysical Name="&quot;mg_timestamp&quot;" PIC_U="30" allowed_null="Y" attribute="A" context_cookies="Y" database_definition="2" id="231" storage="3" translate="1"/>
+        <_FieldStyle id="276" val="1"/>
+      </PropertyList>
+    </Column>
+  </Columns>
+
+  <Indexes/>
+
+  <ForeignKeys/>
+
+  <WebS/>
+
+</DataObject>  </DataObjects>
+ </DataSourceRepository>
+  </Application>

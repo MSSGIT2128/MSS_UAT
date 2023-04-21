@@ -1,0 +1,380 @@
+﻿<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK rel="stylesheet" type="text/css" href="iboltprint.css">
+  </head>
+  <h1>
+        Flow: RoleCall Trigger</h1>
+  <h2>General</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">ID</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Name</td>
+      <td>RoleCall Trigger</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Two Phase Processing</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">DB transaction</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">DB Resources List</td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Disable</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Inactive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Max Instances</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Timeout Policy</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Timeout Value</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Recovery Policy</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Enablement</td>
+      <td>Always</td>
+    </tr>
+  </table>
+  <h2>Flow Invokers</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">Auto Start</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">Auto Repeat</td>
+      <td>No</td>
+    </tr>
+  </table>
+  <h2>External</h2>
+  <table>
+    <tr>
+      <td class="RowHeader">PSS Subscribe Once</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td class="RowHeader">PSS Subscribe Name</td>
+      <td>
+      </td>
+    </tr>
+  </table><br><br><hr>
+  <h1>Graphical View</h1><img style="max-width: 80%;" src="&#xD;&#xA;          ../Images/BP2_Flow3.png&#xD;&#xA;        "><hr>
+  <h2>Triggers</h2>
+  <hr>
+  <h2>Steps</h2>
+  <h3><img src="C:\Magicxpi412\Runtime\projects\Rolecall_To_Fusion\Documentation\Images\Flow Data.png">Step: SetValues</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>SetValues</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         <h4>
+    </h4>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">Action</th>
+        <th class="FitToContent">Target Type</th>
+        <th class="FitToContent">Dynamic Variable</th>
+        <th class="FitToContent">Name</th>
+        <th class="FitToContent">Data Type</th>
+        <th class="FitToContent">Encoding</th>
+        <th class="FitToContent">Index</th>
+        <th class="FitToContent">Update Expression</th>
+        <th class="FitToContent">Condition</th>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.ObjectName</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>StrToken (Trim (C.RoleCallInputFilePath),7,'\')</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.AuditLogFilePath</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>EnvVal ('AuditLogs') &amp;GetObjectName (1)&amp;EnvVal ('sl')&amp;Trim (DStr (Date (),'YYYY'))&amp;EnvVal ('sl')&amp;Trim (DStr (Date (),'MMM'))&amp;EnvVal ('sl')&amp;'MainFlow'&amp;EnvVal ('sl')&amp;Trim (DStr (Date (),'DD-MM-YYYY'))&amp;EnvVal ('sl')</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+      </div>
+  <h3><img src="C:\Magicxpi412\Runtime\projects\Rolecall_To_Fusion\Documentation\Images\Flow Data.png">Step: BlankError</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>BlankError</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Condition</td>
+        <td>BlobSize (C.RoleCallRequest)=0</td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         <h4>
+    </h4>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">Action</th>
+        <th class="FitToContent">Target Type</th>
+        <th class="FitToContent">Dynamic Variable</th>
+        <th class="FitToContent">Name</th>
+        <th class="FitToContent">Data Type</th>
+        <th class="FitToContent">Encoding</th>
+        <th class="FitToContent">Index</th>
+        <th class="FitToContent">Update Expression</th>
+        <th class="FitToContent">Condition</th>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.FusionResponse1</td>
+        <td>Blob</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>'{
+   "Success": false,
+  "Error": {
+    "Code": 999,
+    "Message":"Request body is blank"
+  },
+  "FileName":'&amp;Trim (C.RoleCallInputFilePath)&amp;'
+}'</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.UserCode</td>
+        <td>Numeric</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>IF (Blb2File (C.FusionResponse1,Trim (C.AuditLogFilePath)&amp;DStr (Date (),'DDMMYYYY')&amp;'_'&amp;TStr (Time (),'HHMMSS')&amp;'_'&amp;Trim (Str (GetFSID (),''))&amp;'_CSVBlank.txt'),0,1)</td>
+        <td>G.AuditLogFlag</td>
+      </tr>
+    </table>
+      </div>
+  <h3><img src="C:\Magicxpi412\Runtime\projects\Rolecall_To_Fusion\Documentation\Images\Flow Data.png">Step: SetAuditLog</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>SetAuditLog</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+         <h4>
+    </h4>
+    <table width="100%">
+      <tr>
+        <th class="FitToContent">Action</th>
+        <th class="FitToContent">Target Type</th>
+        <th class="FitToContent">Dynamic Variable</th>
+        <th class="FitToContent">Name</th>
+        <th class="FitToContent">Data Type</th>
+        <th class="FitToContent">Encoding</th>
+        <th class="FitToContent">Index</th>
+        <th class="FitToContent">Update Expression</th>
+        <th class="FitToContent">Condition</th>
+      </tr>
+      <tr>
+        <td>Update</td>
+        <td>Context</td>
+        <td>No</td>
+        <td>C.AuditLogFilePath</td>
+        <td>Alpha</td>
+        <td>Ansi</td>
+        <td>
+        </td>
+        <td>EnvVal ('AuditLogs') &amp;GetObjectName (1)&amp;EnvVal ('sl')&amp;Trim (DStr (Date (),'YYYY'))&amp;EnvVal ('sl')&amp;Trim (DStr (Date (),'MMM'))&amp;EnvVal ('sl')&amp;Trim (C.ObjectName)&amp;EnvVal ('sl')&amp;Trim (DStr (Date (),'DD-MM-YYYY'))&amp;EnvVal ('sl')</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+      </div>
+  <h3><img src="C:\Magicxpi412\Runtime\projects\Rolecall_To_Fusion\Documentation\Images\Invoke Flow.png">Step: Invoke Flow</h3>
+  <div style="margin-left:3em">
+            <h4>General</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">ID</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Name</td>
+        <td>Invoke Flow</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Processing Mode</td>
+        <td>Linear</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Two Phase Processing</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Wait for Completion</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Save Point</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Call logic flow</td>
+        <td>No</td>
+      </tr>
+    </table>
+            <h4>Configuration...</h4>
+    <table>
+      <tr>
+        <td class="RowHeader">Invoke by Expression</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Target BP ID expression</td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td class="RowHeader">Target flow ID expression</td>
+        <td>
+        </td>
+      </tr>
+    </table>
+            
+               
+            
+         
+         
+      </div>
+</html>

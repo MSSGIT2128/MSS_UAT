@@ -1,0 +1,66 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": [],
+    "examples": [
+        [
+            {
+                "name": "P_GL_NAME",
+                "value": "SIS AU PL"
+            },
+            {
+                "name": "P_FROM_DATE",
+                "value": "2020-12-01 17:03:25"
+            }
+        ]
+    ],
+    "additionalItems": true,
+    "items": {
+        "$id": "#/items",
+        "anyOf": [
+            {
+                "$id": "#/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                    {
+                        "name": "P_GL_NAME",
+                        "value": "SIS AU PL"
+                    }
+                ],
+                "required": [
+                    "name",
+                    "value"
+                ],
+                "properties": {
+                    "name": {
+                        "$id": "#/items/anyOf/0/properties/name",
+                        "type": "string",
+                        "title": "The name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "P_GL_NAME"
+                        ]
+                    },
+                    "value": {
+                        "$id": "#/items/anyOf/0/properties/value",
+                        "type": "string",
+                        "title": "The value schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "SIS AU PL"
+                        ]
+                    }
+                },
+                "additionalProperties": true
+            }
+        ]
+    }
+}

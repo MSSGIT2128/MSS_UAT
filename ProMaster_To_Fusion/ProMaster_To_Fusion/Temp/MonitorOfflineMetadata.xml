@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectData projectKey="75419b1b-ad09-453c-9839-1d99ab7c8d76">
+  <BusinessProcess>
+    <ID>1</ID>
+    <Name>FUSION BUSINESS PROCESS</Name>
+    <Flow>
+      <ID>2</ID>
+      <Name>APInvoice</Name>
+      <Step>
+        <ID>103</ID>
+        <Name>APInvoice</Name>
+      </Step>
+      <Step>
+        <ID>104</ID>
+        <Name>APInvoice_AuditLog</Name>
+      </Step>
+      <Step>
+        <ID>108</ID>
+        <Name>Err_Fusion_Response_Parsing</Name>
+      </Step>
+      <Step>
+        <ID>112</ID>
+        <Name>Err_Create_APInvoice_Mapping</Name>
+      </Step>
+      <Step>
+        <ID>119</ID>
+        <Name>CreateInvoiceMapping</Name>
+      </Step>
+      <Step>
+        <ID>121</ID>
+        <Name>Parse Fusion Create Response</Name>
+      </Step>
+      <Step>
+        <ID>122</ID>
+        <Name>Err_APInvoice</Name>
+      </Step>
+      <Step>
+        <ID>139</ID>
+        <Name>CreateInvoiceMapping</Name>
+      </Step>
+      <Step>
+        <ID>140</ID>
+        <Name>Repstr Request</Name>
+      </Step>
+      <Step>
+        <ID>143</ID>
+        <Name>Err_Create_APInvoice_Mapping</Name>
+      </Step>
+      <Step>
+        <ID>144</ID>
+        <Name>Delay</Name>
+      </Step>
+    </Flow>
+    <Flow>
+      <ID>11</ID>
+      <Name>APCreditMemo</Name>
+      <Step>
+        <ID>103</ID>
+        <Name>APInvoice</Name>
+      </Step>
+      <Step>
+        <ID>104</ID>
+        <Name>APInvoice_AuditLog</Name>
+      </Step>
+      <Step>
+        <ID>108</ID>
+        <Name>Err_Fusion_Response_Parsing</Name>
+      </Step>
+      <Step>
+        <ID>112</ID>
+        <Name>Err_Create_APInvoice_Mapping</Name>
+      </Step>
+      <Step>
+        <ID>119</ID>
+        <Name>CreateInvoiceMapping</Name>
+      </Step>
+      <Step>
+        <ID>121</ID>
+        <Name>Parse Fusion Create Response</Name>
+      </Step>
+      <Step>
+        <ID>122</ID>
+        <Name>Err_APInvoice</Name>
+      </Step>
+      <Step>
+        <ID>139</ID>
+        <Name>CreateInvoiceMapping</Name>
+      </Step>
+      <Step>
+        <ID>140</ID>
+        <Name>Repstr Request</Name>
+      </Step>
+      <Step>
+        <ID>143</ID>
+        <Name>Err_Create_APInvoice_Mapping</Name>
+      </Step>
+    </Flow>
+  </BusinessProcess>
+  <BusinessProcess>
+    <ID>2</ID>
+    <Name>PROMASTER BUSINESS PROCESS</Name>
+    <Flow>
+      <ID>3</ID>
+      <Name>APInvoiceTrigger</Name>
+      <Step>
+        <ID>2</ID>
+        <Name>Update Variables</Name>
+      </Step>
+      <Step>
+        <ID>3</ID>
+        <Name>BlankError</Name>
+      </Step>
+      <Step>
+        <ID>126</ID>
+        <Name>Invoke Flow AP Invoice</Name>
+      </Step>
+      <Step>
+        <ID>131</ID>
+        <Name>Invoke Flow Response</Name>
+      </Step>
+      <Trigger>
+        <ID>1</ID>
+        <Name>APInvoice</Name>
+      </Trigger>
+    </Flow>
+    <Flow>
+      <ID>6</ID>
+      <Name>RealTimeErrNotification</Name>
+      <Step>
+        <ID>28</ID>
+        <Name>BAM Utility</Name>
+      </Step>
+      <Step>
+        <ID>29</ID>
+        <Name>EmailTemplate</Name>
+      </Step>
+      <Step>
+        <ID>30</ID>
+        <Name>Real Time Email</Name>
+      </Step>
+      <Step>
+        <ID>31</ID>
+        <Name>Err_Email</Name>
+      </Step>
+    </Flow>
+    <Flow>
+      <ID>10</ID>
+      <Name>APCreditMemoTrigger</Name>
+      <Step>
+        <ID>2</ID>
+        <Name>Update Variables</Name>
+      </Step>
+      <Step>
+        <ID>3</ID>
+        <Name>BlankError</Name>
+      </Step>
+      <Step>
+        <ID>14</ID>
+        <Name>Invoke BAM EMAIL</Name>
+      </Step>
+      <Step>
+        <ID>15</ID>
+        <Name>DB History</Name>
+      </Step>
+      <Step>
+        <ID>19</ID>
+        <Name>MoveToError</Name>
+      </Step>
+      <Step>
+        <ID>125</ID>
+        <Name>Generate Out File</Name>
+      </Step>
+      <Step>
+        <ID>126</ID>
+        <Name>Invoke Flow AP Invoice</Name>
+      </Step>
+      <Trigger>
+        <ID>1</ID>
+        <Name>APInvoice</Name>
+      </Trigger>
+    </Flow>
+    <Flow>
+      <ID>12</ID>
+      <Name>ResponseFlow</Name>
+      <Step>
+        <ID>127</ID>
+        <Name>Invoke BAM EMAIL</Name>
+      </Step>
+      <Step>
+        <ID>128</ID>
+        <Name>MoveToError</Name>
+      </Step>
+      <Step>
+        <ID>129</ID>
+        <Name>DB History</Name>
+      </Step>
+      <Step>
+        <ID>130</ID>
+        <Name>Generate Out File</Name>
+      </Step>
+      <Step>
+        <ID>131</ID>
+        <Name>NOP</Name>
+      </Step>
+      <Step>
+        <ID>132</ID>
+        <Name>NOP</Name>
+      </Step>
+      <Step>
+        <ID>133</ID>
+        <Name>Flow Data</Name>
+      </Step>
+    </Flow>
+  </BusinessProcess>
+  <BusinessProcess>
+    <ID>3</ID>
+    <Name>Maintenance</Name>
+    <Flow>
+      <ID>7</ID>
+      <Name>FloderCreation</Name>
+      <Step>
+        <ID>1</ID>
+        <Name>File Management</Name>
+      </Step>
+      <Step>
+        <ID>3</ID>
+        <Name>NOP</Name>
+      </Step>
+      <Trigger>
+        <ID>4</ID>
+        <Name>Scheduler Utility</Name>
+      </Trigger>
+    </Flow>
+    <Flow>
+      <ID>8</ID>
+      <Name>ErrorFlow</Name>
+      <Step>
+        <ID>2</ID>
+        <Name>ErrorToFile</Name>
+      </Step>
+      <Step>
+        <ID>3</ID>
+        <Name>Raise Eror</Name>
+      </Step>
+    </Flow>
+    <Flow>
+      <ID>9</ID>
+      <Name>DailyErrorEmailNotification</Name>
+    </Flow>
+  </BusinessProcess>
+</ProjectData>

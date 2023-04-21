@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:app3="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:app2="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/" schemaLocation="UpdateOrganization_app2.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="UpdateOrganization.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" schemaLocation="UpdateOrganization_app3.xsd" />
+  <xs:element name="RequestId" msdata:Prefix="ns1" type="xs:string" />
+  <xs:element name="PartyNumber" msdata:Prefix="ns1" type="xs:string" />
+  <xs:element name="PartyId" msdata:Prefix="ns1" type="xs:string" />
+  <xs:element name="OrganizationProfile" msdata:Prefix="ns1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrganizationName" msdata:Prefix="ns1" type="xs:string" minOccurs="0" />
+        <xs:element name="JgzzFiscalCode" msdata:Prefix="ns1" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PartySite" msdata:Prefix="ns1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app3:LocationId" minOccurs="0" />
+        <xs:element ref="app3:PartySiteNumber" minOccurs="0" />
+        <xs:element ref="app3:PartySiteName" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

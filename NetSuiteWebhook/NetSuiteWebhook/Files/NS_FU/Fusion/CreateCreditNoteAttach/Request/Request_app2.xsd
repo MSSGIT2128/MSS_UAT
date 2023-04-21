@@ -1,0 +1,27 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:app1="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" schemaLocation="Request_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:element name="uploadAttachment" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="entityName" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="categoryName" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="allowDuplicate" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="attachmentRows" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:UserKeyA" minOccurs="0" />
+              <xs:element ref="app1:UserKeyB" minOccurs="0" />
+              <xs:element ref="app1:UserKeyC" minOccurs="0" />
+              <xs:element ref="app1:UserKeyD" minOccurs="0" />
+              <xs:element ref="app1:AttachmentType" minOccurs="0" />
+              <xs:element ref="app1:Title" minOccurs="0" />
+              <xs:element ref="app1:Content" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

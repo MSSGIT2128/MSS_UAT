@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/scheduler/types" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/scheduler/types" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/scheduler/types" xmlns:app2="http://xmlns.oracle.com/scheduler">
+  <xs:import namespace="http://xmlns.oracle.com/scheduler" schemaLocation="Request_app2.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:element name="name" msdata:Prefix="typ" type="xs:string" />
+  <xs:element name="packageName" msdata:Prefix="typ" type="xs:string" />
+  <xs:element name="type" msdata:Prefix="typ" type="xs:string" />
+  <xs:element name="parameter" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dataType" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="name" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="value" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

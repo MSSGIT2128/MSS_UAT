@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/scheduler" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/scheduler" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:import schemaLocation="schema3.xsd" namespace="http://xmlns.oracle.com/scheduler/types"/>
+	<xs:element name="submitRequest">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="jobDefinitionId">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element xmlns:q1="http://xmlns.oracle.com/scheduler/types" ref="q1:name"/>
+							<xs:element xmlns:q2="http://xmlns.oracle.com/scheduler/types" ref="q2:packageName"/>
+							<xs:element xmlns:q3="http://xmlns.oracle.com/scheduler/types" ref="q3:type"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="application" type="xs:string"/>
+				<xs:element name="requestedStartTime"/>
+				<xs:element name="requestParameters">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" xmlns:q4="http://xmlns.oracle.com/scheduler/types" ref="q4:parameter"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

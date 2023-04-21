@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="schema3.xsd" namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" />
+  <xs:element name="ObjectId" type="xs:string" />
+  <xs:element name="PartyId" type="xs:string" />
+  <xs:element name="PersonProfile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PersonProfileId" type="xs:string" />
+        <xs:element name="PersonFirstName" type="xs:string" />
+        <xs:element name="PersonLastName" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Relationship">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" ref="q1:RelationshipRecId" />
+        <xs:element xmlns:q2="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" ref="q2:RelationshipId" />
+        <xs:element xmlns:q3="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" ref="q3:SubjectId" />
+        <xs:element xmlns:q4="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" ref="q4:Email" />
+        <xs:element maxOccurs="unbounded" xmlns:q5="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" ref="q5:Phone" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

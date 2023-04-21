@@ -1,0 +1,77 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "AccountNumber": "D7000001",
+            "SiteNumber": "A7000003",
+            "CustomerAccountId": "300000003167502",
+            "PartyId": "300000003167493",
+            "PaymentTerms": "90 Days"
+        }
+    ],
+    "required": [
+        "AccountNumber",
+        "SiteNumber",
+        "CustomerAccountId",
+        "PartyId",
+        "PaymentTerms"
+    ],
+    "properties": {
+        "AccountNumber": {
+            "$id": "#/properties/AccountNumber",
+            "type": "string",
+            "title": "The AccountNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "D7000001"
+            ]
+        },
+        "SiteNumber": {
+            "$id": "#/properties/SiteNumber",
+            "type": "string",
+            "title": "The SiteNumber schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "A7000003"
+            ]
+        },
+        "CustomerAccountId": {
+            "$id": "#/properties/CustomerAccountId",
+            "type": "string",
+            "title": "The CustomerAccountId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "300000003167502"
+            ]
+        },
+        "PartyId": {
+            "$id": "#/properties/PartyId",
+            "type": "string",
+            "title": "The PartyId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "300000003167493"
+            ]
+        },
+        "PaymentTerms": {
+            "$id": "#/properties/PaymentTerms",
+            "type": "string",
+            "title": "The PaymentTerms schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "90 Days"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

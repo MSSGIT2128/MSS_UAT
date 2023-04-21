@@ -1,0 +1,381 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "processInterfaceDistribution": {
+                "changeOperation": "Create",
+                "interfaceDistribution": [
+                    {
+                        "AccountClass": "REC",
+                        "OrgId": "300000002313021",
+                        "Percent": "100",
+                        "CodeCombinationId": "300000003452005",
+                        "DistributionInterfacLineDff": {
+                            "FLEX_Context": "OtherInvoiceDetails",
+                            "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                            "otherinvoicedetails": "70404808CM_1"
+                        }
+                    },
+                    {
+                        "AccountClass": "REV",
+                        "OrgId": "300000002313021",
+                        "Amount": -65644.65,
+                        "CodeCombinationId": "300000003331078",
+                        "DistributionInterfacLineDff": {
+                            "FLEX_Context": "OtherInvoiceDetails",
+                            "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                            "otherinvoicedetails": "70404808CM_1"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "processInterfaceDistribution"
+    ],
+    "properties": {
+        "processInterfaceDistribution": {
+            "$id": "#/properties/processInterfaceDistribution",
+            "type": "object",
+            "title": "The processInterfaceDistribution schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "changeOperation": "Create",
+                    "interfaceDistribution": [
+                        {
+                            "AccountClass": "REC",
+                            "OrgId": "300000002313021",
+                            "Percent": "100",
+                            "CodeCombinationId": "300000003452005",
+                            "DistributionInterfacLineDff": {
+                                "FLEX_Context": "OtherInvoiceDetails",
+                                "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                "otherinvoicedetails": "70404808CM_1"
+                            }
+                        },
+                        {
+                            "AccountClass": "REV",
+                            "OrgId": "300000002313021",
+                            "Amount": -65644.65,
+                            "CodeCombinationId": "300000003331078",
+                            "DistributionInterfacLineDff": {
+                                "FLEX_Context": "OtherInvoiceDetails",
+                                "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                "otherinvoicedetails": "70404808CM_1"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "changeOperation",
+                "interfaceDistribution"
+            ],
+            "properties": {
+                "changeOperation": {
+                    "$id": "#/properties/processInterfaceDistribution/properties/changeOperation",
+                    "type": "string",
+                    "title": "The changeOperation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Create"
+                    ]
+                },
+                "interfaceDistribution": {
+                    "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution",
+                    "type": "array",
+                    "title": "The interfaceDistribution schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "AccountClass": "REC",
+                                "OrgId": "300000002313021",
+                                "Percent": "100",
+                                "CodeCombinationId": "300000003452005",
+                                "DistributionInterfacLineDff": {
+                                    "FLEX_Context": "OtherInvoiceDetails",
+                                    "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                    "otherinvoicedetails": "70404808CM_1"
+                                }
+                            },
+                            {
+                                "AccountClass": "REV",
+                                "OrgId": "300000002313021",
+                                "Amount": -65644.65,
+                                "CodeCombinationId": "300000003331078",
+                                "DistributionInterfacLineDff": {
+                                    "FLEX_Context": "OtherInvoiceDetails",
+                                    "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                    "otherinvoicedetails": "70404808CM_1"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "AccountClass": "REC",
+                                        "OrgId": "300000002313021",
+                                        "Percent": "100",
+                                        "CodeCombinationId": "300000003452005",
+                                        "DistributionInterfacLineDff": {
+                                            "FLEX_Context": "OtherInvoiceDetails",
+                                            "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                            "otherinvoicedetails": "70404808CM_1"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "AccountClass",
+                                    "OrgId",
+                                    "Percent",
+                                    "CodeCombinationId",
+                                    "DistributionInterfacLineDff"
+                                ],
+                                "properties": {
+                                    "AccountClass": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/AccountClass",
+                                        "type": "string",
+                                        "title": "The AccountClass schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "REC"
+                                        ]
+                                    },
+                                    "OrgId": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/OrgId",
+                                        "type": "string",
+                                        "title": "The OrgId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000002313021"
+                                        ]
+                                    },
+                                    "Percent": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/Percent",
+                                        "type": "string",
+                                        "title": "The Percent schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "100"
+                                        ]
+                                    },
+                                    "CodeCombinationId": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/CodeCombinationId",
+                                        "type": "string",
+                                        "title": "The CodeCombinationId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000003452005"
+                                        ]
+                                    },
+                                    "DistributionInterfacLineDff": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/DistributionInterfacLineDff",
+                                        "type": "object",
+                                        "title": "The DistributionInterfacLineDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "FLEX_Context": "OtherInvoiceDetails",
+                                                "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                                "otherinvoicedetails": "70404808CM_1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "FLEX_Context",
+                                            "FLEX_Context_DisplayValue",
+                                            "otherinvoicedetails"
+                                        ],
+                                        "properties": {
+                                            "FLEX_Context": {
+                                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/DistributionInterfacLineDff/properties/FLEX_Context",
+                                                "type": "string",
+                                                "title": "The FLEX_Context schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "FLEX_Context_DisplayValue": {
+                                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/DistributionInterfacLineDff/properties/FLEX_Context_DisplayValue",
+                                                "type": "string",
+                                                "title": "The FLEX_Context_DisplayValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "otherinvoicedetails": {
+                                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/0/properties/DistributionInterfacLineDff/properties/otherinvoicedetails",
+                                                "type": "string",
+                                                "title": "The otherinvoicedetails schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "70404808CM_1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            },
+                            {
+                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1",
+                                "type": "object",
+                                "title": "The second anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "AccountClass": "REV",
+                                        "OrgId": "300000002313021",
+                                        "Amount": -65644.65,
+                                        "CodeCombinationId": "300000003331078",
+                                        "DistributionInterfacLineDff": {
+                                            "FLEX_Context": "OtherInvoiceDetails",
+                                            "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                            "otherinvoicedetails": "70404808CM_1"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "AccountClass",
+                                    "OrgId",
+                                    "Amount",
+                                    "CodeCombinationId",
+                                    "DistributionInterfacLineDff"
+                                ],
+                                "properties": {
+                                    "AccountClass": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/AccountClass",
+                                        "type": "string",
+                                        "title": "The AccountClass schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "REV"
+                                        ]
+                                    },
+                                    "OrgId": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/OrgId",
+                                        "type": "string",
+                                        "title": "The OrgId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000002313021"
+                                        ]
+                                    },
+                                    "Amount": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/Amount",
+                                        "type": "number",
+                                        "title": "The Amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            -65644.65
+                                        ]
+                                    },
+                                    "CodeCombinationId": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/CodeCombinationId",
+                                        "type": "string",
+                                        "title": "The CodeCombinationId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000003331078"
+                                        ]
+                                    },
+                                    "DistributionInterfacLineDff": {
+                                        "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/DistributionInterfacLineDff",
+                                        "type": "object",
+                                        "title": "The DistributionInterfacLineDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "FLEX_Context": "OtherInvoiceDetails",
+                                                "FLEX_Context_DisplayValue": "OtherInvoiceDetails",
+                                                "otherinvoicedetails": "70404808CM_1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "FLEX_Context",
+                                            "FLEX_Context_DisplayValue",
+                                            "otherinvoicedetails"
+                                        ],
+                                        "properties": {
+                                            "FLEX_Context": {
+                                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/DistributionInterfacLineDff/properties/FLEX_Context",
+                                                "type": "string",
+                                                "title": "The FLEX_Context schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "FLEX_Context_DisplayValue": {
+                                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/DistributionInterfacLineDff/properties/FLEX_Context_DisplayValue",
+                                                "type": "string",
+                                                "title": "The FLEX_Context_DisplayValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "otherinvoicedetails": {
+                                                "$id": "#/properties/processInterfaceDistribution/properties/interfaceDistribution/items/anyOf/1/properties/DistributionInterfacLineDff/properties/otherinvoicedetails",
+                                                "type": "string",
+                                                "title": "The otherinvoicedetails schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "70404808CM_1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

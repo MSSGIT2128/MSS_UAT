@@ -1,0 +1,236 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"RequestId": 1627873818290,
+			"Operation": "Create",
+			"Type": "Dimension",
+			"Data": {
+				"Dimension": [
+					{
+						"Customer_Site": "S147265999",
+						"Customer_Site_Name": "DFO Outlet - Perth Airport",
+						"Contract_number": "99999999",
+						"Contract_Name": "Common",
+						"Branch": "8803",
+						"State": "908",
+						"Entity": "301",
+						"Business_Type": "999"
+					}
+				]
+			}
+		}
+	],
+	"required": [
+		"RequestId",
+		"Operation",
+		"Type",
+		"Data"
+	],
+	"properties": {
+		"RequestId": {
+			"$id": "#/properties/RequestId",
+			"type": "integer",
+			"title": "The RequestId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0,
+			"examples": [
+				1627873818290
+			]
+		},
+		"Operation": {
+			"$id": "#/properties/Operation",
+			"type": "string",
+			"title": "The Operation schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Create"
+			]
+		},
+		"Type": {
+			"$id": "#/properties/Type",
+			"type": "string",
+			"title": "The Type schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Dimension"
+			]
+		},
+		"Data": {
+			"$id": "#/properties/Data",
+			"type": "object",
+			"title": "The Data schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{
+					"Dimension": [
+						{
+							"Customer_Site": "S147265999",
+							"Customer_Site_Name": "DFO Outlet - Perth Airport",
+							"Contract_number": "99999999",
+							"Contract_Name": "Common",
+							"Branch": "8803",
+							"State": "908",
+							"Entity": "301",
+							"Business_Type": "999"
+						}
+					]
+				}
+			],
+			"required": [
+				"Dimension"
+			],
+			"properties": {
+				"Dimension": {
+					"$id": "#/properties/Data/properties/Dimension",
+					"type": "array",
+					"title": "The Dimension schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": [],
+					"examples": [
+						[
+							{
+								"Customer_Site": "S147265999",
+								"Customer_Site_Name": "DFO Outlet - Perth Airport",
+								"Contract_number": "99999999",
+								"Contract_Name": "Common",
+								"Branch": "8803",
+								"State": "908",
+								"Entity": "301",
+								"Business_Type": "999"
+							}
+						]
+					],
+					"additionalItems": true,
+					"items": {
+						"$id": "#/properties/Data/properties/Dimension/items",
+						"anyOf": [
+							{
+								"$id": "#/properties/Data/properties/Dimension/items/anyOf/0",
+								"type": "object",
+								"title": "The first anyOf schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": {},
+								"examples": [
+									{
+										"Customer_Site": "S147265999",
+										"Customer_Site_Name": "DFO Outlet - Perth Airport",
+										"Contract_number": "99999999",
+										"Contract_Name": "Common",
+										"Branch": "8803",
+										"State": "908",
+										"Entity": "301",
+										"Business_Type": "999"
+									}
+								],
+								"required": [
+									"Customer_Site",
+									"Customer_Site_Name",
+									"Contract_number",
+									"Contract_Name",
+									"Branch",
+									"State",
+									"Entity",
+									"Business_Type"
+								],
+								"properties": {
+									"Customer_Site": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Customer_Site",
+										"type": "string",
+										"title": "The Customer_Site schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"S147265999"
+										]
+									},
+									"Customer_Site_Name": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Customer_Site_Name",
+										"type": "string",
+										"title": "The Customer_Site_Name schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"DFO Outlet - Perth Airport"
+										]
+									},
+									"Contract_number": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Contract_number",
+										"type": "string",
+										"title": "The Contract_number schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"99999999"
+										]
+									},
+									"Contract_Name": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Contract_Name",
+										"type": "string",
+										"title": "The Contract_Name schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"Common"
+										]
+									},
+									"Branch": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Branch",
+										"type": "string",
+										"title": "The Branch schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"8803"
+										]
+									},
+									"State": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/State",
+										"type": "string",
+										"title": "The State schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"908"
+										]
+									},
+									"Entity": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Entity",
+										"type": "string",
+										"title": "The Entity schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"301"
+										]
+									},
+									"Business_Type": {
+										"$id": "#/properties/Data/properties/Dimension/items/anyOf/0/properties/Business_Type",
+										"type": "string",
+										"title": "The Business_Type schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"999"
+										]
+									}
+								},
+								"additionalProperties": true
+							}
+						]
+					}
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}

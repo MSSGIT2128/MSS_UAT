@@ -1,0 +1,86 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": "187769898889333",
+            "Success": false,
+            "Error": {
+                "Code": 404,
+                "Message": "Record not found"
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Success",
+        "Error"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "string",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                187769898889333
+            ]
+        },
+        "Success": {
+            "$id": "#/properties/Success",
+            "type": "boolean",
+            "title": "The Success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                false
+            ]
+        },
+        "Error": {
+            "$id": "#/properties/Error",
+            "type": "object",
+            "title": "The Error schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Code": 404,
+                    "Message": "Record not found"
+                }
+            ],
+            "required": [
+                "Code",
+                "Message"
+            ],
+            "properties": {
+                "Code": {
+                    "$id": "#/properties/Error/properties/Code",
+                    "type": "integer",
+                    "title": "The Code schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        404
+                    ]
+                },
+                "Message": {
+                    "$id": "#/properties/Error/properties/Message",
+                    "type": "string",
+                    "title": "The Message schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Record not found"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,801 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1633397577637,
+            "Operation": "Edit",
+            "Type": "Contact",
+            "FusionId": 300000015817531,
+            "Data": {
+                "CreatedByModule": "SIS",
+                "ObjectId": "300000015776489",
+                "PartyId": "300000015817531",
+                "PersonProfile": {
+                    "PersonProfileId": "300000015817531",
+                    "PersonFirstName": "Karl",
+                    "PersonLastName": "Donly",
+                    "CreatedByModule": "SIS"
+                },
+                "Relationship": {
+                    "RelationshipRecId": "300000015817532",
+                    "RelationshipId": "300000015817533",
+                    "SubjectId": "300000015817531",
+                    "SubjectType": "PERSON",
+                    "SubjectTableName": "HZ_PARTIES",
+                    "ObjectId": "300000015776489",
+                    "ObjectType": "ORGANIZATION",
+                    "ObjectTableName": "HZ_PARTIES",
+                    "RelationshipCode": "CONTACT_OF",
+                    "RelationshipType": "CONTACT",
+                    "StartDate": "2021-10-05",
+                    "CreatedByModule": "SIS",
+                    "OrganizationContact": {
+                        "ContactNumber": "03 6424 4315",
+                        "CreatedByModule": "SIS",
+                        "OrganizationContactRole": {
+                            "RoleType": "CONTACT",
+                            "PrimaryFlag": true,
+                            "CreatedByModule": "SIS"
+                        }
+                    },
+                    "Email": {
+                        "ContactPointId": "300000015817537",
+                        "OwnerTableName": "HZ_PARTIES",
+                        "PrimaryFlag": true,
+                        "CreatedByModule": "SIS",
+                        "ContactPointPurpose": "BUSINESS",
+                        "StartDate": "2021-10-05",
+                        "EmailAddress": "finance@canoensurf.com"
+                    },
+                    "Phone": {
+                        "ContactPointId": "300000015817537",
+                        "OwnerTableName": "HZ_PARTIES",
+                        "PrimaryFlag": true,
+                        "CreatedByModule": "SIS",
+                        "ContactPointPurpose": "BUSINESS",
+                        "StartDate": "2020-09-24",
+                        "PhoneCountryCode": "+91",
+                        "PhoneNumber": "987456123",
+                        "PhoneLineType": "test2@test"
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "FusionId",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1633397577637
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Edit"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Contact"
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "integer",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                300000015817531
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CreatedByModule": "SIS",
+                    "ObjectId": "300000015776489",
+                    "PartyId": "300000015817531",
+                    "PersonProfile": {
+                        "PersonProfileId": "300000015817531",
+                        "PersonFirstName": "Karl",
+                        "PersonLastName": "Donly",
+                        "CreatedByModule": "SIS"
+                    },
+                    "Relationship": {
+                        "RelationshipRecId": "300000015817532",
+                        "RelationshipId": "300000015817533",
+                        "SubjectId": "300000015817531",
+                        "SubjectType": "PERSON",
+                        "SubjectTableName": "HZ_PARTIES",
+                        "ObjectId": "300000015776489",
+                        "ObjectType": "ORGANIZATION",
+                        "ObjectTableName": "HZ_PARTIES",
+                        "RelationshipCode": "CONTACT_OF",
+                        "RelationshipType": "CONTACT",
+                        "StartDate": "2021-10-05",
+                        "CreatedByModule": "SIS",
+                        "OrganizationContact": {
+                            "ContactNumber": "03 6424 4315",
+                            "CreatedByModule": "SIS",
+                            "OrganizationContactRole": {
+                                "RoleType": "CONTACT",
+                                "PrimaryFlag": true,
+                                "CreatedByModule": "SIS"
+                            }
+                        },
+                        "Email": {
+                            "ContactPointId": "300000015817537",
+                            "OwnerTableName": "HZ_PARTIES",
+                            "PrimaryFlag": true,
+                            "CreatedByModule": "SIS",
+                            "ContactPointPurpose": "BUSINESS",
+                            "StartDate": "2021-10-05",
+                            "EmailAddress": "finance@canoensurf.com"
+                        },
+                        "Phone": {
+                            "ContactPointId": "300000015817537",
+                            "OwnerTableName": "HZ_PARTIES",
+                            "PrimaryFlag": true,
+                            "CreatedByModule": "SIS",
+                            "ContactPointPurpose": "BUSINESS",
+                            "StartDate": "2020-09-24",
+                            "PhoneCountryCode": "+91",
+                            "PhoneNumber": "987456123",
+                            "PhoneLineType": "test2@test"
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "CreatedByModule",
+                "ObjectId",
+                "PartyId",
+                "PersonProfile",
+                "Relationship"
+            ],
+            "properties": {
+                "CreatedByModule": {
+                    "$id": "#/properties/Data/properties/CreatedByModule",
+                    "type": "string",
+                    "title": "The CreatedByModule schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SIS"
+                    ]
+                },
+                "ObjectId": {
+                    "$id": "#/properties/Data/properties/ObjectId",
+                    "type": "string",
+                    "title": "The ObjectId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000015776489"
+                    ]
+                },
+                "PartyId": {
+                    "$id": "#/properties/Data/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000015817531"
+                    ]
+                },
+                "PersonProfile": {
+                    "$id": "#/properties/Data/properties/PersonProfile",
+                    "type": "object",
+                    "title": "The PersonProfile schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "PersonProfileId": "300000015817531",
+                            "PersonFirstName": "Karl",
+                            "PersonLastName": "Donly",
+                            "CreatedByModule": "SIS"
+                        }
+                    ],
+                    "required": [
+                        "PersonProfileId",
+                        "PersonFirstName",
+                        "PersonLastName",
+                        "CreatedByModule"
+                    ],
+                    "properties": {
+                        "PersonProfileId": {
+                            "$id": "#/properties/Data/properties/PersonProfile/properties/PersonProfileId",
+                            "type": "string",
+                            "title": "The PersonProfileId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015817531"
+                            ]
+                        },
+                        "PersonFirstName": {
+                            "$id": "#/properties/Data/properties/PersonProfile/properties/PersonFirstName",
+                            "type": "string",
+                            "title": "The PersonFirstName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Karl"
+                            ]
+                        },
+                        "PersonLastName": {
+                            "$id": "#/properties/Data/properties/PersonProfile/properties/PersonLastName",
+                            "type": "string",
+                            "title": "The PersonLastName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Donly"
+                            ]
+                        },
+                        "CreatedByModule": {
+                            "$id": "#/properties/Data/properties/PersonProfile/properties/CreatedByModule",
+                            "type": "string",
+                            "title": "The CreatedByModule schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SIS"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Relationship": {
+                    "$id": "#/properties/Data/properties/Relationship",
+                    "type": "object",
+                    "title": "The Relationship schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "RelationshipRecId": "300000015817532",
+                            "RelationshipId": "300000015817533",
+                            "SubjectId": "300000015817531",
+                            "SubjectType": "PERSON",
+                            "SubjectTableName": "HZ_PARTIES",
+                            "ObjectId": "300000015776489",
+                            "ObjectType": "ORGANIZATION",
+                            "ObjectTableName": "HZ_PARTIES",
+                            "RelationshipCode": "CONTACT_OF",
+                            "RelationshipType": "CONTACT",
+                            "StartDate": "2021-10-05",
+                            "CreatedByModule": "SIS",
+                            "OrganizationContact": {
+                                "ContactNumber": "03 6424 4315",
+                                "CreatedByModule": "SIS",
+                                "OrganizationContactRole": {
+                                    "RoleType": "CONTACT",
+                                    "PrimaryFlag": true,
+                                    "CreatedByModule": "SIS"
+                                }
+                            },
+                            "Email": {
+                                "ContactPointId": "300000015817537",
+                                "OwnerTableName": "HZ_PARTIES",
+                                "PrimaryFlag": true,
+                                "CreatedByModule": "SIS",
+                                "ContactPointPurpose": "BUSINESS",
+                                "StartDate": "2021-10-05",
+                                "EmailAddress": "finance@canoensurf.com"
+                            },
+                            "Phone": {
+                                "ContactPointId": "300000015817537",
+                                "OwnerTableName": "HZ_PARTIES",
+                                "PrimaryFlag": true,
+                                "CreatedByModule": "SIS",
+                                "ContactPointPurpose": "BUSINESS",
+                                "StartDate": "2020-09-24",
+                                "PhoneCountryCode": "+91",
+                                "PhoneNumber": "987456123",
+                                "PhoneLineType": "test2@test"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "RelationshipRecId",
+                        "RelationshipId",
+                        "SubjectId",
+                        "SubjectType",
+                        "SubjectTableName",
+                        "ObjectId",
+                        "ObjectType",
+                        "ObjectTableName",
+                        "RelationshipCode",
+                        "RelationshipType",
+                        "StartDate",
+                        "CreatedByModule",
+                        "OrganizationContact",
+                        "Email",
+                        "Phone"
+                    ],
+                    "properties": {
+                        "RelationshipRecId": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/RelationshipRecId",
+                            "type": "string",
+                            "title": "The RelationshipRecId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015817532"
+                            ]
+                        },
+                        "RelationshipId": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/RelationshipId",
+                            "type": "string",
+                            "title": "The RelationshipId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015817533"
+                            ]
+                        },
+                        "SubjectId": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/SubjectId",
+                            "type": "string",
+                            "title": "The SubjectId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015817531"
+                            ]
+                        },
+                        "SubjectType": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/SubjectType",
+                            "type": "string",
+                            "title": "The SubjectType schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "PERSON"
+                            ]
+                        },
+                        "SubjectTableName": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/SubjectTableName",
+                            "type": "string",
+                            "title": "The SubjectTableName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "HZ_PARTIES"
+                            ]
+                        },
+                        "ObjectId": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/ObjectId",
+                            "type": "string",
+                            "title": "The ObjectId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000015776489"
+                            ]
+                        },
+                        "ObjectType": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/ObjectType",
+                            "type": "string",
+                            "title": "The ObjectType schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "ORGANIZATION"
+                            ]
+                        },
+                        "ObjectTableName": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/ObjectTableName",
+                            "type": "string",
+                            "title": "The ObjectTableName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "HZ_PARTIES"
+                            ]
+                        },
+                        "RelationshipCode": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/RelationshipCode",
+                            "type": "string",
+                            "title": "The RelationshipCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "CONTACT_OF"
+                            ]
+                        },
+                        "RelationshipType": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/RelationshipType",
+                            "type": "string",
+                            "title": "The RelationshipType schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "CONTACT"
+                            ]
+                        },
+                        "StartDate": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/StartDate",
+                            "type": "string",
+                            "title": "The StartDate schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2021-10-05"
+                            ]
+                        },
+                        "CreatedByModule": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/CreatedByModule",
+                            "type": "string",
+                            "title": "The CreatedByModule schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "SIS"
+                            ]
+                        },
+                        "OrganizationContact": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact",
+                            "type": "object",
+                            "title": "The OrganizationContact schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "ContactNumber": "03 6424 4315",
+                                    "CreatedByModule": "SIS",
+                                    "OrganizationContactRole": {
+                                        "RoleType": "CONTACT",
+                                        "PrimaryFlag": true,
+                                        "CreatedByModule": "SIS"
+                                    }
+                                }
+                            ],
+                            "required": [
+                                "ContactNumber",
+                                "CreatedByModule",
+                                "OrganizationContactRole"
+                            ],
+                            "properties": {
+                                "ContactNumber": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact/properties/ContactNumber",
+                                    "type": "string",
+                                    "title": "The ContactNumber schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "03 6424 4315"
+                                    ]
+                                },
+                                "CreatedByModule": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact/properties/CreatedByModule",
+                                    "type": "string",
+                                    "title": "The CreatedByModule schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "SIS"
+                                    ]
+                                },
+                                "OrganizationContactRole": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact/properties/OrganizationContactRole",
+                                    "type": "object",
+                                    "title": "The OrganizationContactRole schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": {},
+                                    "examples": [
+                                        {
+                                            "RoleType": "CONTACT",
+                                            "PrimaryFlag": true,
+                                            "CreatedByModule": "SIS"
+                                        }
+                                    ],
+                                    "required": [
+                                        "RoleType",
+                                        "PrimaryFlag",
+                                        "CreatedByModule"
+                                    ],
+                                    "properties": {
+                                        "RoleType": {
+                                            "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact/properties/OrganizationContactRole/properties/RoleType",
+                                            "type": "string",
+                                            "title": "The RoleType schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "CONTACT"
+                                            ]
+                                        },
+                                        "PrimaryFlag": {
+                                            "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact/properties/OrganizationContactRole/properties/PrimaryFlag",
+                                            "type": "boolean",
+                                            "title": "The PrimaryFlag schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": false,
+                                            "examples": [
+                                                true
+                                            ]
+                                        },
+                                        "CreatedByModule": {
+                                            "$id": "#/properties/Data/properties/Relationship/properties/OrganizationContact/properties/OrganizationContactRole/properties/CreatedByModule",
+                                            "type": "string",
+                                            "title": "The CreatedByModule schema",
+                                            "description": "An explanation about the purpose of this instance.",
+                                            "default": "",
+                                            "examples": [
+                                                "SIS"
+                                            ]
+                                        }
+                                    },
+                                    "additionalProperties": true
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "Email": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/Email",
+                            "type": "object",
+                            "title": "The Email schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "ContactPointId": "300000015817537",
+                                    "OwnerTableName": "HZ_PARTIES",
+                                    "PrimaryFlag": true,
+                                    "CreatedByModule": "SIS",
+                                    "ContactPointPurpose": "BUSINESS",
+                                    "StartDate": "2021-10-05",
+                                    "EmailAddress": "finance@canoensurf.com"
+                                }
+                            ],
+                            "required": [
+                                "ContactPointId",
+                                "OwnerTableName",
+                                "PrimaryFlag",
+                                "CreatedByModule",
+                                "ContactPointPurpose",
+                                "StartDate",
+                                "EmailAddress"
+                            ],
+                            "properties": {
+                                "ContactPointId": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/ContactPointId",
+                                    "type": "string",
+                                    "title": "The ContactPointId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000015817537"
+                                    ]
+                                },
+                                "OwnerTableName": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/OwnerTableName",
+                                    "type": "string",
+                                    "title": "The OwnerTableName schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "HZ_PARTIES"
+                                    ]
+                                },
+                                "PrimaryFlag": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/PrimaryFlag",
+                                    "type": "boolean",
+                                    "title": "The PrimaryFlag schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": false,
+                                    "examples": [
+                                        true
+                                    ]
+                                },
+                                "CreatedByModule": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/CreatedByModule",
+                                    "type": "string",
+                                    "title": "The CreatedByModule schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "SIS"
+                                    ]
+                                },
+                                "ContactPointPurpose": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/ContactPointPurpose",
+                                    "type": "string",
+                                    "title": "The ContactPointPurpose schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "BUSINESS"
+                                    ]
+                                },
+                                "StartDate": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/StartDate",
+                                    "type": "string",
+                                    "title": "The StartDate schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "2021-10-05"
+                                    ]
+                                },
+                                "EmailAddress": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Email/properties/EmailAddress",
+                                    "type": "string",
+                                    "title": "The EmailAddress schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "finance@canoensurf.com"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "Phone": {
+                            "$id": "#/properties/Data/properties/Relationship/properties/Phone",
+                            "type": "object",
+                            "title": "The Phone schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "ContactPointId": "300000015817537",
+                                    "OwnerTableName": "HZ_PARTIES",
+                                    "PrimaryFlag": true,
+                                    "CreatedByModule": "SIS",
+                                    "ContactPointPurpose": "BUSINESS",
+                                    "StartDate": "2020-09-24",
+                                    "PhoneCountryCode": "+91",
+                                    "PhoneNumber": "987456123",
+                                    "PhoneLineType": "test2@test"
+                                }
+                            ],
+                            "required": [
+                                "ContactPointId",
+                                "OwnerTableName",
+                                "PrimaryFlag",
+                                "CreatedByModule",
+                                "ContactPointPurpose",
+                                "StartDate",
+                                "PhoneCountryCode",
+                                "PhoneNumber",
+                                "PhoneLineType"
+                            ],
+                            "properties": {
+                                "ContactPointId": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/ContactPointId",
+                                    "type": "string",
+                                    "title": "The ContactPointId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000015817537"
+                                    ]
+                                },
+                                "OwnerTableName": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/OwnerTableName",
+                                    "type": "string",
+                                    "title": "The OwnerTableName schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "HZ_PARTIES"
+                                    ]
+                                },
+                                "PrimaryFlag": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/PrimaryFlag",
+                                    "type": "boolean",
+                                    "title": "The PrimaryFlag schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": false,
+                                    "examples": [
+                                        true
+                                    ]
+                                },
+                                "CreatedByModule": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/CreatedByModule",
+                                    "type": "string",
+                                    "title": "The CreatedByModule schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "SIS"
+                                    ]
+                                },
+                                "ContactPointPurpose": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/ContactPointPurpose",
+                                    "type": "string",
+                                    "title": "The ContactPointPurpose schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "BUSINESS"
+                                    ]
+                                },
+                                "StartDate": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/StartDate",
+                                    "type": "string",
+                                    "title": "The StartDate schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "2020-09-24"
+                                    ]
+                                },
+                                "PhoneCountryCode": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/PhoneCountryCode",
+                                    "type": "string",
+                                    "title": "The PhoneCountryCode schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "+91"
+                                    ]
+                                },
+                                "PhoneNumber": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/PhoneNumber",
+                                    "type": "string",
+                                    "title": "The PhoneNumber schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "987456123"
+                                    ]
+                                },
+                                "PhoneLineType": {
+                                    "$id": "#/properties/Data/properties/Relationship/properties/Phone/properties/PhoneLineType",
+                                    "type": "string",
+                                    "title": "The PhoneLineType schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "test2@test"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

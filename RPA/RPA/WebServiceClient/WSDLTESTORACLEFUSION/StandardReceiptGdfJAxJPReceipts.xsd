@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptGdf/" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptGdf/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="StandardReceiptGdf.xsd" />
+  <xsd:complexType name="StandardReceiptGdfJAxJPReceipts">
+    <xsd:annotation>
+      <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+        <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+          <attribute>CashReceiptId</attribute>
+        </key>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="StandardReceiptGdf">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="transmissionName" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="alternatePayerName" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="customerBankName" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="customerBankBranchName" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="customerVirtualAccountNumber" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="eftRequestorNumber" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="ediInformation" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="description" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="remittanceBankBranchNumber" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="standardReceiptGdfJAxJPReceipts" type="StandardReceiptGdfJAxJPReceipts" />
+</xsd:schema>

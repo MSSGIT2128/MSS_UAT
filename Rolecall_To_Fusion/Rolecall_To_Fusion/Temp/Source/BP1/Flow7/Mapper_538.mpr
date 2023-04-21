@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema xsi:type="DataBaseSchema">
+      <SchemaID>1</SchemaID>
+      <Order>0</Order>
+      <Name>DataBase_1</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>Record</Identifier>
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldDataBase">
+          <Identifier>Record/CNT</Identifier>
+          <FieldName>CNT</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>N10</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <LogErrorVariable>
+            <ExpectedType>N</ExpectedType>
+            <Direction>O</Direction>
+          </LogErrorVariable>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>"cnt"</GenerateColumnName>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>U0VMRUNUIGNvdW50KFtSb2xlQ2FsbF9Mb2NhdGlvbl9UcmFja2VyXS5bQ3VzdG9tZXJOdW1iZXJdKSBhcyBjbnQgRlJPTSBkYm8uW1JvbGVDYWxsX0xvY2F0aW9uX1RyYWNrZXJdIFdIRVJFIGRiby5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW0N1c3RvbWVyTnVtYmVyXT0nPD9DLkN1c3RvbWVyTnVtYmVyPz4nIGFuZCBkYm8uW1JvbGVDYWxsX0xvY2F0aW9uX1RyYWNrZXJdLltQYXJ0eVNpdGVOdW1iZXJdPSc8P0YuTG9jYXRpb25OdW1iZXI/Pic=</ExpressionVal>
+          <ExpectedType />
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <UPSERT>false</UPSERT>
+        <DBResource>Database_MSS</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <DBHistoryData>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEQldpemFyZEhpc3RvcnlEYXRhIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPg0KICA8REJPcGVyYXRpb24+U2VsZWN0PC9EQk9wZXJhdGlvbj4NCiAgPElzRmlsdGVyRGVmaW5pdGlvbk9ubHk+ZmFsc2U8L0lzRmlsdGVyRGVmaW5pdGlvbk9ubHk+DQogIDxTZWxlY3RlZE93bmVyT3JMaWJyYXJ5PmRibzwvU2VsZWN0ZWRPd25lck9yTGlicmFyeT4NCiAgPFNlbGVjdGVkVGFibGVMaXN0Pg0KICAgIDxEQldpemFyZFRhYmxlRGF0YT4NCiAgICAgIDxUYWJsZU5hbWU+W1JvbGVDYWxsX0xvY2F0aW9uX1RyYWNrZXJdPC9UYWJsZU5hbWU+DQogICAgICA8VGFibGVGdWxsTmFtZT5kYm8uW1JvbGVDYWxsX0xvY2F0aW9uX1RyYWNrZXJdPC9UYWJsZUZ1bGxOYW1lPg0KICAgICAgPFRhYmxlT3duZXJOYW1lIC8+DQogICAgICA8Q29sdW1uTGlzdD4NCiAgICAgICAgPERCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgICA8Q29sdW1uTmFtZT5bc2VxSURdPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW3NlcUlEXTwvQ29sdW1uRnVsbE5hbWU+DQogICAgICAgICAgPElzU2VsZWN0ZWRCeVVzZXI+ZmFsc2U8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD4xPC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICA8REJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICAgIDxDb2x1bW5OYW1lPltDdXN0b21lck51bWJlcl08L0NvbHVtbk5hbWU+DQogICAgICAgICAgPENvbHVtbkZ1bGxOYW1lPltSb2xlQ2FsbF9Mb2NhdGlvbl9UcmFja2VyXS5bQ3VzdG9tZXJOdW1iZXJdPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj50cnVlPC9Jc1NlbGVjdGVkQnlVc2VyPg0KICAgICAgICAgIDxEZWZhdWx0SW5kZXg+MjwvRGVmYXVsdEluZGV4Pg0KICAgICAgICA8L0RCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgPERCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgICA8Q29sdW1uTmFtZT5bUGFydHlTaXRlTnVtYmVyXTwvQ29sdW1uTmFtZT4NCiAgICAgICAgICA8Q29sdW1uRnVsbE5hbWU+W1JvbGVDYWxsX0xvY2F0aW9uX1RyYWNrZXJdLltQYXJ0eVNpdGVOdW1iZXJdPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj5mYWxzZTwvSXNTZWxlY3RlZEJ5VXNlcj4NCiAgICAgICAgICA8RGVmYXVsdEluZGV4PjM8L0RlZmF1bHRJbmRleD4NCiAgICAgICAgPC9EQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgIDxEQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgICAgPENvbHVtbk5hbWU+W0xvY2F0aW9uSWRdPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW0xvY2F0aW9uSWRdPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj5mYWxzZTwvSXNTZWxlY3RlZEJ5VXNlcj4NCiAgICAgICAgICA8RGVmYXVsdEluZGV4PjQ8L0RlZmF1bHRJbmRleD4NCiAgICAgICAgPC9EQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgIDxEQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgICAgPENvbHVtbk5hbWU+W1NlcXVlbmNlTm9dPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW1NlcXVlbmNlTm9dPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj5mYWxzZTwvSXNTZWxlY3RlZEJ5VXNlcj4NCiAgICAgICAgICA8RGVmYXVsdEluZGV4PjU8L0RlZmF1bHRJbmRleD4NCiAgICAgICAgPC9EQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgIDxEQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgICAgPENvbHVtbk5hbWU+W1BhcnR5U2l0ZU5hbWVdPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW1BhcnR5U2l0ZU5hbWVdPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj5mYWxzZTwvSXNTZWxlY3RlZEJ5VXNlcj4NCiAgICAgICAgICA8RGVmYXVsdEluZGV4PjY8L0RlZmF1bHRJbmRleD4NCiAgICAgICAgPC9EQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgIDxEQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgICAgPENvbHVtbk5hbWU+W0VmZmVjdGl2ZVN0YXJ0RGF0ZV08L0NvbHVtbk5hbWU+DQogICAgICAgICAgPENvbHVtbkZ1bGxOYW1lPltSb2xlQ2FsbF9Mb2NhdGlvbl9UcmFja2VyXS5bRWZmZWN0aXZlU3RhcnREYXRlXTwvQ29sdW1uRnVsbE5hbWU+DQogICAgICAgICAgPElzU2VsZWN0ZWRCeVVzZXI+ZmFsc2U8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD43PC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICA8REJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICAgIDxDb2x1bW5OYW1lPltTdGFydERhdGVBY3RpdmVdPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW1N0YXJ0RGF0ZUFjdGl2ZV08L0NvbHVtbkZ1bGxOYW1lPg0KICAgICAgICAgIDxJc1NlbGVjdGVkQnlVc2VyPmZhbHNlPC9Jc1NlbGVjdGVkQnlVc2VyPg0KICAgICAgICAgIDxEZWZhdWx0SW5kZXg+ODwvRGVmYXVsdEluZGV4Pg0KICAgICAgICA8L0RCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgIDwvQ29sdW1uTGlzdD4NCiAgICA8L0RCV2l6YXJkVGFibGVEYXRhPg0KICA8L1NlbGVjdGVkVGFibGVMaXN0Pg0KICA8V2hlcmVDbGF1c2VTdHJpbmc+ZGJvLltSb2xlQ2FsbF9Mb2NhdGlvbl9UcmFja2VyXS5bQ3VzdG9tZXJOdW1iZXJdPScmbHQ7P0MuQ3VzdG9tZXJOdW1iZXI/Jmd0OycgYW5kIGRiby5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW1BhcnR5U2l0ZU51bWJlcl09JyZsdDs/Ri5Mb2NhdGlvbk51bWJlcj8mZ3Q7JzwvV2hlcmVDbGF1c2VTdHJpbmc+DQogIDxPcmRlckJ5U2VnbWFudHMgLz4NCiAgPEpvaW5TZWdtYW50TGlzdCAvPg0KICA8U1FMU3RhdGVtZW50PlNFTEVDVCBbUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW0N1c3RvbWVyTnVtYmVyXSBGUk9NIGRiby5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0gV0hFUkUgZGJvLltSb2xlQ2FsbF9Mb2NhdGlvbl9UcmFja2VyXS5bQ3VzdG9tZXJOdW1iZXJdPScmbHQ7P0MuQ3VzdG9tZXJOdW1iZXI/Jmd0OycgYW5kIGRiby5bUm9sZUNhbGxfTG9jYXRpb25fVHJhY2tlcl0uW1BhcnR5U2l0ZU51bWJlcl09JyZsdDs/Ri5Mb2NhdGlvbk51bWJlcj8mZ3Q7JzwvU1FMU3RhdGVtZW50Pg0KPC9EQldpemFyZEhpc3RvcnlEYXRhPg==</DBHistoryData>
+      </DB>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema xsi:type="VariableSchema">
+      <SchemaID>2</SchemaID>
+      <Order>0</Order>
+      <Name>Variable_2</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>Variable</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>2</Identifier>
+          <FieldName>Instance</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>9656cf1d-20d9-46de-bdeb-435e256058ce</Identifier>
+          <FieldName>F.IfExist</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>PCMhJUAkPmdldE5vZGVOYW1lKDEvUmVjb3JkL0NOVCk8IyElQCQ+PjA=</ExpressionVal>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>L</MagicFieldType>
+          <MagicPicture>1</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Logical</ExternalFieldType>
+          <UserPicture>1</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>99</Encoding>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <Variables>
+        <Variables>
+          <Variable>
+            <VarGUID>9656cf1d-20d9-46de-bdeb-435e256058ce</VarGUID>
+          </Variable>
+        </Variables>
+      </Variables>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>1</SourceSchemaID>
+      <DestinationIdentifier>2</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/CNT</SourceIdentifier>
+      <SourceSchemaID>1</SourceSchemaID>
+      <DestinationIdentifier>9656cf1d-20d9-46de-bdeb-435e256058ce</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+  <ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDE5KTwjISVAJD4=</ErrorFlowExpressionVal>
+</Mapper>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="schema3.xsd" namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" />
+  <xs:import schemaLocation="schema4.xsd" namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" />
+  <xs:element name="PartyId" type="xs:unsignedLong" />
+  <xs:element name="AccountNumber" type="xs:string" />
+  <xs:element name="CustomerClassCode" type="xs:string" />
+  <xs:element name="AccountName" type="xs:string" />
+  <xs:element name="AccountEstablishedDate" type="xs:date" />
+  <xs:element name="CreatedByModule" type="xs:string" />
+  <xs:element name="CustomerAccountSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PartySiteId" type="xs:unsignedLong" />
+        <xs:element name="CreatedByModule" type="xs:string" />
+        <xs:element name="SetId" type="xs:unsignedLong" />
+        <xs:element name="StartDate" type="xs:date" />
+        <xs:element name="CustomerAccountSiteUse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SiteUseCode" type="xs:string" />
+              <xs:element name="StartDate" type="xs:date" />
+              <xs:element name="CreatedByModule" type="xs:string" />
+              <xs:element name="OriginalSystemReference">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element xmlns:q1="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q1:OrigSystem" />
+                    <xs:element xmlns:q2="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q2:OrigSystemReference" />
+                    <xs:element xmlns:q3="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q3:OwnerTableName" />
+                    <xs:element xmlns:q4="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q4:CreatedByModule" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="OriginalSystemReference">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:q5="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q5:OrigSystem" />
+              <xs:element xmlns:q6="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q6:OrigSystemReference" />
+              <xs:element xmlns:q7="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q7:OwnerTableName" />
+              <xs:element xmlns:q8="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q8:CreatedByModule" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OriginalSystemReference">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q9:OrigSystem" />
+        <xs:element xmlns:q10="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q10:OrigSystemReference" />
+        <xs:element xmlns:q11="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q11:OwnerTableName" />
+        <xs:element xmlns:q12="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" ref="q12:CreatedByModule" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustAcctInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q13:cinNum" />
+        <xs:element xmlns:q14="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q14:customerProvidedCode" />
+        <xs:element xmlns:q15="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q15:customerGroup" />
+        <xs:element xmlns:q16="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q16:customerGroupCode" />
+        <xs:element xmlns:q17="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q17:customerGrandParent" />
+        <xs:element xmlns:q18="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q18:customerGrandParentCode" />
+        <xs:element xmlns:q19="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q19:wthTaxCode" />
+        <xs:element xmlns:q20="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q20:defaultTdsRate" />
+        <xs:element xmlns:q21="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q21:concessional" />
+        <xs:element xmlns:q22="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q22:validityPeriod" />
+        <xs:element xmlns:q23="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q23:thresholdLimit" />
+        <xs:element xmlns:q24="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q24:virtualAccountNum" />
+        <xs:element xmlns:q25="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q25:salesRep" />
+        <xs:element xmlns:q26="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q26:warehouse" />
+        <xs:element xmlns:q27="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q27:marketing" />
+        <xs:element xmlns:q28="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q28:paymentTerms" />
+        <xs:element xmlns:q29="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q29:suppressReminder" />
+        <xs:element xmlns:q30="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q30:suppressStatement" />
+        <xs:element xmlns:q31="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q31:acquiredFrom" />
+        <xs:element xmlns:q32="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q32:invoiceType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

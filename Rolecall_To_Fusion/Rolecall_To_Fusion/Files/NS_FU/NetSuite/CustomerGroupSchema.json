@@ -1,0 +1,175 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1632882721718,
+            "Operation": "Create",
+            "Type": "CustomerGroup",
+            "FusionId": null,
+            "Data": {
+                "AccountNumber": "N014234",
+                "AccountName": "Southern Cross Protection",
+                "CustomerGroup": "SXP Default",
+                "CustomerGroupCode": "2-301SXP",
+                "CustomerGrandParent": "SXP Default",
+                "CustomerGrandParentCode": "3-301SXP",
+                "StartDateActive": "2021-09-28"
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "FusionId",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1632882721718
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "CustomerGroup"
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "null",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "AccountNumber": "N014234",
+                    "AccountName": "Southern Cross Protection",
+                    "CustomerGroup": "SXP Default",
+                    "CustomerGroupCode": "2-301SXP",
+                    "CustomerGrandParent": "SXP Default",
+                    "CustomerGrandParentCode": "3-301SXP",
+                    "StartDateActive": "2021-09-28"
+                }
+            ],
+            "required": [
+                "AccountNumber",
+                "AccountName",
+                "CustomerGroup",
+                "CustomerGroupCode",
+                "CustomerGrandParent",
+                "CustomerGrandParentCode",
+                "StartDateActive"
+            ],
+            "properties": {
+                "AccountNumber": {
+                    "$id": "#/properties/Data/properties/AccountNumber",
+                    "type": "string",
+                    "title": "The AccountNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "N014234"
+                    ]
+                },
+                "AccountName": {
+                    "$id": "#/properties/Data/properties/AccountName",
+                    "type": "string",
+                    "title": "The AccountName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Southern Cross Protection"
+                    ]
+                },
+                "CustomerGroup": {
+                    "$id": "#/properties/Data/properties/CustomerGroup",
+                    "type": "string",
+                    "title": "The CustomerGroup schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SXP Default"
+                    ]
+                },
+                "CustomerGroupCode": {
+                    "$id": "#/properties/Data/properties/CustomerGroupCode",
+                    "type": "string",
+                    "title": "The CustomerGroupCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2-301SXP"
+                    ]
+                },
+                "CustomerGrandParent": {
+                    "$id": "#/properties/Data/properties/CustomerGrandParent",
+                    "type": "string",
+                    "title": "The CustomerGrandParent schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SXP Default"
+                    ]
+                },
+                "CustomerGrandParentCode": {
+                    "$id": "#/properties/Data/properties/CustomerGrandParentCode",
+                    "type": "string",
+                    "title": "The CustomerGrandParentCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "3-301SXP"
+                    ]
+                },
+                "StartDateActive": {
+                    "$id": "#/properties/Data/properties/StartDateActive",
+                    "type": "string",
+                    "title": "The StartDateActive schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-09-28"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

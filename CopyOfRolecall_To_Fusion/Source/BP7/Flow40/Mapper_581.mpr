@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema xsi:type="DataBaseSchema">
+      <SchemaID>1</SchemaID>
+      <Order>0</Order>
+      <Name>DataBase_1</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>Record</Identifier>
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldDataBase">
+          <Identifier>Record/HEADERSEQID</Identifier>
+          <FieldName>HEADERSEQID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N10</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>INTEGER</ExternalFieldType>
+          <ExternalFieldPicture>10</ExternalFieldPicture>
+          <UserPicture>N10</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <LogErrorVariable>
+            <ExpectedType>N</ExpectedType>
+            <Direction>O</Direction>
+          </LogErrorVariable>
+          <isDateTime>false</isDateTime>
+          <StorageSize>4</StorageSize>
+          <StorageNum>4</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>"headerSeqID"</GenerateColumnName>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>IFNFTEVDVCBoZWFkZXJTZXFJRA0KICBGUk9NIFtGdXNpb25TdGFnaW5nREJdLltkYm9dLltUQl9NZXNzYWdlSGVhZGVyXSB3aGVyZQ0KICAgUGF5bG9hZElkPSclQSUnIGFuZCANCiAgVGltZXN0YW1wVXRjPSclQiUnDQo=</ExpressionVal>
+          <ExpectedType />
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <UPSERT>false</UPSERT>
+        <DBResource>Database_MSS</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+      </DB>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema xsi:type="VariableSchema">
+      <SchemaID>2</SchemaID>
+      <Order>0</Order>
+      <Name>Variable_2</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>Variable</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>2</Identifier>
+          <FieldName>Instance</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>37ee26ad-98c5-4bfc-a4a8-b03f34e71eb8</Identifier>
+          <FieldName>C.HeaderSeqID</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>N12</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Numeric</ExternalFieldType>
+          <UserPicture>N12.4</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>99</Encoding>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <Variables>
+        <Variables>
+          <Variable>
+            <VarGUID>37ee26ad-98c5-4bfc-a4a8-b03f34e71eb8</VarGUID>
+          </Variable>
+        </Variables>
+      </Variables>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>1</SourceSchemaID>
+      <DestinationIdentifier>2</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/HEADERSEQID</SourceIdentifier>
+      <SourceSchemaID>1</SourceSchemaID>
+      <DestinationIdentifier>37ee26ad-98c5-4bfc-a4a8-b03f34e71eb8</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+  <ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDE5KTwjISVAJD4=</ErrorFlowExpressionVal>
+</Mapper>

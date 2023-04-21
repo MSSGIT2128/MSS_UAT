@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="NewDataSet" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.oracle.com/UCM">
+  <xs:import namespace="http://www.oracle.com/UCM" schemaLocation="Response_app1.xsd" />
+  <xs:element name="Envelope" msdata:Prefix="env">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Header" msdata:Prefix="env" type="xs:string" minOccurs="0" />
+        <xs:element name="Body" msdata:Prefix="env" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:GenericResponse" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:Prefix="env">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="app1:Field" />
+        <xs:element ref="Envelope" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

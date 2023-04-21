@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "dimensions"
+    ],
+    "properties": {
+        "dimensions": {
+            "type": "array",
+            "default": [],
+            "title": "The dimensions Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "ParamName",
+                    "ParamValue"
+                ],
+                "properties": {
+                    "ParamName": {
+                        "type": "string",
+                        "title": "The ParamName Schema",
+                        "examples": [
+                            "P_ORG",
+                            "P_TRX_NUM"
+                        ]
+                    },
+                    "ParamValue": {
+                        "type": "string",
+                        "title": "The ParamValue Schema",
+                        "examples": [
+                            "SXP Group BU",
+                            "1234564"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "ParamName": "P_ORG",
+                    "ParamValue": "SXP Group BU"
+                },
+                {
+                    "ParamName": "P_TRX_NUM",
+                    "ParamValue": "1234564"
+                }]
+            },
+            "examples": [
+                [{
+                    "ParamName": "P_ORG",
+                    "ParamValue": "SXP Group BU"
+                },
+                {
+                    "ParamName": "P_TRX_NUM",
+                    "ParamValue": "1234564"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "dimensions": [{
+            "ParamName": "P_ORG",
+            "ParamValue": "SXP Group BU"
+        },
+        {
+            "ParamName": "P_TRX_NUM",
+            "ParamValue": "1234564"
+        }]
+    }]
+}

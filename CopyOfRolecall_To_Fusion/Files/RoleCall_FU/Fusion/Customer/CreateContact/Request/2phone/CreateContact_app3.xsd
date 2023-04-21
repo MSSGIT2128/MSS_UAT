@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" xmlns:mstns="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app3="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" xmlns:app1="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/" xmlns:app2="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/applicationModule/types/" xmlns:app4="http://xmlns.oracle.com/apps/cdm/foundation/parties/contactPointService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/contactPointService/" schemaLocation="CreateContact_app4.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="CreateContact.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/applicationModule/types/" schemaLocation="CreateContact_app2.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/" schemaLocation="CreateContact_app1.xsd" />
+  <xs:element name="SubjectType" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="SubjectTableName" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="ObjectId" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="ObjectType" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="ObjectTableName" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="RelationshipCode" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="RelationshipType" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="StartDate" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="CreatedByModule" msdata:Prefix="rel" type="xs:string" />
+  <xs:element name="OrganizationContact" msdata:Prefix="rel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ContactNumber" msdata:Prefix="rel" type="xs:string" minOccurs="0" />
+        <xs:element name="CreatedByModule" msdata:Prefix="rel" type="xs:string" minOccurs="0" />
+        <xs:element name="OrganizationContactRole" msdata:Prefix="rel" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoleType" msdata:Prefix="rel" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimaryFlag" msdata:Prefix="rel" type="xs:string" minOccurs="0" />
+              <xs:element name="CreatedByModule" msdata:Prefix="rel" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Email" msdata:Prefix="rel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app4:OwnerTableName" minOccurs="0" />
+        <xs:element ref="app4:PrimaryFlag" minOccurs="0" />
+        <xs:element ref="app4:CreatedByModule" minOccurs="0" />
+        <xs:element ref="app4:ContactPointPurpose" minOccurs="0" />
+        <xs:element ref="app4:StartDate" minOccurs="0" />
+        <xs:element ref="app4:EmailAddress" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Phone" msdata:Prefix="rel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app4:OwnerTableName" minOccurs="0" />
+        <xs:element ref="app4:PrimaryFlag" minOccurs="0" />
+        <xs:element ref="app4:CreatedByModule" minOccurs="0" />
+        <xs:element ref="app4:PhoneLineType" minOccurs="0" />
+        <xs:element ref="app4:ContactPointPurpose" minOccurs="0" />
+        <xs:element ref="app4:StartDate" minOccurs="0" />
+        <xs:element ref="app4:PhoneCountryCode" minOccurs="0" />
+        <xs:element ref="app4:PhoneNumber" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

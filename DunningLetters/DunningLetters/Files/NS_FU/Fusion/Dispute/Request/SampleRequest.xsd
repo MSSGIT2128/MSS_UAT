@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Envelope" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" xmlns:app2="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/" schemaLocation="SampleRequest_app1.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" schemaLocation="SampleRequest_app2.xsd" />
+  <xs:element name="Envelope" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:Prefix="soapenv">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Body" msdata:Prefix="soapenv">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app2:updateDffEntityDetails" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

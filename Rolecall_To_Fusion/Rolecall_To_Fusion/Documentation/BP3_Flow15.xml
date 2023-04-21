@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Flow id="BP3_Flow15">
+   <Properties>
+      <PropertiesGroup id="General" name="General">
+         <Property id="id" name="ID" value="15" />
+         <Property id="name" name="Name" value="FolderCreation" />
+         <Property id="istwophase" name="Two Phase Processing" value="No" />
+         <Property id="hasdbtransaction" name="DB transaction" value="No" />
+         <Property id="dbtransactionstring" name="DB Resources List" value="" />
+         <Property id="isdisabled" name="Disable" value="No" />
+         <Property id="isinactive" name="Inactive" value="No" />
+         <Property id="maxinstances" name="Max Instances" value="0" />
+         <Property id="timeoutpolicy" name="Timeout Policy" value="None" />
+         <Property id="timeoutval" name="Timeout Value" value="0" />
+         <Property id="recoverypolicy" name="Recovery Policy" value="None" />
+         <Property id="enablement" name="Enablement" value="Always" />
+      </PropertiesGroup>
+      <PropertiesGroup id="FlowInvokers" name="Flow Invokers">
+         <Property id="isautostart" name="Auto Start" value="No" />
+         <Property id="isautorepeat" name="Auto Repeat" value="No" />
+      </PropertiesGroup>
+      <PropertiesGroup id="External" name="External">
+         <Property id="psssubscribeonce" name="PSS Subscribe Once" value="No" />
+         <Property id="psssubscribename" name="PSS Subscribe Name" value="" />
+      </PropertiesGroup>
+   </Properties>
+   <Triggers>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="4" />
+               <Property id="name" name="Name" value="Scheduler Utility" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="interface" name="Interface" value="Method" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="ressername" name="Resource Name" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Logging" name="Logging">
+               <Property id="displayloggingscope" name="Logging Scope" value="No" />
+               <Property id="displayloggingoptions" name="Step Logging Options" value="Before" />
+               <Property id="message" name="Message" value="" />
+               <Property id="blob" name="BLOB" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Scheduler.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details Name="Schedulers">
+            <Structure>
+               <Field fieldId="name" widthHint="FitToContent">Name</Field>
+               <Field fieldId="servicename" widthHint="FitToContent">Service Name</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Scheduler1" />
+                  <Property fieldId="servicename" value="Scheduler_Daliy" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+   </Triggers>
+   <Steps>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="1" />
+               <Property id="name" name="Name" value="File Management" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="interface" name="Interface" value="Method" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="ressername" name="Resource Name" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Logging" name="Logging">
+               <Property id="displayloggingscope" name="Logging Scope" value="No" />
+               <Property id="displayloggingoptions" name="Step Logging Options" value="Before" />
+               <Property id="message" name="Message" value="" />
+               <Property id="blob" name="BLOB" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\File Management.png" />
+            </PropertiesGroup>
+         </Properties>
+         <DAM>
+            <Structure>
+               <Field fieldId="name" widthHint="FitToContent">DAM Method</Field>
+               <Field fieldId="condition" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Create Folder" />
+                  <Property fieldId="condition" value="NOT (FileExist ( EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date ()+30,'MMM')))" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Folder Name" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date ()+30,'MMM')" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Error Code" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Create Folder" />
+                  <Property fieldId="condition" value="NOT (FileExist ( EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;DStr (Date (),'DD-MM-YYYY')))" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Folder Name" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;DStr (Date (),'DD-MM-YYYY')" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Error Code" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Create Folder" />
+                  <Property fieldId="condition" value="NOT (FileExist ( EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;DStr (Date ()+1,'DD-MM-YYYY')))" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Folder Name" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;DStr (Date ()+1,'DD-MM-YYYY')" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Error Code" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="name" value="Create Folder" />
+                  <Property fieldId="condition" value="NOT (FileExist (EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;DStr (Date ()+1,'DD-MM-YYYY')&amp;EnvVal ('sl') &amp;'REPORTS_PROCESS'))" />
+                  <SubItems>
+                     <Repository>
+                        <Structure>
+                           <Field fieldId="parametername" widthHint="FitToContent">Parameter Name</Field>
+                           <Field fieldId="parametertype" widthHint="FitToContent">Type</Field>
+                           <Field fieldId="parameterpicture" widthHint="FitToContent">Picture</Field>
+                           <Field fieldId="direction" widthHint="FitToContent">In/Out</Field>
+                           <Field fieldId="parameterexp" widthHint="FitToContent">Value</Field>
+                        </Structure>
+                        <Items>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Folder Name" />
+                              <Property fieldId="parametertype" value="Alpha" />
+                              <Property fieldId="parameterpicture" value="260" />
+                              <Property fieldId="direction" value="In" />
+                              <Property fieldId="parameterexp" value="EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;DStr (Date ()+1,'DD-MM-YYYY')&amp;EnvVal ('sl') &amp;'REPORTS_PROCESS'" />
+                           </RepositoryItem>
+                           <RepositoryItem>
+                              <Property fieldId="parametername" value="Error Code" />
+                              <Property fieldId="parametertype" value="Numeric" />
+                              <Property fieldId="parameterpicture" value="12" />
+                              <Property fieldId="direction" value="Out" />
+                              <Property fieldId="parameterexp" value="" />
+                           </RepositoryItem>
+                        </Items>
+                     </Repository>
+                  </SubItems>
+               </RepositoryItem>
+            </Items>
+         </DAM>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="2" />
+               <Property id="name" name="Name" value="Flow Data" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.username" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="EnvVal ('AuditLogs') &amp;DStr (Date (),'YYYY')&amp;EnvVal ('sl') &amp;DStr (Date (),'MMM') &amp;EnvVal ('sl')&amp;'BUUAssignment1\'&amp;DStr (Date (),'DD-MM-YYYY')" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="3" />
+               <Property id="name" name="Name" value="NOP" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\NOP.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="5" />
+               <Property id="name" name="Name" value="Invoke Flow" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="isbyexp" name="Invoke by Expression" value="No" />
+               <Property id="bpexp" name="Target BP ID expression" value="" />
+               <Property id="flowexp" name="Target flow ID expression" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Invoke Flow.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+   </Steps>
+   <LocalizationTable>
+      <FlowDiagram>Graphical View</FlowDiagram>
+      <Trigger>Trigger</Trigger>
+      <Step>Step</Step>
+   </LocalizationTable>
+</Flow>

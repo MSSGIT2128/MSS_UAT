@@ -1,0 +1,175 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1631594270268,
+            "Operation": "Create",
+            "Type": "createCustomerProfile",
+            "FusionId": null,
+            "Data": {
+                "AccountNumber": "P031208",
+                "SiteNumber": "OS5006",
+                "CustomerAccountId": "300000009328678",
+                "EffectiveStartDate": "2021-09-16",
+                "PartyId": "300000009328673",
+                "PaymentTerms": "14 Days",
+                "CollectorName": "Rohan Nayak"
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "FusionId",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1631594270268
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "createCustomerProfile"
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "null",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": null,
+            "examples": [
+                null
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "AccountNumber": "P031208",
+                    "SiteNumber": "OS5006",
+                    "CustomerAccountId": "300000009328678",
+                    "EffectiveStartDate": "2021-09-16",
+                    "PartyId": "300000009328673",
+                    "PaymentTerms": "14 Days",
+                    "CollectorName": "Rohan Nayak"
+                }
+            ],
+            "required": [
+                "AccountNumber",
+                "SiteNumber",
+                "CustomerAccountId",
+                "EffectiveStartDate",
+                "PartyId",
+                "PaymentTerms",
+                "CollectorName"
+            ],
+            "properties": {
+                "AccountNumber": {
+                    "$id": "#/properties/Data/properties/AccountNumber",
+                    "type": "string",
+                    "title": "The AccountNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "P031208"
+                    ]
+                },
+                "SiteNumber": {
+                    "$id": "#/properties/Data/properties/SiteNumber",
+                    "type": "string",
+                    "title": "The SiteNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "OS5006"
+                    ]
+                },
+                "CustomerAccountId": {
+                    "$id": "#/properties/Data/properties/CustomerAccountId",
+                    "type": "string",
+                    "title": "The CustomerAccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000009328678"
+                    ]
+                },
+                "EffectiveStartDate": {
+                    "$id": "#/properties/Data/properties/EffectiveStartDate",
+                    "type": "string",
+                    "title": "The EffectiveStartDate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-09-16"
+                    ]
+                },
+                "PartyId": {
+                    "$id": "#/properties/Data/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000009328673"
+                    ]
+                },
+                "PaymentTerms": {
+                    "$id": "#/properties/Data/properties/PaymentTerms",
+                    "type": "string",
+                    "title": "The PaymentTerms schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "14 Days"
+                    ]
+                },
+                "CollectorName": {
+                    "$id": "#/properties/Data/properties/CollectorName",
+                    "type": "string",
+                    "title": "The CollectorName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Rohan Nayak"
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

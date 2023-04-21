@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/types/" xmlns:app1="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/" schemaLocation="Request_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:element name="createInvoiceInterface" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="invoiceInterfaceHeader" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:Source" minOccurs="0" />
+              <xs:element ref="app1:OperatingUnit" minOccurs="0" />
+              <xs:element ref="app1:VendorName" minOccurs="0" />
+              <xs:element ref="app1:VendorSiteCode" minOccurs="0" />
+              <xs:element ref="app1:ApplicationId" minOccurs="0" />
+              <xs:element ref="app1:GlDate" minOccurs="0" />
+              <xs:element ref="app1:GroupId" minOccurs="0" />
+              <xs:element ref="app1:InvoiceCurrencyCode" minOccurs="0" />
+              <xs:element ref="app1:InvoiceDate" minOccurs="0" />
+              <xs:element ref="app1:InvoiceNumber" minOccurs="0" />
+              <xs:element ref="app1:InvoiceTypeLookupCode" minOccurs="0" />
+              <xs:element ref="app1:ExchangeRateType" minOccurs="0" />
+              <xs:element ref="app1:ExchangeDate" minOccurs="0" />
+              <xs:element ref="app1:Description" minOccurs="0" />
+              <xs:element ref="app1:LegalEntityId" minOccurs="0" />
+              <xs:element ref="app1:InvoiceAmount" />
+              <xs:element ref="app1:InvoiceInterfaceLine" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

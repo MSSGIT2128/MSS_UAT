@@ -1,0 +1,374 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "customerAccount": {
+                "CustomerAccountId": "300000005527608",
+                "PartyId": "300000005527601",
+                "CustomerClassCode": "COMMERCIAL",
+                "CustAcctInformation": {
+                    "customerGroup": "MELBOURNE ADHOC",
+                    "customerGroupCode": "5118",
+                    "customerGrandParent": "MSS",
+                    "customerGrandParentCode": "MSS201",
+                    "salesRep": "Gavin Nelmes",
+                    "warehouse": "3019",
+                    "marketing": "Delta Maurice",
+                    "paymentTerms": "45 Days",
+                    "suppressStatement": "Y",
+                    "suppressReminder": "Y"
+                }
+            },
+            "CustomerProfiles": [
+                {
+                    "AccountNumber": "D3029001",
+                    "SiteNumber": "A3029002",
+                    "CustomerAccountId": "300000005527608",
+                    "PartyId": "300000005527601",
+					"businessManager": "Michael Matthews",
+                    "CollectorName": "Delta Maurice",
+                    "PaymentTerms": "45 Days"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "customerAccount",
+        "CustomerProfiles"
+    ],
+    "properties": {
+        "customerAccount": {
+            "$id": "#/properties/customerAccount",
+            "type": "object",
+            "title": "The customerAccount schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CustomerAccountId": "300000005527608",
+                    "PartyId": "300000005527601",
+                    "CustomerClassCode": "COMMERCIAL",
+                    "CustAcctInformation": {
+                        "customerGroup": "MELBOURNE ADHOC",
+                        "customerGroupCode": "5118",
+                        "customerGrandParent": "MSS",
+                        "customerGrandParentCode": "MSS201",
+                        "salesRep": "Gavin Nelmes",
+                        "warehouse": "3019",
+                        "marketing": "Delta Maurice",
+                        "paymentTerms": "45 Days",
+                        "suppressStatement": "Y",
+                        "suppressReminder": "Y"
+                    }
+                }
+            ],
+            "required": [
+                "CustomerAccountId",
+                "PartyId",
+                "CustomerClassCode",
+                "CustAcctInformation"
+            ],
+            "properties": {
+                "CustomerAccountId": {
+                    "$id": "#/properties/customerAccount/properties/CustomerAccountId",
+                    "type": "string",
+                    "title": "The CustomerAccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000005527608"
+                    ]
+                },
+                "PartyId": {
+                    "$id": "#/properties/customerAccount/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000005527601"
+                    ]
+                },
+                "CustomerClassCode": {
+                    "$id": "#/properties/customerAccount/properties/CustomerClassCode",
+                    "type": "string",
+                    "title": "The CustomerClassCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "COMMERCIAL"
+                    ]
+                },
+                "CustAcctInformation": {
+                    "$id": "#/properties/customerAccount/properties/CustAcctInformation",
+                    "type": "object",
+                    "title": "The CustAcctInformation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "customerGroup": "MELBOURNE ADHOC",
+                            "customerGroupCode": "5118",
+                            "customerGrandParent": "MSS",
+                            "customerGrandParentCode": "MSS201",
+                            "salesRep": "Gavin Nelmes",
+                            "warehouse": "3019",
+                            "marketing": "Delta Maurice",
+                            "paymentTerms": "45 Days",
+                            "suppressStatement": "Y",
+                            "suppressReminder": "Y"
+                        }
+                    ],
+                    "required": [
+                        "customerGroup",
+                        "customerGroupCode",
+                        "customerGrandParent",
+                        "customerGrandParentCode",
+                        "salesRep",
+                        "warehouse",
+                        "marketing",
+                        "paymentTerms",
+                        "suppressStatement",
+                        "suppressReminder"
+                    ],
+                    "properties": {
+                        "customerGroup": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGroup",
+                            "type": "string",
+                            "title": "The customerGroup schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "MELBOURNE ADHOC"
+                            ]
+                        },
+                        "customerGroupCode": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGroupCode",
+                            "type": "string",
+                            "title": "The customerGroupCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "5118"
+                            ]
+                        },
+                        "customerGrandParent": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGrandParent",
+                            "type": "string",
+                            "title": "The customerGrandParent schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "MSS"
+                            ]
+                        },
+                        "customerGrandParentCode": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGrandParentCode",
+                            "type": "string",
+                            "title": "The customerGrandParentCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "MSS201"
+                            ]
+                        },
+                        "salesRep": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/salesRep",
+                            "type": "string",
+                            "title": "The salesRep schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Gavin Nelmes"
+                            ]
+                        },
+                        "warehouse": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/warehouse",
+                            "type": "string",
+                            "title": "The warehouse schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "3019"
+                            ]
+                        },
+                        "marketing": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/marketing",
+                            "type": "string",
+                            "title": "The marketing schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Delta Maurice"
+                            ]
+                        },
+                        "paymentTerms": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/paymentTerms",
+                            "type": "string",
+                            "title": "The paymentTerms schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "45 Days"
+                            ]
+                        },
+                        "suppressStatement": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/suppressStatement",
+                            "type": "string",
+                            "title": "The suppressStatement schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Y"
+                            ]
+                        },
+                        "suppressReminder": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/suppressReminder",
+                            "type": "string",
+                            "title": "The suppressReminder schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Y"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        },
+        "CustomerProfiles": {
+            "$id": "#/properties/CustomerProfiles",
+            "type": "array",
+            "title": "The CustomerProfiles schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "AccountNumber": "D3029001",
+                        "SiteNumber": "A3029002",
+                        "CustomerAccountId": "300000005527608",
+                        "PartyId": "300000005527601",
+						"businessManager": "Michael Matthews",
+                        "CollectorName": "Delta Maurice",
+                        "PaymentTerms": "45 Days"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/CustomerProfiles/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/CustomerProfiles/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "AccountNumber": "D3029001",
+                                "SiteNumber": "A3029002",
+                                "CustomerAccountId": "300000005527608",
+                                "PartyId": "300000005527601",
+								"businessManager": "Michael Matthews",
+                                "CollectorName": "Delta Maurice",
+                                "PaymentTerms": "45 Days"
+                            }
+                        ],
+                        "required": [
+                            "AccountNumber",
+                            "SiteNumber",
+                            "CustomerAccountId",
+                            "PartyId",
+							"businessManager",
+                            "CollectorName",
+                            "PaymentTerms"
+                        ],
+                        "properties": {
+                            "AccountNumber": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/AccountNumber",
+                                "type": "string",
+                                "title": "The AccountNumber schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "D3029001"
+                                ]
+                            },
+                            "SiteNumber": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/SiteNumber",
+                                "type": "string",
+                                "title": "The SiteNumber schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "A3029002"
+                                ]
+                            },
+                            "CustomerAccountId": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/CustomerAccountId",
+                                "type": "string",
+                                "title": "The CustomerAccountId schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "300000005527608"
+                                ]
+                            },
+                            "PartyId": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/PartyId",
+                                "type": "string",
+                                "title": "The PartyId schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "300000005527601"
+                                ]
+                            },
+							 "businessManager": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/businessManager",
+                                "type": "string",
+                                "title": "The businessManager schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Michael Matthews"
+                                ]
+                            },
+                            "CollectorName": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/CollectorName",
+                                "type": "string",
+                                "title": "The CollectorName schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "Delta Maurice"
+                                ]
+                            },
+                            "PaymentTerms": {
+                                "$id": "#/properties/CustomerProfiles/items/anyOf/0/properties/PaymentTerms",
+                                "type": "string",
+                                "title": "The PaymentTerms schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "45 Days"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

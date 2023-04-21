@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" xmlns:app2="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/types/" schemaLocation="sampleRequest_app2.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="sampleRequest.xsd" />
+  <xs:element name="BatchName" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="BatchDescription" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="LedgerId" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="AccountingPeriodName" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="AccountingDate" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="UserSourceName" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="UserCategoryName" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="ErrorToSuspenseFlag" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="SummaryFlag" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="ImportDescriptiveFlexField" msdata:Prefix="jour" type="xs:string" />
+  <xs:element name="GlInterface" msdata:Prefix="jour">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Reference4" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Reference5" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="LedgerId" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="PeriodName" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="AccountingDate" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="UserJeSourceName" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="UserJeCategoryName" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment1" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment2" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment3" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment4" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment5" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment6" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment7" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment8" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment9" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment10" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Segment11" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="CurrencyCode" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="AccountedCr" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="AccountedDr" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Reference1" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Reference2" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Attribute1" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Attribute2" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Attribute3" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="Attribute4" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="SetOfBooksId" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="TransactionDate" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="GroupId" msdata:Prefix="jour" type="xs:string" minOccurs="0" />
+        <xs:element name="EnteredCrAmount" msdata:Prefix="jour" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent msdata:Prefix="jour" msdata:ColumnName="EnteredCrAmount_Text" msdata:Ordinal="1">
+              <xs:extension base="xs:string">
+                <xs:attribute name="currencyCode" form="unqualified" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="EnteredDrAmount" msdata:Prefix="jour" nillable="true" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:simpleContent msdata:Prefix="jour" msdata:ColumnName="EnteredDrAmount_Text" msdata:Ordinal="1">
+              <xs:extension base="xs:string">
+                <xs:attribute name="currencyCode" form="unqualified" type="xs:string" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

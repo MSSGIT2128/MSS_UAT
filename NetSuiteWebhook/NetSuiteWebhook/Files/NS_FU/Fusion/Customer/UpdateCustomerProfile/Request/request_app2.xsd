@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/" schemaLocation="request_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="request.xsd" />
+  <xs:element name="updateCustomerProfile" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="customerProfile" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:AccountNumber" minOccurs="0" />
+              <xs:element ref="app1:SiteNumber" minOccurs="0" />
+              <xs:element ref="app1:CustomerAccountId" minOccurs="0" />
+              <xs:element ref="app1:ProfileClassName" minOccurs="0" />
+              <xs:element ref="app1:ClearingDays" minOccurs="0" />
+              <xs:element ref="app1:EffectiveStartDate" minOccurs="0" />
+              <xs:element ref="app1:PartyId" minOccurs="0" />
+              <xs:element ref="app1:Tolerance" minOccurs="0" />
+              <xs:element ref="app1:PaymentTerms" minOccurs="0" />
+			  <xs:element ref="app1:CollectorName" minOccurs="0" />
+              <xs:element ref="app1:PreferredContactMethod" minOccurs="0" />
+              <xs:element ref="app1:PreferredDeliveryMethod" minOccurs="0" />
+              <xs:element ref="app1:CreditReviewCycleName" minOccurs="0" />
+              <xs:element ref="app1:CreditCurrencyCode" minOccurs="0" />
+              <xs:element ref="app1:StatementDeliveryMethod" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,42 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pub="http://xmlns.oracle.com/oxp/service/PublicReportService">
+	<soap:Header/>
+	<soap:Body>
+		<pub:runReport>
+			<pub:reportRequest>
+				<pub:attributeFormat>csv</pub:attributeFormat>
+				<!-- Flatten XML should always be false when we have XML type of output to display the XML tags as mentioned in BIP Data Model and display XML structure in as expected format -->
+				<pub:flattenXML>true</pub:flattenXML>
+				<pub:parameterNameValues>
+					<pub:item>
+						<pub:name>P_BU_NAME</pub:name>
+						<pub:values>
+							<pub:item>MSS Group BU</pub:item>
+						</pub:values>
+					</pub:item>
+					<!--1st Parameter of BIP Report-->
+					<pub:item>
+						<pub:name>p_status_type</pub:name>
+						<pub:values>
+							<pub:item>Errors Only</pub:item>
+						</pub:values>
+					</pub:item>
+					<pub:item>
+						<pub:name>P_TRX_NUM</pub:name>
+						<pub:values>
+							<pub:item>06042021CM_2</pub:item>
+						</pub:values>
+					</pub:item>
+					<pub:item>
+						<pub:name>P_DATE</pub:name>
+						<pub:values>
+							<pub:item>2021-04-06</pub:item>
+						</pub:values>
+					</pub:item>
+				</pub:parameterNameValues>
+				<pub:reportAbsolutePath>/Custom/Integration/Reports/SIS AR CREDIT MEMO STATUS REPORT.xdo</pub:reportAbsolutePath>
+				<!-- Setting sizeOfDataChunkDownload to -1 will return the output to the calling client -->
+				<pub:sizeOfDataChunkDownload>-1</pub:sizeOfDataChunkDownload>
+			</pub:reportRequest>
+		</pub:runReport>
+	</soap:Body>
+</soap:Envelope>

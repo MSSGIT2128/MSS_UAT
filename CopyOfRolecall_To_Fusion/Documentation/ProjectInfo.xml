@@ -1,0 +1,1420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+   <Properties>
+      <PropertiesGroup id="General" name="General">
+         <Property id="name" name="Name" value="Rolecall_To_Fusion" />
+         <Property id="description" name="Description" value="" />
+         <Property id="last_edited" name="Last Modified" value="12/16/2020 2:22:28 PM" />
+         <Property id="owner" name="Owner" value="Magic Software Enterprises Ltd" />
+         <Property id="internalver" name="InternalVer" value="1.0" />
+         <Property id="encoding" name="Encoding" value="West European" />
+         <Property id="resourcefile" name="ResourceFile" value="resources.xml" />
+         <Property id="servicefile" name="ServiceFile" value="services.xml" />
+         <Property id="calendarsfile" name="CalendarsFile" value="Calendars.xml" />
+         <Property id="clearods" name="Clear ODS Information" value="Yes" />
+      </PropertiesGroup>
+   </Properties>
+   <Repositories>
+      <Repository Name="User Global Variables" id="UserGlobalVariables">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">Name</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+            <Field fieldId="id" widthHint="FitToContent">ID</Field>
+            <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+            <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+            <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+            <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+         </Structure>
+         <Items>
+            <RepositoryItem>
+               <Property fieldId="name" value="G.AuditLogFlag" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="1" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="'TRUE'LOG" />
+               <Property fieldId="guid" value="8d91d7a3-fe0f-4724-a73a-b47933023baf" />
+            </RepositoryItem>
+         </Items>
+      </Repository>
+      <Repository Name="User Context Variables" id="UserContextVariables">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">Name</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+            <Field fieldId="id" widthHint="FitToContent">ID</Field>
+            <Field fieldId="variabletype" widthHint="FitToContent">Type</Field>
+            <Field fieldId="picturelength" widthHint="FitToContent">Length</Field>
+            <Field fieldId="defaultvalue" widthHint="FitToContent">Default Value</Field>
+            <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+         </Structure>
+         <Items>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FlowIdExt" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="94" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="8dfd9328-172e-480d-88e8-767e4427414f" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.StepIdExt" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="95" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="d95b4e00-f604-4192-87b5-72ca81fa92fa" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RelationshipId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="93" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="148df70c-7f4b-4314-a2e7-91e035f5c258" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ESSreportStatus" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="92" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="300" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="089756ce-ed33-4223-8364-c4f81b42ecb3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Operations" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="91" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="dfe1eb0e-b513-48fa-9d16-7e975b9e6ca3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ModuleName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="90" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="56387cb7-edb2-467b-ab1f-348fe433f977" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ObjectType" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="88" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="1f9bb00d-a9a8-4a70-a749-0a1f89f6d5dc" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.TempPayload" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="89" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="64c9b422-2bd9-4336-8d11-92ada42f4d92" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.HeaderSeqID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="82" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="1" />
+               <Property fieldId="guid" value="37ee26ad-98c5-4bfc-a4a8-b03f34e71eb8" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.PayloadIDs" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="83" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="50" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="525234c4-a385-4760-a866-b3a78dae3cba" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.IsNew" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="85" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="ac45a476-c0e6-4702-84eb-b26db2cc6e2a" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RedoFlow" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="86" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="1b22457e-95db-42d4-b0fe-bf5543804dfd" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RedoStep" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="87" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="4c132781-99dc-4738-873f-6177dceaee68" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.TimestampUTC" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="84" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="50" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="8f44183a-0600-4a1b-8741-60d005a69992" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CustomerSite" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="69" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="b07a1049-afbc-4975-a85c-ead342649bad" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ContractNumber" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="70" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="50" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="e7b9c712-bf8d-4fa0-b045-55f51dc02a1c" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Branch" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="71" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'8211'" />
+               <Property fieldId="guid" value="bbb5aa02-59b9-459f-be49-d4ba032876d6" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.State" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="72" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'902'" />
+               <Property fieldId="guid" value="a70c6e91-2ac7-47b9-856e-21db9139663e" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Entity" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="73" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'301'" />
+               <Property fieldId="guid" value="eee660d4-c39b-4fbb-b6ca-4a27ee1dfa77" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.BusinessType" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="74" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'999'" />
+               <Property fieldId="guid" value="84241ea1-48db-46b9-8a5c-034aab30c846" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CustomerSiteName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="75" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="d2d0ee7d-eb6e-473d-ad1e-ab20fff04287" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ContractName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="76" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="50" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="f09b06b0-73c8-4ebc-8ae0-939f53556422" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.StartActiveDate" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="77" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="'2018-01-01'" />
+               <Property fieldId="guid" value="951a45b3-a20b-4704-a782-5382953a8ec8" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FusionLocationID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="78" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="62417079-ee5a-4bf7-9910-21ee84bee7f9" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FusionResponseStatusCode" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="66" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="16f000b3-15ba-44ed-a58f-e924bb6b0e0f" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ResponseTime" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="67" />
+               <Property fieldId="variabletype" value="Time" />
+               <Property fieldId="picturelength" value="8" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="5dc002e8-caba-4c17-be62-fe102f90909c" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FusionResponseStatus" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="68" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="05738565-8152-4d7f-a840-0a7a3368f57a" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.DATA_DS_Check" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="65" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="bfcfaae5-eeb4-4575-8871-f6978fa7c617" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Report_Blank_Check" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="64" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="282662a2-2032-48d9-93eb-ff9744662fa1" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.BP_Name" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="63" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="18308014-0566-43d4-9db6-e3bfa3829989" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.AuditBk" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="79" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="300" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="3c049b75-2988-4dcb-afce-971e24c8fe7c" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ARCreditMemoFileId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="61" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="2b73eca2-e248-4c4a-a6fc-0d2a04d3dfe3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ARCreditMemoFileContent" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="59" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="5e534abc-09ef-464c-91c1-4aa149333625" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ARCreditHeadeFileContent" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="81" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="6d8267a6-17f6-4264-9221-ce1730f06588" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ARCreditMemoFileName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="60" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="1000" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="d97a1fb4-73c9-4c31-b9f5-ed0720711a36" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RequestXML" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="56" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="cb333a96-549d-48a4-b984-3c5982f01dc3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CreatedCsvFileName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="58" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="300" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="5aad96a7-baa1-42e0-8f42-7e5c885c104a" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.PartyId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="55" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="2ab6931d-826c-47a8-9519-48cdf7f15c3b" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CustomerAccountId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="54" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="a30184b0-08c9-4d39-a399-8761f46302b5" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ContractSegment" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="52" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="db95e3e4-92fc-4699-a157-04c367ce64ae" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.PartySiteNumber" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="62" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="297d23d1-7b69-45e6-ab59-f79761daeef2" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ContractDescription" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="53" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="53dca079-121b-499e-be88-0cf879251f35" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.LedgerName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="51" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="251d2f88-8d4d-40e2-9e34-078026d7d528" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.SIS_Customer_mapping_Resp_Id" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="50" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="34a3edb2-85e8-442f-84e9-86ec1e13e408" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.InvoiceNumber" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="47" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="5a6aec76-6e5b-483c-895a-75e727757242" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.SearchTextId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="45" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="f09b8bae-6174-410d-8bd3-40786d03cc1e" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.PayloadID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="44" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="f60bd649-85a4-4377-971e-a0b967cc8557" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.username" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="42" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="236812ca-9b2b-4378-8b9b-0f3cd79125b3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CLCnt" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="41" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="0" />
+               <Property fieldId="guid" value="53d702ae-09e9-444d-9c98-9009e73f79fa" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.IsSuccess" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="32" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="4fd503eb-88de-4d1e-8e0a-20228b8058ef" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FusionResponseHeaderString" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="33" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="ffa65594-3714-4275-9be0-c6ed44cec70f" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Operation" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="34" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="fee3a17c-36a2-44ce-b8f2-215109472e6a" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FusionRequest" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="30" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="748615e6-5e35-49b8-8e9e-71884843643c" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FusionResponse" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="31" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="f09c2ba9-3f2f-4c9a-b1d4-9c3b266d30dd" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.BAM_Category" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="29" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="d7114b8f-1618-4d22-a9f2-067bfd110c9d" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.EmailTemplate" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="27" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="592dd31a-c9e2-41dc-873f-4fe6525972e5" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Err_Msg" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="26" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="1000" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="e862a270-7a1d-455a-974c-21ca13750c26" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.IsOk" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="24" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="'TRUE'LOG" />
+               <Property fieldId="guid" value="fef0435d-5ef8-4c9c-8b73-e6f85d936efb" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RequestDate" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="23" />
+               <Property fieldId="variabletype" value="Date" />
+               <Property fieldId="picturelength" value="10" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="2ef58230-07fd-40ff-8ed5-d84f2b31f8b9" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.Response" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="5" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="9ca65ab6-06fb-47e9-8762-4021b87155ae" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RequestId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="6" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="15.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="505e04b6-a7ad-4cad-a8f6-030dbd23a558" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ObjectName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="19" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="db335621-f735-4812-9ead-a7d316c03bc3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.MessageID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="11" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="2bdd36b8-70b3-4bf1-a541-cc535defe4f7" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RequestTime" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="13" />
+               <Property fieldId="variabletype" value="Time" />
+               <Property fieldId="picturelength" value="8" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="22dfbc89-af74-4989-8d13-f77d03a006f3" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.AuditLogFilePath" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="14" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="255" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="22040a65-e247-4960-8897-54f80236bf92" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RoleCallRequest" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="17" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="6596b39c-a71f-4774-afde-3d40e68ab363" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RoleCallInputFilePath" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="18" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="300" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="6d5fb0ff-b1cd-4f12-88a0-3c4a36e18b65" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.RoleCallInputFile" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="43" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="60" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="db38a5a0-f5a4-4bd2-935e-df4edd88008e" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CustomerNumber" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="20" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="50" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="77eb54d7-e23d-4118-ba57-c1a98e79b894" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.SeqNumber" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="21" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="0" />
+               <Property fieldId="guid" value="f4d0d70e-064b-4020-903f-905e2526ce5f" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ResponseCode" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="25" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.4" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="6aa311f1-1c75-49fc-9e97-562a913d9f8d" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.TransactionNumber" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="48" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="50" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="78df8edf-6fb8-4d79-8950-5056d25562b4" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.FileName" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="49" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="100" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="9f98b680-f834-4279-be21-586b6f0fb531" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ESSJobStatusID" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="80" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="379c75cf-b714-44b1-8a7b-f0984bf43521" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserString" />
+               <Property fieldId="description" value="Passes alpha-numeric information between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="1000" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000005" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserCode" />
+               <Property fieldId="description" value="Passes only numeric information between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000006" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserBlob" />
+               <Property fieldId="description" value="Passes undefined types of information between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000007" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.UserXML" />
+               <Property fieldId="description" value="Passes information in XML format between components in flows." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000008" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.HTTP_Body" />
+               <Property fieldId="description" value="Body of HTTP request." />
+               <Property fieldId="id" value="0" />
+               <Property fieldId="variabletype" value="Blob" />
+               <Property fieldId="picturelength" value="" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="000000000000000000000000000000000000009" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.CreateContRealtionshipId" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="96" />
+               <Property fieldId="variabletype" value="Alpha" />
+               <Property fieldId="picturelength" value="30" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="f507821d-6907-444a-bf49-289d68791626" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ActiveBill" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="97" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="eb657d70-60be-4821-b266-80e6bb43b193" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.ValueNtRealted" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="98" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="1bb60e87-be7e-4044-a9c9-0d72d102f6de" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.HeaderExistError" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="99" />
+               <Property fieldId="variabletype" value="Logical" />
+               <Property fieldId="picturelength" value="1" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="d605cae6-05ef-4d35-9b3a-21bf8c82d5dd" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="C.HeaderExistCnt" />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="100" />
+               <Property fieldId="variabletype" value="Numeric" />
+               <Property fieldId="picturelength" value="12.0" />
+               <Property fieldId="defaultvalue" value="" />
+               <Property fieldId="guid" value="0ceb196d-03bc-4851-88f6-f2163abf657d" />
+            </RepositoryItem>
+         </Items>
+      </Repository>
+      <Repository Name="Default Data Format" id="XMLDataTypes">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">External Data Type</Field>
+            <Field fieldId="variabletype" widthHint="FitToContent">Internal Data Type</Field>
+            <Field fieldId="formatproxy" widthHint="FitToContent">Format</Field>
+         </Structure>
+         <Items />
+      </Repository>
+      <Repository Name="Data Converter" id="DataConverter">
+         <Structure>
+            <Field fieldId="name" widthHint="FitToContent">Name</Field>
+            <Field fieldId="isdynamic" widthHint="FitToContent">Dynamic Table</Field>
+            <Field fieldId="filepath" widthHint="FitToContent">File Name</Field>
+            <Field fieldId="delimiter" widthHint="FitToContent">Columns Delimiter</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+            <Field fieldId="id" widthHint="FitToContent">ID</Field>
+            <Field fieldId="guid" widthHint="FitToContent">GUID</Field>
+         </Structure>
+         <Items>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.ModuleInvokeMaster" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="conversion\ModuleInvokeMaster.csv" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="1" />
+               <Property fieldId="guid" value="a639b2ef-cd2b-4a9f-847e-42fccbe00c88" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.SIS_Cust_Detail_Query_Master" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="conversion\SIS_Cust_Detail_Query_Master.csv" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="3" />
+               <Property fieldId="guid" value="e172d8b7-cc83-4d37-9ff4-70a052d23f3c" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.CCID_Query_Master" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="conversion\CCID_Query_Master.csv" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="2" />
+               <Property fieldId="guid" value="824ada84-5e45-4acc-abf4-ced8f334173e" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.ModifyInvokeMaster" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="conversion\ModifyInvokeMaster.txt" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="4" />
+               <Property fieldId="guid" value="9b4c582e-befb-4b97-9df2-8425ea97f7aa" />
+            </RepositoryItem>
+            <RepositoryItem>
+               <Property fieldId="name" value="V.ValueSet" />
+               <Property fieldId="isdynamic" value="No" />
+               <Property fieldId="filepath" value="conversion\ValueSet.csv" />
+               <Property fieldId="delimiter" value="," />
+               <Property fieldId="description" value="" />
+               <Property fieldId="id" value="5" />
+               <Property fieldId="guid" value="c0802541-4c5c-4d01-a323-86b6d3c848a4" />
+            </RepositoryItem>
+         </Items>
+      </Repository>
+      <Repository Name="User Errors" id="UserErrors">
+         <Structure>
+            <Field fieldId="errorcode" widthHint="FitToContent">ErrorCode</Field>
+            <Field fieldId="description" widthHint="ExtendToMax">Description</Field>
+         </Structure>
+         <Items />
+      </Repository>
+   </Repositories>
+   <Resources name="Resources" element="Resource">
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="REST Client_Fusion" />
+            <Property id="type" name="Type" value="REST Client" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="Server URL" />
+               <Property id="format" name="Format" value="2500" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Security" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="HTTP-Basic" />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="REST Client_Fusion Checks" />
+            <Property id="type" name="Type" value="REST Client" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="No" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="Server URL" />
+               <Property id="format" name="Format" value="2500" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com:443" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Security" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="HTTP-Basic" />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="Database_MSS(old)" />
+            <Property id="type" name="Type" value="Database" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="DBMS" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="Microsoft SQL Server" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="User" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="sa" />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="Database_MSS" />
+            <Property id="type" name="Type" value="Database" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="No" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="DBMS" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="Microsoft SQL Server" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="User" />
+               <Property id="format" name="Format" value="30" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="MSS_INTEGRATION" />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="Email_ErrNotification" />
+            <Property id="type" name="Type" value="Email" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="Server Type" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Incoming Mail Server" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Incoming Port" />
+               <Property id="format" name="Format" value="8" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Incoming Secure Connection" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="No" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Outgoing Mail Server" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="Smtp.office365.com" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Outgoing Port" />
+               <Property id="format" name="Format" value="8" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="587" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Outgoing Secure Connection" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="TLS" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="From Address" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%Resource_email%" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Authentication Type" />
+               <Property id="format" name="Format" value="1" />
+               <Property id="type" name="Type" value="Numeric" />
+               <Property id="value" name="Value" value="Basic" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="User" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="%Resource_email%" />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="OAuth Refresh Token Status" />
+               <Property id="format" name="Format" value="10" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Authorization URL" />
+               <Property id="format" name="Format" value="1000" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Access Token URL" />
+               <Property id="format" name="Format" value="1000" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Callback URL" />
+               <Property id="format" name="Format" value="1000" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Client Id" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="Scope" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+            <Item>
+               <Property id="name" name="Name" value="State" />
+               <Property id="format" name="Format" value="260" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="" />
+               <Property id="details" name="Details" value=" " />
+            </Item>
+         </Configuration>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="HTTPCilent_Fusion" />
+            <Property id="type" name="Type" value="HTTP" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <Configuration Name="Settings">
+            <Item>
+               <Property id="name" name="Name" value="URL" />
+               <Property id="format" name="Format" value="2500" />
+               <Property id="type" name="Type" value="Alpha" />
+               <Property id="value" name="Value" value="https://fa-epnz-test-saasfaprod1.fa.ocs.oraclecloud.com" />
+            </Item>
+         </Configuration>
+      </Element>
+   </Resources>
+   <Services name="Services" element="Service">
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="schedulertype" name="Scheduler Type" value="Daily" />
+            <Property id="name" name="Name" value="Scheduler_Daliy" />
+            <Property id="type" name="Type" value="Scheduler" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Scheduler" name="Scheduler">
+            <Property id="timeinday" name="Day(s)" value="00:01" />
+            <Property id="daysinterval" name="Day(s)" value="1" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="schedulertype" name="Scheduler Type" value="Daily" />
+            <Property id="name" name="Name" value="Scheduler_Cust_Detail_Report" />
+            <Property id="type" name="Type" value="Scheduler" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="No" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Scheduler" name="Scheduler">
+            <Property id="timeinday" name="Day(s)" value="08:00,14:00" />
+            <Property id="daysinterval" name="Day(s)" value="1" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="schedulertype" name="Scheduler Type" value="Daily" />
+            <Property id="name" name="Name" value="Scheduler_CCID_Report" />
+            <Property id="type" name="Type" value="Scheduler" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="No" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Scheduler" name="Scheduler">
+            <Property id="timeinday" name="Day(s)" value="08:00,14:00" />
+            <Property id="daysinterval" name="Day(s)" value="1" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="schedulertype" name="Scheduler Type" value="Daily" />
+            <Property id="name" name="Name" value="Scheduler_Purge" />
+            <Property id="type" name="Type" value="Scheduler" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="No" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Scheduler" name="Scheduler">
+            <Property id="timeinday" name="Day(s)" value="01:00" />
+            <Property id="daysinterval" name="Day(s)" value="1" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="HTTP_temp" />
+            <Property id="type" name="Type" value="HTTP" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="Yes" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Details" name="Details">
+            <Property id="webserver" name="WebServer" value="MagicXpiSvr01" />
+            <Property id="alias" name="Alias" value="Magicxpi4.13" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="General" name="General">
+            <Property id="name" name="Name" value="HTTP_report" />
+            <Property id="type" name="Type" value="HTTP" />
+            <Property id="description" name="Description" value="" />
+            <Property id="default" name="Default" value="No" />
+         </PropertiesGroup>
+         <PropertiesGroup id="Details" name="Details">
+            <Property id="webserver" name="WebServer" value="MagicXpiSvr01" />
+            <Property id="alias" name="Alias" value="Magicxpi4.13" />
+         </PropertiesGroup>
+      </Element>
+   </Services>
+   <UserEnvironmentVariables name="User Environment Variables" element="Variable">
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="ReportEnv" />
+            <Property id="value" name="Value" value="UAT" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="ToEmail" />
+            <Property id="value" name="Value" value="delta.maurice@msssecurity.com.au" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="CC_Email" />
+            <Property id="value" name="Value" value="step" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="BCC" />
+            <Property id="value" name="Value" value="prajwal_kamthe@magicsoftware.com" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="AuditLogs" />
+            <Property id="value" name="Value" value="f:\Magic\AuditLogs\RoleCall_To_Fusion\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="CreateCustFilePath" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\CreateCustomer\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="ARInvoiceFilePath" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\ARInvoice\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Resource_email" />
+            <Property id="value" name="Value" value="Mss.smtp@msssecurity.com.au" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="SetId" />
+            <Property id="value" name="Value" value="300000000003311" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="ARInvoiceWithAttachFilePath" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\ARInvoice\Attachment\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Dim_Mastr_S4_attributeFormat" />
+            <Property id="value" name="Value" value="text" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="LedgerName" />
+            <Property id="value" name="Value" value="SIS IN PL" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="DynamicInsertion" />
+            <Property id="value" name="Value" value="Y" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Dim_Mastr_S4_p_entity" />
+            <Property id="value" name="Value" value="201" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Dim_Mastr_S4_flattenXML" />
+            <Property id="value" name="Value" value="true" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Dim_Mastr_S4_reportAbsPath" />
+            <Property id="value" name="Value" value="/Custom/Integration/Reports/SIS Related Relationship.xdo" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Reports" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\Reports\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="ARCreditMemo" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\ARCreditMemo\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Alert_CC_Mail" />
+            <Property id="value" name="Value" value="'Michael.pickering@msssecurity.com.au,Raj.Daroch@msssecurity.com.au,joe.oliveira@msssecurity.com.au,prajwal_kamthe@magicsoftware.com'" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Mine_Email" />
+            <Property id="value" name="Value" value="prajwal_kamthe@magicsoftware.com" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="ExistingCustFilePath" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\ExistingCustomer\" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="A" />
+            <Property id="value" name="Value" value="5DC1D544-07AB-448D-808A-01E680A08975" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="B" />
+            <Property id="value" name="Value" value="2021-05-26 14:54:02.8300000" />
+         </PropertiesGroup>
+      </Element>
+      <Element>
+         <PropertiesGroup id="" name="">
+            <Property id="name" name="Name" value="Modify" />
+            <Property id="value" name="Value" value="c:\RC-Payloads\ModifyCustomer\" />
+         </PropertiesGroup>
+      </Element>
+   </UserEnvironmentVariables>
+   <Calendars name="Calendars" element="Calendar" />
+   <BusinessProcesses>
+      <BPRef id="BP1" bpName="FUSION_CREATE_CUST_PROCESS">
+         <Flows>
+            <FlowRef id="BP1_Flow2" flowName="FUSION_CUSTOMER_CREATION" />
+            <FlowRef id="BP1_Flow22" flowName="SIS_Customer_Mapping" />
+            <FlowRef id="BP1_Flow21" flowName="COA_Customer_Sites" />
+            <FlowRef id="BP1_Flow20" flowName="Dimension_Master_Flow" />
+            <FlowRef id="BP1_Flow7" flowName="CreateLocation" />
+            <FlowRef id="BP1_Flow14" flowName="Organization" />
+            <FlowRef id="BP1_Flow8" flowName="CreateCustomerAcc_Site" />
+            <FlowRef id="BP1_Flow9" flowName="CreateBUAssignment" />
+            <FlowRef id="BP1_Flow10" flowName="CreateTaxResgitration" />
+            <FlowRef id="BP1_Flow23" flowName="Create_Customer_Profile" />
+            <FlowRef id="BP1_Flow11" flowName="CreateContact" />
+            <FlowRef id="BP1_Flow12" flowName="CreateConatctAssignToSite" />
+            <FlowRef id="BP1_Flow13" flowName="RealTimeErrNotification" />
+            <FlowRef id="BP1_Flow33" flowName="Flow-39" />
+            <FlowRef id="BP1_Flow34" flowName="CCIdPayload" />
+            <FlowRef id="BP1_Flow35" flowName="Dimension" />
+            <FlowRef id="BP1_Flow52" flowName="Grandparents" />
+            <FlowRef id="BP1_Flow70" flowName="redoBU_Dimension" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP3" bpName="MAGIC_MAINTAINANCE_PROCESS">
+         <Flows>
+            <FlowRef id="BP3_Flow4" flowName="RefreshConversion" />
+            <FlowRef id="BP3_Flow15" flowName="FloderCreation" />
+            <FlowRef id="BP3_Flow19" flowName="ErrorFlow" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP4" bpName="FUSION_AR_INVOICE_PROCESS">
+         <Flows>
+            <FlowRef id="BP4_Flow17" flowName="PayloadARcreationWithAttach" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP5" bpName="REPORTS_PROCESS">
+         <Flows>
+            <FlowRef id="BP5_Flow26" flowName="MSS_Group_CCID_Report" />
+            <FlowRef id="BP5_Flow28" flowName="MSS_Customer_Details_Report" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP6" bpName="AR_CREDIT_MEMO_PROCESS">
+         <Flows>
+            <FlowRef id="BP6_Flow29" flowName="DS_Trigger" />
+            <FlowRef id="BP6_Flow30" flowName="Create_AR_Memo_Header_Line" />
+            <FlowRef id="BP6_Flow31" flowName="Create_AR_Credit_Memo_Distribn" />
+            <FlowRef id="BP6_Flow32" flowName="AR_CM_INV_Application" />
+            <FlowRef id="BP6_Flow36" flowName="ESSJob" />
+            <FlowRef id="BP6_Flow71" flowName="Sch_Purge" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP7" bpName="FUSION_EXISTING_CUST">
+         <Flows>
+            <FlowRef id="BP7_Flow40" flowName="FUSION_CUSTOMER_ADD_SITE" />
+            <FlowRef id="BP7_Flow42" flowName="Dimension" />
+            <FlowRef id="BP7_Flow44" flowName="CCIdPayload" />
+            <FlowRef id="BP7_Flow43" flowName="CreateLocation" />
+            <FlowRef id="BP7_Flow41" flowName="MergeOrganization" />
+            <FlowRef id="BP7_Flow46" flowName="MergeCustomerAcc_Site" />
+            <FlowRef id="BP7_Flow47" flowName="CreateBUAssignment" />
+            <FlowRef id="BP7_Flow48" flowName="CreateTaxResgitration" />
+            <FlowRef id="BP7_Flow49" flowName="Create_Customer_Profile" />
+            <FlowRef id="BP7_Flow50" flowName="CreateContact" />
+            <FlowRef id="BP7_Flow51" flowName="CreateConatctAssignToSite" />
+            <FlowRef id="BP7_Flow45" flowName="RealTimeErrNotification" />
+            <FlowRef id="BP7_Flow65" flowName="Flow-65" />
+         </Flows>
+      </BPRef>
+      <BPRef id="BP8" bpName="FUSION_MODIFY_PROCESS">
+         <Flows>
+            <FlowRef id="BP8_Flow53" flowName="Main_Flow" />
+            <FlowRef id="BP8_Flow54" flowName="Location" />
+            <FlowRef id="BP8_Flow56" flowName="Contact" />
+            <FlowRef id="BP8_Flow57" flowName="PaymentTerms" />
+            <FlowRef id="BP8_Flow58" flowName="AccountUpdate" />
+            <FlowRef id="BP8_Flow59" flowName="UpdateOrg" />
+            <FlowRef id="BP8_Flow55" flowName="RealTimeErrNotification" />
+            <FlowRef id="BP8_Flow60" flowName="=UpdateCustomerSite" />
+            <FlowRef id="BP8_Flow62" flowName="UpdateSite" />
+            <FlowRef id="BP8_Flow66" flowName="Update_Customer_Profile" />
+            <FlowRef id="BP8_Flow68" flowName="AddContactToCustomer" />
+            <FlowRef id="BP8_Flow67" flowName="CreateContact" />
+            <FlowRef id="BP8_Flow69" flowName="CreateConatctAssignToSite" />
+         </Flows>
+      </BPRef>
+   </BusinessProcesses>
+</Project>

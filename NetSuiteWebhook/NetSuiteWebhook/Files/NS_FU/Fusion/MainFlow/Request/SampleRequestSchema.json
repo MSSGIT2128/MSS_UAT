@@ -1,0 +1,67 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"RequestId": 1614148362011,
+			"Operation": "Create",
+			"Type": "Journal",
+			"Data": {}
+		}
+	],
+	"required": [
+		"RequestId",
+		"Operation",
+		"Type",
+		"Data"
+	],
+	"properties": {
+		"RequestId": {
+			"$id": "#/properties/RequestId",
+			"type": "integer",
+			"title": "The RequestId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0,
+			"examples": [
+				1614148362011
+			]
+		},
+		"Operation": {
+			"$id": "#/properties/Operation",
+			"type": "string",
+			"title": "The Operation schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Create"
+			]
+		},
+		"Type": {
+			"$id": "#/properties/Type",
+			"type": "string",
+			"title": "The Type schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Journal"
+			]
+		},
+		"Data": {
+			"$id": "#/properties/Data",
+			"type": "object",
+			"title": "The Data schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{}
+			],
+			"required": [],
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}

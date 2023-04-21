@@ -1,0 +1,114 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "parameter": [
+                {
+                    "dataType": "dDocTitle",
+                    "name": "RELATED_RELATIONSHIP.txt",
+                    "value": "RELATED_RELATIONSHIP.txt"
+                },
+                {
+                    "dataType": "dDocTitle",
+                    "name": "RELATED_RELATIONSHIP.txt",
+                    "value": "RELATED_RELATIONSHIP.txt"
+                },
+                {
+                    "dataType": "dDocTitle",
+                    "name": "RELATED_RELATIONSHIP.txt",
+                    "value": "RELATED_RELATIONSHIP.txt"
+                }
+            ]
+        }
+    ],
+    "required": [
+        "parameter"
+    ],
+    "properties": {
+        "parameter": {
+            "$id": "#/properties/parameter",
+            "type": "array",
+            "title": "The parameter schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    {
+                        "dataType": "dDocTitle",
+                        "name": "RELATED_RELATIONSHIP.txt",
+                        "value": "RELATED_RELATIONSHIP.txt"
+                    },
+                    {
+                        "dataType": "dDocTitle",
+                        "name": "RELATED_RELATIONSHIP.txt",
+                        "value": "RELATED_RELATIONSHIP.txt"
+                    }
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/parameter/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/parameter/items/anyOf/0",
+                        "type": "object",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": {},
+                        "examples": [
+                            {
+                                "dataType": "dDocTitle",
+                                "name": "RELATED_RELATIONSHIP.txt",
+                                "value": "RELATED_RELATIONSHIP.txt"
+                            }
+                        ],
+                        "required": [
+                            "dataType",
+                            "name",
+                            "value"
+                        ],
+                        "properties": {
+                            "dataType": {
+                                "$id": "#/properties/parameter/items/anyOf/0/properties/dataType",
+                                "type": "string",
+                                "title": "The dataType schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "dDocTitle"
+                                ]
+                            },
+                            "name": {
+                                "$id": "#/properties/parameter/items/anyOf/0/properties/name",
+                                "type": "string",
+                                "title": "The name schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "RELATED_RELATIONSHIP.txt"
+                                ]
+                            },
+                            "value": {
+                                "$id": "#/properties/parameter/items/anyOf/0/properties/value",
+                                "type": "string",
+                                "title": "The value schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "RELATED_RELATIONSHIP.txt"
+                                ]
+                            }
+                        },
+                        "additionalProperties": true
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}

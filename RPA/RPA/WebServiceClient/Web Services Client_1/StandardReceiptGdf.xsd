@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptGdf/" xmlns:sdoJava="commonj.sdo/java" xmlns:sdoXML="commonj.sdo/xml" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptGdf/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="Jexptadditionalinfo.xsd" xml:id="Jexptadditionalinfo-xsd" />
+  <xsd:include schemaLocation="StandardReceiptGdfJA_5FCN_5FREMIT_5FBILL_5FNUM.xsd" xml:id="StandardReceiptGdfJA_5FCN_5FREMIT_5FBILL_5FNUM-xsd" />
+  <xsd:include schemaLocation="JLxMXReceipts.xsd" xml:id="JLxMXReceipts-xsd" />
+  <xsd:include schemaLocation="Jaxtwreceiptinformation.xsd" xml:id="Jaxtwreceiptinformation-xsd" />
+  <xsd:include schemaLocation="JExILReceiptInformation.xsd" xml:id="JExILReceiptInformation-xsd" />
+  <xsd:include schemaLocation="StandardReceiptGdfJAxJPReceipts.xsd" xml:id="StandardReceiptGdfJAxJPReceipts-xsd" />
+  <xsd:include schemaLocation="JLxARReceiptInformation.xsd" xml:id="JLxARReceiptInformation-xsd" />
+  <xsd:import schemaLocation="sdoXML.xsd" namespace="commonj.sdo/xml" />
+  <xsd:import schemaLocation="sdoJava.xsd" namespace="commonj.sdo/java" />
+  <xsd:complexType name="StandardReceiptGdf">
+    <xsd:annotation>
+      <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+        <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+          <attribute>CashReceiptId</attribute>
+        </key>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element sdoXML:dataType="sdoJava:LongObject" minOccurs="0" name="CashReceiptId" type="xsd:long" />
+      <xsd:element minOccurs="0" name="FLEX_PARAM_GLOBAL_COUNTRY_CODE" nillable="true" type="xsd:string" />
+      <xsd:element minOccurs="0" name="__FLEX_Context" nillable="true" type="xsd:string" />
+      <xsd:element minOccurs="0" name="__FLEX_Context_DisplayValue" nillable="true" type="xsd:string" />
+      <xsd:element minOccurs="0" name="_FLEX_NumOfSegments" nillable="true" type="xsd:int" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="standardReceiptGdf" type="StandardReceiptGdf" />
+</xsd:schema>

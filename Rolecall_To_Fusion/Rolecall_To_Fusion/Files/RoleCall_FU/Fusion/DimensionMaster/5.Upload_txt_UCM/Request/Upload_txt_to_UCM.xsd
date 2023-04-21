@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Envelope" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.oracle.com/UCM">
+  <xs:import namespace="http://www.oracle.com/UCM" schemaLocation="Upload_txt_to_UCM_app1.xsd" />
+  <xs:element name="Envelope" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:Prefix="soap">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Body" msdata:Prefix="soap">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:GenericRequest" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

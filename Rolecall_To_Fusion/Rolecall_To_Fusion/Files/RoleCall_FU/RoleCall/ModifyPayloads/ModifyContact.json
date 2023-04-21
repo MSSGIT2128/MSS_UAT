@@ -1,0 +1,400 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "personParty": {
+                "ObjectId": "300000001613332",
+                "PartyId": "300000003009001",
+                "PersonProfile": {
+                    "PersonProfileId": "300000003009001",
+                    "PersonFirstName": "TestingFirstName",
+                    "PersonLastName": "TestingLastName"
+                },
+                "Relationship": {
+                    "RelationshipRecId": "300000003009002",
+                    "RelationshipId": "300000003009003",
+                    "SubjectId": "300000003009001",
+                    "Email": {
+                        "ContactPointId": "300000003009008",
+                        "ContactPointType": "EMAIL",
+                        "EmailAddress": "test00212@test.com"
+                    },
+                    "Phone": [
+                        {
+                            "ContactPointId": "300000003009007",
+                            "ContactPointType": "PHONE",
+                            "PhoneLineType": "GEN",
+                            "PhoneCountryCode": "91",
+                            "PhoneNumber": "9717054321",
+                            "ContactPointPurpose": ""
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "personParty"
+    ],
+    "properties": {
+        "personParty": {
+            "$id": "#/properties/personParty",
+            "type": "object",
+            "title": "The personParty schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "ObjectId": "300000001613332",
+                    "PartyId": "300000003009001",
+                    "PersonProfile": {
+                        "PersonProfileId": "300000003009001",
+                        "PersonFirstName": "TestingFirstName",
+                        "PersonLastName": "TestingLastName"
+                    },
+                    "Relationship": {
+                        "RelationshipRecId": "300000003009002",
+                        "RelationshipId": "300000003009003",
+                        "SubjectId": "300000003009001",
+                        "Email": {
+                            "ContactPointId": "300000003009008",
+                            "ContactPointType": "EMAIL",
+                            "EmailAddress": "test00212@test.com"
+                        },
+                        "Phone": [
+                            {
+                                "ContactPointId": "300000003009007",
+                                "ContactPointType": "PHONE",
+                                "PhoneLineType": "GEN",
+                                "PhoneCountryCode": "91",
+                                "PhoneNumber": "9717054321",
+                                "ContactPointPurpose": ""
+                            }
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "ObjectId",
+                "PartyId",
+                "PersonProfile",
+                "Relationship"
+            ],
+            "properties": {
+                "ObjectId": {
+                    "$id": "#/properties/personParty/properties/ObjectId",
+                    "type": "string",
+                    "title": "The ObjectId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000001613332"
+                    ]
+                },
+                "PartyId": {
+                    "$id": "#/properties/personParty/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000003009001"
+                    ]
+                },
+                "PersonProfile": {
+                    "$id": "#/properties/personParty/properties/PersonProfile",
+                    "type": "object",
+                    "title": "The PersonProfile schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "PersonProfileId": "300000003009001",
+                            "PersonFirstName": "TestingFirstName",
+                            "PersonLastName": "TestingLastName"
+                        }
+                    ],
+                    "required": [
+                        "PersonProfileId",
+                        "PersonFirstName",
+                        "PersonLastName"
+                    ],
+                    "properties": {
+                        "PersonProfileId": {
+                            "$id": "#/properties/personParty/properties/PersonProfile/properties/PersonProfileId",
+                            "type": "string",
+                            "title": "The PersonProfileId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000003009001"
+                            ]
+                        },
+                        "PersonFirstName": {
+                            "$id": "#/properties/personParty/properties/PersonProfile/properties/PersonFirstName",
+                            "type": "string",
+                            "title": "The PersonFirstName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TestingFirstName"
+                            ]
+                        },
+                        "PersonLastName": {
+                            "$id": "#/properties/personParty/properties/PersonProfile/properties/PersonLastName",
+                            "type": "string",
+                            "title": "The PersonLastName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "TestingLastName"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "Relationship": {
+                    "$id": "#/properties/personParty/properties/Relationship",
+                    "type": "object",
+                    "title": "The Relationship schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "RelationshipRecId": "300000003009002",
+                            "RelationshipId": "300000003009003",
+                            "SubjectId": "300000003009001",
+                            "Email": {
+                                "ContactPointId": "300000003009008",
+                                "ContactPointType": "EMAIL",
+                                "EmailAddress": "test00212@test.com"
+                            },
+                            "Phone": [
+                                {
+                                    "ContactPointId": "300000003009007",
+                                    "ContactPointType": "PHONE",
+                                    "PhoneLineType": "GEN",
+                                    "PhoneCountryCode": "91",
+                                    "PhoneNumber": "9717054321",
+                                    "ContactPointPurpose": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "RelationshipRecId",
+                        "RelationshipId",
+                        "SubjectId",
+                        "Email",
+                        "Phone"
+                    ],
+                    "properties": {
+                        "RelationshipRecId": {
+                            "$id": "#/properties/personParty/properties/Relationship/properties/RelationshipRecId",
+                            "type": "string",
+                            "title": "The RelationshipRecId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000003009002"
+                            ]
+                        },
+                        "RelationshipId": {
+                            "$id": "#/properties/personParty/properties/Relationship/properties/RelationshipId",
+                            "type": "string",
+                            "title": "The RelationshipId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000003009003"
+                            ]
+                        },
+                        "SubjectId": {
+                            "$id": "#/properties/personParty/properties/Relationship/properties/SubjectId",
+                            "type": "string",
+                            "title": "The SubjectId schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "300000003009001"
+                            ]
+                        },
+                        "Email": {
+                            "$id": "#/properties/personParty/properties/Relationship/properties/Email",
+                            "type": "object",
+                            "title": "The Email schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+                                    "ContactPointId": "300000003009008",
+                                    "ContactPointType": "EMAIL",
+                                    "EmailAddress": "test00212@test.com"
+                                }
+                            ],
+                            "required": [
+                                "ContactPointId",
+                                "ContactPointType",
+                                "EmailAddress"
+                            ],
+                            "properties": {
+                                "ContactPointId": {
+                                    "$id": "#/properties/personParty/properties/Relationship/properties/Email/properties/ContactPointId",
+                                    "type": "string",
+                                    "title": "The ContactPointId schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "300000003009008"
+                                    ]
+                                },
+                                "ContactPointType": {
+                                    "$id": "#/properties/personParty/properties/Relationship/properties/Email/properties/ContactPointType",
+                                    "type": "string",
+                                    "title": "The ContactPointType schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "EMAIL"
+                                    ]
+                                },
+                                "EmailAddress": {
+                                    "$id": "#/properties/personParty/properties/Relationship/properties/Email/properties/EmailAddress",
+                                    "type": "string",
+                                    "title": "The EmailAddress schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "test00212@test.com"
+                                    ]
+                                }
+                            },
+                            "additionalProperties": true
+                        },
+                        "Phone": {
+                            "$id": "#/properties/personParty/properties/Relationship/properties/Phone",
+                            "type": "array",
+                            "title": "The Phone schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "ContactPointId": "300000003009007",
+                                        "ContactPointType": "PHONE",
+                                        "PhoneLineType": "GEN",
+                                        "PhoneCountryCode": "91",
+                                        "PhoneNumber": "9717054321",
+                                        "ContactPointPurpose": ""
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "ContactPointId": "300000003009007",
+                                                "ContactPointType": "PHONE",
+                                                "PhoneLineType": "GEN",
+                                                "PhoneCountryCode": "91",
+                                                "PhoneNumber": "9717054321",
+                                                "ContactPointPurpose": ""
+                                            }
+                                        ],
+                                        "required": [
+                                            "ContactPointId",
+                                            "ContactPointType",
+                                            "PhoneLineType",
+                                            "PhoneCountryCode",
+                                            "PhoneNumber",
+                                            "ContactPointPurpose"
+                                        ],
+                                        "properties": {
+                                            "ContactPointId": {
+                                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0/properties/ContactPointId",
+                                                "type": "string",
+                                                "title": "The ContactPointId schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "300000003009007"
+                                                ]
+                                            },
+                                            "ContactPointType": {
+                                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0/properties/ContactPointType",
+                                                "type": "string",
+                                                "title": "The ContactPointType schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "PHONE"
+                                                ]
+                                            },
+                                            "PhoneLineType": {
+                                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneLineType",
+                                                "type": "string",
+                                                "title": "The PhoneLineType schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "GEN"
+                                                ]
+                                            },
+                                            "PhoneCountryCode": {
+                                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneCountryCode",
+                                                "type": "string",
+                                                "title": "The PhoneCountryCode schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "91"
+                                                ]
+                                            },
+                                            "PhoneNumber": {
+                                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0/properties/PhoneNumber",
+                                                "type": "string",
+                                                "title": "The PhoneNumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "9717054321"
+                                                ]
+                                            },
+                                            "ContactPointPurpose": {
+                                                "$id": "#/properties/personParty/properties/Relationship/properties/Phone/items/anyOf/0/properties/ContactPointPurpose",
+                                                "type": "string",
+                                                "title": "The ContactPointPurpose schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    ""
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

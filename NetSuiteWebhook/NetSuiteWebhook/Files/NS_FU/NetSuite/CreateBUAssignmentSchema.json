@@ -1,0 +1,215 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567898765434,
+            "Operation": "Create",
+            "Type": "BUAssignment",
+            "Data": {
+                "CustomerNumber": "Test1",
+                "CustomerAccountNumber": "TestAccount",
+                "CustomerSiteNumber": "Test1",
+                "BusinessUnit": "Dusters Total Solutions Services Pvt. Ltd.",
+                "RevenueAccountCodeCombination": "100.999.4321201.999.030.0006.99999.99999.999.999.9999",
+                "ReceivableAccountCodeCombination": "100.999.4321201.999.030.0006.99999.99999.999.999.9999",
+                "TaxAccountCodeCombination": true,
+                "FreightAccountCodeCombination": true,
+                "UnearnedRevenueAccountCodeCombination": true,
+                "UnbilledReceivableAccountCodeCombination": true,
+                "AutoInvoiceClearingAccountCodeCombination": true
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567898765434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "BUAssignment"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CustomerNumber": "Test1",
+                    "CustomerAccountNumber": "TestAccount",
+                    "CustomerSiteNumber": "Test1",
+                    "BusinessUnit": "Dusters Total Solutions Services Pvt. Ltd.",
+                    "RevenueAccountCodeCombination": "100.999.4321201.999.030.0006.99999.99999.999.999.9999",
+                    "ReceivableAccountCodeCombination": "100.999.4321201.999.030.0006.99999.99999.999.999.9999",
+                    "TaxAccountCodeCombination": true,
+                    "FreightAccountCodeCombination": true,
+                    "UnearnedRevenueAccountCodeCombination": true,
+                    "UnbilledReceivableAccountCodeCombination": true,
+                    "AutoInvoiceClearingAccountCodeCombination": true
+                }
+            ],
+            "required": [
+                "CustomerNumber",
+                "CustomerAccountNumber",
+                "CustomerSiteNumber",
+                "BusinessUnit",
+                "RevenueAccountCodeCombination",
+                "ReceivableAccountCodeCombination",
+                "TaxAccountCodeCombination",
+                "FreightAccountCodeCombination",
+                "UnearnedRevenueAccountCodeCombination",
+                "UnbilledReceivableAccountCodeCombination",
+                "AutoInvoiceClearingAccountCodeCombination"
+            ],
+            "properties": {
+                "CustomerNumber": {
+                    "$id": "#/properties/Data/properties/CustomerNumber",
+                    "type": "string",
+                    "title": "The CustomerNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Test1"
+                    ]
+                },
+                "CustomerAccountNumber": {
+                    "$id": "#/properties/Data/properties/CustomerAccountNumber",
+                    "type": "string",
+                    "title": "The CustomerAccountNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "TestAccount"
+                    ]
+                },
+                "CustomerSiteNumber": {
+                    "$id": "#/properties/Data/properties/CustomerSiteNumber",
+                    "type": "string",
+                    "title": "The CustomerSiteNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Test1"
+                    ]
+                },
+                "BusinessUnit": {
+                    "$id": "#/properties/Data/properties/BusinessUnit",
+                    "type": "string",
+                    "title": "The BusinessUnit schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Dusters Total Solutions Services Pvt. Ltd."
+                    ]
+                },
+                "RevenueAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/RevenueAccountCodeCombination",
+                    "type": "string",
+                    "title": "The RevenueAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "100.999.4321201.999.030.0006.99999.99999.999.999.9999"
+                    ]
+                },
+                "ReceivableAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/ReceivableAccountCodeCombination",
+                    "type": "string",
+                    "title": "The ReceivableAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "100.999.4321201.999.030.0006.99999.99999.999.999.9999"
+                    ]
+                },
+                "TaxAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/TaxAccountCodeCombination",
+                    "type": "boolean",
+                    "title": "The TaxAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "FreightAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/FreightAccountCodeCombination",
+                    "type": "boolean",
+                    "title": "The FreightAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "UnearnedRevenueAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/UnearnedRevenueAccountCodeCombination",
+                    "type": "boolean",
+                    "title": "The UnearnedRevenueAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "UnbilledReceivableAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/UnbilledReceivableAccountCodeCombination",
+                    "type": "boolean",
+                    "title": "The UnbilledReceivableAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                },
+                "AutoInvoiceClearingAccountCodeCombination": {
+                    "$id": "#/properties/Data/properties/AutoInvoiceClearingAccountCodeCombination",
+                    "type": "boolean",
+                    "title": "The AutoInvoiceClearingAccountCodeCombination schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": false,
+                    "examples": [
+                        true
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

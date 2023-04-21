@@ -1,0 +1,198 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1631608223264,
+            "Operation": "Update",
+            "Type": "UpdateDFFEntityDetails",
+            "Data": {
+                "operationMode": "SINGLE",
+                "object": {
+                    "EntityName": "Receivables Invoice",
+                    "ContextValue": "#NULL",
+                    "UserKeyA": "333431",
+					
+                    "DFFAttributes": {
+						"ATTRIBUTE1":"4500004077"
+                        
+                    }
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1631608223264
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Update"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "UpdateDFFEntityDetails"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "operationMode": "SINGLE",
+                    "object": {
+                        "EntityName": "Receivables Invoice",
+                        "ContextValue": "#NULL",
+                        "UserKeyA": "333431",
+						
+                        "DFFAttributes": {
+							"ATTRIBUTE1":"PO12345"
+                       
+                        }
+                    }
+                }
+            ],
+            "required": [
+                "operationMode",
+                "object"
+            ],
+            "properties": {
+                "operationMode": {
+                    "$id": "#/properties/Data/properties/operationMode",
+                    "type": "string",
+                    "title": "The operationMode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SINGLE"
+                    ]
+                },
+                "object": {
+                    "$id": "#/properties/Data/properties/object",
+                    "type": "object",
+                    "title": "The object schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "EntityName": "Receivables Invoice",
+                            "ContextValue": "#NULL",
+                            "UserKeyA": "333431",
+							
+                            "DFFAttributes": {
+								"ATTRIBUTE1":"PO12345"
+                            }
+                        }
+                    ],
+                    "required": [
+                        "EntityName",
+                        "ContextValue",
+                        "UserKeyA",
+                        "DFFAttributes"
+                    ],
+                    "properties": {
+                        "EntityName": {
+                            "$id": "#/properties/Data/properties/object/properties/EntityName",
+                            "type": "string",
+                            "title": "The EntityName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Receivables Invoice"
+                            ]
+                        },
+                        "ContextValue": {
+                            "$id": "#/properties/Data/properties/object/properties/ContextValue",
+                            "type": "string",
+                            "title": "The ContextValue schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "#NULL"
+                            ]
+                        },
+                        "UserKeyA": {
+                            "$id": "#/properties/Data/properties/object/properties/UserKeyA",
+                            "type": "string",
+                            "title": "The UserKeyA schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "333431"
+                            ]
+                        },
+                        "DFFAttributes": {
+                            "$id": "#/properties/Data/properties/object/properties/DFFAttributes",
+                            "type": "object",
+                            "title": "The DFFAttributes schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                                {
+									"ATTRIBUTE1":"PO12345"
+                                }
+                            ],
+                            "required": [
+								"ATTRIBUTE1"
+                            ],
+                            "properties": {
+								"ATTRIBUTE1": {
+                                    "$id": "#/properties/Data/properties/object/properties/DFFAttributes/properties/ATTRIBUTE1",
+                                    "type": "string",
+                                    "title": "The ATTRIBUTE1 schema",
+                                    "description": "An explanation about the purpose of this instance.",
+                                    "default": "",
+                                    "examples": [
+                                        "PO12345"
+                                    ]
+                                }
+                                
+                               
+                               
+                               
+                                
+                               
+                               
+                            },
+                            "additionalProperties": true
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

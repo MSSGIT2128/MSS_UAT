@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:app3="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionDistributionInterfaceLineDff/" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" schemaLocation="Request_app1.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionDistributionInterfaceLineDff/" schemaLocation="Request_app3.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:element name="processInterfaceDistribution" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="changeOperation" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="interfaceDistribution" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:AccountClass" minOccurs="0" />
+              <xs:element ref="app1:OrgId" minOccurs="0" />
+              <xs:element ref="app1:Amount" minOccurs="0" />
+              <xs:element ref="app1:Percent" minOccurs="0" />
+              <xs:element ref="app1:CodeCombinationId" minOccurs="0" />
+              <xs:element ref="app1:DistributionInterfacLineDff" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

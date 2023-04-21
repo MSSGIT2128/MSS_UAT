@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Envelope" targetNamespace="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mstns="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://www.w3.org/2005/08/addressing" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:app3="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:app4="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/" xmlns:app5="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/" schemaLocation="Response_app4.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" schemaLocation="Response_app2.xsd" />
+  <xs:import namespace="http://www.w3.org/2005/08/addressing" schemaLocation="Response_app1.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/" schemaLocation="Response_app5.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" schemaLocation="Response_app3.xsd" />
+  <xs:element name="Envelope" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msdata:Prefix="env">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Header" msdata:Prefix="env">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:Action" minOccurs="0" />
+              <xs:element ref="app1:MessageID" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Body" msdata:Prefix="env">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app3:processInterfaceLineResponse" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

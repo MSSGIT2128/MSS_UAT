@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptDff/" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/receipts/shared/model/flex/StandardReceiptDff/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="StandardReceiptFLEX.xsd" />
+  <xsd:complexType name="ZenginCashReceipts">
+    <xsd:annotation>
+      <xsd:appinfo source="http://xmlns.oracle.com/adf/svc/metadata/">
+        <key xmlns="http://xmlns.oracle.com/adf/svc/metadata/">
+          <attribute>CashReceiptId</attribute>
+        </key>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:complexContent mixed="false">
+      <xsd:extension base="StandardReceiptFLEX" />
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="zenginCashReceipts" type="ZenginCashReceipts" />
+</xsd:schema>

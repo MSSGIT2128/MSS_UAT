@@ -1,0 +1,111 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1627873848872,
+            "Operation": "Create",
+            "Type": "DisputeRunReport",
+            "Data": {
+                "P_TRX_NUM": "D552072",
+                "P_FROM_DATE": "2021-09-01 01:00:00",
+                "P_TO_DATE": ""
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1627873848872
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "DisputeRunReport"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "P_TRX_NUM": "D552072",
+                    "P_FROM_DATE": "2021-09-01 01:00:00",
+                    "P_TO_DATE": ""
+                }
+            ],
+            "required": [
+                "P_TRX_NUM",
+                "P_FROM_DATE",
+                "P_TO_DATE"
+            ],
+            "properties": {
+                "P_TRX_NUM": {
+                    "$id": "#/properties/Data/properties/P_TRX_NUM",
+                    "type": "string",
+                    "title": "The P_TRX_NUM schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "D552072"
+                    ]
+                },
+                "P_FROM_DATE": {
+                    "$id": "#/properties/Data/properties/P_FROM_DATE",
+                    "type": "string",
+                    "title": "The P_FROM_DATE schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-09-01 01:00:00"
+                    ]
+                },
+                "P_TO_DATE": {
+                    "$id": "#/properties/Data/properties/P_TO_DATE",
+                    "type": "string",
+                    "title": "The P_TO_DATE schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        ""
+                    ]
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,223 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"PartyNumber": "D3314001",
+			"PartyId": "300000003167493",
+			"OrganizationProfile": {
+				"OrganizationName": "New Organisation Name"
+			},
+			"PartySite": [
+				{
+					"PartySiteNumber": "A3314002",
+					"PartySiteName": "New site name 2",
+					"valueSets_ValueId": 123456
+				},
+				{
+					"PartySiteNumber": "A3314003",
+					"PartySiteName": "New site name 3",
+					"valueSets_ValueId": 7890123
+				}
+			],
+			"customerAccount": {
+				"CustomerAccountId": "300000003167502",
+				"PartyId": "300000003167493",
+				"AccountName": "New Organisation Name"
+			}
+		}
+	],
+	"required": [
+		"PartyNumber",
+		"PartyId",
+		"OrganizationProfile",
+		"PartySite",
+		"customerAccount"
+	],
+	"properties": {
+		"PartyNumber": {
+			"$id": "#/properties/PartyNumber",
+			"type": "string",
+			"title": "The PartyNumber schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"D3314001"
+			]
+		},
+		"PartyId": {
+			"$id": "#/properties/PartyId",
+			"type": "string",
+			"title": "The PartyId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"300000003167493"
+			]
+		},
+		"OrganizationProfile": {
+			"$id": "#/properties/OrganizationProfile",
+			"type": "object",
+			"title": "The OrganizationProfile schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{
+					"OrganizationName": "New Organisation Name"
+				}
+			],
+			"required": [
+				"OrganizationName"
+			],
+			"properties": {
+				"OrganizationName": {
+					"$id": "#/properties/OrganizationProfile/properties/OrganizationName",
+					"type": "string",
+					"title": "The OrganizationName schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"New Organisation Name"
+					]
+				}
+			},
+			"additionalProperties": true
+		},
+		"PartySite": {
+			"$id": "#/properties/PartySite",
+			"type": "array",
+			"title": "The PartySite schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"PartySiteNumber": "A3314002",
+						"PartySiteName": "New site name 2",
+						"valueSets_ValueId": 123456
+					},
+					{
+						"PartySiteNumber": "A3314003",
+						"PartySiteName": "New site name 3",
+						"valueSets_ValueId": 7890123
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/PartySite/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/PartySite/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"PartySiteNumber": "A3314002",
+								"PartySiteName": "New site name 2",
+								"valueSets_ValueId": 123456
+							}
+						],
+						"required": [
+							"PartySiteNumber",
+							"PartySiteName",
+							"valueSets_ValueId"
+						],
+						"properties": {
+							"PartySiteNumber": {
+								"$id": "#/properties/PartySite/items/anyOf/0/properties/PartySiteNumber",
+								"type": "string",
+								"title": "The PartySiteNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"A3314002"
+								]
+							},
+							"PartySiteName": {
+								"$id": "#/properties/PartySite/items/anyOf/0/properties/PartySiteName",
+								"type": "string",
+								"title": "The PartySiteName schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"New site name 2"
+								]
+							},
+							"valueSets_ValueId": {
+								"$id": "#/properties/PartySite/items/anyOf/0/properties/valueSets_ValueId",
+								"type": "integer",
+								"title": "The valueSets_ValueId schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": 0,
+								"examples": [
+									123456
+								]
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		},
+		"customerAccount": {
+			"$id": "#/properties/customerAccount",
+			"type": "object",
+			"title": "The customerAccount schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{
+					"CustomerAccountId": "300000003167502",
+					"PartyId": "300000003167493",
+					"AccountName": "New Organisation Name"
+				}
+			],
+			"required": [
+				"CustomerAccountId",
+				"PartyId",
+				"AccountName"
+			],
+			"properties": {
+				"CustomerAccountId": {
+					"$id": "#/properties/customerAccount/properties/CustomerAccountId",
+					"type": "string",
+					"title": "The CustomerAccountId schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"300000003167502"
+					]
+				},
+				"PartyId": {
+					"$id": "#/properties/customerAccount/properties/PartyId",
+					"type": "string",
+					"title": "The PartyId schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"300000003167493"
+					]
+				},
+				"AccountName": {
+					"$id": "#/properties/customerAccount/properties/AccountName",
+					"type": "string",
+					"title": "The AccountName schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"New Organisation Name"
+					]
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}

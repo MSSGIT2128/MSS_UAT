@@ -1,0 +1,101 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "LocationId": "300000003167472",
+            "Address1": "Level 10, Suite 7",
+            "Address2": "Zenith Centre Tower B",
+            "Address3": "821 Pacific Highway",
+            "City": "Chatswood",
+            "PostalCode": 2067,
+            "State": "NSW"
+        }
+    ],
+    "required": [
+        "LocationId",
+        "Address1",
+        "Address2",
+        "Address3",
+        "City",
+        "PostalCode",
+        "State"
+    ],
+    "properties": {
+        "LocationId": {
+            "$id": "#/properties/LocationId",
+            "type": "string",
+            "title": "The LocationId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "300000003167472"
+            ]
+        },
+        "Address1": {
+            "$id": "#/properties/Address1",
+            "type": "string",
+            "title": "The Address1 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Level 10, Suite 7"
+            ]
+        },
+        "Address2": {
+            "$id": "#/properties/Address2",
+            "type": "string",
+            "title": "The Address2 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Zenith Centre Tower B"
+            ]
+        },
+        "Address3": {
+            "$id": "#/properties/Address3",
+            "type": "string",
+            "title": "The Address3 schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "821 Pacific Highway"
+            ]
+        },
+        "City": {
+            "$id": "#/properties/City",
+            "type": "string",
+            "title": "The City schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Chatswood"
+            ]
+        },
+        "PostalCode": {
+            "$id": "#/properties/PostalCode",
+            "type": "integer",
+            "title": "The PostalCode schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                2067
+            ]
+        },
+        "State": {
+            "$id": "#/properties/State",
+            "type": "string",
+            "title": "The State schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "NSW"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

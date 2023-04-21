@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:app3="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionDistributionInterfaceLineDff/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionDistributionInterfaceLineDff/" schemaLocation="Request_app3.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" schemaLocation="Request_app2.xsd" />
+  <xs:element name="AccountClass" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="OrgId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Amount" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="Percent" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="CodeCombinationId" msdata:Prefix="inv" type="xs:string" />
+  <xs:element name="DistributionInterfacLineDff" msdata:Prefix="inv">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app3:__FLEX_Context" minOccurs="0" />
+        <xs:element ref="app3:__FLEX_Context_DisplayValue" minOccurs="0" />
+        <xs:element ref="app3:otherinvoicedetails" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

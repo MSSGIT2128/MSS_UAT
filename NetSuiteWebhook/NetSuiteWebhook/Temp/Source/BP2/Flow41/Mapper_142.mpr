@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper>
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema d3p1:type="FlatFileSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>2</SchemaID>
+      <Order>0</Order>
+      <Name>FlatFile_2</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>FlatFile</SchemaType>
+      <Fields>
+        <Field d3p1:type="ComplexField">
+          <Identifier>2</Identifier>
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>f575558b-599b-43af-9dc0-ce0945d77a94</Identifier>
+          <FieldName>InvoiceNumber</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>30</Length>
+        </Field>
+        <Field d3p1:type="FieldFlatFile">
+          <Identifier>6a47c2a1-1b29-4166-837b-3360e164eb24</Identifier>
+          <FieldName>Message</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>100</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>100</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <From>0</From>
+          <Length>30</Length>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <FF>
+        <DataExp>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnNmM1MzFlYjctMjEzYS00M2YxLWI0OGItNDk5NDg0YzEwYzY0JywwLDApPCMhJUAkPg==</ExpressionVal>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </DataExp>
+        <isUnicode>false</isUnicode>
+        <isAppend>false</isAppend>
+        <DataDestination>Variable</DataDestination>
+        <Delimited_Posi>Delimited</Delimited_Posi>
+        <Delimeter>,</Delimeter>
+        <IncludeDelimiterInData>false</IncludeDelimiterInData>
+        <RecordDelimiter>|</RecordDelimiter>
+        <CreateTitles>false</CreateTitles>
+        <DataEncoding>Ansi</DataEncoding>
+        <FF_Lines>
+          <FF_Line>
+            <GUID>f575558b-599b-43af-9dc0-ce0945d77a94</GUID>
+            <Type>A</Type>
+            <Name>InvoiceNumber</Name>
+            <Picture>30</Picture>
+            <From>0</From>
+            <Length>30</Length>
+          </FF_Line>
+          <FF_Line>
+            <GUID>6a47c2a1-1b29-4166-837b-3360e164eb24</GUID>
+            <Type>A</Type>
+            <Name>Message</Name>
+            <Picture>100</Picture>
+            <From>0</From>
+            <Length>30</Length>
+          </FF_Line>
+        </FF_Lines>
+      </FF>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema d3p1:type="JSonSchema" xmlns:d3p1="http://www.w3.org/2001/XMLSchema-instance">
+      <SchemaID>1</SchemaID>
+      <Order>0</Order>
+      <Name>JSON_1</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>JSON</SchemaType>
+      <Fields>
+        <Field d3p1:type="JsonComplexField">
+          <Identifier>The root schema</Identifier>
+          <FieldName>The root schema</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema</ActualPath>
+          <InternalComplexType>ObjectComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+        </Field>
+        <Field d3p1:type="JsonComplexField">
+          <Identifier>The root schema/Response</Identifier>
+          <FieldName>Response</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema/Response</ActualPath>
+          <InternalComplexType>ObjectComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+        </Field>
+        <Field d3p1:type="JsonSimpleField">
+          <Identifier>The root schema/Response/InvoiceNumber</Identifier>
+          <FieldName>InvoiceNumber</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldE5vZGVOYW1lKDIvZjU3NTU1OGItNTk5Yi00M2FmLTlkYzAtY2UwOTQ1ZDc3YTk0KTwjISVAJD4p</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>String</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <IsArrayItem>false</IsArrayItem>
+          <MaxInstance>0</MaxInstance>
+          <ActualPath>The root schema/Response/InvoiceNumber</ActualPath>
+          <AdditionalJsonProperties>
+            <MaxLength />
+            <MaxItems />
+            <MinItems />
+            <Default />
+            <EnumValues />
+          </AdditionalJsonProperties>
+        </Field>
+        <Field d3p1:type="JsonSimpleField">
+          <Identifier>The root schema/Response/Message</Identifier>
+          <FieldName>Message</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldE5vZGVOYW1lKDIvNmE0N2MyYTEtMWIyOS00MTY2LTgzN2ItMzM2MGUxNjRlYjI0KTwjISVAJD4p</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>String</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <IsArrayItem>false</IsArrayItem>
+          <MaxInstance>0</MaxInstance>
+          <ActualPath>The root schema/Response/Message</ActualPath>
+          <AdditionalJsonProperties>
+            <MaxLength />
+            <MaxItems />
+            <MinItems />
+            <Default />
+            <EnumValues />
+          </AdditionalJsonProperties>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <JSON>
+        <JsonFileName>Files\NS_FU\Fusion\AR Credit Memo\AR_CM_INV_Application\ErrorResponse\Consolidated_schema.json</JsonFileName>
+        <UseStreamingParser>false</UseStreamingParser>
+        <DataDest>Variable</DataDest>
+        <DataDestinationExpression>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnZDgzZDk1ODUtMDAyMi00ZDc0LWFmMDUtYjg4ODMzYTg1NzZiJywwLDApPCMhJUAkPg==</ExpressionVal>
+          <ExpectedType>B</ExpectedType>
+          <Direction>O</Direction>
+        </DataDestinationExpression>
+        <JsonFileEncoding>Unicode(UTF-8)</JsonFileEncoding>
+        <ValidateSchema>false</ValidateSchema>
+        <DataFormats />
+        <AlwaysCreateNodes>false</AlwaysCreateNodes>
+      </JSON>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>2</SourceIdentifier>
+      <SourceSchemaID>2</SourceSchemaID>
+      <DestinationIdentifier>The root schema</DestinationIdentifier>
+      <DestinationSchemaID>1</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>f575558b-599b-43af-9dc0-ce0945d77a94</SourceIdentifier>
+      <SourceSchemaID>2</SourceSchemaID>
+      <DestinationIdentifier>The root schema/Response/InvoiceNumber</DestinationIdentifier>
+      <DestinationSchemaID>1</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>6a47c2a1-1b29-4166-837b-3360e164eb24</SourceIdentifier>
+      <SourceSchemaID>2</SourceSchemaID>
+      <DestinationIdentifier>The root schema/Response/Message</DestinationIdentifier>
+      <DestinationSchemaID>1</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

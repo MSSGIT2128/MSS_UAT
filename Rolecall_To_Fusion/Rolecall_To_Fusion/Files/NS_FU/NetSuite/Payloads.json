@@ -1,0 +1,363 @@
+Location Create
+{
+  "RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "Location",
+  "Data": {
+    "ID": "10",
+    "Name": "VIC",
+    "EnabledFlag": "Y",
+    "AddressEffectiveDate": "2020-01-01",
+    "EffectiveDate": "2020-01-01",
+    "Country": "AU",
+    "Address1": "123 Test Street",
+    "City": "Melbourne",
+    "PostalCode": "3000",
+    "State": "Victoria",
+    "CreatedByModule": "SIS"
+  }
+}
+
+Location Edit
+{
+  "RequestId": 654567898765434,
+  "Operation": "Edit",
+  "Type": "Location",
+  "FusionId": "300000001613421",
+  "Data": {
+    "ID": "10",
+    "Name": "VIC",
+    "EnabledFlag": "Y",
+    "AddressEffectiveDate": "2020-01-01",
+    "EffectiveDate": "2020-01-01",
+    "Country": "AU",
+    "Address1": "123 Test Street",
+    "City": "Melbourne",
+    "PostalCode": "3000",
+    "State": "Victoria",
+    "CreatedByModule": "SIS"
+  }
+}
+
+
+
+Organisation Create
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "Organization",
+  "Data": {
+    "CreatedByModule": "SIS",
+    "OrganizationProfile": {
+      "PartyNumber": "C123456",
+      "OrganizationName": "ABC Company"
+    },
+    "PartyUsageAssignment": {
+      "PartyUsageCode": "PARTY_OF_INTEREST",
+      "EffectiveStartDate": "2020-01-01"
+    },
+    "PartySites": [
+      {
+        "LocationId": "300000001771248",
+        "PartySiteNumber": "Test",
+        "PartySiteName": "Test Party Site",
+        "EffectiveStartDate": "2020-01-01",
+        "PartySiteUse": {
+          "SiteUseType": "BILL_TO"
+        }
+      },
+      {
+        "LocationId": "300000001771250",
+        "PartySiteNumber": "Test2",
+        "PartySiteName": "Test Party Site2",
+        "EffectiveStartDate": "2020-01-01",
+        "PartySiteUse": {
+          "SiteUseType": "SHIP_TO"
+        }
+      }
+    ]
+  }
+}
+
+Organisation Edit
+{
+  "RequestId": 654567898765434,
+  "Operation": "Edit",
+  "Type": "Organization",
+  "FusionId": "300000001613421",
+  "Data": {
+    "CreatedByModule": "SIS",
+    "OrganizationProfile": {
+      "PartyNumber": "C123456",
+      "OrganizationName": "ABC Company"
+    },
+    "PartyUsageAssignment": {
+      "PartyUsageCode": "PARTY_OF_INTEREST",
+      "EffectiveStartDate": "2020-01-01"
+    },
+    "PartySites": [
+      {
+        "LocationId": "300000001771248",
+        "PartySiteNumber": "Test",
+        "PartySiteName": "Test Party Site",
+        "EffectiveStartDate": "2020-01-01",
+        "PartySiteUse": {
+          "SiteUseType": "BILL_TO"
+        }
+      },
+      {
+        "LocationId": "300000001771250",
+        "PartySiteNumber": "Test2",
+        "PartySiteName": "Test Party Site2",
+        "EffectiveStartDate": "2020-01-01",
+        "PartySiteUse": {
+          "SiteUseType": "SHIP_TO"
+        }
+      }
+    ]
+  }
+}
+
+
+Customer Account & Account Site Create
+{
+  "RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "CustomerAccount",
+  "Data": {
+    "PartyId": "300000001771253",
+    "AccountNumber": "TestAccount",
+    "CustomerClassCode": "PUBLIC SECTOR COMPANIES",
+    "AccountName": "TestAccount",
+    "CreatedByModule": "SIS",
+    "CustomerAccountSite": [
+      {
+        "PartySiteId": "300000001771254",
+        "CreatedByModule": "SIS",
+        "SetId": "300000000003311",
+        "StartDateActive": "2020-09-25",
+        "CustomerAccountSiteUse": [
+          {
+            "SiteUseCode": "BILL_TO",
+            "StartDate": "2020-09-25",
+            "CreatedByModule": "SIS",
+            "OriginalSystemReference": {
+              "OrigSystem": "SIS",
+              "OrigSystemReference": "300000001771255",
+              "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+              "CreatedByModule": "SIS"
+            }
+          },
+          {
+            "SiteUseCode": "SHIP_TO",
+            "StartDate": "2020-09-25",
+            "CreatedByModule": "SIS",
+            "OriginalSystemReference": {
+              "OrigSystem": "SIS",
+              "OrigSystemReference": "300000001771256",
+              "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+              "CreatedByModule": "SIS"
+            }
+          }
+        ],
+        "OriginalSystemReference": {
+          "OrigSystem": "SIS",
+          "OrigSystemReference": "300000001771254",
+          "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+          "CreatedByModule": "SIS"
+        }
+      },
+      {
+        "PartySiteId": "300000001771257",
+        "CreatedByModule": "SIS",
+        "SetId": "300000000003311",
+        "StartDateActive": "2020-09-25",
+        "CustomerAccountSiteUse": [
+          {
+            "SiteUseCode": "BILL_TO",
+            "StartDate": "2020-09-25",
+            "CreatedByModule": "SIS",
+            "OriginalSystemReference": {
+              "OrigSystem": "SIS",
+              "OrigSystemReference": "300000001771258",
+              "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+              "CreatedByModule": "SIS"
+            }
+          },
+          {
+            "SiteUseCode": "SHIP_TO",
+            "StartDate": "2020-09-25",
+            "CreatedByModule": "SIS",
+            "OriginalSystemReference": {
+              "OrigSystem": "SIS",
+              "OrigSystemReference": "300000001771259",
+              "OwnerTableName": "HZ_CUST_SITE_USES_ALL",
+              "CreatedByModule": "SIS"
+            }
+          }
+        ],
+        "OriginalSystemReference": {
+          "OrigSystem": "SIS",
+          "OrigSystemReference": "300000001771257",
+          "OwnerTableName": "HZ_CUST_ACCT_SITES_ALL",
+          "CreatedByModule": "SIS"
+        }
+      }
+    ],
+    "OriginalSystemReference": {
+      "OrigSystem": "SIS",
+      "OrigSystemReference": "300000001771253",
+      "OwnerTableName": "HZ_CUST_ACCOUNTS",
+      "CreatedByModule": "SIS"
+    }
+  }
+}
+
+Customer Business Unit Assignment
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "BUAssignment",
+  "Data": {
+    "CustomerNumber": "Test1",
+    "CustomerAccountNumber": "TestAccount",
+    "CustomerSiteNumber": "Test1",
+    "BusinessUnit": "Dusters Total Solutions Services Pvt. Ltd.",
+    "RevenueAccountCodeCombination": "100.999.4321201.999.030.0006.99999.99999.999.999.9999",
+    "ReceivableAccountCodeCombination": "100.999.4321201.999.030.0006.99999.99999.999.999.9999",
+    "TaxAccountCodeCombination": true,
+    "FreightAccountCodeCombination": true,
+    "UnearnedRevenueAccountCodeCombination": true,
+    "UnbilledReceivableAccountCodeCombination": true,
+    "AutoInvoiceClearingAccountCodeCombination": true
+  }
+}
+
+Customer Tax Registration
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "TaxRegistration",
+  "Data": {
+    "PartyTypeCode": "THIRD_PARTY_SITE",
+    "PartyName": "91 Springboard Business Hub Pvt. Ltd-Test",
+    "PartyNumber": "TestAccount",
+    "PartySiteNumber": "Test2",
+    "TaxRegimeCode": "INDIA GST REGIME",
+    "EffectiveFrom": "2020-09-24",
+    "RegistrationNumber": "06AAACZ8912H1Z6",
+    "RegistrationStatusCode": "REGISTERED"
+  }
+}
+
+Customer Contact 
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "Contact",
+  "Data": {
+    "CreatedByModule": "SIS",
+    "PersonProfile": {
+      "PersonFirstName": "TestFisrt",
+      "PersonLastName": "TestLast",
+      "CreatedByModule": "SIS"
+    },
+    "Relationship": {
+      "SubjectType": "PERSON",
+      "SubjectTableName": "HZ_PARTIES",
+      "ObjectId": "300000001771253",
+      "ObjectType": "ORGANIZATION",
+      "ObjectTableName": "HZ_PARTIES",
+      "RelationshipCode": "CONTACT_OF",
+      "RelationshipType": "CONTACT",
+      "StartDate": "2020-09-24",
+      "CreatedByModule": "SIS",
+      "OrganizationContact": {
+        "ContactNumber": "TestContact1",
+        "CreatedByModule": "SIS",
+        "OrganizationContactRole": {
+          "RoleType": "CONTACT",
+          "PrimaryFlag": true,
+          "CreatedByModule": "SIS"
+        }
+      },
+      "Email": {
+        "OwnerTableName": "HZ_PARTIES",
+        "PrimaryFlag": true,
+        "CreatedByModule": "SIS",
+        "ContactPointPurpose": "BUSINESS",
+        "StartDate": "2020-09-24",
+        "EmailAddress": "test2@test.com"
+      }
+    }
+  }
+}
+
+Contact Assignment to Site Account
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "ContactAssignmentToSiteRequest",
+  "Data": {
+    "CustomerAccountId": "300000001771282",
+    "PartyId": "300000001771253",
+    "CustomerAccountSite": {
+      "CustomerAccountSiteId": "300000001771283",
+      "CustomerAccountId": "300000001771282",
+      "PartySiteId": "300000001771254",
+      "CustomerAccountContact": {
+        "CustomerAccountId": "300000001771282",
+        "CustomerAccountSiteId": "300000001771283",
+        "PrimaryFlag": false,
+        "RoleType": "CONTACT",
+        "CreatedByModule": "SIS",
+        "RelationshipId": "300000001771339",
+        "CustomerAccountContactRole": {
+          "ResponsibilityType": "BILL_TO",
+          "PrimaryFlag": true,
+          "CreatedByModule": "SIS"
+        }
+      }
+    }
+  }
+}
+
+Merge Organization To Site
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "MergeOrganizationToSite",
+  "Data": {
+    "PartyId": "300000001771253",
+    "PartySite": {
+      "PartySiteNumber": "Test4",
+      "LocationId": "300000001771359",
+      "CreatedByModule": "SIS",
+      "PartySiteUse": {
+        "SiteUseType": "BILL_TO",
+        "CreatedByModule": "SIS"
+      }
+    }
+  }
+}
+
+Merge Customer Account To Site Request
+{
+"RequestId": 654567898765434,
+  "Operation": "Create",
+  "Type": "MergeCustomerSite",
+  "Data": {
+    "CustomerAccountId": "300000001771282",
+    "CustomerAccountSite": {
+      "PartySiteId": "300000001771361",
+      "CreatedByModule": "SIS",
+      "SetId": "300000000003311",
+      "CustomerAccountSiteUse": {
+        "SiteUseCode": "BILL_TO",
+        "LocationId": "300000001771359",
+        "CreatedByModule": "SIS",
+        "SetId": "300000000003311"
+      }
+    }
+  }
+}

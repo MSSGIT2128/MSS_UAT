@@ -1,0 +1,52 @@
+<soapenv:Envelope xmlns:inv="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" 
+   xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+   xmlns:tran="http://xmlns.oracle.com/apps/financials/receivables/transactions/autoInvoices/model/flex/TransactionInterfaceGdf/" 
+   xmlns:tran1="http://xmlns.oracle.com/apps/financials/receivables/transactions/autoInvoices/model/flex/TransactionLineInterfaceGdf/" 
+   xmlns:tran2="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/" 
+   xmlns:tran3="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceLinkToDff/" 
+   xmlns:tran4="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceReferenceDff/" 
+   xmlns:tran5="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineDff/" 
+   xmlns:tran6="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/" 
+   xmlns:typ="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" 
+   xmlns:typ1="http://xmlns.oracle.com/adf/svc/types/" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Header>
+   </soapenv:Header>
+   <soapenv:Body>
+      <typ:processInterfaceLine>
+         <typ:changeOperation>Create</typ:changeOperation>
+         <typ:interfaceLine>
+            <inv:OrgId>300000001939869</inv:OrgId>
+            <inv:BillCustomerAccountNumber>D470587</inv:BillCustomerAccountNumber>
+            <inv:BillCustomerSiteNumber>A200341</inv:BillCustomerSiteNumber>
+            <inv:BatchSourceName>SIS_AR_IMPORT</inv:BatchSourceName>
+            <inv:CurrencyCode>AUD</inv:CurrencyCode>
+            <inv:CustomerTrxTypeName>Credit Memo</inv:CustomerTrxTypeName>
+            <inv:Description>Test for Credit Note Tax issue</inv:Description>
+            <inv:LineType>LINE</inv:LineType>
+            <inv:Quantity>1</inv:Quantity>
+            <inv:TrxNumber>Mg_CreditMemo_10002</inv:TrxNumber>
+            <inv:TrxDate>2021-02-02</inv:TrxDate>
+            <inv:GlDate>2021-02-02</inv:GlDate>
+            <inv:UnitSellingPrice>-225</inv:UnitSellingPrice>
+            <inv:AmountIncludesTax>N</inv:AmountIncludesTax>
+            <inv:TaxJurisdictionCode>AU GST</inv:TaxJurisdictionCode>
+            <inv:Tax>AU GST</inv:Tax>
+            <inv:TaxRateCode>AU_GST_10%</inv:TaxRateCode>
+            <inv:TaxRegimeCode>AU GST REGIME</inv:TaxRegimeCode>
+            <inv:Taxable>Y</inv:Taxable>
+            <inv:ReasonCodeMeaning>Billing</inv:ReasonCodeMeaning>
+            <inv:Comments>Test Comments</inv:Comments>
+            <inv:LegalEntityId>300000001992061</inv:LegalEntityId>
+            <inv:TransactionInterfaceLineDff xsi:type="tran2:Otherinvoicedetails">
+               <tran2:__FLEX_Context>OtherInvoiceDetails</tran2:__FLEX_Context>
+               <tran2:__FLEX_Context_DisplayValue>OtherInvoiceDetails</tran2:__FLEX_Context_DisplayValue>
+               <tran2:otherinvoicedetails>Mg_CreditMemo_10002_1</tran2:otherinvoicedetails>
+            </inv:TransactionInterfaceLineDff>
+            <inv:TransactionInterfaceHeaderDff>
+               <tran6:batchtrxnumber>TestBatch</tran6:batchtrxnumber>
+            </inv:TransactionInterfaceHeaderDff>
+         </typ:interfaceLine>
+      </typ:processInterfaceLine>
+   </soapenv:Body>
+</soapenv:Envelope>

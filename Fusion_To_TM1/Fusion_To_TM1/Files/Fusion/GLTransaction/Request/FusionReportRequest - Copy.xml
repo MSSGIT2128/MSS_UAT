@@ -1,0 +1,27 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pub="http://xmlns.oracle.com/oxp/service/PublicReportService">
+   <soap:Header/>
+   <soap:Body>
+      <pub:runReport>
+         <pub:reportRequest>
+            <pub:attributeFormat>csv</pub:attributeFormat>
+            <pub:flattenXML>true</pub:flattenXML>
+            <pub:parameterNameValues>
+                  <pub:item>
+                  <pub:name>P_GL_NAME</pub:name>
+                  <pub:values>
+                   <pub:item></pub:item>
+                  </pub:values>
+                  </pub:item>
+				  <pub:item>
+                  <pub:name>P_FROM_DATE</pub:name>
+                  <pub:values>
+                  <pub:item>2020-12-01 17:03:25</pub:item>
+                  </pub:values>
+                  </pub:item>
+                  </pub:parameterNameValues>
+            <pub:reportAbsolutePath>/Custom/Integration/Reports/SIS GL Wise Transaction TM1 Report.xdo</pub:reportAbsolutePath>
+            <pub:sizeOfDataChunkDownload>-1</pub:sizeOfDataChunkDownload>
+         </pub:reportRequest>
+      </pub:runReport>
+   </soap:Body>
+</soap:Envelope>

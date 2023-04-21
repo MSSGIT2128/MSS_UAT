@@ -1,0 +1,89 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1613732885,
+            "Success": true,
+            "FusionId": "300000003680878",
+            "PartySiteId": "",
+            "Type": "Contact",
+            "RelationshipId": "300000003826303"
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Success",
+        "FusionId",
+        "PartySiteId",
+        "Type",
+        "RelationshipId"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1613732885
+            ]
+        },
+        "Success": {
+            "$id": "#/properties/Success",
+            "type": "boolean",
+            "title": "The Success schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": false,
+            "examples": [
+                true
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "string",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "300000003680878"
+            ]
+        },
+        "PartySiteId": {
+            "$id": "#/properties/PartySiteId",
+            "type": "string",
+            "title": "The PartySiteId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Contact"
+            ]
+        },
+        "RelationshipId": {
+            "$id": "#/properties/RelationshipId",
+            "type": "string",
+            "title": "The RelationshipId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "300000003826303"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

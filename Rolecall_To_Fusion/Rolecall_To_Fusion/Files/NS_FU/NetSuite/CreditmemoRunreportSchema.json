@@ -1,0 +1,303 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 1234567890,
+            "Operation": "Create",
+            "Type": "runReport",
+            "Data": {
+                "reportRequest": {
+                    "Creditnumber": "123485_CM",
+                    "attributeFormat": "xml",
+                    "flattenXML": false,
+                    "parameterNameValues": [
+                        {
+                            "item": "P_BU_NAME",
+                            "values": {
+                                "item": "SXP Group BU"
+                            }
+                        },
+                        {
+                            "item": "p_status_type",
+                            "values": {
+                                "item": ""
+                            }
+                        },
+                        {
+                            "item": "P_TRX_NUM",
+                            "values": {
+                                "item": "CN54321"
+                            }
+                        },
+                        {
+                            "item": "P_DATE",
+                            "values": {
+                                "item": "2021-05-13"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1234567890
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "runReport"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "reportRequest": {
+                        "Creditnumber": "123485_CM",
+                        "attributeFormat": "xml",
+                        "flattenXML": false,
+                        "parameterNameValues": [
+                            {
+                                "item": "P_BU_NAME",
+                                "values": {
+                                    "item": "SXP Group BU"
+                                }
+                            },
+                            {
+                                "item": "p_status_type",
+                                "values": {
+                                    "item": ""
+                                }
+                            },
+                            {
+                                "item": "P_TRX_NUM",
+                                "values": {
+                                    "item": "CN54321"
+                                }
+                            },
+                            {
+                                "item": "P_DATE",
+                                "values": {
+                                    "item": "2021-05-13"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "required": [
+                "reportRequest"
+            ],
+            "properties": {
+                "reportRequest": {
+                    "$id": "#/properties/Data/properties/reportRequest",
+                    "type": "object",
+                    "title": "The reportRequest schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "Creditnumber": "123485_CM",
+                            "attributeFormat": "xml",
+                            "flattenXML": false,
+                            "parameterNameValues": [
+                                {
+                                    "item": "P_BU_NAME",
+                                    "values": {
+                                        "item": "SXP Group BU"
+                                    }
+                                },
+                                {
+                                    "item": "p_status_type",
+                                    "values": {
+                                        "item": ""
+                                    }
+                                },
+                                {
+                                    "item": "P_TRX_NUM",
+                                    "values": {
+                                        "item": "CN54321"
+                                    }
+                                },
+                                {
+                                    "item": "P_DATE",
+                                    "values": {
+                                        "item": "2021-05-13"
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "required": [
+                        "Creditnumber",
+                        "attributeFormat",
+                        "flattenXML",
+                        "parameterNameValues"
+                    ],
+                    "properties": {
+                        "Creditnumber": {
+                            "$id": "#/properties/Data/properties/reportRequest/properties/Creditnumber",
+                            "type": "string",
+                            "title": "The Creditnumber schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "123485_CM"
+                            ]
+                        },
+                        "attributeFormat": {
+                            "$id": "#/properties/Data/properties/reportRequest/properties/attributeFormat",
+                            "type": "string",
+                            "title": "The attributeFormat schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "xml"
+                            ]
+                        },
+                        "flattenXML": {
+                            "$id": "#/properties/Data/properties/reportRequest/properties/flattenXML",
+                            "type": "boolean",
+                            "title": "The flattenXML schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": false,
+                            "examples": [
+                                false
+                            ]
+                        },
+                        "parameterNameValues": {
+                            "$id": "#/properties/Data/properties/reportRequest/properties/parameterNameValues",
+                            "type": "array",
+                            "title": "The parameterNameValues schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": [],
+                            "examples": [
+                                [
+                                    {
+                                        "item": "P_BU_NAME",
+                                        "values": {
+                                            "item": "SXP Group BU"
+                                        }
+                                    },
+                                    {
+                                        "item": "p_status_type",
+                                        "values": {
+                                            "item": ""
+                                        }
+                                    }
+                                ]
+                            ],
+                            "additionalItems": true,
+                            "items": {
+                                "$id": "#/properties/Data/properties/reportRequest/properties/parameterNameValues/items",
+                                "anyOf": [
+                                    {
+                                        "$id": "#/properties/Data/properties/reportRequest/properties/parameterNameValues/items/anyOf/0",
+                                        "type": "object",
+                                        "title": "The first anyOf schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "item": "P_BU_NAME",
+                                                "values": {
+                                                    "item": "SXP Group BU"
+                                                }
+                                            }
+                                        ],
+                                        "required": [
+                                            "item",
+                                            "values"
+                                        ],
+                                        "properties": {
+                                            "item": {
+                                                "$id": "#/properties/Data/properties/reportRequest/properties/parameterNameValues/items/anyOf/0/properties/item",
+                                                "type": "string",
+                                                "title": "The item schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "P_BU_NAME"
+                                                ]
+                                            },
+                                            "values": {
+                                                "$id": "#/properties/Data/properties/reportRequest/properties/parameterNameValues/items/anyOf/0/properties/values",
+                                                "type": "object",
+                                                "title": "The values schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": {},
+                                                "examples": [
+                                                    {
+                                                        "item": "SXP Group BU"
+                                                    }
+                                                ],
+                                                "required": [
+                                                    "item"
+                                                ],
+                                                "properties": {
+                                                    "item": {
+                                                        "$id": "#/properties/Data/properties/reportRequest/properties/parameterNameValues/items/anyOf/0/properties/values/properties/item",
+                                                        "type": "string",
+                                                        "title": "The item schema",
+                                                        "description": "An explanation about the purpose of this instance.",
+                                                        "default": "",
+                                                        "examples": [
+                                                            "SXP Group BU"
+                                                        ]
+                                                    }
+                                                },
+                                                "additionalProperties": true
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

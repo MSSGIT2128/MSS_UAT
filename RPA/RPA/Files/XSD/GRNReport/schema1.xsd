@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/oxp/service/PublicReportService" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/oxp/service/PublicReportService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="runReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="reportRequest">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="attributeFormat" type="xs:string" />
+              <xs:element name="flattenXML" type="xs:string" />
+              <xs:element name="parameterNameValues">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="item">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="name" type="xs:string" />
+                          <xs:element name="values">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element maxOccurs="unbounded" name="item" type="xs:string" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="reportAbsolutePath" type="xs:string" />
+              <xs:element name="sizeOfDataChunkDownload" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

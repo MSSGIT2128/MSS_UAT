@@ -1,0 +1,102 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/" xmlns:mstns="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app3="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/" xmlns:app8="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/orgContact/" xmlns:app4="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/organization/" xmlns:app1="http://www.w3.org/2005/08/addressing" xmlns:app6="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/partySite/" xmlns:app9="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/relationship/" xmlns:app5="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:app2="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:app7="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" schemaLocation="CreateMergeOrganizationToSite_app7.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" schemaLocation="CreateMergeOrganizationToSite_app2.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" schemaLocation="CreateMergeOrganizationToSite_app5.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/relationship/" schemaLocation="CreateMergeOrganizationToSite_app9.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/partySite/" schemaLocation="CreateMergeOrganizationToSite_app6.xsd" />
+  <xs:import namespace="http://www.w3.org/2005/08/addressing" schemaLocation="CreateMergeOrganizationToSite_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="CreateMergeOrganizationToSite.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/organization/" schemaLocation="CreateMergeOrganizationToSite_app4.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/orgContact/" schemaLocation="CreateMergeOrganizationToSite_app8.xsd" />
+  <xs:element name="getOrganizationResponse" msdata:Prefix="ns0">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="result" msdata:Prefix="ns3" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app2:PartyNumber" minOccurs="0" />
+              <xs:element ref="app2:PartyId" minOccurs="0" />
+              <xs:element ref="app2:PartyType" minOccurs="0" />
+              <xs:element ref="app2:PartyName" minOccurs="0" />
+              <xs:element ref="app2:LastUpdatedBy" minOccurs="0" />
+              <xs:element ref="app2:ValidatedFlag" minOccurs="0" />
+              <xs:element ref="app2:LastUpdateLogin" minOccurs="0" />
+              <xs:element ref="app2:CreationDate" minOccurs="0" />
+              <xs:element ref="app2:RequestId" minOccurs="0" />
+              <xs:element ref="app2:LastUpdateDate" minOccurs="0" />
+              <xs:element ref="app2:CreatedBy" minOccurs="0" />
+              <xs:element ref="app2:OrigSystemReference" minOccurs="0" />
+              <xs:element ref="app2:HQBranchIndicator" minOccurs="0" />
+              <xs:element ref="app2:DUNSNumberC" minOccurs="0" />
+              <xs:element ref="app2:SICCode" minOccurs="0" />
+              <xs:element ref="app2:JgzzFiscalCode" minOccurs="0" />
+              <xs:element ref="app2:Address1" minOccurs="0" />
+              <xs:element ref="app2:Country" minOccurs="0" />
+              <xs:element ref="app2:Address3" minOccurs="0" />
+              <xs:element ref="app2:GroupType" minOccurs="0" />
+              <xs:element ref="app2:Address2" minOccurs="0" />
+              <xs:element ref="app2:Address4" minOccurs="0" />
+              <xs:element ref="app2:Status" minOccurs="0" />
+              <xs:element ref="app2:City" minOccurs="0" />
+              <xs:element ref="app2:PostalCode" minOccurs="0" />
+              <xs:element ref="app2:County" minOccurs="0" />
+              <xs:element ref="app2:YearEstablished" minOccurs="0" />
+              <xs:element ref="app2:Province" minOccurs="0" />
+              <xs:element ref="app2:State" minOccurs="0" />
+              <xs:element ref="app2:URL" minOccurs="0" />
+              <xs:element ref="app2:AnalysisFy" minOccurs="0" />
+              <xs:element ref="app2:SICCodeType" minOccurs="0" />
+              <xs:element ref="app2:EmailAddress" minOccurs="0" />
+              <xs:element ref="app2:FiscalYearendMonth" minOccurs="0" />
+              <xs:element ref="app2:EmployeesTotal" minOccurs="0" />
+              <xs:element ref="app2:CurrentFiscalYearPotentialRevenueAmount" minOccurs="0" />
+              <xs:element ref="app2:NextFyPotentialRevenueAmount" minOccurs="0" />
+              <xs:element ref="app2:GSAIndicatorFlag" minOccurs="0" />
+              <xs:element ref="app2:CategoryCode" minOccurs="0" />
+              <xs:element ref="app2:LanguageName" minOccurs="0" />
+              <xs:element ref="app2:MissionStatement" minOccurs="0" />
+              <xs:element ref="app2:ThirdPartyFlag" minOccurs="0" />
+              <xs:element ref="app2:HomeCountry" minOccurs="0" />
+              <xs:element ref="app2:CreatedByModule" minOccurs="0" />
+              <xs:element ref="app2:ObjectVersionNumber" minOccurs="0" />
+              <xs:element ref="app2:CertificationLevel" minOccurs="0" />
+              <xs:element ref="app2:CertReasonCode" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhonePurpose" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhoneContactPointId" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhoneLineType" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhoneCountryCode" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhoneAreaCode" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhoneNumber" minOccurs="0" />
+              <xs:element ref="app2:PreferredContactMethod" minOccurs="0" />
+              <xs:element ref="app2:PrimaryPhoneExtension" minOccurs="0" />
+              <xs:element ref="app2:IdenAddrLocationId" minOccurs="0" />
+              <xs:element ref="app2:PrimaryURLContactPointId" minOccurs="0" />
+              <xs:element ref="app2:PrimaryEmailContactPointId" minOccurs="0" />
+              <xs:element ref="app2:IdenAddrPartySiteId" minOccurs="0" />
+              <xs:element ref="app2:PreferredName" minOccurs="0" />
+              <xs:element ref="app2:PersonSecondLastName" minOccurs="0" />
+              <xs:element ref="app2:PreferredNameId" minOccurs="0" />
+              <xs:element ref="app2:TradingPartnerIdentifier" minOccurs="0" />
+              <xs:element ref="app2:PreferredContactPersonId" minOccurs="0" />
+              <xs:element ref="app2:PreferredFunctionalCurrency" minOccurs="0" />
+              <xs:element ref="app2:InternalFlag" minOccurs="0" />
+              <xs:element ref="app2:Comments" minOccurs="0" />
+              <xs:element ref="app2:CeoName" minOccurs="0" />
+              <xs:element ref="app2:PrincipalName" minOccurs="0" />
+              <xs:element ref="app2:OrganizationSize" minOccurs="0" />
+              <xs:element ref="app2:PartyUniqueName" minOccurs="0" />
+              <xs:element ref="app2:SourceSystem" minOccurs="0" />
+              <xs:element ref="app2:SourceSystemReferenceValue" minOccurs="0" />
+              <xs:element ref="app2:SourceSystemUpdateDate" minOccurs="0" />
+              <xs:element ref="app2:OrganizationProfile" />
+              <xs:element ref="app2:PartySite" />
+              <xs:element ref="app2:PartyUsageAssignment" />
+              <xs:element ref="app2:Relationship" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

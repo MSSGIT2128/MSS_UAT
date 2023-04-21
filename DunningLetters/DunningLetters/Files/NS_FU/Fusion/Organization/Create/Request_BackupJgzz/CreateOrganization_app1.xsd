@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app1="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:app3="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:app2="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/" schemaLocation="CreateOrganization_app2.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="CreateOrganization.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" schemaLocation="CreateOrganization_app3.xsd" />
+  <xs:element name="RequestId" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="CreatedByModule" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="OrganizationProfile" msdata:Prefix="ns2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PartyNumber" msdata:Prefix="ns2" type="xs:string" minOccurs="0" />
+        <xs:element name="OrganizationName" msdata:Prefix="ns2" type="xs:string" minOccurs="0" />
+        <xs:element name="CreatedByModule" msdata:Prefix="ns2" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PartyUsageAssignment" msdata:Prefix="ns2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app3:PartyUsageCode" minOccurs="0" />
+        <xs:element ref="app3:EffectiveStartDate" minOccurs="0" />
+        <xs:element ref="app3:CreatedByModule" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PartySite" msdata:Prefix="ns2" > 
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="app3:LocationId" minOccurs="0"/>
+        <xs:element ref="app3:PartySiteNumber" minOccurs="0"/>
+        <xs:element ref="app3:PartySiteName" minOccurs="0" />
+        <xs:element ref="app3:EffectiveStartDate" minOccurs="0" />
+        <xs:element ref="app3:CreatedByModule" minOccurs="0"/>
+        <xs:element ref="app3:PartySiteUse"  minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

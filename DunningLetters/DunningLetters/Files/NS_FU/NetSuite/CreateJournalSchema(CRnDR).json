@@ -1,0 +1,1355 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"RequestId": 1614148362011,
+			"Operation": "Create",
+			"Type": "Journal",
+			"Data": {
+				"interfaceRows": {
+					"BatchName": "Magic_Batch_0001",
+					"BatchDescription": "Test Batch from API",
+					"LedgerId": "300000002335898",
+					"AccountingPeriodName": "Sep-20",
+					"AccountingDate": "2020-09-21",
+					"UserSourceName": "ADP GL Interface",
+					"UserCategoryName": "ADP GL Interface",
+					"ErrorToSuspenseFlag": "false",
+					"SummaryFlag": "false",
+					"ImportDescriptiveFlexField": "Y",
+					"GlInterface": [
+						{
+							"Reference4": "Test",
+							"Reference5": "Test",
+							"LedgerId": "300000002335898",
+							"PeriodName": "Mar-21",
+							"AccountingDate": "2021-03-04",
+							"UserJeSourceName": "SIS GL Interface",
+							"UserJeCategoryName": "SIS GL Interface",
+							"Segment1": "301",
+							"Segment2": "99999999",
+							"Segment3": "201",
+							"Segment4": "4400118",
+							"Segment5": "026",
+							"Segment6": "8403",
+							"Segment7": "902",
+							"Segment8": "99999999",
+							"Segment9": "999",
+							"Segment10": "999",
+							"Segment11": "9999",
+							"CurrencyCode": "AUD",
+							"EnteredDrAmount": {
+								"currencyCode": "AUD",
+								"text": "700"
+							},
+							"AccountedDr": "700",
+							"Reference1": "Item Fulfilment - 2945",
+							"Reference2": "Test Journal from API",
+							"Attribute1": "Test Attribute1",
+							"Attribute2": "Test Attribute2",
+							"Attribute3": "Test Attribute3",
+							"Attribute4": "Test Attribute4",
+							"SetOfBooksId": "300000001751038",
+							"TransactionDate": "2021-03-04",
+							"GroupId": "0"
+						},
+						{
+							"Reference4": "Test",
+							"Reference5": "Test",
+							"LedgerId": "300000002335898",
+							"PeriodName": "Mar-21",
+							"AccountingDate": "2021-03-04",
+							"UserJeSourceName": "SIS GL Interface",
+							"UserJeCategoryName": "SIS GL Interface",
+							"Segment1": "301",
+							"Segment2": "99999999",
+							"Segment3": "203",
+							"Segment4": "4348102",
+							"Segment5": "011",
+							"Segment6": "8052",
+							"Segment7": "902",
+							"Segment8": "99999999",
+							"Segment9": "999",
+							"Segment10": "999",
+							"Segment11": "9999",
+							"CurrencyCode": "AUD",
+							"EnteredCrAmount": {
+								"currencyCode": "AUD",
+								"text": "700"
+							},
+							"AccountedCr": "700",
+							"Reference1": "Item Fulfilment - 2945",
+							"Reference2": "Test Journal from API",
+							"Attribute1": "Test Attribute1",
+							"Attribute2": "Test Attribute2",
+							"Attribute3": "Test Attribute3",
+							"Attribute4": "Test Attribute4",
+							"SetOfBooksId": "300000001751038",
+							"TransactionDate": "2021-03-04",
+							"GroupId": "123"
+						}
+					]
+				}
+			}
+		}
+	],
+	"required": [
+		"RequestId",
+		"Operation",
+		"Type",
+		"Data"
+	],
+	"properties": {
+		"RequestId": {
+			"$id": "#/properties/RequestId",
+			"type": "integer",
+			"title": "The RequestId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0,
+			"examples": [
+				1614148362011
+			]
+		},
+		"Operation": {
+			"$id": "#/properties/Operation",
+			"type": "string",
+			"title": "The Operation schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Create"
+			]
+		},
+		"Type": {
+			"$id": "#/properties/Type",
+			"type": "string",
+			"title": "The Type schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Journal"
+			]
+		},
+		"Data": {
+			"$id": "#/properties/Data",
+			"type": "object",
+			"title": "The Data schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{
+					"interfaceRows": {
+						"BatchName": "Magic_Batch_0001",
+						"BatchDescription": "Test Batch from API",
+						"LedgerId": "300000002335898",
+						"AccountingPeriodName": "Sep-20",
+						"AccountingDate": "2020-09-21",
+						"UserSourceName": "ADP GL Interface",
+						"UserCategoryName": "ADP GL Interface",
+						"ErrorToSuspenseFlag": "false",
+						"SummaryFlag": "false",
+						"ImportDescriptiveFlexField": "Y",
+						"GlInterface": [
+							{
+								"Reference4": "Test",
+								"Reference5": "Test",
+								"LedgerId": "300000002335898",
+								"PeriodName": "Mar-21",
+								"AccountingDate": "2021-03-04",
+								"UserJeSourceName": "SIS GL Interface",
+								"UserJeCategoryName": "SIS GL Interface",
+								"Segment1": "301",
+								"Segment2": "99999999",
+								"Segment3": "201",
+								"Segment4": "4400118",
+								"Segment5": "026",
+								"Segment6": "8403",
+								"Segment7": "902",
+								"Segment8": "99999999",
+								"Segment9": "999",
+								"Segment10": "999",
+								"Segment11": "9999",
+								"CurrencyCode": "AUD",
+								"EnteredDrAmount": {
+									"currencyCode": "AUD",
+									"text": "700"
+								},
+								"AccountedDr": "700",
+								"Reference1": "Item Fulfilment - 2945",
+								"Reference2": "Test Journal from API",
+								"Attribute1": "Test Attribute1",
+								"Attribute2": "Test Attribute2",
+								"Attribute3": "Test Attribute3",
+								"Attribute4": "Test Attribute4",
+								"SetOfBooksId": "300000001751038",
+								"TransactionDate": "2021-03-04",
+								"GroupId": "0"
+							},
+							{
+								"Reference4": "Test",
+								"Reference5": "Test",
+								"LedgerId": "300000002335898",
+								"PeriodName": "Mar-21",
+								"AccountingDate": "2021-03-04",
+								"UserJeSourceName": "SIS GL Interface",
+								"UserJeCategoryName": "SIS GL Interface",
+								"Segment1": "301",
+								"Segment2": "99999999",
+								"Segment3": "203",
+								"Segment4": "4348102",
+								"Segment5": "011",
+								"Segment6": "8052",
+								"Segment7": "902",
+								"Segment8": "99999999",
+								"Segment9": "999",
+								"Segment10": "999",
+								"Segment11": "9999",
+								"CurrencyCode": "AUD",
+								"EnteredCrAmount": {
+									"currencyCode": "AUD",
+									"text": "700"
+								},
+								"AccountedCr": "700",
+								"Reference1": "Item Fulfilment - 2945",
+								"Reference2": "Test Journal from API",
+								"Attribute1": "Test Attribute1",
+								"Attribute2": "Test Attribute2",
+								"Attribute3": "Test Attribute3",
+								"Attribute4": "Test Attribute4",
+								"SetOfBooksId": "300000001751038",
+								"TransactionDate": "2021-03-04",
+								"GroupId": "123"
+							}
+						]
+					}
+				}
+			],
+			"required": [
+				"interfaceRows"
+			],
+			"properties": {
+				"interfaceRows": {
+					"$id": "#/properties/Data/properties/interfaceRows",
+					"type": "object",
+					"title": "The interfaceRows schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": {},
+					"examples": [
+						{
+							"BatchName": "Magic_Batch_0001",
+							"BatchDescription": "Test Batch from API",
+							"LedgerId": "300000002335898",
+							"AccountingPeriodName": "Sep-20",
+							"AccountingDate": "2020-09-21",
+							"UserSourceName": "ADP GL Interface",
+							"UserCategoryName": "ADP GL Interface",
+							"ErrorToSuspenseFlag": "false",
+							"SummaryFlag": "false",
+							"ImportDescriptiveFlexField": "Y",
+							"GlInterface": [
+								{
+									"Reference4": "Test",
+									"Reference5": "Test",
+									"LedgerId": "300000002335898",
+									"PeriodName": "Mar-21",
+									"AccountingDate": "2021-03-04",
+									"UserJeSourceName": "SIS GL Interface",
+									"UserJeCategoryName": "SIS GL Interface",
+									"Segment1": "301",
+									"Segment2": "99999999",
+									"Segment3": "201",
+									"Segment4": "4400118",
+									"Segment5": "026",
+									"Segment6": "8403",
+									"Segment7": "902",
+									"Segment8": "99999999",
+									"Segment9": "999",
+									"Segment10": "999",
+									"Segment11": "9999",
+									"CurrencyCode": "AUD",
+									"EnteredDrAmount": {
+										"currencyCode": "AUD",
+										"text": "700"
+									},
+									"AccountedDr": "700",
+									"Reference1": "Item Fulfilment - 2945",
+									"Reference2": "Test Journal from API",
+									"Attribute1": "Test Attribute1",
+									"Attribute2": "Test Attribute2",
+									"Attribute3": "Test Attribute3",
+									"Attribute4": "Test Attribute4",
+									"SetOfBooksId": "300000001751038",
+									"TransactionDate": "2021-03-04",
+									"GroupId": "0"
+								},
+								{
+									"Reference4": "Test",
+									"Reference5": "Test",
+									"LedgerId": "300000002335898",
+									"PeriodName": "Mar-21",
+									"AccountingDate": "2021-03-04",
+									"UserJeSourceName": "SIS GL Interface",
+									"UserJeCategoryName": "SIS GL Interface",
+									"Segment1": "301",
+									"Segment2": "99999999",
+									"Segment3": "203",
+									"Segment4": "4348102",
+									"Segment5": "011",
+									"Segment6": "8052",
+									"Segment7": "902",
+									"Segment8": "99999999",
+									"Segment9": "999",
+									"Segment10": "999",
+									"Segment11": "9999",
+									"CurrencyCode": "AUD",
+									"EnteredCrAmount": {
+										"currencyCode": "AUD",
+										"text": "700"
+									},
+									"AccountedCr": "700",
+									"Reference1": "Item Fulfilment - 2945",
+									"Reference2": "Test Journal from API",
+									"Attribute1": "Test Attribute1",
+									"Attribute2": "Test Attribute2",
+									"Attribute3": "Test Attribute3",
+									"Attribute4": "Test Attribute4",
+									"SetOfBooksId": "300000001751038",
+									"TransactionDate": "2021-03-04",
+									"GroupId": "123"
+								}
+							]
+						}
+					],
+					"required": [
+						"BatchName",
+						"BatchDescription",
+						"LedgerId",
+						"AccountingPeriodName",
+						"AccountingDate",
+						"UserSourceName",
+						"UserCategoryName",
+						"ErrorToSuspenseFlag",
+						"SummaryFlag",
+						"ImportDescriptiveFlexField",
+						"GlInterface"
+					],
+					"properties": {
+						"BatchName": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/BatchName",
+							"type": "string",
+							"title": "The BatchName schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"Magic_Batch_0001"
+							]
+						},
+						"BatchDescription": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/BatchDescription",
+							"type": "string",
+							"title": "The BatchDescription schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"Test Batch from API"
+							]
+						},
+						"LedgerId": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/LedgerId",
+							"type": "string",
+							"title": "The LedgerId schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"300000002335898"
+							]
+						},
+						"AccountingPeriodName": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/AccountingPeriodName",
+							"type": "string",
+							"title": "The AccountingPeriodName schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"Sep-20"
+							]
+						},
+						"AccountingDate": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/AccountingDate",
+							"type": "string",
+							"title": "The AccountingDate schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"2020-09-21"
+							]
+						},
+						"UserSourceName": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/UserSourceName",
+							"type": "string",
+							"title": "The UserSourceName schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"ADP GL Interface"
+							]
+						},
+						"UserCategoryName": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/UserCategoryName",
+							"type": "string",
+							"title": "The UserCategoryName schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"ADP GL Interface"
+							]
+						},
+						"ErrorToSuspenseFlag": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/ErrorToSuspenseFlag",
+							"type": "string",
+							"title": "The ErrorToSuspenseFlag schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"false"
+							]
+						},
+						"SummaryFlag": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/SummaryFlag",
+							"type": "string",
+							"title": "The SummaryFlag schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"false"
+							]
+						},
+						"ImportDescriptiveFlexField": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/ImportDescriptiveFlexField",
+							"type": "string",
+							"title": "The ImportDescriptiveFlexField schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"Y"
+							]
+						},
+						"GlInterface": {
+							"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface",
+							"type": "array",
+							"title": "The GlInterface schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": [],
+							"examples": [
+								[
+									{
+										"Reference4": "Test",
+										"Reference5": "Test",
+										"LedgerId": "300000002335898",
+										"PeriodName": "Mar-21",
+										"AccountingDate": "2021-03-04",
+										"UserJeSourceName": "SIS GL Interface",
+										"UserJeCategoryName": "SIS GL Interface",
+										"Segment1": "301",
+										"Segment2": "99999999",
+										"Segment3": "201",
+										"Segment4": "4400118",
+										"Segment5": "026",
+										"Segment6": "8403",
+										"Segment7": "902",
+										"Segment8": "99999999",
+										"Segment9": "999",
+										"Segment10": "999",
+										"Segment11": "9999",
+										"CurrencyCode": "AUD",
+										"EnteredDrAmount": {
+											"currencyCode": "AUD",
+											"text": "700"
+										},
+										"AccountedDr": "700",
+										"Reference1": "Item Fulfilment - 2945",
+										"Reference2": "Test Journal from API",
+										"Attribute1": "Test Attribute1",
+										"Attribute2": "Test Attribute2",
+										"Attribute3": "Test Attribute3",
+										"Attribute4": "Test Attribute4",
+										"SetOfBooksId": "300000001751038",
+										"TransactionDate": "2021-03-04",
+										"GroupId": "0"
+									},
+									{
+										"Reference4": "Test",
+										"Reference5": "Test",
+										"LedgerId": "300000002335898",
+										"PeriodName": "Mar-21",
+										"AccountingDate": "2021-03-04",
+										"UserJeSourceName": "SIS GL Interface",
+										"UserJeCategoryName": "SIS GL Interface",
+										"Segment1": "301",
+										"Segment2": "99999999",
+										"Segment3": "203",
+										"Segment4": "4348102",
+										"Segment5": "011",
+										"Segment6": "8052",
+										"Segment7": "902",
+										"Segment8": "99999999",
+										"Segment9": "999",
+										"Segment10": "999",
+										"Segment11": "9999",
+										"CurrencyCode": "AUD",
+										"EnteredCrAmount": {
+											"currencyCode": "AUD",
+											"text": "700"
+										},
+										"AccountedCr": "700",
+										"Reference1": "Item Fulfilment - 2945",
+										"Reference2": "Test Journal from API",
+										"Attribute1": "Test Attribute1",
+										"Attribute2": "Test Attribute2",
+										"Attribute3": "Test Attribute3",
+										"Attribute4": "Test Attribute4",
+										"SetOfBooksId": "300000001751038",
+										"TransactionDate": "2021-03-04",
+										"GroupId": "123"
+									}
+								]
+							],
+							"additionalItems": true,
+							"items": {
+								"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items",
+								"anyOf": [
+									{
+										"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0",
+										"type": "object",
+										"title": "The first anyOf schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": {},
+										"examples": [
+											{
+												"Reference4": "Test",
+												"Reference5": "Test",
+												"LedgerId": "300000002335898",
+												"PeriodName": "Mar-21",
+												"AccountingDate": "2021-03-04",
+												"UserJeSourceName": "SIS GL Interface",
+												"UserJeCategoryName": "SIS GL Interface",
+												"Segment1": "301",
+												"Segment2": "99999999",
+												"Segment3": "201",
+												"Segment4": "4400118",
+												"Segment5": "026",
+												"Segment6": "8403",
+												"Segment7": "902",
+												"Segment8": "99999999",
+												"Segment9": "999",
+												"Segment10": "999",
+												"Segment11": "9999",
+												"CurrencyCode": "AUD",
+												"EnteredDrAmount": {
+													"currencyCode": "AUD",
+													"text": "700"
+												},
+												"AccountedDr": "700",
+												"Reference1": "Item Fulfilment - 2945",
+												"Reference2": "Test Journal from API",
+												"Attribute1": "Test Attribute1",
+												"Attribute2": "Test Attribute2",
+												"Attribute3": "Test Attribute3",
+												"Attribute4": "Test Attribute4",
+												"SetOfBooksId": "300000001751038",
+												"TransactionDate": "2021-03-04",
+												"GroupId": "0"
+											}
+										],
+										"required": [
+											"Reference4",
+											"Reference5",
+											"LedgerId",
+											"PeriodName",
+											"AccountingDate",
+											"UserJeSourceName",
+											"UserJeCategoryName",
+											"Segment1",
+											"Segment2",
+											"Segment3",
+											"Segment4",
+											"Segment5",
+											"Segment6",
+											"Segment7",
+											"Segment8",
+											"Segment9",
+											"Segment10",
+											"Segment11",
+											"CurrencyCode",
+											"EnteredDrAmount",
+											"AccountedDr",
+											"Reference1",
+											"Reference2",
+											"Attribute1",
+											"Attribute2",
+											"Attribute3",
+											"Attribute4",
+											"SetOfBooksId",
+											"TransactionDate",
+											"GroupId"
+										],
+										"properties": {
+											"Reference4": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Reference4",
+												"type": "string",
+												"title": "The Reference4 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test"
+												]
+											},
+											"Reference5": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Reference5",
+												"type": "string",
+												"title": "The Reference5 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test"
+												]
+											},
+											"LedgerId": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/LedgerId",
+												"type": "string",
+												"title": "The LedgerId schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"300000002335898"
+												]
+											},
+											"PeriodName": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/PeriodName",
+												"type": "string",
+												"title": "The PeriodName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Mar-21"
+												]
+											},
+											"AccountingDate": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/AccountingDate",
+												"type": "string",
+												"title": "The AccountingDate schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"2021-03-04"
+												]
+											},
+											"UserJeSourceName": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/UserJeSourceName",
+												"type": "string",
+												"title": "The UserJeSourceName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"SIS GL Interface"
+												]
+											},
+											"UserJeCategoryName": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/UserJeCategoryName",
+												"type": "string",
+												"title": "The UserJeCategoryName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"SIS GL Interface"
+												]
+											},
+											"Segment1": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment1",
+												"type": "string",
+												"title": "The Segment1 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"301"
+												]
+											},
+											"Segment2": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment2",
+												"type": "string",
+												"title": "The Segment2 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"99999999"
+												]
+											},
+											"Segment3": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment3",
+												"type": "string",
+												"title": "The Segment3 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"201"
+												]
+											},
+											"Segment4": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment4",
+												"type": "string",
+												"title": "The Segment4 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"4400118"
+												]
+											},
+											"Segment5": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment5",
+												"type": "string",
+												"title": "The Segment5 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"026"
+												]
+											},
+											"Segment6": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment6",
+												"type": "string",
+												"title": "The Segment6 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"8403"
+												]
+											},
+											"Segment7": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment7",
+												"type": "string",
+												"title": "The Segment7 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"902"
+												]
+											},
+											"Segment8": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment8",
+												"type": "string",
+												"title": "The Segment8 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"99999999"
+												]
+											},
+											"Segment9": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment9",
+												"type": "string",
+												"title": "The Segment9 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"999"
+												]
+											},
+											"Segment10": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment10",
+												"type": "string",
+												"title": "The Segment10 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"999"
+												]
+											},
+											"Segment11": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Segment11",
+												"type": "string",
+												"title": "The Segment11 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"9999"
+												]
+											},
+											"CurrencyCode": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/CurrencyCode",
+												"type": "string",
+												"title": "The CurrencyCode schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"AUD"
+												]
+											},
+											"EnteredDrAmount": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/EnteredDrAmount",
+												"type": "object",
+												"title": "The EnteredDrAmount schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": {},
+												"examples": [
+													{
+														"currencyCode": "AUD",
+														"text": "700"
+													}
+												],
+												"required": [
+													"currencyCode",
+													"text"
+												],
+												"properties": {
+													"currencyCode": {
+														"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/EnteredDrAmount/properties/currencyCode",
+														"type": "string",
+														"title": "The currencyCode schema",
+														"description": "An explanation about the purpose of this instance.",
+														"default": "",
+														"examples": [
+															"AUD"
+														]
+													},
+													"text": {
+														"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/EnteredDrAmount/properties/text",
+														"type": "string",
+														"title": "The text schema",
+														"description": "An explanation about the purpose of this instance.",
+														"default": "",
+														"examples": [
+															"700"
+														]
+													}
+												},
+												"additionalProperties": true
+											},
+											"AccountedDr": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/AccountedDr",
+												"type": "string",
+												"title": "The AccountedDr schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"700"
+												]
+											},
+											"Reference1": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Reference1",
+												"type": "string",
+												"title": "The Reference1 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Item Fulfilment - 2945"
+												]
+											},
+											"Reference2": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Reference2",
+												"type": "string",
+												"title": "The Reference2 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Journal from API"
+												]
+											},
+											"Attribute1": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Attribute1",
+												"type": "string",
+												"title": "The Attribute1 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute1"
+												]
+											},
+											"Attribute2": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Attribute2",
+												"type": "string",
+												"title": "The Attribute2 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute2"
+												]
+											},
+											"Attribute3": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Attribute3",
+												"type": "string",
+												"title": "The Attribute3 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute3"
+												]
+											},
+											"Attribute4": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/Attribute4",
+												"type": "string",
+												"title": "The Attribute4 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute4"
+												]
+											},
+											"SetOfBooksId": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/SetOfBooksId",
+												"type": "string",
+												"title": "The SetOfBooksId schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"300000001751038"
+												]
+											},
+											"TransactionDate": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/TransactionDate",
+												"type": "string",
+												"title": "The TransactionDate schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"2021-03-04"
+												]
+											},
+											"GroupId": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/0/properties/GroupId",
+												"type": "string",
+												"title": "The GroupId schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"0"
+												]
+											}
+										},
+										"additionalProperties": true
+									},
+									{
+										"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1",
+										"type": "object",
+										"title": "The second anyOf schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": {},
+										"examples": [
+											{
+												"Reference4": "Test",
+												"Reference5": "Test",
+												"LedgerId": "300000002335898",
+												"PeriodName": "Mar-21",
+												"AccountingDate": "2021-03-04",
+												"UserJeSourceName": "SIS GL Interface",
+												"UserJeCategoryName": "SIS GL Interface",
+												"Segment1": "301",
+												"Segment2": "99999999",
+												"Segment3": "203",
+												"Segment4": "4348102",
+												"Segment5": "011",
+												"Segment6": "8052",
+												"Segment7": "902",
+												"Segment8": "99999999",
+												"Segment9": "999",
+												"Segment10": "999",
+												"Segment11": "9999",
+												"CurrencyCode": "AUD",
+												"EnteredCrAmount": {
+													"currencyCode": "AUD",
+													"text": "700"
+												},
+												"AccountedCr": "700",
+												"Reference1": "Item Fulfilment - 2945",
+												"Reference2": "Test Journal from API",
+												"Attribute1": "Test Attribute1",
+												"Attribute2": "Test Attribute2",
+												"Attribute3": "Test Attribute3",
+												"Attribute4": "Test Attribute4",
+												"SetOfBooksId": "300000001751038",
+												"TransactionDate": "2021-03-04",
+												"GroupId": "123"
+											}
+										],
+										"required": [
+											"Reference4",
+											"Reference5",
+											"LedgerId",
+											"PeriodName",
+											"AccountingDate",
+											"UserJeSourceName",
+											"UserJeCategoryName",
+											"Segment1",
+											"Segment2",
+											"Segment3",
+											"Segment4",
+											"Segment5",
+											"Segment6",
+											"Segment7",
+											"Segment8",
+											"Segment9",
+											"Segment10",
+											"Segment11",
+											"CurrencyCode",
+											"EnteredCrAmount",
+											"AccountedCr",
+											"Reference1",
+											"Reference2",
+											"Attribute1",
+											"Attribute2",
+											"Attribute3",
+											"Attribute4",
+											"SetOfBooksId",
+											"TransactionDate",
+											"GroupId"
+										],
+										"properties": {
+											"Reference4": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Reference4",
+												"type": "string",
+												"title": "The Reference4 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test"
+												]
+											},
+											"Reference5": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Reference5",
+												"type": "string",
+												"title": "The Reference5 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test"
+												]
+											},
+											"LedgerId": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/LedgerId",
+												"type": "string",
+												"title": "The LedgerId schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"300000002335898"
+												]
+											},
+											"PeriodName": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/PeriodName",
+												"type": "string",
+												"title": "The PeriodName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Mar-21"
+												]
+											},
+											"AccountingDate": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/AccountingDate",
+												"type": "string",
+												"title": "The AccountingDate schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"2021-03-04"
+												]
+											},
+											"UserJeSourceName": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/UserJeSourceName",
+												"type": "string",
+												"title": "The UserJeSourceName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"SIS GL Interface"
+												]
+											},
+											"UserJeCategoryName": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/UserJeCategoryName",
+												"type": "string",
+												"title": "The UserJeCategoryName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"SIS GL Interface"
+												]
+											},
+											"Segment1": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment1",
+												"type": "string",
+												"title": "The Segment1 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"301"
+												]
+											},
+											"Segment2": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment2",
+												"type": "string",
+												"title": "The Segment2 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"99999999"
+												]
+											},
+											"Segment3": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment3",
+												"type": "string",
+												"title": "The Segment3 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"203"
+												]
+											},
+											"Segment4": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment4",
+												"type": "string",
+												"title": "The Segment4 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"4348102"
+												]
+											},
+											"Segment5": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment5",
+												"type": "string",
+												"title": "The Segment5 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"011"
+												]
+											},
+											"Segment6": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment6",
+												"type": "string",
+												"title": "The Segment6 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"8052"
+												]
+											},
+											"Segment7": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment7",
+												"type": "string",
+												"title": "The Segment7 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"902"
+												]
+											},
+											"Segment8": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment8",
+												"type": "string",
+												"title": "The Segment8 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"99999999"
+												]
+											},
+											"Segment9": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment9",
+												"type": "string",
+												"title": "The Segment9 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"999"
+												]
+											},
+											"Segment10": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment10",
+												"type": "string",
+												"title": "The Segment10 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"999"
+												]
+											},
+											"Segment11": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Segment11",
+												"type": "string",
+												"title": "The Segment11 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"9999"
+												]
+											},
+											"CurrencyCode": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/CurrencyCode",
+												"type": "string",
+												"title": "The CurrencyCode schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"AUD"
+												]
+											},
+											"EnteredCrAmount": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/EnteredCrAmount",
+												"type": "object",
+												"title": "The EnteredCrAmount schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": {},
+												"examples": [
+													{
+														"currencyCode": "AUD",
+														"text": "700"
+													}
+												],
+												"required": [
+													"currencyCode",
+													"text"
+												],
+												"properties": {
+													"currencyCode": {
+														"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/EnteredCrAmount/properties/currencyCode",
+														"type": "string",
+														"title": "The currencyCode schema",
+														"description": "An explanation about the purpose of this instance.",
+														"default": "",
+														"examples": [
+															"AUD"
+														]
+													},
+													"text": {
+														"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/EnteredCrAmount/properties/text",
+														"type": "string",
+														"title": "The text schema",
+														"description": "An explanation about the purpose of this instance.",
+														"default": "",
+														"examples": [
+															"700"
+														]
+													}
+												},
+												"additionalProperties": true
+											},
+											"AccountedCr": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/AccountedCr",
+												"type": "string",
+												"title": "The AccountedCr schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"700"
+												]
+											},
+											"Reference1": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Reference1",
+												"type": "string",
+												"title": "The Reference1 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Item Fulfilment - 2945"
+												]
+											},
+											"Reference2": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Reference2",
+												"type": "string",
+												"title": "The Reference2 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Journal from API"
+												]
+											},
+											"Attribute1": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Attribute1",
+												"type": "string",
+												"title": "The Attribute1 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute1"
+												]
+											},
+											"Attribute2": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Attribute2",
+												"type": "string",
+												"title": "The Attribute2 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute2"
+												]
+											},
+											"Attribute3": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Attribute3",
+												"type": "string",
+												"title": "The Attribute3 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute3"
+												]
+											},
+											"Attribute4": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/Attribute4",
+												"type": "string",
+												"title": "The Attribute4 schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"Test Attribute4"
+												]
+											},
+											"SetOfBooksId": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/SetOfBooksId",
+												"type": "string",
+												"title": "The SetOfBooksId schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"300000001751038"
+												]
+											},
+											"TransactionDate": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/TransactionDate",
+												"type": "string",
+												"title": "The TransactionDate schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"2021-03-04"
+												]
+											},
+											"GroupId": {
+												"$id": "#/properties/Data/properties/interfaceRows/properties/GlInterface/items/anyOf/1/properties/GroupId",
+												"type": "string",
+												"title": "The GroupId schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"123"
+												]
+											}
+										},
+										"additionalProperties": true
+									}
+								]
+							}
+						}
+					},
+					"additionalProperties": true
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/types/" xmlns:app4="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/" xmlns:app3="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/invoices/invoiceService/" schemaLocation="Request_app1.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionLineInterfaceLineDff/" schemaLocation="Request_app3.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/flex/financials/receivables/transactions/autoInvoices/TransactionInterfaceHeaderDff/" schemaLocation="Request_app4.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Request.xsd" />
+  <xs:element name="processInterfaceLine" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="changeOperation" msdata:Prefix="typ" type="xs:string" minOccurs="0" />
+        <xs:element name="interfaceLine" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:OrgId" minOccurs="0" />
+              <xs:element ref="app1:BillCustomerAccountNumber" minOccurs="0" />
+              <xs:element ref="app1:BillCustomerSiteNumber" minOccurs="0" />
+              <xs:element ref="app1:BatchSourceName" minOccurs="0" />
+              <xs:element ref="app1:CurrencyCode" minOccurs="0" />
+              <xs:element ref="app1:CustomerTrxTypeName" minOccurs="0" />
+              <xs:element ref="app1:Description" minOccurs="0" />
+              <xs:element ref="app1:LineType" minOccurs="0" />
+              <xs:element ref="app1:Quantity" minOccurs="0" />
+              <xs:element ref="app1:TrxNumber" minOccurs="0" />
+              <xs:element ref="app1:TrxDate" minOccurs="0" />
+              <xs:element ref="app1:GlDate" minOccurs="0" />
+              <xs:element ref="app1:UnitSellingPrice" minOccurs="0" />
+              <xs:element ref="app1:AmountIncludesTax" minOccurs="0" />
+              <xs:element ref="app1:TaxJurisdictionCode" minOccurs="0" />
+              <xs:element ref="app1:Tax" minOccurs="0" />
+              <xs:element ref="app1:TaxRateCode" minOccurs="0" />
+              <xs:element ref="app1:TaxRegimeCode" minOccurs="0" />
+              <xs:element ref="app1:Taxable" minOccurs="0" />
+              <xs:element ref="app1:ReasonCodeMeaning" minOccurs="0" />
+              <xs:element ref="app1:Comments" minOccurs="0" />
+              <xs:element ref="app1:LegalEntityId" minOccurs="0" />
+              <xs:element ref="app1:TransactionInterfaceLineDff" />
+              <xs:element ref="app1:TransactionInterfaceHeaderDff" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

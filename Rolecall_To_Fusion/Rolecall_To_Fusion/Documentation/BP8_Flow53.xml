@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Flow id="BP8_Flow53">
+   <Properties>
+      <PropertiesGroup id="General" name="General">
+         <Property id="id" name="ID" value="53" />
+         <Property id="name" name="Name" value="Main_Flow" />
+         <Property id="istwophase" name="Two Phase Processing" value="No" />
+         <Property id="hasdbtransaction" name="DB transaction" value="No" />
+         <Property id="dbtransactionstring" name="DB Resources List" value="" />
+         <Property id="isdisabled" name="Disable" value="No" />
+         <Property id="isinactive" name="Inactive" value="No" />
+         <Property id="maxinstances" name="Max Instances" value="0" />
+         <Property id="timeoutpolicy" name="Timeout Policy" value="None" />
+         <Property id="timeoutval" name="Timeout Value" value="0" />
+         <Property id="recoverypolicy" name="Recovery Policy" value="None" />
+         <Property id="enablement" name="Enablement" value="Always" />
+      </PropertiesGroup>
+      <PropertiesGroup id="FlowInvokers" name="Flow Invokers">
+         <Property id="isautostart" name="Auto Start" value="No" />
+         <Property id="isautorepeat" name="Auto Repeat" value="No" />
+      </PropertiesGroup>
+      <PropertiesGroup id="External" name="External">
+         <Property id="psssubscribeonce" name="PSS Subscribe Once" value="No" />
+         <Property id="psssubscribename" name="PSS Subscribe Name" value="" />
+      </PropertiesGroup>
+   </Properties>
+   <Triggers>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="1" />
+               <Property id="name" name="Name" value="Directory Scanner" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="interface" name="Interface" value="Method" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="ressername" name="Resource Name" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Logging" name="Logging">
+               <Property id="displayloggingscope" name="Logging Scope" value="No" />
+               <Property id="displayloggingoptions" name="Step Logging Options" value="Before" />
+               <Property id="message" name="Message" value="" />
+               <Property id="blob" name="BLOB" value="" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\DirectoryScanner.png" />
+            </PropertiesGroup>
+         </Properties>
+         <DirectoryScannerDetails>
+            <Structure>
+               <Field fieldId="ftptransfermode" widthHint="FitToContent">FTPTransferMode</Field>
+               <Field fieldId="sourcedirtype" widthHint="FitToContent">SourceDirType</Field>
+               <Field fieldId="sourcedirectorylocation" widthHint="FitToContent">SourceDirectoryLocation</Field>
+               <Field fieldId="sourcedirexpid" widthHint="FitToContent">SourceDirExpID</Field>
+               <Field fieldId="includesubdir" widthHint="FitToContent">IncludeSubDir</Field>
+               <Field fieldId="scanordercriteria" widthHint="FitToContent">ScanOrderCriteria</Field>
+               <Field fieldId="scanorderoperator" widthHint="FitToContent">ScanOrderOperator</Field>
+               <Field fieldId="scanorder" widthHint="FitToContent">ScanOrder</Field>
+               <Field fieldId="scanfilesizeortimestamp" widthHint="FitToContent">ScanFileSizeOrTimeStamp</Field>
+               <Field fieldId="includefiles" widthHint="FitToContent">IncludeFiles</Field>
+               <Field fieldId="excludefiles" widthHint="FitToContent">ExcludeFiles</Field>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="destinationdirectorytype" widthHint="FitToContent">DestinationDirectorytype</Field>
+               <Field fieldId="destinationdirexpid" widthHint="FitToContent">DestinationDirExpID</Field>
+               <Field fieldId="mask" widthHint="FitToContent">Mask</Field>
+               <Field fieldId="logfilename" widthHint="FitToContent">LogFileName</Field>
+               <Field fieldId="logtype" widthHint="FitToContent">LogType</Field>
+               <Field fieldId="timeout" widthHint="FitToContent">Timeout</Field>
+               <Field fieldId="returnfiletoexpid" widthHint="FitToContent">ReturnFileToExpID</Field>
+               <Field fieldId="returnfilenametoexpid" widthHint="FitToContent">ReturnFileNameToExpID</Field>
+               <Field fieldId="pollinginterval" widthHint="FitToContent">PollingInterval</Field>
+               <Field fieldId="returnargumentsexpid" widthHint="FitToContent">ReturnArgumentsExpID</Field>
+               <Field fieldId="returnsourcefilenametoexpid" widthHint="FitToContent">ReturnSourceFileNameToExpID</Field>
+               <Field fieldId="keepaliveinterval" widthHint="FitToContent">KeepAliveInterval</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="ftptransfermode" value="Binary" />
+                  <Property fieldId="sourcedirtype" value="LAN" />
+                  <Property fieldId="sourcedirectorylocation" value="0" />
+                  <Property fieldId="sourcedirexpid" value="EnvVal ('Modify') &amp;'in\'" />
+                  <Property fieldId="includesubdir" value="No" />
+                  <Property fieldId="scanordercriteria" value="Name" />
+                  <Property fieldId="scanorderoperator" value="GreaterThan" />
+                  <Property fieldId="scanorder" value="Ascending" />
+                  <Property fieldId="scanfilesizeortimestamp" value="" />
+                  <Property fieldId="includefiles" value="*.*" />
+                  <Property fieldId="excludefiles" value="" />
+                  <Property fieldId="action" value="Move" />
+                  <Property fieldId="destinationdirectorytype" value="LAN" />
+                  <Property fieldId="destinationdirexpid" value="EnvVal ('Modify') &amp;'processed\'" />
+                  <Property fieldId="mask" value="" />
+                  <Property fieldId="logfilename" value="" />
+                  <Property fieldId="logtype" value="Text" />
+                  <Property fieldId="timeout" value="0" />
+                  <Property fieldId="returnfiletoexpid" value="C.RoleCallRequest" />
+                  <Property fieldId="returnfilenametoexpid" value="C.RoleCallInputFilePath" />
+                  <Property fieldId="pollinginterval" value="3000" />
+                  <Property fieldId="returnargumentsexpid" value="" />
+                  <Property fieldId="returnsourcefilenametoexpid" value="" />
+                  <Property fieldId="keepaliveinterval" value="0" />
+               </RepositoryItem>
+            </Items>
+         </DirectoryScannerDetails>
+      </Step>
+   </Triggers>
+   <Steps>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="2" />
+               <Property id="name" name="Name" value="Getfilename" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.AuditLogFilePath" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="EnvVal ('AuditLogs')   &amp;Trim (Str (Year (Date ()),'')) &amp;EnvVal ('sl') &amp;Trim (DStr (Date (),'MMM')) &amp;EnvVal ('sl')   &amp;DStr (Date (),'DD-MM-YYYY')&amp;EnvVal ('sl')&amp;Trim (GetObjectName (6))&amp;EnvVal ('sl')" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.RoleCallInputFilePath" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'C:\RC-Payloads\ModifyCustomer\in\UpdateLocation_yyyyMMdd-HHmmss_optionalText.json'" />
+                  <Property fieldId="conditionexpression" value="'FALSE'LOG" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.RoleCallInputFile" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="Flip (StrToken (Flip (Trim (C.RoleCallInputFilePath)),1,'\'))" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.ModuleName" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="StrToken (Trim (C.RoleCallInputFile),1,'_')" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.BP_Name" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="'Modify Payloads'" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="3" />
+               <Property id="name" name="Name" value="Flow Data" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Flow Data.png" />
+            </PropertiesGroup>
+         </Properties>
+         <Details>
+            <Structure>
+               <Field fieldId="action" widthHint="FitToContent">Action</Field>
+               <Field fieldId="target_type" widthHint="FitToContent">Target Type</Field>
+               <Field fieldId="dynamicvariable" widthHint="FitToContent">Dynamic Variable</Field>
+               <Field fieldId="nameexp" widthHint="FitToContent">Name</Field>
+               <Field fieldId="datatype" widthHint="FitToContent">Data Type</Field>
+               <Field fieldId="encoding" widthHint="FitToContent">Encoding</Field>
+               <Field fieldId="indexexpression" widthHint="FitToContent">Index</Field>
+               <Field fieldId="updateexpression" widthHint="FitToContent">Update Expression</Field>
+               <Field fieldId="conditionexpression" widthHint="FitToContent">Condition</Field>
+            </Structure>
+            <Items>
+               <RepositoryItem>
+                  <Property fieldId="action" value="Update" />
+                  <Property fieldId="target_type" value="Context" />
+                  <Property fieldId="dynamicvariable" value="No" />
+                  <Property fieldId="nameexp" value="C.AuditBk" />
+                  <Property fieldId="datatype" value="Alpha" />
+                  <Property fieldId="encoding" value="Ansi" />
+                  <Property fieldId="indexexpression" value="" />
+                  <Property fieldId="updateexpression" value="Convert (V.ModifyInvokeMaster,StrToken (Trim (C.RoleCallInputFile),1,'_'),'',0)" />
+                  <Property fieldId="conditionexpression" value="" />
+               </RepositoryItem>
+            </Items>
+         </Details>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="4" />
+               <Property id="name" name="Name" value="NOP" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\NOP.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+      <Step>
+         <Properties>
+            <PropertiesGroup id="General" name="General">
+               <Property id="id" name="ID" value="5" />
+               <Property id="name" name="Name" value="Invoke Flow" />
+               <Property id="processmode" name="Processing Mode" value="Linear" />
+               <Property id="istwophase" name="Two Phase Processing" value="No" />
+               <Property id="iswait4comp" name="Wait for Completion" value="No" />
+               <Property id="issavepoint" name="Save Point" value="No" />
+               <Property id="calllogicflow" name="Call logic flow" value="No" />
+            </PropertiesGroup>
+            <PropertiesGroup id="Configuration" name="Configuration...">
+               <Property id="isbyexp" name="Invoke by Expression" value="Yes" />
+               <Property id="bpexp" name="Target BP ID expression" value="Val (StrToken (Convert (V.ModifyInvokeMaster,C.ModuleName,'',0),1,'_'),'N12')" />
+               <Property id="flowexp" name="Target flow ID expression" value="Val (StrToken (Convert (V.ModifyInvokeMaster,C.ModuleName,'',0),2,'_'),'N12')" />
+            </PropertiesGroup>
+            <PropertiesGroup id="_docdata_" name="_docdata_">
+               <Property id="imagepath" name="ImagePath" value="C:\Magicxpi413\Runtime\projects\Rolecall_To_Fusion\Rolecall_To_Fusion\Documentation\Images\Invoke Flow.png" />
+            </PropertiesGroup>
+         </Properties>
+      </Step>
+   </Steps>
+   <LocalizationTable>
+      <FlowDiagram>Graphical View</FlowDiagram>
+      <Trigger>Trigger</Trigger>
+      <Step>Step</Step>
+   </LocalizationTable>
+</Flow>

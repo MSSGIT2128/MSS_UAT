@@ -1,0 +1,24 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:typ="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/">
+   <env:Header>
+      <wsa:Action>http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService//CustomerProfileService/createReferenceAccountsForBillToSiteResponse</wsa:Action>
+      <wsa:MessageID>urn:uuid:247cf391-2e58-4d42-bbd9-24a174a0eac4</wsa:MessageID>
+   </env:Header>
+   <env:Body>
+      <ns0:createReferenceAccountsForBillToSiteResponse xmlns:ns0="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/">
+         <ns1:result xsi:type="ns3:CustomerSiteReferenceAccounts" xmlns:ns1="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:ns3="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/" xmlns:ns0="http://xmlns.oracle.com/adf/svc/types/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+			<ns3:RequestId>123456789987456</ns3:RequestId>
+            <ns3:CustomerNumber>Test1</ns3:CustomerNumber>
+            <ns3:CustomerAccountNumber>TestAccount</ns3:CustomerAccountNumber>
+            <ns3:CustomerSiteNumber>Test1</ns3:CustomerSiteNumber>
+            <ns3:BusinessUnit>Dusters Total Solutions Services Pvt. Ltd.</ns3:BusinessUnit>
+            <ns3:RevenueAccountCodeCombination>100.999.4321201.999.030.0006.99999.99999.999.999.9999</ns3:RevenueAccountCodeCombination>
+            <ns3:ReceivableAccountCodeCombination>100.999.4321201.999.030.0006.99999.99999.999.999.9999</ns3:ReceivableAccountCodeCombination>
+            <ns3:TaxAccountCodeCombination xsi:nil="true"/>
+            <ns3:FreightAccountCodeCombination xsi:nil="true"/>
+            <ns3:UnearnedRevenueAccountCodeCombination xsi:nil="true"/>
+            <ns3:UnbilledReceivableAccountCodeCombination xsi:nil="true"/>
+            <ns3:AutoInvoiceClearingAccountCodeCombination xsi:nil="true"/>
+         </ns1:result>
+      </ns0:createReferenceAccountsForBillToSiteResponse>
+   </env:Body>
+</env:Envelope>

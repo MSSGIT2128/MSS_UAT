@@ -1,0 +1,38 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/types/" xmlns:inv="http://xmlns.oracle.com/apps/financials/payables/invoices/quickInvoices/invoiceInterfaceService/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:createInvoiceInterface>
+         <typ:invoiceInterfaceHeader>
+            <!--Optional:-->
+            <inv:Source>INVOICE GATEWAY</inv:Source>
+            <inv:OperatingUnit>MSS Security Pty Limited</inv:OperatingUnit>
+            <inv:VendorName>KM CORPORATE SECURITY</inv:VendorName>
+            <inv:VendorSiteCode>KM CORPORATE SE</inv:VendorSiteCode>
+            <inv:ApplicationId>200</inv:ApplicationId>
+            <inv:GlDate>2020-12-15</inv:GlDate>
+            <inv:GroupId>101</inv:GroupId>s
+            <inv:InvoiceAmount currencyCode="INR">-990</inv:InvoiceAmount>
+            <inv:InvoiceCurrencyCode>INR</inv:InvoiceCurrencyCode>
+            <inv:InvoiceDate>2020-12-15</inv:InvoiceDate>
+            <inv:InvoiceNumber>15122020CM_13</inv:InvoiceNumber>
+            <inv:InvoiceTypeLookupCode>CREDIT</inv:InvoiceTypeLookupCode>
+	    <inv:ExchangeRateType>Corporate</inv:ExchangeRateType>
+	    <inv:ExchangeDate>2020-12-15</inv:ExchangeDate>
+	    <inv:Description>invcm hdr desc</inv:Description>
+	    <inv:LegalEntityId>300000001608257</inv:LegalEntityId>
+            <inv:InvoiceInterfaceLine>
+               <inv:LineNumber>1</inv:LineNumber>
+               <inv:AccountingDate>2020-12-15</inv:AccountingDate>
+               <inv:Amount currencyCode="INR">-900</inv:Amount>
+               <inv:DistCodeConcatenated>201.999.4348102.999.999.6011.999999999.999999999.999.999.9999</inv:DistCodeConcatenated>
+               <inv:TaxClassificationCode>AU_GST_10%</inv:TaxClassificationCode>
+               <inv:LineTypeLookupCode>ITEM</inv:LineTypeLookupCode>
+			<inv:Description>invcm line desc</inv:Description>
+			<inv:Attribute2>2020-12-17</inv:Attribute2>
+			<inv:Attribute1>7</inv:Attribute1>
+			<inv:PrimaryIntendedUse>GST_TAX</inv:PrimaryIntendedUse>
+			</inv:InvoiceInterfaceLine>
+         </typ:invoiceInterfaceHeader>
+      </typ:createInvoiceInterface>
+   </soapenv:Body>
+</soapenv:Envelope>

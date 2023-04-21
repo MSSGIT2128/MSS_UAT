@@ -1,0 +1,626 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 125792021021217,
+            "Operation": "Create",
+            "Type": "Credit",
+            "Data": {
+                "Lines": [
+                    {
+                        "OrgId": "300000001939869",
+                        "BillCustomerAccountNumber": "D370584",
+                        "BillCustomerSiteNumber": "A400326",
+                        "BatchSourceName": "SIS_AR_IMPORT",
+                        "CurrencyCode": "AUD",
+                        "CustomerTrxTypeName": "Credit Memo",
+                        "Description": "Test Debit Memo",
+                        "LineType": "LINE",
+                        "Quantity": "1",
+                        "TrxNumber": "0710202004CM",
+                        "TrxDate": "2021-01-07",
+                        "GlDate": "2021-01-07",
+                        "UnitSellingPrice": "-225",
+                        "AmountIncludesTax": "N",
+                        "TaxJurisdictionCode": "AU GST",
+                        "Tax": "AU GST",
+                        "TaxRateCode": "AU_GST_10%",
+                        "TaxRegimeCode": "AU GST REGIME",
+                        "Taxable": "Y",
+                        "ReasonCodeMeaning": "Billing",
+                        "Comments": "Test Comments",
+                        "LegalEntityId": "300000001992061",
+                        "ProductFiscClassification": "12.00-30049099",
+                        "TransactionInterfaceLineDff": {
+                            "Type": "Otherinvoicedetails",
+                            "Content": "OtherInvoiceDetails",
+                            "ContentDisplayValue": "OtherInvoiceDetails",
+                            "OtherDetails": "0710202004CM-1"
+                        },
+                        "TransactionInterfaceHeaderDff": {
+                            "batchtrxnumber": "TestBatch"
+                        }
+                    }
+                ],
+                "processControl": {
+                    "partialFailureAllowed": "false"
+                }
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                125792021021217
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Credit"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "Lines": [
+                        {
+                            "OrgId": "300000001939869",
+                            "BillCustomerAccountNumber": "D370584",
+                            "BillCustomerSiteNumber": "A400326",
+                            "BatchSourceName": "SIS_AR_IMPORT",
+                            "CurrencyCode": "AUD",
+                            "CustomerTrxTypeName": "Credit Memo",
+                            "Description": "Test Debit Memo",
+                            "LineType": "LINE",
+                            "Quantity": "1",
+                            "TrxNumber": "0710202004CM",
+                            "TrxDate": "2021-01-07",
+                            "GlDate": "2021-01-07",
+                            "UnitSellingPrice": "-225",
+                            "AmountIncludesTax": "N",
+                            "TaxJurisdictionCode": "AU GST",
+                            "Tax": "AU GST",
+                            "TaxRateCode": "AU_GST_10%",
+                            "TaxRegimeCode": "AU GST REGIME",
+                            "Taxable": "Y",
+                            "ReasonCodeMeaning": "Billing",
+                            "Comments": "Test Comments",
+                            "LegalEntityId": "300000001992061",
+                            "ProductFiscClassification": "12.00-30049099",
+                            "TransactionInterfaceLineDff": {
+                                "Type": "Otherinvoicedetails",
+                                "Content": "OtherInvoiceDetails",
+                                "ContentDisplayValue": "OtherInvoiceDetails",
+                                "OtherDetails": "0710202004CM-1"
+                            },
+                            "TransactionInterfaceHeaderDff": {
+                                "batchtrxnumber": "TestBatch"
+                            }
+                        }
+                    ],
+                    "processControl": {
+                        "partialFailureAllowed": "false"
+                    }
+                }
+            ],
+            "required": [
+                "Lines",
+                "processControl"
+            ],
+            "properties": {
+                "Lines": {
+                    "$id": "#/properties/Data/properties/Lines",
+                    "type": "array",
+                    "title": "The Lines schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "OrgId": "300000001939869",
+                                "BillCustomerAccountNumber": "D370584",
+                                "BillCustomerSiteNumber": "A400326",
+                                "BatchSourceName": "SIS_AR_IMPORT",
+                                "CurrencyCode": "AUD",
+                                "CustomerTrxTypeName": "Credit Memo",
+                                "Description": "Test Debit Memo",
+                                "LineType": "LINE",
+                                "Quantity": "1",
+                                "TrxNumber": "0710202004CM",
+                                "TrxDate": "2021-01-07",
+                                "GlDate": "2021-01-07",
+                                "UnitSellingPrice": "-225",
+                                "AmountIncludesTax": "N",
+                                "TaxJurisdictionCode": "AU GST",
+                                "Tax": "AU GST",
+                                "TaxRateCode": "AU_GST_10%",
+                                "TaxRegimeCode": "AU GST REGIME",
+                                "Taxable": "Y",
+                                "ReasonCodeMeaning": "Billing",
+                                "Comments": "Test Comments",
+                                "LegalEntityId": "300000001992061",
+                                "ProductFiscClassification": "12.00-30049099",
+                                "TransactionInterfaceLineDff": {
+                                    "Type": "Otherinvoicedetails",
+                                    "Content": "OtherInvoiceDetails",
+                                    "ContentDisplayValue": "OtherInvoiceDetails",
+                                    "OtherDetails": "0710202004CM-1"
+                                },
+                                "TransactionInterfaceHeaderDff": {
+                                    "batchtrxnumber": "TestBatch"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/Lines/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "OrgId": "300000001939869",
+                                        "BillCustomerAccountNumber": "D370584",
+                                        "BillCustomerSiteNumber": "A400326",
+                                        "BatchSourceName": "SIS_AR_IMPORT",
+                                        "CurrencyCode": "AUD",
+                                        "CustomerTrxTypeName": "Credit Memo",
+                                        "Description": "Test Debit Memo",
+                                        "LineType": "LINE",
+                                        "Quantity": "1",
+                                        "TrxNumber": "0710202004CM",
+                                        "TrxDate": "2021-01-07",
+                                        "GlDate": "2021-01-07",
+                                        "UnitSellingPrice": "-225",
+                                        "AmountIncludesTax": "N",
+                                        "TaxJurisdictionCode": "AU GST",
+                                        "Tax": "AU GST",
+                                        "TaxRateCode": "AU_GST_10%",
+                                        "TaxRegimeCode": "AU GST REGIME",
+                                        "Taxable": "Y",
+                                        "ReasonCodeMeaning": "Billing",
+                                        "Comments": "Test Comments",
+                                        "LegalEntityId": "300000001992061",
+                                        "ProductFiscClassification": "12.00-30049099",
+                                        "TransactionInterfaceLineDff": {
+                                            "Type": "Otherinvoicedetails",
+                                            "Content": "OtherInvoiceDetails",
+                                            "ContentDisplayValue": "OtherInvoiceDetails",
+                                            "OtherDetails": "0710202004CM-1"
+                                        },
+                                        "TransactionInterfaceHeaderDff": {
+                                            "batchtrxnumber": "TestBatch"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "OrgId",
+                                    "BillCustomerAccountNumber",
+                                    "BillCustomerSiteNumber",
+                                    "BatchSourceName",
+                                    "CurrencyCode",
+                                    "CustomerTrxTypeName",
+                                    "Description",
+                                    "LineType",
+                                    "Quantity",
+                                    "TrxNumber",
+                                    "TrxDate",
+                                    "GlDate",
+                                    "UnitSellingPrice",
+                                    "AmountIncludesTax",
+                                    "TaxJurisdictionCode",
+                                    "Tax",
+                                    "TaxRateCode",
+                                    "TaxRegimeCode",
+                                    "Taxable",
+                                    "ReasonCodeMeaning",
+                                    "Comments",
+                                    "LegalEntityId",
+                                    "ProductFiscClassification",
+                                    "TransactionInterfaceLineDff",
+                                    "TransactionInterfaceHeaderDff"
+                                ],
+                                "properties": {
+                                    "OrgId": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/OrgId",
+                                        "type": "string",
+                                        "title": "The OrgId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001939869"
+                                        ]
+                                    },
+                                    "BillCustomerAccountNumber": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/BillCustomerAccountNumber",
+                                        "type": "string",
+                                        "title": "The BillCustomerAccountNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "D370584"
+                                        ]
+                                    },
+                                    "BillCustomerSiteNumber": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/BillCustomerSiteNumber",
+                                        "type": "string",
+                                        "title": "The BillCustomerSiteNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "A400326"
+                                        ]
+                                    },
+                                    "BatchSourceName": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/BatchSourceName",
+                                        "type": "string",
+                                        "title": "The BatchSourceName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "SIS_AR_IMPORT"
+                                        ]
+                                    },
+                                    "CurrencyCode": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/CurrencyCode",
+                                        "type": "string",
+                                        "title": "The CurrencyCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AUD"
+                                        ]
+                                    },
+                                    "CustomerTrxTypeName": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/CustomerTrxTypeName",
+                                        "type": "string",
+                                        "title": "The CustomerTrxTypeName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Credit Memo"
+                                        ]
+                                    },
+                                    "Description": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/Description",
+                                        "type": "string",
+                                        "title": "The Description schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Test Debit Memo"
+                                        ]
+                                    },
+                                    "LineType": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/LineType",
+                                        "type": "string",
+                                        "title": "The LineType schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "LINE"
+                                        ]
+                                    },
+                                    "Quantity": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/Quantity",
+                                        "type": "string",
+                                        "title": "The Quantity schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "1"
+                                        ]
+                                    },
+                                    "TrxNumber": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TrxNumber",
+                                        "type": "string",
+                                        "title": "The TrxNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "0710202004CM"
+                                        ]
+                                    },
+                                    "TrxDate": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TrxDate",
+                                        "type": "string",
+                                        "title": "The TrxDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2021-01-07"
+                                        ]
+                                    },
+                                    "GlDate": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/GlDate",
+                                        "type": "string",
+                                        "title": "The GlDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2021-01-07"
+                                        ]
+                                    },
+                                    "UnitSellingPrice": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/UnitSellingPrice",
+                                        "type": "string",
+                                        "title": "The UnitSellingPrice schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "-225"
+                                        ]
+                                    },
+                                    "AmountIncludesTax": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/AmountIncludesTax",
+                                        "type": "string",
+                                        "title": "The AmountIncludesTax schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "N"
+                                        ]
+                                    },
+                                    "TaxJurisdictionCode": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TaxJurisdictionCode",
+                                        "type": "string",
+                                        "title": "The TaxJurisdictionCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST"
+                                        ]
+                                    },
+                                    "Tax": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/Tax",
+                                        "type": "string",
+                                        "title": "The Tax schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST"
+                                        ]
+                                    },
+                                    "TaxRateCode": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TaxRateCode",
+                                        "type": "string",
+                                        "title": "The TaxRateCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU_GST_10%"
+                                        ]
+                                    },
+                                    "TaxRegimeCode": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TaxRegimeCode",
+                                        "type": "string",
+                                        "title": "The TaxRegimeCode schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "AU GST REGIME"
+                                        ]
+                                    },
+                                    "Taxable": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/Taxable",
+                                        "type": "string",
+                                        "title": "The Taxable schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Y"
+                                        ]
+                                    },
+                                    "ReasonCodeMeaning": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/ReasonCodeMeaning",
+                                        "type": "string",
+                                        "title": "The ReasonCodeMeaning schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Billing"
+                                        ]
+                                    },
+                                    "Comments": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/Comments",
+                                        "type": "string",
+                                        "title": "The Comments schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Test Comments"
+                                        ]
+                                    },
+                                    "LegalEntityId": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/LegalEntityId",
+                                        "type": "string",
+                                        "title": "The LegalEntityId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001992061"
+                                        ]
+                                    },
+                                    "ProductFiscClassification": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/ProductFiscClassification",
+                                        "type": "string",
+                                        "title": "The ProductFiscClassification schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "12.00-30049099"
+                                        ]
+                                    },
+                                    "TransactionInterfaceLineDff": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceLineDff",
+                                        "type": "object",
+                                        "title": "The TransactionInterfaceLineDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "Type": "Otherinvoicedetails",
+                                                "Content": "OtherInvoiceDetails",
+                                                "ContentDisplayValue": "OtherInvoiceDetails",
+                                                "OtherDetails": "0710202004CM-1"
+                                            }
+                                        ],
+                                        "required": [
+                                            "Type",
+                                            "Content",
+                                            "ContentDisplayValue",
+                                            "OtherDetails"
+                                        ],
+                                        "properties": {
+                                            "Type": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/Type",
+                                                "type": "string",
+                                                "title": "The Type schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "Otherinvoicedetails"
+                                                ]
+                                            },
+                                            "Content": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/Content",
+                                                "type": "string",
+                                                "title": "The Content schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "ContentDisplayValue": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/ContentDisplayValue",
+                                                "type": "string",
+                                                "title": "The ContentDisplayValue schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "OtherInvoiceDetails"
+                                                ]
+                                            },
+                                            "OtherDetails": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceLineDff/properties/OtherDetails",
+                                                "type": "string",
+                                                "title": "The OtherDetails schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "0710202004CM-1"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    },
+                                    "TransactionInterfaceHeaderDff": {
+                                        "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceHeaderDff",
+                                        "type": "object",
+                                        "title": "The TransactionInterfaceHeaderDff schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "batchtrxnumber": "TestBatch"
+                                            }
+                                        ],
+                                        "required": [
+                                            "batchtrxnumber"
+                                        ],
+                                        "properties": {
+                                            "batchtrxnumber": {
+                                                "$id": "#/properties/Data/properties/Lines/items/anyOf/0/properties/TransactionInterfaceHeaderDff/properties/batchtrxnumber",
+                                                "type": "string",
+                                                "title": "The batchtrxnumber schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "TestBatch"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "processControl": {
+                    "$id": "#/properties/Data/properties/processControl",
+                    "type": "object",
+                    "title": "The processControl schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "partialFailureAllowed": "false"
+                        }
+                    ],
+                    "required": [
+                        "partialFailureAllowed"
+                    ],
+                    "properties": {
+                        "partialFailureAllowed": {
+                            "$id": "#/properties/Data/properties/processControl/properties/partialFailureAllowed",
+                            "type": "string",
+                            "title": "The partialFailureAllowed schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "false"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

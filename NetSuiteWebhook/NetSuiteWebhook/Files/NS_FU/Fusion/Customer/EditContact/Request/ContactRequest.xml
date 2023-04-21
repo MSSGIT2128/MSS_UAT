@@ -1,0 +1,37 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/applicationModule/types/" xmlns:per="http://xmlns.oracle.com/apps/cdm/foundation/parties/personService/" xmlns:par="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:sour="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/sourceSystemRef/" xmlns:con="http://xmlns.oracle.com/apps/cdm/foundation/parties/contactPointService/" xmlns:con1="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/contactPoint/" xmlns:par1="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/partySite/" xmlns:per1="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/person/" xmlns:rel="http://xmlns.oracle.com/apps/cdm/foundation/parties/relationshipService/" xmlns:org="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/orgContact/" xmlns:rel1="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/relationship/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <typ:updatePerson>
+         <typ:personParty>
+            <per:ObjectId>300000001613332</per:ObjectId>
+            <per:PartyId>300000003009001</per:PartyId>
+
+            <per:PersonProfile>
+               <per:PersonProfileId>300000003009001</per:PersonProfileId>
+               <per:PersonFirstName>TestingFirstName</per:PersonFirstName>
+               <per:PersonLastName>TestingLastName</per:PersonLastName>
+            </per:PersonProfile>
+           
+            <per:Relationship>
+               <rel:RelationshipRecId>300000003009002</rel:RelationshipRecId>
+               <rel:RelationshipId>300000003009003</rel:RelationshipId>
+               <rel:SubjectId>300000003009001</rel:SubjectId>
+               <rel:Email>
+                  <con:ContactPointId>300000003009008</con:ContactPointId>
+                  <con:ContactPointType>EMAIL</con:ContactPointType>
+                  <con:EmailAddress>test00212@test.com</con:EmailAddress>
+                  <con:ContactPointPurpose>BUSINESS</con:ContactPointPurpose>
+               </rel:Email>
+               <rel:Phone>
+                  <con:ContactPointId>300000003009007</con:ContactPointId>
+                  <con:ContactPointType>PHONE</con:ContactPointType>
+                  <con:PhoneCountryCode>91</con:PhoneCountryCode>
+                  <con:PhoneNumber>9717054321</con:PhoneNumber>
+                  <con:PhoneLineType>GEN</con:PhoneLineType>
+	          <con:ContactPointPurpose>BUSINESS</con:ContactPointPurpose>
+               </rel:Phone>
+            </per:Relationship>
+         </typ:personParty>
+      </typ:updatePerson>
+   </soapenv:Body>
+</soapenv:Envelope>

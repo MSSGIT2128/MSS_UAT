@@ -1,0 +1,180 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "customerAccount": {
+                "CustomerAccountId": "300000003167502",
+                "PartyId": "300000003167493",
+                "CustomerClassCode": "DEFENCE",
+                "CustAcctInformation": {
+                    "customerGroup": "Cust.Group MaxSize is 150",
+                    "customerGrandParent": "GrandParent MaxSize is 150",
+                    "customerGrandParentCode": "B8888888",
+                    "salesRep": "Kendra Hotta",
+                    "warehouse": "9900",
+                    "marketing": "1010"
+                }
+            }
+        }
+    ],
+    "required": [
+        "customerAccount"
+    ],
+    "properties": {
+        "customerAccount": {
+            "$id": "#/properties/customerAccount",
+            "type": "object",
+            "title": "The customerAccount schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CustomerAccountId": "300000003167502",
+                    "PartyId": "300000003167493",
+                    "CustomerClassCode": "DEFENCE",
+                    "CustAcctInformation": {
+                        "customerGroup": "Cust.Group MaxSize is 150",
+                        "customerGrandParent": "GrandParent MaxSize is 150",
+                        "customerGrandParentCode": "B8888888",
+                        "salesRep": "Kendra Hotta",
+                        "warehouse": "9900",
+                        "marketing": "1010"
+                    }
+                }
+            ],
+            "required": [
+                "CustomerAccountId",
+                "PartyId",
+                "CustomerClassCode",
+                "CustAcctInformation"
+            ],
+            "properties": {
+                "CustomerAccountId": {
+                    "$id": "#/properties/customerAccount/properties/CustomerAccountId",
+                    "type": "string",
+                    "title": "The CustomerAccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000003167502"
+                    ]
+                },
+                "PartyId": {
+                    "$id": "#/properties/customerAccount/properties/PartyId",
+                    "type": "string",
+                    "title": "The PartyId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "300000003167493"
+                    ]
+                },
+                "CustomerClassCode": {
+                    "$id": "#/properties/customerAccount/properties/CustomerClassCode",
+                    "type": "string",
+                    "title": "The CustomerClassCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "DEFENCE"
+                    ]
+                },
+                "CustAcctInformation": {
+                    "$id": "#/properties/customerAccount/properties/CustAcctInformation",
+                    "type": "object",
+                    "title": "The CustAcctInformation schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "customerGroup": "Cust.Group MaxSize is 150",
+                            "customerGrandParent": "GrandParent MaxSize is 150",
+                            "customerGrandParentCode": "B8888888",
+                            "salesRep": "Kendra Hotta",
+                            "warehouse": "9900",
+                            "marketing": "1010"
+                        }
+                    ],
+                    "required": [
+                        "customerGroup",
+                        "customerGrandParent",
+                        "customerGrandParentCode",
+                        "salesRep",
+                        "warehouse",
+                        "marketing"
+                    ],
+                    "properties": {
+                        "customerGroup": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGroup",
+                            "type": "string",
+                            "title": "The customerGroup schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Cust.Group MaxSize is 150"
+                            ]
+                        },
+                        "customerGrandParent": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGrandParent",
+                            "type": "string",
+                            "title": "The customerGrandParent schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "GrandParent MaxSize is 150"
+                            ]
+                        },
+                        "customerGrandParentCode": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/customerGrandParentCode",
+                            "type": "string",
+                            "title": "The customerGrandParentCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "B8888888"
+                            ]
+                        },
+                        "salesRep": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/salesRep",
+                            "type": "string",
+                            "title": "The salesRep schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "Kendra Hotta"
+                            ]
+                        },
+                        "warehouse": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/warehouse",
+                            "type": "string",
+                            "title": "The warehouse schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "9900"
+                            ]
+                        },
+                        "marketing": {
+                            "$id": "#/properties/customerAccount/properties/CustAcctInformation/properties/marketing",
+                            "type": "string",
+                            "title": "The marketing schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "1010"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

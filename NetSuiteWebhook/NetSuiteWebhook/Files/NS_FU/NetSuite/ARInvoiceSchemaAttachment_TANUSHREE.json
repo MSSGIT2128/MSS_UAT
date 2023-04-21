@@ -1,0 +1,715 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "type": "integer",
+            "default": 0,
+            "title": "The RequestId Schema",
+            "examples": [
+                1631600786958
+            ]
+        },
+        "Operation": {
+            "type": "string",
+            "default": "",
+            "title": "The Operation Schema",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "type": "string",
+            "default": "",
+            "title": "The Type Schema",
+            "examples": [
+                "Invoice"
+            ]
+        },
+        "Data": {
+            "type": "object",
+            "default": {},
+            "title": "The Data Schema",
+            "required": [
+                "DueDate",
+                "InvoiceCurrencyCode",
+                "TransactionNumber",
+                "TransactionDate",
+                "BatchTRXNumber",
+                "TransactionType",
+                "TransactionSource",
+                "BillToCustomerNumber",
+                "BillToSite",
+                "PaymentTerms",
+                "BusinessUnit",
+                "LegalEntityIdentifier",
+                "BillToCustomerName",
+                "bpayRefNumber",
+                "poNumber",
+                "AccountingDate",
+                "receivablesInvoiceLines",
+                "receivablesInvoiceDistributions",
+                "attachments"
+            ],
+            "properties": {
+                "DueDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The DueDate Schema",
+                    "examples": [
+                        "2021-09-28"
+                    ]
+                },
+                "InvoiceCurrencyCode": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The InvoiceCurrencyCode Schema",
+                    "examples": [
+                        "NZD"
+                    ]
+                },
+                "TransactionNumber": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The TransactionNumber Schema",
+                    "examples": [
+                        "333428"
+                    ]
+                },
+                "TransactionDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The TransactionDate Schema",
+                    "examples": [
+                        "2021-09-14"
+                    ]
+                },
+                "BatchTRXNumber": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The BatchTRXNumber Schema",
+                    "examples": [
+                        "NetSuite-2021-09-14"
+                    ]
+                },
+                "TransactionType": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The TransactionType Schema",
+                    "examples": [
+                        "Invoice"
+                    ]
+                },
+                "TransactionSource": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The TransactionSource Schema",
+                    "examples": [
+                        "SIS Receivable Invoice"
+                    ]
+                },
+                "BillToCustomerNumber": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The BillToCustomerNumber Schema",
+                    "examples": [
+                        "P031208"
+                    ]
+                },
+                "BillToSite": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The BillToSite Schema",
+                    "examples": [
+                        "299166"
+                    ]
+                },
+                "PaymentTerms": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The PaymentTerms Schema",
+                    "examples": [
+                        "14 Days"
+                    ]
+                },
+                "BusinessUnit": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The BusinessUnit Schema",
+                    "examples": [
+                        "P4G Group BU"
+                    ]
+                },
+                "LegalEntityIdentifier": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The LegalEntityIdentifier Schema",
+                    "examples": [
+                        "P4G_LE"
+                    ]
+                },
+                "BillToCustomerName": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The BillToCustomerName Schema",
+                    "examples": [
+                        "Stride Property Limited"
+                    ]
+                },
+                "bpayRefNumber": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The bpayRefNumber Schema",
+                    "examples": [
+                        "3334282"
+                    ]
+                },
+                "poNumber": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The poNumber Schema",
+                    "examples": [
+                        ""
+                    ]
+                },
+                "AccountingDate": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The AccountingDate Schema",
+                    "examples": [
+                        "20-03-2022"
+                    ]
+                },
+                "receivablesInvoiceLines": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The receivablesInvoiceLines Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "LineNumber",
+                            "Description",
+                            "Quantity",
+                            "UnitSellingPrice",
+                            "receivablesInvoiceLineTaxLines"
+                        ],
+                        "properties": {
+                            "LineNumber": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The LineNumber Schema",
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "Description": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The Description Schema",
+                                "examples": [
+                                    "333428 - "
+                                ]
+                            },
+                            "Quantity": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The Quantity Schema",
+                                "examples": [
+                                    1
+                                ]
+                            },
+                            "UnitSellingPrice": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The UnitSellingPrice Schema",
+                                "examples": [
+                                    1550
+                                ]
+                            },
+                            "receivablesInvoiceLineTaxLines": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The receivablesInvoiceLineTaxLines Schema",
+                                "items": {
+                                    "type": "object",
+                                    "default": {},
+                                    "title": "A Schema",
+                                    "required": [
+                                        "TaxJurisdictionCode",
+                                        "TaxRate",
+                                        "TaxAmount",
+                                        "TaxRateCode",
+                                        "TaxRegimeCode",
+                                        "Tax"
+                                    ],
+                                    "properties": {
+                                        "TaxJurisdictionCode": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The TaxJurisdictionCode Schema",
+                                            "examples": [
+                                                "NZ GST"
+                                            ]
+                                        },
+                                        "TaxRate": {
+                                            "type": "integer",
+                                            "default": 0,
+                                            "title": "The TaxRate Schema",
+                                            "examples": [
+                                                15
+                                            ]
+                                        },
+                                        "TaxAmount": {
+                                            "type": "number",
+                                            "default": 0.0,
+                                            "title": "The TaxAmount Schema",
+                                            "examples": [
+                                                232.5
+                                            ]
+                                        },
+                                        "TaxRateCode": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The TaxRateCode Schema",
+                                            "examples": [
+                                                "NZ_GST_15%"
+                                            ]
+                                        },
+                                        "TaxRegimeCode": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The TaxRegimeCode Schema",
+                                            "examples": [
+                                                "NZ GST REGIME"
+                                            ]
+                                        },
+                                        "Tax": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The Tax Schema",
+                                            "examples": [
+                                                "NZ GST"
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "TaxJurisdictionCode": "NZ GST",
+                                        "TaxRate": 15,
+                                        "TaxAmount": 232.5,
+                                        "TaxRateCode": "NZ_GST_15%",
+                                        "TaxRegimeCode": "NZ GST REGIME",
+                                        "Tax": "NZ GST"
+                                    }]
+                                },
+                                "examples": [
+                                    [{
+                                        "TaxJurisdictionCode": "NZ GST",
+                                        "TaxRate": 15,
+                                        "TaxAmount": 232.5,
+                                        "TaxRateCode": "NZ_GST_15%",
+                                        "TaxRegimeCode": "NZ GST REGIME",
+                                        "Tax": "NZ GST"
+                                    }]
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "LineNumber": 1,
+                            "Description": "333428 - ",
+                            "Quantity": 1,
+                            "UnitSellingPrice": 1550,
+                            "receivablesInvoiceLineTaxLines": [{
+                                "TaxJurisdictionCode": "NZ GST",
+                                "TaxRate": 15,
+                                "TaxAmount": 232.5,
+                                "TaxRateCode": "NZ_GST_15%",
+                                "TaxRegimeCode": "NZ GST REGIME",
+                                "Tax": "NZ GST"
+                            }]
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "LineNumber": 1,
+                            "Description": "333428 - ",
+                            "Quantity": 1,
+                            "UnitSellingPrice": 1550,
+                            "receivablesInvoiceLineTaxLines": [{
+                                "TaxJurisdictionCode": "NZ GST",
+                                "TaxRate": 15,
+                                "TaxAmount": 232.5,
+                                "TaxRateCode": "NZ_GST_15%",
+                                "TaxRegimeCode": "NZ GST REGIME",
+                                "Tax": "NZ GST"
+                            }]
+                        }]
+                    ]
+                },
+                "receivablesInvoiceDistributions": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The receivablesInvoiceDistributions Schema",
+                    "items": {
+                        "type": "object",
+                        "title": "A Schema",
+                        "required": [
+                            "InvoiceLineNumber",
+                            "AccountClass",
+                            "AccountCombination",
+                            "Percent",
+                            "RunAccountCombination",
+                            "Amount"
+                        ],
+                        "properties": {
+                            "InvoiceLineNumber": {
+                                "type": [
+                                    "null",
+                                    "integer"
+                                ],
+                                "title": "The InvoiceLineNumber Schema",
+                                "examples": [
+                                    null,
+                                    1
+                                ]
+                            },
+                            "AccountClass": {
+                                "type": "string",
+                                "title": "The AccountClass Schema",
+                                "examples": [
+                                    "Receivable",
+                                    "Revenue"
+                                ]
+                            },
+                            "AccountCombination": {
+                                "type": "string",
+                                "title": "The AccountCombination Schema",
+                                "examples": [
+                                    "401.99999999.299.1171301.999.9999.999.99999999.999.999.9999",
+                                    "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                                    "401.OS5006.162.3147110.060.7201.801.99999999.999.999.9999"
+                                ]
+                            },
+                            "Percent": {
+                                "type": "integer",
+                                "default": 0,
+                                "title": "The Percent Schema",
+                                "examples": [
+                                    100
+                                ]
+                            },
+                            "RunAccountCombination": {
+                                "type": "string",
+                                "title": "The RunAccountCombination Schema",
+                                "examples": [
+                                    ""
+                                ]
+                            },
+                            "Amount": {
+                                "type": "integer",
+                                "title": "The Amount Schema",
+                                "examples": [
+                                    350,
+                                    500
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "InvoiceLineNumber": null,
+                            "AccountClass": "Receivable",
+                            "AccountCombination": "401.99999999.299.1171301.999.9999.999.99999999.999.999.9999",
+                            "Percent": 100
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 350
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 350
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 350
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.162.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 500
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "InvoiceLineNumber": null,
+                            "AccountClass": "Receivable",
+                            "AccountCombination": "401.99999999.299.1171301.999.9999.999.99999999.999.999.9999",
+                            "Percent": 100
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 350
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 350
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 350
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "401.OS5006.162.3147110.060.7201.801.99999999.999.999.9999",
+                            "RunAccountCombination": "",
+                            "Amount": 500
+                        }]
+                    ]
+                },
+                "attachments": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The attachments Schema",
+                    "items": {
+                        "type": "object",
+                        "default": {},
+                        "title": "A Schema",
+                        "required": [
+                            "title",
+                            "CategoryName",
+                            "DatatypeCode",
+                            "FileContents"
+                        ],
+                        "properties": {
+                            "title": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The title Schema",
+                                "examples": [
+                                    "Invoice 333428.pdf"
+                                ]
+                            },
+                            "CategoryName": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The CategoryName Schema",
+                                "examples": [
+                                    "CUSTOMER_TRX"
+                                ]
+                            },
+                            "DatatypeCode": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The DatatypeCode Schema",
+                                "examples": [
+                                    "FILE"
+                                ]
+                            },
+                            "FileContents": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The FileContents Schema",
+                                "examples": [
+                                    "JVBERi0xL"
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "title": "Invoice 333428.pdf",
+                            "CategoryName": "CUSTOMER_TRX",
+                            "DatatypeCode": "FILE",
+                            "FileContents": "JVBERi0xL"
+                        }]
+                    },
+                    "examples": [
+                        [{
+                            "title": "Invoice 333428.pdf",
+                            "CategoryName": "CUSTOMER_TRX",
+                            "DatatypeCode": "FILE",
+                            "FileContents": "JVBERi0xL"
+                        }]
+                    ]
+                }
+            },
+            "examples": [{
+                "DueDate": "2021-09-28",
+                "InvoiceCurrencyCode": "NZD",
+                "TransactionNumber": "333428",
+                "TransactionDate": "2021-09-14",
+                "BatchTRXNumber": "NetSuite-2021-09-14",
+                "TransactionType": "Invoice",
+                "TransactionSource": "SIS Receivable Invoice",
+                "BillToCustomerNumber": "P031208",
+                "BillToSite": "299166",
+                "PaymentTerms": "14 Days",
+                "BusinessUnit": "P4G Group BU",
+                "LegalEntityIdentifier": "P4G_LE",
+                "BillToCustomerName": "Stride Property Limited",
+                "bpayRefNumber": "3334282",
+                "poNumber": "",
+                "AccountingDate": "20-03-2022",
+                "receivablesInvoiceLines": [{
+                    "LineNumber": 1,
+                    "Description": "333428 - ",
+                    "Quantity": 1,
+                    "UnitSellingPrice": 1550,
+                    "receivablesInvoiceLineTaxLines": [{
+                        "TaxJurisdictionCode": "NZ GST",
+                        "TaxRate": 15,
+                        "TaxAmount": 232.5,
+                        "TaxRateCode": "NZ_GST_15%",
+                        "TaxRegimeCode": "NZ GST REGIME",
+                        "Tax": "NZ GST"
+                    }]
+                }],
+                "receivablesInvoiceDistributions": [{
+                    "InvoiceLineNumber": null,
+                    "AccountClass": "Receivable",
+                    "AccountCombination": "401.99999999.299.1171301.999.9999.999.99999999.999.999.9999",
+                    "Percent": 100
+                },
+                {
+                    "InvoiceLineNumber": 1,
+                    "AccountClass": "Revenue",
+                    "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                    "RunAccountCombination": "",
+                    "Amount": 350
+                },
+                {
+                    "InvoiceLineNumber": 1,
+                    "AccountClass": "Revenue",
+                    "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                    "RunAccountCombination": "",
+                    "Amount": 350
+                },
+                {
+                    "InvoiceLineNumber": 1,
+                    "AccountClass": "Revenue",
+                    "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                    "RunAccountCombination": "",
+                    "Amount": 350
+                },
+                {
+                    "InvoiceLineNumber": 1,
+                    "AccountClass": "Revenue",
+                    "AccountCombination": "401.OS5006.162.3147110.060.7201.801.99999999.999.999.9999",
+                    "RunAccountCombination": "",
+                    "Amount": 500
+                }],
+                "attachments": [{
+                    "title": "Invoice 333428.pdf",
+                    "CategoryName": "CUSTOMER_TRX",
+                    "DatatypeCode": "FILE",
+                    "FileContents": "JVBERi0xL"
+                }]
+            }]
+        }
+    },
+    "examples": [{
+        "RequestId": 1631600786958,
+        "Operation": "Create",
+        "Type": "Invoice",
+        "Data": {
+            "DueDate": "2021-09-28",
+            "InvoiceCurrencyCode": "NZD",
+            "TransactionNumber": "333428",
+            "TransactionDate": "2021-09-14",
+            "BatchTRXNumber": "NetSuite-2021-09-14",
+            "TransactionType": "Invoice",
+            "TransactionSource": "SIS Receivable Invoice",
+            "BillToCustomerNumber": "P031208",
+            "BillToSite": "299166",
+            "PaymentTerms": "14 Days",
+            "BusinessUnit": "P4G Group BU",
+            "LegalEntityIdentifier": "P4G_LE",
+            "BillToCustomerName": "Stride Property Limited",
+            "bpayRefNumber": "3334282",
+            "poNumber": "",
+            "AccountingDate": "20-03-2022",
+            "receivablesInvoiceLines": [{
+                "LineNumber": 1,
+                "Description": "333428 - ",
+                "Quantity": 1,
+                "UnitSellingPrice": 1550,
+                "receivablesInvoiceLineTaxLines": [{
+                    "TaxJurisdictionCode": "NZ GST",
+                    "TaxRate": 15,
+                    "TaxAmount": 232.5,
+                    "TaxRateCode": "NZ_GST_15%",
+                    "TaxRegimeCode": "NZ GST REGIME",
+                    "Tax": "NZ GST"
+                }]
+            }],
+            "receivablesInvoiceDistributions": [{
+                "InvoiceLineNumber": null,
+                "AccountClass": "Receivable",
+                "AccountCombination": "401.99999999.299.1171301.999.9999.999.99999999.999.999.9999",
+                "Percent": 100
+            },
+            {
+                "InvoiceLineNumber": 1,
+                "AccountClass": "Revenue",
+                "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                "RunAccountCombination": "",
+                "Amount": 350
+            },
+            {
+                "InvoiceLineNumber": 1,
+                "AccountClass": "Revenue",
+                "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                "RunAccountCombination": "",
+                "Amount": 350
+            },
+            {
+                "InvoiceLineNumber": 1,
+                "AccountClass": "Revenue",
+                "AccountCombination": "401.OS5006.161.3147110.060.7201.801.99999999.999.999.9999",
+                "RunAccountCombination": "",
+                "Amount": 350
+            },
+            {
+                "InvoiceLineNumber": 1,
+                "AccountClass": "Revenue",
+                "AccountCombination": "401.OS5006.162.3147110.060.7201.801.99999999.999.999.9999",
+                "RunAccountCombination": "",
+                "Amount": 500
+            }],
+            "attachments": [{
+                "title": "Invoice 333428.pdf",
+                "CategoryName": "CUSTOMER_TRX",
+                "DatatypeCode": "FILE",
+                "FileContents": "JVBERi0xL"
+            }]
+        }
+    }]
+}

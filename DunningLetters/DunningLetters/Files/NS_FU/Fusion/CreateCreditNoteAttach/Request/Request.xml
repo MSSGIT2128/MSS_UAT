@@ -1,0 +1,27 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/types/" xmlns:erp="http://xmlns.oracle.com/apps/financials/commonModules/shared/model/erpIntegrationService/">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<typ:uploadAttachment>
+			<typ:entityName>RA_CUSTOMER_TRX_ALL</typ:entityName>
+			<typ:categoryName>CUSTOMER_TRX</typ:categoryName>
+			<typ:allowDuplicate>Yes</typ:allowDuplicate>
+			<!--Zero or more repetitions:-->
+			<typ:attachmentRows>
+				<!--Business Unit:-->
+				<erp:UserKeyA>MSS Group BU</erp:UserKeyA>
+				<!--Transaction Number:-->
+				<erp:UserKeyB>26032021CM_1</erp:UserKeyB>
+				<!--Transaction Source:-->
+				<erp:UserKeyC>SIS_AR_IMPORT</erp:UserKeyC>
+				<!--CUSTOMER_TRX_ID:-->
+				<erp:UserKeyD>19013</erp:UserKeyD>
+				<!--AttachmentType:-->
+				<erp:AttachmentType>FILE</erp:AttachmentType>
+				<!--File Name:-->
+				<erp:Title>TESTAV.txt</erp:Title>
+				<!--Content:-->
+				<erp:Content>SGVsbG8gV29ybGQ=</erp:Content>
+			</typ:attachmentRows>
+		</typ:uploadAttachment>
+	</soapenv:Body>
+</soapenv:Envelope>

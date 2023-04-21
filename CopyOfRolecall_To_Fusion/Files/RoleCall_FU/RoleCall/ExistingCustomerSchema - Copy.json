@@ -1,0 +1,1505 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"ExistingCustomerNumber": "D3315001",
+			"ExistingOrganizationName": "Joe AcmeCorp-3315 Pty Ltd",
+			"PartyId": "300000005463438",
+			"CustomerAccountId": "300000005463445",
+			"EntitySegment": "201",
+			"ContractSegment": "99999999",
+			"ContractDescription": "Common",
+			"BusinessTypeSegment": "999",
+			"LedgerName": "SIS AU PL",
+			"CreatedByModule": "SIS",
+			"CustomerAccountSiteUse_OrigSysRef": {
+				"OrigSystem": "SIS",
+				"OwnerTableName": "HZ_CUST_SITE_USES_ALL"
+			},
+			"AddNewSites": [
+				{
+					"PartySiteNumber": "A3315003",
+					"PartySiteName": "Joe AcmeCorp-3315 Branch Chatswood",
+					"TerritorySegment": "9021",
+					"StateSegment": "902",
+					"EnabledFlag": "Y",
+					"SummaryFlag": "N",
+					"DetailPostingAllowed": "Y",
+					"DetailBudgetingAllowed": "Y",
+					"StartDateActive": "2020-01-15",
+					"SiteUseType": "BILL_TO",
+					"PartyUsageCode": "PARTY_OF_INTEREST",
+					"Address1": "Level 10",
+					"Address2": "Zenith Centre Tower B",
+					"Address3": "821 Pacific Highway",
+					"City": "Chatswood",
+					"PostalCode": "2067",
+					"State": "New South Wales",
+					"Country": "AU",
+					"AddressEffectiveDate": "2020-01-15",
+					"EffectiveDate": "2021-02-10"
+				},
+				{
+					"PartySiteNumber": "A3315004",
+					"PartySiteName": "Joe AcmeCorp-3315 Branch Newcastle",
+					"TerritorySegment": "9021",
+					"StateSegment": "902",
+					"EnabledFlag": "Y",
+					"SummaryFlag": "N",
+					"DetailPostingAllowed": "Y",
+					"DetailBudgetingAllowed": "Y",
+					"StartDateActive": "2020-01-15",
+					"SiteUseType": "BILL_TO",
+					"PartyUsageCode": "PARTY_OF_INTEREST",
+					"Address1": "101 Hunter Street",
+					"Address2": null,
+					"Address3": null,
+					"City": "Newcastle",
+					"PostalCode": "2300",
+					"State": "New South Wales",
+					"Country": "AU",
+					"AddressEffectiveDate": "2020-01-15",
+					"EffectiveDate": "2021-02-10"
+				}
+			],
+			"ReferenceAccountsForBillToSites": [
+				{
+					"CustomerAccountNumber": "D3315001",
+					"CustomerSiteNumber": "A3315003",
+					"BusinessUnit": "MSS Group BU",
+					"RevenueAccountCodeCombination": "201.A3315003.101.5144101.060.9021.902.99999999.999.999.9999",
+					"ReceivableAccountCodeCombination": "201.99999999.299.1171301.999.9999.902.99999999.999.999.9999"
+				},
+				{
+					"CustomerAccountNumber": "D3315001",
+					"CustomerSiteNumber": "A3315004",
+					"BusinessUnit": "MSS Group BU",
+					"RevenueAccountCodeCombination": "201.A3315004.101.5144101.060.9021.902.99999999.999.999.9999",
+					"ReceivableAccountCodeCombination": "201.99999999.299.1171301.999.9999.999.99999999.999.999.9999"
+				}
+			],
+			"TaxRegistrations": [
+				{
+					"PartyTypeCode": "THIRD_PARTY_SITE",
+					"PartyName": "Joe AcmeCorp-3315 Branch Chatswood",
+					"PartyNumber": "D3315001",
+					"PartySiteNumber": "A3315003",
+					"TaxRegimeCode": "AU GST REGIME",
+					"EffectiveFrom": "2020-01-15",
+					"RegistrationNumber": "50008559486",
+					"RegistrationStatusCode": "REGISTERED"
+				},
+				{
+					"PartyTypeCode": "THIRD_PARTY_SITE",
+					"PartyName": "Joe AcmeCorp-3315 Branch Newcastle",
+					"PartyNumber": "D3315001",
+					"PartySiteNumber": "A3315004",
+					"TaxRegimeCode": "AU GST REGIME",
+					"EffectiveFrom": "2020-01-15",
+					"RegistrationNumber": "50008559486",
+					"RegistrationStatusCode": "REGISTERED"
+				}
+			],
+			"CustomerProfile": [
+				{
+					"AccountNumber": "D3315001",
+					"SiteNumber": "A3315003",
+					"EffectiveStartDate": "2020-01-15",
+					"PaymentTerms": "14 Days"
+				},
+				{
+					"AccountNumber": "D3315001",
+					"SiteNumber": "A3315004",
+					"EffectiveStartDate": "2020-01-15",
+					"PaymentTerms": "120 Days"
+				}
+			],
+			"contactPersons": [
+				{
+					"PersonFirstName": "George",
+					"PersonLastName": "Benson",
+					"ContactLevel": "SITE",
+					"PartySiteNumber": "A3315003",
+					"Relationship": {
+						"SubjectType": "PERSON",
+						"SubjectTableName": "HZ_PARTIES",
+						"ObjectType": "ORGANIZATION",
+						"ObjectId": -1,
+						"ObjectTableName": "HZ_PARTIES",
+						"RelationshipCode": "CONTACT_OF",
+						"RelationshipType": "CONTACT",
+						"StartDate": "2020-01-15",
+						"OrganizationContact": {
+							"ContactNumber": "025556666",
+							"RoleType": "CONTACT",
+							"PrimaryFlag": "true"
+						},
+						"Email": {
+							"OwnerTableName": "HZ_PARTIES",
+							"PrimaryFlag": "true",
+							"ContactPointPurpose": "BUSINESS",
+							"StartDate": "2020-01-15",
+							"EmailAddress": "george.benson@mydomain.com"
+						},
+						"RelationshipId": -1,
+						"CustomerAccountContactRole": {
+							"ResponsibilityType": "BILL_TO",
+							"PrimaryFlag": true
+						}
+					}
+				},
+				{
+					"PersonFirstName": "Cindi",
+					"PersonLastName": "Rella",
+					"ContactLevel": "SITE",
+					"PartySiteNumber": "A3315004",
+					"Relationship": {
+						"SubjectType": "PERSON",
+						"SubjectTableName": "HZ_PARTIES",
+						"ObjectType": "ORGANIZATION",
+						"ObjectId": -1,
+						"ObjectTableName": "HZ_PARTIES",
+						"RelationshipCode": "CONTACT_OF",
+						"RelationshipType": "CONTACT",
+						"StartDate": "2020-01-15",
+						"OrganizationContact": {
+							"ContactNumber": "0266669292",
+							"RoleType": "CONTACT",
+							"PrimaryFlag": "true"
+						},
+						"Email": {
+							"OwnerTableName": "HZ_PARTIES",
+							"PrimaryFlag": "true",
+							"ContactPointPurpose": "BUSINESS",
+							"StartDate": "2020-01-15",
+							"EmailAddress": "cindi.rella@mydomain.com"
+						},
+						"RelationshipId": -1,
+						"CustomerAccountContactRole": {
+							"ResponsibilityType": "BILL_TO",
+							"PrimaryFlag": true
+						}
+					}
+				}
+			]
+		}
+	],
+	"required": [
+		"ExistingCustomerNumber",
+		"ExistingOrganizationName",
+		"PartyId",
+		"CustomerAccountId",
+		"EntitySegment",
+		"ContractSegment",
+		"ContractDescription",
+		"BusinessTypeSegment",
+		"LedgerName",
+		"CreatedByModule",
+		"CustomerAccountSiteUse_OrigSysRef",
+		"AddNewSites",
+		"ReferenceAccountsForBillToSites",
+		"TaxRegistrations",
+		"CustomerProfile",
+		"contactPersons"
+	],
+	"properties": {
+		"ExistingCustomerNumber": {
+			"$id": "#/properties/ExistingCustomerNumber",
+			"type": "string",
+			"title": "The ExistingCustomerNumber schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"D3315001"
+			]
+		},
+		"ExistingOrganizationName": {
+			"$id": "#/properties/ExistingOrganizationName",
+			"type": "string",
+			"title": "The ExistingOrganizationName schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Joe AcmeCorp-3315 Pty Ltd"
+			]
+		},
+		"PartyId": {
+			"$id": "#/properties/PartyId",
+			"type": "string",
+			"title": "The PartyId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"300000005463438"
+			]
+		},
+		"CustomerAccountId": {
+			"$id": "#/properties/CustomerAccountId",
+			"type": "string",
+			"title": "The CustomerAccountId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"300000005463445"
+			]
+		},
+		"EntitySegment": {
+			"$id": "#/properties/EntitySegment",
+			"type": "string",
+			"title": "The EntitySegment schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"201"
+			]
+		},
+		"ContractSegment": {
+			"$id": "#/properties/ContractSegment",
+			"type": "string",
+			"title": "The ContractSegment schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"99999999"
+			]
+		},
+		"ContractDescription": {
+			"$id": "#/properties/ContractDescription",
+			"type": "string",
+			"title": "The ContractDescription schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Common"
+			]
+		},
+		"BusinessTypeSegment": {
+			"$id": "#/properties/BusinessTypeSegment",
+			"type": "string",
+			"title": "The BusinessTypeSegment schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"999"
+			]
+		},
+		"LedgerName": {
+			"$id": "#/properties/LedgerName",
+			"type": "string",
+			"title": "The LedgerName schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"SIS AU PL"
+			]
+		},
+		"CreatedByModule": {
+			"$id": "#/properties/CreatedByModule",
+			"type": "string",
+			"title": "The CreatedByModule schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"SIS"
+			]
+		},
+		"CustomerAccountSiteUse_OrigSysRef": {
+			"$id": "#/properties/CustomerAccountSiteUse_OrigSysRef",
+			"type": "object",
+			"title": "The CustomerAccountSiteUse_OrigSysRef schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{
+					"OrigSystem": "SIS",
+					"OwnerTableName": "HZ_CUST_SITE_USES_ALL"
+				}
+			],
+			"required": [
+				"OrigSystem",
+				"OwnerTableName"
+			],
+			"properties": {
+				"OrigSystem": {
+					"$id": "#/properties/CustomerAccountSiteUse_OrigSysRef/properties/OrigSystem",
+					"type": "string",
+					"title": "The OrigSystem schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"SIS"
+					]
+				},
+				"OwnerTableName": {
+					"$id": "#/properties/CustomerAccountSiteUse_OrigSysRef/properties/OwnerTableName",
+					"type": "string",
+					"title": "The OwnerTableName schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"HZ_CUST_SITE_USES_ALL"
+					]
+				}
+			},
+			"additionalProperties": true
+		},
+		"AddNewSites": {
+			"$id": "#/properties/AddNewSites",
+			"type": "array",
+			"title": "The AddNewSites schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"PartySiteNumber": "A3315003",
+						"PartySiteName": "Joe AcmeCorp-3315 Branch Chatswood",
+						"TerritorySegment": "9021",
+						"StateSegment": "902",
+						"EnabledFlag": "Y",
+						"SummaryFlag": "N",
+						"DetailPostingAllowed": "Y",
+						"DetailBudgetingAllowed": "Y",
+						"StartDateActive": "2020-01-15",
+						"SiteUseType": "BILL_TO",
+						"PartyUsageCode": "PARTY_OF_INTEREST",
+						"Address1": "Level 10",
+						"Address2": "Zenith Centre Tower B",
+						"Address3": "821 Pacific Highway",
+						"City": "Chatswood",
+						"PostalCode": "2067",
+						"State": "New South Wales",
+						"Country": "AU",
+						"AddressEffectiveDate": "2020-01-15",
+						"EffectiveDate": "2021-02-10"
+					},
+					{
+						"PartySiteNumber": "A3315004",
+						"PartySiteName": "Joe AcmeCorp-3315 Branch Newcastle",
+						"TerritorySegment": "9021",
+						"StateSegment": "902",
+						"EnabledFlag": "Y",
+						"SummaryFlag": "N",
+						"DetailPostingAllowed": "Y",
+						"DetailBudgetingAllowed": "Y",
+						"StartDateActive": "2020-01-15",
+						"SiteUseType": "BILL_TO",
+						"PartyUsageCode": "PARTY_OF_INTEREST",
+						"Address1": "101 Hunter Street",
+						"Address2": null,
+						"Address3": null,
+						"City": "Newcastle",
+						"PostalCode": "2300",
+						"State": "New South Wales",
+						"Country": "AU",
+						"AddressEffectiveDate": "2020-01-15",
+						"EffectiveDate": "2021-02-10"
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/AddNewSites/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/AddNewSites/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"PartySiteNumber": "A3315003",
+								"PartySiteName": "Joe AcmeCorp-3315 Branch Chatswood",
+								"TerritorySegment": "9021",
+								"StateSegment": "902",
+								"EnabledFlag": "Y",
+								"SummaryFlag": "N",
+								"DetailPostingAllowed": "Y",
+								"DetailBudgetingAllowed": "Y",
+								"StartDateActive": "2020-01-15",
+								"SiteUseType": "BILL_TO",
+								"PartyUsageCode": "PARTY_OF_INTEREST",
+								"Address1": "Level 10",
+								"Address2": "Zenith Centre Tower B",
+								"Address3": "821 Pacific Highway",
+								"City": "Chatswood",
+								"PostalCode": "2067",
+								"State": "New South Wales",
+								"Country": "AU",
+								"AddressEffectiveDate": "2020-01-15",
+								"EffectiveDate": "2021-02-10"
+							}
+						],
+						"required": [
+							"PartySiteNumber",
+							"PartySiteName",
+							"TerritorySegment",
+							"StateSegment",
+							"EnabledFlag",
+							"SummaryFlag",
+							"DetailPostingAllowed",
+							"DetailBudgetingAllowed",
+							"StartDateActive",
+							"SiteUseType",
+							"PartyUsageCode",
+							"Address1",
+							"Address2",
+							"Address3",
+							"City",
+							"PostalCode",
+							"State",
+							"Country",
+							"AddressEffectiveDate",
+							"EffectiveDate"
+						],
+						"properties": {
+							"PartySiteNumber": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/PartySiteNumber",
+								"type": "string",
+								"title": "The PartySiteNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"A3315003"
+								]
+							},
+							"PartySiteName": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/PartySiteName",
+								"type": "string",
+								"title": "The PartySiteName schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Joe AcmeCorp-3315 Branch Chatswood"
+								]
+							},
+							"TerritorySegment": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/TerritorySegment",
+								"type": "string",
+								"title": "The TerritorySegment schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"9021"
+								]
+							},
+							"StateSegment": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/StateSegment",
+								"type": "string",
+								"title": "The StateSegment schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"902"
+								]
+							},
+							"EnabledFlag": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/EnabledFlag",
+								"type": "string",
+								"title": "The EnabledFlag schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Y"
+								]
+							},
+							"SummaryFlag": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/SummaryFlag",
+								"type": "string",
+								"title": "The SummaryFlag schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"N"
+								]
+							},
+							"DetailPostingAllowed": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/DetailPostingAllowed",
+								"type": "string",
+								"title": "The DetailPostingAllowed schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Y"
+								]
+							},
+							"DetailBudgetingAllowed": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/DetailBudgetingAllowed",
+								"type": "string",
+								"title": "The DetailBudgetingAllowed schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Y"
+								]
+							},
+							"StartDateActive": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/StartDateActive",
+								"type": "string",
+								"title": "The StartDateActive schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"2020-01-15"
+								]
+							},
+							"SiteUseType": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/SiteUseType",
+								"type": "string",
+								"title": "The SiteUseType schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"BILL_TO"
+								]
+							},
+							"PartyUsageCode": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/PartyUsageCode",
+								"type": "string",
+								"title": "The PartyUsageCode schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"PARTY_OF_INTEREST"
+								]
+							},
+							"Address1": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/Address1",
+								"type": "string",
+								"title": "The Address1 schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Level 10"
+								]
+							},
+							"Address2": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/Address2",
+								"type": "string",
+								"title": "The Address2 schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Zenith Centre Tower B"
+								]
+							},
+							"Address3": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/Address3",
+								"type": "string",
+								"title": "The Address3 schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"821 Pacific Highway"
+								]
+							},
+							"City": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/City",
+								"type": "string",
+								"title": "The City schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Chatswood"
+								]
+							},
+							"PostalCode": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/PostalCode",
+								"type": "string",
+								"title": "The PostalCode schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"2067"
+								]
+							},
+							"State": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/State",
+								"type": "string",
+								"title": "The State schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"New South Wales"
+								]
+							},
+							"Country": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/Country",
+								"type": "string",
+								"title": "The Country schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"AU"
+								]
+							},
+							"AddressEffectiveDate": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/AddressEffectiveDate",
+								"type": "string",
+								"title": "The AddressEffectiveDate schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"2020-01-15"
+								]
+							},
+							"EffectiveDate": {
+								"$id": "#/properties/AddNewSites/items/anyOf/0/properties/EffectiveDate",
+								"type": "string",
+								"title": "The EffectiveDate schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"2021-02-10"
+								]
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		},
+		"ReferenceAccountsForBillToSites": {
+			"$id": "#/properties/ReferenceAccountsForBillToSites",
+			"type": "array",
+			"title": "The ReferenceAccountsForBillToSites schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"CustomerAccountNumber": "D3315001",
+						"CustomerSiteNumber": "A3315003",
+						"BusinessUnit": "MSS Group BU",
+						"RevenueAccountCodeCombination": "201.A3315003.101.5144101.060.9021.902.99999999.999.999.9999",
+						"ReceivableAccountCodeCombination": "201.99999999.299.1171301.999.9999.902.99999999.999.999.9999"
+					},
+					{
+						"CustomerAccountNumber": "D3315001",
+						"CustomerSiteNumber": "A3315004",
+						"BusinessUnit": "MSS Group BU",
+						"RevenueAccountCodeCombination": "201.A3315004.101.5144101.060.9021.902.99999999.999.999.9999",
+						"ReceivableAccountCodeCombination": "201.99999999.299.1171301.999.9999.999.99999999.999.999.9999"
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/ReferenceAccountsForBillToSites/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/ReferenceAccountsForBillToSites/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"CustomerAccountNumber": "D3315001",
+								"CustomerSiteNumber": "A3315003",
+								"BusinessUnit": "MSS Group BU",
+								"RevenueAccountCodeCombination": "201.A3315003.101.5144101.060.9021.902.99999999.999.999.9999",
+								"ReceivableAccountCodeCombination": "201.99999999.299.1171301.999.9999.902.99999999.999.999.9999"
+							}
+						],
+						"required": [
+							"CustomerAccountNumber",
+							"CustomerSiteNumber",
+							"BusinessUnit",
+							"RevenueAccountCodeCombination",
+							"ReceivableAccountCodeCombination"
+						],
+						"properties": {
+							"CustomerAccountNumber": {
+								"$id": "#/properties/ReferenceAccountsForBillToSites/items/anyOf/0/properties/CustomerAccountNumber",
+								"type": "string",
+								"title": "The CustomerAccountNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"D3315001"
+								]
+							},
+							"CustomerSiteNumber": {
+								"$id": "#/properties/ReferenceAccountsForBillToSites/items/anyOf/0/properties/CustomerSiteNumber",
+								"type": "string",
+								"title": "The CustomerSiteNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"A3315003"
+								]
+							},
+							"BusinessUnit": {
+								"$id": "#/properties/ReferenceAccountsForBillToSites/items/anyOf/0/properties/BusinessUnit",
+								"type": "string",
+								"title": "The BusinessUnit schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"MSS Group BU"
+								]
+							},
+							"RevenueAccountCodeCombination": {
+								"$id": "#/properties/ReferenceAccountsForBillToSites/items/anyOf/0/properties/RevenueAccountCodeCombination",
+								"type": "string",
+								"title": "The RevenueAccountCodeCombination schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"201.A3315003.101.5144101.060.9021.902.99999999.999.999.9999"
+								]
+							},
+							"ReceivableAccountCodeCombination": {
+								"$id": "#/properties/ReferenceAccountsForBillToSites/items/anyOf/0/properties/ReceivableAccountCodeCombination",
+								"type": "string",
+								"title": "The ReceivableAccountCodeCombination schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"201.99999999.299.1171301.999.9999.902.99999999.999.999.9999"
+								]
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		},
+		"TaxRegistrations": {
+			"$id": "#/properties/TaxRegistrations",
+			"type": "array",
+			"title": "The TaxRegistrations schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"PartyTypeCode": "THIRD_PARTY_SITE",
+						"PartyName": "Joe AcmeCorp-3315 Branch Chatswood",
+						"PartyNumber": "D3315001",
+						"PartySiteNumber": "A3315003",
+						"TaxRegimeCode": "AU GST REGIME",
+						"EffectiveFrom": "2020-01-15",
+						"RegistrationNumber": "50008559486",
+						"RegistrationStatusCode": "REGISTERED"
+					},
+					{
+						"PartyTypeCode": "THIRD_PARTY_SITE",
+						"PartyName": "Joe AcmeCorp-3315 Branch Newcastle",
+						"PartyNumber": "D3315001",
+						"PartySiteNumber": "A3315004",
+						"TaxRegimeCode": "AU GST REGIME",
+						"EffectiveFrom": "2020-01-15",
+						"RegistrationNumber": "50008559486",
+						"RegistrationStatusCode": "REGISTERED"
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/TaxRegistrations/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/TaxRegistrations/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"PartyTypeCode": "THIRD_PARTY_SITE",
+								"PartyName": "Joe AcmeCorp-3315 Branch Chatswood",
+								"PartyNumber": "D3315001",
+								"PartySiteNumber": "A3315003",
+								"TaxRegimeCode": "AU GST REGIME",
+								"EffectiveFrom": "2020-01-15",
+								"RegistrationNumber": "50008559486",
+								"RegistrationStatusCode": "REGISTERED"
+							}
+						],
+						"required": [
+							"PartyTypeCode",
+							"PartyName",
+							"PartyNumber",
+							"PartySiteNumber",
+							"TaxRegimeCode",
+							"EffectiveFrom",
+							"RegistrationNumber",
+							"RegistrationStatusCode"
+						],
+						"properties": {
+							"PartyTypeCode": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/PartyTypeCode",
+								"type": "string",
+								"title": "The PartyTypeCode schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"THIRD_PARTY_SITE"
+								]
+							},
+							"PartyName": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/PartyName",
+								"type": "string",
+								"title": "The PartyName schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Joe AcmeCorp-3315 Branch Chatswood"
+								]
+							},
+							"PartyNumber": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/PartyNumber",
+								"type": "string",
+								"title": "The PartyNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"D3315001"
+								]
+							},
+							"PartySiteNumber": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/PartySiteNumber",
+								"type": "string",
+								"title": "The PartySiteNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"A3315003"
+								]
+							},
+							"TaxRegimeCode": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/TaxRegimeCode",
+								"type": "string",
+								"title": "The TaxRegimeCode schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"AU GST REGIME"
+								]
+							},
+							"EffectiveFrom": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/EffectiveFrom",
+								"type": "string",
+								"title": "The EffectiveFrom schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"2020-01-15"
+								]
+							},
+							"RegistrationNumber": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/RegistrationNumber",
+								"type": "string",
+								"title": "The RegistrationNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"50008559486"
+								]
+							},
+							"RegistrationStatusCode": {
+								"$id": "#/properties/TaxRegistrations/items/anyOf/0/properties/RegistrationStatusCode",
+								"type": "string",
+								"title": "The RegistrationStatusCode schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"REGISTERED"
+								]
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		},
+		"CustomerProfile": {
+			"$id": "#/properties/CustomerProfile",
+			"type": "array",
+			"title": "The CustomerProfile schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"AccountNumber": "D3315001",
+						"SiteNumber": "A3315003",
+						"EffectiveStartDate": "2020-01-15",
+						"PaymentTerms": "14 Days"
+					},
+					{
+						"AccountNumber": "D3315001",
+						"SiteNumber": "A3315004",
+						"EffectiveStartDate": "2020-01-15",
+						"PaymentTerms": "120 Days"
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/CustomerProfile/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/CustomerProfile/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"AccountNumber": "D3315001",
+								"SiteNumber": "A3315003",
+								"EffectiveStartDate": "2020-01-15",
+								"PaymentTerms": "14 Days"
+							}
+						],
+						"required": [
+							"AccountNumber",
+							"SiteNumber",
+							"EffectiveStartDate",
+							"PaymentTerms"
+						],
+						"properties": {
+							"AccountNumber": {
+								"$id": "#/properties/CustomerProfile/items/anyOf/0/properties/AccountNumber",
+								"type": "string",
+								"title": "The AccountNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"D3315001"
+								]
+							},
+							"SiteNumber": {
+								"$id": "#/properties/CustomerProfile/items/anyOf/0/properties/SiteNumber",
+								"type": "string",
+								"title": "The SiteNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"A3315003"
+								]
+							},
+							"EffectiveStartDate": {
+								"$id": "#/properties/CustomerProfile/items/anyOf/0/properties/EffectiveStartDate",
+								"type": "string",
+								"title": "The EffectiveStartDate schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"2020-01-15"
+								]
+							},
+							"PaymentTerms": {
+								"$id": "#/properties/CustomerProfile/items/anyOf/0/properties/PaymentTerms",
+								"type": "string",
+								"title": "The PaymentTerms schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"14 Days"
+								]
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		},
+		"contactPersons": {
+			"$id": "#/properties/contactPersons",
+			"type": "array",
+			"title": "The contactPersons schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"PersonFirstName": "George",
+						"PersonLastName": "Benson",
+						"ContactLevel": "SITE",
+						"PartySiteNumber": "A3315003",
+						"Relationship": {
+							"SubjectType": "PERSON",
+							"SubjectTableName": "HZ_PARTIES",
+							"ObjectType": "ORGANIZATION",
+							"ObjectId": -1,
+							"ObjectTableName": "HZ_PARTIES",
+							"RelationshipCode": "CONTACT_OF",
+							"RelationshipType": "CONTACT",
+							"StartDate": "2020-01-15",
+							"OrganizationContact": {
+								"ContactNumber": "025556666",
+								"RoleType": "CONTACT",
+								"PrimaryFlag": "true"
+							},
+							"Email": {
+								"OwnerTableName": "HZ_PARTIES",
+								"PrimaryFlag": "true",
+								"ContactPointPurpose": "BUSINESS",
+								"StartDate": "2020-01-15",
+								"EmailAddress": "george.benson@mydomain.com"
+							},
+							"RelationshipId": -1,
+							"CustomerAccountContactRole": {
+								"ResponsibilityType": "BILL_TO",
+								"PrimaryFlag": true
+							}
+						}
+					},
+					{
+						"PersonFirstName": "Cindi",
+						"PersonLastName": "Rella",
+						"ContactLevel": "SITE",
+						"PartySiteNumber": "A3315004",
+						"Relationship": {
+							"SubjectType": "PERSON",
+							"SubjectTableName": "HZ_PARTIES",
+							"ObjectType": "ORGANIZATION",
+							"ObjectId": -1,
+							"ObjectTableName": "HZ_PARTIES",
+							"RelationshipCode": "CONTACT_OF",
+							"RelationshipType": "CONTACT",
+							"StartDate": "2020-01-15",
+							"OrganizationContact": {
+								"ContactNumber": "0266669292",
+								"RoleType": "CONTACT",
+								"PrimaryFlag": "true"
+							},
+							"Email": {
+								"OwnerTableName": "HZ_PARTIES",
+								"PrimaryFlag": "true",
+								"ContactPointPurpose": "BUSINESS",
+								"StartDate": "2020-01-15",
+								"EmailAddress": "cindi.rella@mydomain.com"
+							},
+							"RelationshipId": -1,
+							"CustomerAccountContactRole": {
+								"ResponsibilityType": "BILL_TO",
+								"PrimaryFlag": true
+							}
+						}
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/contactPersons/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/contactPersons/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"PersonFirstName": "George",
+								"PersonLastName": "Benson",
+								"ContactLevel": "SITE",
+								"PartySiteNumber": "A3315003",
+								"Relationship": {
+									"SubjectType": "PERSON",
+									"SubjectTableName": "HZ_PARTIES",
+									"ObjectType": "ORGANIZATION",
+									"ObjectId": -1,
+									"ObjectTableName": "HZ_PARTIES",
+									"RelationshipCode": "CONTACT_OF",
+									"RelationshipType": "CONTACT",
+									"StartDate": "2020-01-15",
+									"OrganizationContact": {
+										"ContactNumber": "025556666",
+										"RoleType": "CONTACT",
+										"PrimaryFlag": "true"
+									},
+									"Email": {
+										"OwnerTableName": "HZ_PARTIES",
+										"PrimaryFlag": "true",
+										"ContactPointPurpose": "BUSINESS",
+										"StartDate": "2020-01-15",
+										"EmailAddress": "george.benson@mydomain.com"
+									},
+									"RelationshipId": -1,
+									"CustomerAccountContactRole": {
+										"ResponsibilityType": "BILL_TO",
+										"PrimaryFlag": true
+									}
+								}
+							}
+						],
+						"required": [
+							"PersonFirstName",
+							"PersonLastName",
+							"ContactLevel",
+							"PartySiteNumber",
+							"Relationship"
+						],
+						"properties": {
+							"PersonFirstName": {
+								"$id": "#/properties/contactPersons/items/anyOf/0/properties/PersonFirstName",
+								"type": "string",
+								"title": "The PersonFirstName schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"George"
+								]
+							},
+							"PersonLastName": {
+								"$id": "#/properties/contactPersons/items/anyOf/0/properties/PersonLastName",
+								"type": "string",
+								"title": "The PersonLastName schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"Benson"
+								]
+							},
+							"ContactLevel": {
+								"$id": "#/properties/contactPersons/items/anyOf/0/properties/ContactLevel",
+								"type": "string",
+								"title": "The ContactLevel schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"SITE"
+								]
+							},
+							"PartySiteNumber": {
+								"$id": "#/properties/contactPersons/items/anyOf/0/properties/PartySiteNumber",
+								"type": "string",
+								"title": "The PartySiteNumber schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"A3315003"
+								]
+							},
+							"Relationship": {
+								"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship",
+								"type": "object",
+								"title": "The Relationship schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": {},
+								"examples": [
+									{
+										"SubjectType": "PERSON",
+										"SubjectTableName": "HZ_PARTIES",
+										"ObjectType": "ORGANIZATION",
+										"ObjectId": -1,
+										"ObjectTableName": "HZ_PARTIES",
+										"RelationshipCode": "CONTACT_OF",
+										"RelationshipType": "CONTACT",
+										"StartDate": "2020-01-15",
+										"OrganizationContact": {
+											"ContactNumber": "025556666",
+											"RoleType": "CONTACT",
+											"PrimaryFlag": "true"
+										},
+										"Email": {
+											"OwnerTableName": "HZ_PARTIES",
+											"PrimaryFlag": "true",
+											"ContactPointPurpose": "BUSINESS",
+											"StartDate": "2020-01-15",
+											"EmailAddress": "george.benson@mydomain.com"
+										},
+										"RelationshipId": -1,
+										"CustomerAccountContactRole": {
+											"ResponsibilityType": "BILL_TO",
+											"PrimaryFlag": true
+										}
+									}
+								],
+								"required": [
+									"SubjectType",
+									"SubjectTableName",
+									"ObjectType",
+									"ObjectId",
+									"ObjectTableName",
+									"RelationshipCode",
+									"RelationshipType",
+									"StartDate",
+									"OrganizationContact",
+									"Email",
+									"RelationshipId",
+									"CustomerAccountContactRole"
+								],
+								"properties": {
+									"SubjectType": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/SubjectType",
+										"type": "string",
+										"title": "The SubjectType schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"PERSON"
+										]
+									},
+									"SubjectTableName": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/SubjectTableName",
+										"type": "string",
+										"title": "The SubjectTableName schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"HZ_PARTIES"
+										]
+									},
+									"ObjectType": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/ObjectType",
+										"type": "string",
+										"title": "The ObjectType schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"ORGANIZATION"
+										]
+									},
+									"ObjectId": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/ObjectId",
+										"type": "integer",
+										"title": "The ObjectId schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": 0,
+										"examples": [
+											-1
+										]
+									},
+									"ObjectTableName": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/ObjectTableName",
+										"type": "string",
+										"title": "The ObjectTableName schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"HZ_PARTIES"
+										]
+									},
+									"RelationshipCode": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/RelationshipCode",
+										"type": "string",
+										"title": "The RelationshipCode schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"CONTACT_OF"
+										]
+									},
+									"RelationshipType": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/RelationshipType",
+										"type": "string",
+										"title": "The RelationshipType schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"CONTACT"
+										]
+									},
+									"StartDate": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/StartDate",
+										"type": "string",
+										"title": "The StartDate schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": "",
+										"examples": [
+											"2020-01-15"
+										]
+									},
+									"OrganizationContact": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/OrganizationContact",
+										"type": "object",
+										"title": "The OrganizationContact schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": {},
+										"examples": [
+											{
+												"ContactNumber": "025556666",
+												"RoleType": "CONTACT",
+												"PrimaryFlag": "true"
+											}
+										],
+										"required": [
+											"ContactNumber",
+											"RoleType",
+											"PrimaryFlag"
+										],
+										"properties": {
+											"ContactNumber": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/OrganizationContact/properties/ContactNumber",
+												"type": "string",
+												"title": "The ContactNumber schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"025556666"
+												]
+											},
+											"RoleType": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/OrganizationContact/properties/RoleType",
+												"type": "string",
+												"title": "The RoleType schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"CONTACT"
+												]
+											},
+											"PrimaryFlag": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/OrganizationContact/properties/PrimaryFlag",
+												"type": "string",
+												"title": "The PrimaryFlag schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"true"
+												]
+											}
+										},
+										"additionalProperties": true
+									},
+									"Email": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email",
+										"type": "object",
+										"title": "The Email schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": {},
+										"examples": [
+											{
+												"OwnerTableName": "HZ_PARTIES",
+												"PrimaryFlag": "true",
+												"ContactPointPurpose": "BUSINESS",
+												"StartDate": "2020-01-15",
+												"EmailAddress": "george.benson@mydomain.com"
+											}
+										],
+										"required": [
+											"OwnerTableName",
+											"PrimaryFlag",
+											"ContactPointPurpose",
+											"StartDate",
+											"EmailAddress"
+										],
+										"properties": {
+											"OwnerTableName": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/properties/OwnerTableName",
+												"type": "string",
+												"title": "The OwnerTableName schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"HZ_PARTIES"
+												]
+											},
+											"PrimaryFlag": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/properties/PrimaryFlag",
+												"type": "string",
+												"title": "The PrimaryFlag schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"true"
+												]
+											},
+											"ContactPointPurpose": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/properties/ContactPointPurpose",
+												"type": "string",
+												"title": "The ContactPointPurpose schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"BUSINESS"
+												]
+											},
+											"StartDate": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/properties/StartDate",
+												"type": "string",
+												"title": "The StartDate schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"2020-01-15"
+												]
+											},
+											"EmailAddress": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/Email/properties/EmailAddress",
+												"type": "string",
+												"title": "The EmailAddress schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"george.benson@mydomain.com"
+												]
+											}
+										},
+										"additionalProperties": true
+									},
+									"RelationshipId": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/RelationshipId",
+										"type": "integer",
+										"title": "The RelationshipId schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": 0,
+										"examples": [
+											-1
+										]
+									},
+									"CustomerAccountContactRole": {
+										"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/CustomerAccountContactRole",
+										"type": "object",
+										"title": "The CustomerAccountContactRole schema",
+										"description": "An explanation about the purpose of this instance.",
+										"default": {},
+										"examples": [
+											{
+												"ResponsibilityType": "BILL_TO",
+												"PrimaryFlag": true
+											}
+										],
+										"required": [
+											"ResponsibilityType",
+											"PrimaryFlag"
+										],
+										"properties": {
+											"ResponsibilityType": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/CustomerAccountContactRole/properties/ResponsibilityType",
+												"type": "string",
+												"title": "The ResponsibilityType schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": "",
+												"examples": [
+													"BILL_TO"
+												]
+											},
+											"PrimaryFlag": {
+												"$id": "#/properties/contactPersons/items/anyOf/0/properties/Relationship/properties/CustomerAccountContactRole/properties/PrimaryFlag",
+												"type": "boolean",
+												"title": "The PrimaryFlag schema",
+												"description": "An explanation about the purpose of this instance.",
+												"default": false,
+												"examples": [
+													true
+												]
+											}
+										},
+										"additionalProperties": true
+									}
+								},
+								"additionalProperties": true
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		}
+	},
+	"additionalProperties": true
+}

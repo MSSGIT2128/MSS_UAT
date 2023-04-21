@@ -1,0 +1,93 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"Relationship": [
+				{
+					"name": "p_entity",
+					"values": "301"
+				},
+				{
+					"name": "p_customer_site",
+					"values": "S1362299"
+				}
+			]
+		}
+	],
+	"required": [
+		"Relationship"
+	],
+	"properties": {
+		"Relationship": {
+			"$id": "#/properties/Relationship",
+			"type": "array",
+			"title": "The Relationship schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": [],
+			"examples": [
+				[
+					{
+						"name": "p_entity",
+						"values": "301"
+					},
+					{
+						"name": "p_customer_site",
+						"values": "S1362299"
+					}
+				]
+			],
+			"additionalItems": true,
+			"items": {
+				"$id": "#/properties/Relationship/items",
+				"anyOf": [
+					{
+						"$id": "#/properties/Relationship/items/anyOf/0",
+						"type": "object",
+						"title": "The first anyOf schema",
+						"description": "An explanation about the purpose of this instance.",
+						"default": {},
+						"examples": [
+							{
+								"name": "p_entity",
+								"values": "301"
+							}
+						],
+						"required": [
+							"name",
+							"values"
+						],
+						"properties": {
+							"name": {
+								"$id": "#/properties/Relationship/items/anyOf/0/properties/name",
+								"type": "string",
+								"title": "The name schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"p_entity"
+								]
+							},
+							"values": {
+								"$id": "#/properties/Relationship/items/anyOf/0/properties/values",
+								"type": "string",
+								"title": "The values schema",
+								"description": "An explanation about the purpose of this instance.",
+								"default": "",
+								"examples": [
+									"301"
+								]
+							}
+						},
+						"additionalProperties": true
+					}
+				]
+			}
+		}
+	},
+	"additionalProperties": true
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="schema3.xsd" namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccountSite/" />
+  <xs:import schemaLocation="schema4.xsd" namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" />
+  <xs:element name="CustomerAccountId" type="xs:unsignedLong" />
+  <xs:element name="PartyId" type="xs:unsignedLong" />
+  <xs:element name="CustomerClassCode" type="xs:string" />
+  <xs:element name="AccountName" type="xs:string" />
+  <xs:element name="CustomerAccountSite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CustomerAccountId" type="xs:unsignedLong" />
+        <xs:element name="PartyId" type="xs:unsignedLong" />
+        <xs:element name="CustomerAccountSiteId" type="xs:unsignedLong" />
+        <xs:element name="CustomerAccountSiteUse">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SiteUseId" type="xs:unsignedLong" />
+              <xs:element name="CustomerAccountSiteId" type="xs:unsignedLong" />
+              <xs:element name="OrigSystemReference" type="xs:unsignedLong" />
+              <xs:element name="PrimaryFlag" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CustAcctSiteInformation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element xmlns:q1="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccountSite/" ref="q1:businessManager" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CustAcctInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q2:customerGroup" />
+        <xs:element xmlns:q3="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q3:customerGroupCode" />
+        <xs:element xmlns:q4="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q4:customerGrandParent" />
+        <xs:element xmlns:q5="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q5:customerGrandParentCode" />
+        <xs:element xmlns:q6="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q6:marketing" />
+        <xs:element xmlns:q7="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q7:paymentTerms" />
+        <xs:element xmlns:q8="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q8:suppressReminder" />
+        <xs:element xmlns:q9="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q9:suppressStatement" />
+        <xs:element xmlns:q10="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q10:invoiceType" />
+        <xs:element xmlns:q11="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q11:salesRep" />
+        <xs:element xmlns:q12="http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/" ref="q12:acquiredFrom" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

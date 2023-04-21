@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:tns="http://xmlns.oracle.com/scheduler/types" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/scheduler/types" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="name" type="xs:string" />
+  <xs:element name="packageName" type="xs:string" />
+  <xs:element name="type" type="xs:string" />
+  <xs:element name="parameter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="dataType" type="xs:string" />
+        <xs:element name="name" type="xs:string" />
+        <xs:element name="value" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

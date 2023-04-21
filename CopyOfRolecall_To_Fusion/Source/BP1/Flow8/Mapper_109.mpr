@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema xsi:type="DataBaseSchema">
+      <SchemaID>5</SchemaID>
+      <Order>0</Order>
+      <Name>DataBase_5</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>DataBase</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>Record</Identifier>
+          <FieldName>Record</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldDataBase">
+          <Identifier>Record/PartyId</Identifier>
+          <FieldName>PartyId</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>100</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>100</ExternalFieldPicture>
+          <UserPicture>100</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <LogErrorVariable>
+            <ExpectedType>A</ExpectedType>
+            <Direction>O</Direction>
+          </LogErrorVariable>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>"PartyId"</GenerateColumnName>
+        </Field>
+        <Field xsi:type="FieldDataBase">
+          <Identifier>Record/PartySiteId</Identifier>
+          <FieldName>PartySiteId</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>50</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>VARCHAR</ExternalFieldType>
+          <ExternalFieldPicture>50</ExternalFieldPicture>
+          <UserPicture>50</UserPicture>
+          <isNillable>true</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <LogError>false</LogError>
+          <LogErrorVariable>
+            <ExpectedType>A</ExpectedType>
+            <Direction>O</Direction>
+          </LogErrorVariable>
+          <isDateTime>false</isDateTime>
+          <StorageSize>0</StorageSize>
+          <StorageNum>3</StorageNum>
+          <SpecialUniCode>false</SpecialUniCode>
+          <GenerateColumnName>"PartySiteId"</GenerateColumnName>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <DB>
+        <SQLStatement>
+          <ExpressionVal>U0VMRUNUIFtSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS5QYXJ0eUlkLFtSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS5QYXJ0eVNpdGVJZCBGUk9NIGRiby5bUm9sZUNhbGxfT3JnYW5pemF0aW9uX3RibF0gV0hFUkUgZGJvLltSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS5DdXN0b21lck51bWJlcj0nPD9GLkN1c3RvbWVyTnVtYmVyPz4n</ExpressionVal>
+          <ExpectedType />
+        </SQLStatement>
+        <DynamicSQL>false</DynamicSQL>
+        <UPSERT>false</UPSERT>
+        <DBResource>Database_MSS</DBResource>
+        <Disconnect>false</Disconnect>
+        <ExceptionflowInfo>
+          <BPID>0</BPID>
+          <FlowID>
+            <ExpectedType />
+            <Direction>O</Direction>
+          </FlowID>
+        </ExceptionflowInfo>
+        <DBHistoryData>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxEQldpemFyZEhpc3RvcnlEYXRhIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiPg0KICA8REJPcGVyYXRpb24+U2VsZWN0PC9EQk9wZXJhdGlvbj4NCiAgPElzRmlsdGVyRGVmaW5pdGlvbk9ubHk+ZmFsc2U8L0lzRmlsdGVyRGVmaW5pdGlvbk9ubHk+DQogIDxTZWxlY3RlZE93bmVyT3JMaWJyYXJ5PmRibzwvU2VsZWN0ZWRPd25lck9yTGlicmFyeT4NCiAgPFNlbGVjdGVkVGFibGVMaXN0Pg0KICAgIDxEQldpemFyZFRhYmxlRGF0YT4NCiAgICAgIDxUYWJsZU5hbWU+W1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdPC9UYWJsZU5hbWU+DQogICAgICA8VGFibGVGdWxsTmFtZT5kYm8uW1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdPC9UYWJsZUZ1bGxOYW1lPg0KICAgICAgPFRhYmxlT3duZXJOYW1lIC8+DQogICAgICA8Q29sdW1uTGlzdD4NCiAgICAgICAgPERCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgICA8Q29sdW1uTmFtZT5zZXFJRDwvQ29sdW1uTmFtZT4NCiAgICAgICAgICA8Q29sdW1uRnVsbE5hbWU+W1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLnNlcUlEPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj5mYWxzZTwvSXNTZWxlY3RlZEJ5VXNlcj4NCiAgICAgICAgICA8RGVmYXVsdEluZGV4PjE8L0RlZmF1bHRJbmRleD4NCiAgICAgICAgPC9EQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgIDxEQldpemFyZENvbHVtbkRhdGE+DQogICAgICAgICAgPENvbHVtbk5hbWU+Q3VzdG9tZXJOdW1iZXI8L0NvbHVtbk5hbWU+DQogICAgICAgICAgPENvbHVtbkZ1bGxOYW1lPltSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS5DdXN0b21lck51bWJlcjwvQ29sdW1uRnVsbE5hbWU+DQogICAgICAgICAgPElzU2VsZWN0ZWRCeVVzZXI+ZmFsc2U8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD4yPC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICA8REJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICAgIDxDb2x1bW5OYW1lPlBhcnR5TmFtZTwvQ29sdW1uTmFtZT4NCiAgICAgICAgICA8Q29sdW1uRnVsbE5hbWU+W1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLlBhcnR5TmFtZTwvQ29sdW1uRnVsbE5hbWU+DQogICAgICAgICAgPElzU2VsZWN0ZWRCeVVzZXI+ZmFsc2U8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD4zPC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICA8REJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICAgIDxDb2x1bW5OYW1lPlBhcnR5SWQ8L0NvbHVtbk5hbWU+DQogICAgICAgICAgPENvbHVtbkZ1bGxOYW1lPltSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS5QYXJ0eUlkPC9Db2x1bW5GdWxsTmFtZT4NCiAgICAgICAgICA8SXNTZWxlY3RlZEJ5VXNlcj50cnVlPC9Jc1NlbGVjdGVkQnlVc2VyPg0KICAgICAgICAgIDxEZWZhdWx0SW5kZXg+NDwvRGVmYXVsdEluZGV4Pg0KICAgICAgICA8L0RCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgPERCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgICA8Q29sdW1uTmFtZT5NZXNzYWdlSUQ8L0NvbHVtbk5hbWU+DQogICAgICAgICAgPENvbHVtbkZ1bGxOYW1lPltSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS5NZXNzYWdlSUQ8L0NvbHVtbkZ1bGxOYW1lPg0KICAgICAgICAgIDxJc1NlbGVjdGVkQnlVc2VyPmZhbHNlPC9Jc1NlbGVjdGVkQnlVc2VyPg0KICAgICAgICAgIDxEZWZhdWx0SW5kZXg+NTwvRGVmYXVsdEluZGV4Pg0KICAgICAgICA8L0RCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgPERCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgICA8Q29sdW1uTmFtZT50aW1lc3RhbXA8L0NvbHVtbk5hbWU+DQogICAgICAgICAgPENvbHVtbkZ1bGxOYW1lPltSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXS50aW1lc3RhbXA8L0NvbHVtbkZ1bGxOYW1lPg0KICAgICAgICAgIDxJc1NlbGVjdGVkQnlVc2VyPmZhbHNlPC9Jc1NlbGVjdGVkQnlVc2VyPg0KICAgICAgICAgIDxEZWZhdWx0SW5kZXg+NjwvRGVmYXVsdEluZGV4Pg0KICAgICAgICA8L0RCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgPERCV2l6YXJkQ29sdW1uRGF0YT4NCiAgICAgICAgICA8Q29sdW1uTmFtZT5TZXF1ZW5jZU5vPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfT3JnYW5pemF0aW9uX3RibF0uU2VxdWVuY2VObzwvQ29sdW1uRnVsbE5hbWU+DQogICAgICAgICAgPElzU2VsZWN0ZWRCeVVzZXI+ZmFsc2U8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD43PC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICA8REJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICAgIDxDb2x1bW5OYW1lPlBhcnR5U2l0ZUlkPC9Db2x1bW5OYW1lPg0KICAgICAgICAgIDxDb2x1bW5GdWxsTmFtZT5bUm9sZUNhbGxfT3JnYW5pemF0aW9uX3RibF0uUGFydHlTaXRlSWQ8L0NvbHVtbkZ1bGxOYW1lPg0KICAgICAgICAgIDxJc1NlbGVjdGVkQnlVc2VyPnRydWU8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD44PC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICA8REJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgICAgIDxDb2x1bW5OYW1lPlBhcnR5U2l0ZU51bWJlcjwvQ29sdW1uTmFtZT4NCiAgICAgICAgICA8Q29sdW1uRnVsbE5hbWU+W1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLlBhcnR5U2l0ZU51bWJlcjwvQ29sdW1uRnVsbE5hbWU+DQogICAgICAgICAgPElzU2VsZWN0ZWRCeVVzZXI+ZmFsc2U8L0lzU2VsZWN0ZWRCeVVzZXI+DQogICAgICAgICAgPERlZmF1bHRJbmRleD45PC9EZWZhdWx0SW5kZXg+DQogICAgICAgIDwvREJXaXphcmRDb2x1bW5EYXRhPg0KICAgICAgPC9Db2x1bW5MaXN0Pg0KICAgIDwvREJXaXphcmRUYWJsZURhdGE+DQogIDwvU2VsZWN0ZWRUYWJsZUxpc3Q+DQogIDxXaGVyZUNsYXVzZVN0cmluZz5kYm8uW1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLkN1c3RvbWVyTnVtYmVyPScmbHQ7P0YuQ3VzdG9tZXJOdW1iZXI/Jmd0Oyc8L1doZXJlQ2xhdXNlU3RyaW5nPg0KICA8T3JkZXJCeVNlZ21hbnRzIC8+DQogIDxKb2luU2VnbWFudExpc3QgLz4NCiAgPFNRTFN0YXRlbWVudD5TRUxFQ1QgW1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLlBhcnR5SWQsW1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLlBhcnR5U2l0ZUlkIEZST00gZGJvLltSb2xlQ2FsbF9Pcmdhbml6YXRpb25fdGJsXSBXSEVSRSBkYm8uW1JvbGVDYWxsX09yZ2FuaXphdGlvbl90YmxdLkN1c3RvbWVyTnVtYmVyPScmbHQ7P0YuQ3VzdG9tZXJOdW1iZXI/Jmd0Oyc8L1NRTFN0YXRlbWVudD4NCjwvREJXaXphcmRIaXN0b3J5RGF0YT4=</DBHistoryData>
+      </DB>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema xsi:type="XSDSchema">
+      <SchemaID>2</SchemaID>
+      <Order>0</Order>
+      <Name>XML_2</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>XSD</SchemaType>
+      <Fields>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope</Identifier>
+          <FieldName>Envelope</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>soap</NameSpacePrefix>
+          <NameSpace>http://schemas.xmlsoap.org/soap/envelope/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body</Identifier>
+          <FieldName>Body</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>soap</NameSpacePrefix>
+          <NameSpace>http://schemas.xmlsoap.org/soap/envelope/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount</Identifier>
+          <FieldName>createCustomerAccount</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns1</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/applicationModule/types/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount</Identifier>
+          <FieldName>customerAccount</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns1</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/applicationModule/types/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:PartyId</Identifier>
+          <FieldName>PartyId</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VmFsIChUcmltICg8IyElQCQ+Z2V0Tm9kZU5hbWUoNS9SZWNvcmQvUGFydHlJZCk8IyElQCQ+KSwnTjE3Jyk=</ExpressionVal>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>9</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>unsignedLong</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>17</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>true</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:AccountNumber</Identifier>
+          <FieldName>AccountNumber</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnNWNlMTkyYjMtMTU4Yi00YmZhLTg0ODUtYzM2YTA1ZjMwZmU2JywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerClassCode</Identifier>
+          <FieldName>CustomerClassCode</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMTBlZWE0OTktNWYwYi00MmUwLTg0ZjUtMzI3OTRiYTFhMThjJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:AccountName</Identifier>
+          <FieldName>AccountName</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnNWMwYjVjZjUtYzBiYi00NWU1LWEwOGQtZDEyZTViNzdjMDI0JywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CreatedByModule</Identifier>
+          <FieldName>CreatedByModule</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMzYyYjUxZWEtOTY0MS00Njk0LWI4NTctODRlMWZlYzA4NjQxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite</Identifier>
+          <FieldName>CustomerAccountSite</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>79228162514264337593543950335</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:PartySiteId</Identifier>
+          <FieldName>PartySiteId</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VmFsICg8IyElQCQ+Z2V0Tm9kZU5hbWUoNS9SZWNvcmQvUGFydHlTaXRlSWQpPCMhJUAkPiwnTjE3Jyk=</ExpressionVal>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>9</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>unsignedLong</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>17</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>true</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CreatedByModule</Identifier>
+          <FieldName>CreatedByModule</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMzYyYjUxZWEtOTY0MS00Njk0LWI4NTctODRlMWZlYzA4NjQxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:SetId</Identifier>
+          <FieldName>SetId</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VmFsIChUcmltIChFbnZWYWwgKCdTZXRJZCcpKSwnTjE3Jyk=</ExpressionVal>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>9</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>unsignedLong</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>17</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>true</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:StartDateActive</Identifier>
+          <FieldName>StartDateActive</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>RFZhbCAoVHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnNGI3ZDliMmMtMWVkMy00NjVlLWIyNzctMjQzZjUyMzFiMTQyJywwLDApPCMhJUAkPiksJ1lZWVktTU0tREQnKQ==</ExpressionVal>
+            <ExpectedType>D</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>D</MagicFieldType>
+          <MagicPicture>YYYY-MM-DD</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>date</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>YYYY-MM-DD</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse</Identifier>
+          <FieldName>CustomerAccountSiteUse</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>79228162514264337593543950335</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:SiteUseCode</Identifier>
+          <FieldName>SiteUseCode</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J0JJTExfVE8n</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:StartDate</Identifier>
+          <FieldName>StartDate</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>RFZhbCAoRFN0ciAoRGF0ZSAoKSwnWVlZWS1NTS1ERCcpLCdZWVlZLU1NLUREJyk=</ExpressionVal>
+            <ExpectedType>D</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>D</MagicFieldType>
+          <MagicPicture>YYYY-MM-DD</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>date</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>YYYY-MM-DD</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:CreatedByModule</Identifier>
+          <FieldName>CreatedByModule</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMzYyYjUxZWEtOTY0MS00Njk0LWI4NTctODRlMWZlYzA4NjQxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:OriginalSystemReference</Identifier>
+          <FieldName>OriginalSystemReference</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:OriginalSystemReference/ns4:OrigSystem</Identifier>
+          <FieldName>OrigSystem</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnODI4NDdjMTItYmQ5MS00MmJiLThlM2QtZGI5Nzg4NTA4YzE1JywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:OriginalSystemReference/ns4:OrigSystemReference</Identifier>
+          <FieldName>OrigSystemReference</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VmFsIChUcmltICg8IyElQCQ+Z2V0Tm9kZU5hbWUoNS9SZWNvcmQvUGFydHlTaXRlSWQpPCMhJUAkPiksJ04xNycpKzE=</ExpressionVal>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>9</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>unsignedLong</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>17</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>true</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:OriginalSystemReference/ns4:OwnerTableName</Identifier>
+          <FieldName>OwnerTableName</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J0haX0NVU1RfU0lURV9VU0VTX0FMTCc=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:OriginalSystemReference/ns4:CreatedByModule</Identifier>
+          <FieldName>CreatedByModule</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMzYyYjUxZWEtOTY0MS00Njk0LWI4NTctODRlMWZlYzA4NjQxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:OriginalSystemReference</Identifier>
+          <FieldName>OriginalSystemReference</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:OriginalSystemReference/ns4:OrigSystem</Identifier>
+          <FieldName>OrigSystem</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnODI4NDdjMTItYmQ5MS00MmJiLThlM2QtZGI5Nzg4NTA4YzE1JywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:OriginalSystemReference/ns4:OrigSystemReference</Identifier>
+          <FieldName>OrigSystemReference</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VmFsIChUcmltICg8IyElQCQ+Z2V0Tm9kZU5hbWUoNS9SZWNvcmQvUGFydHlTaXRlSWQpPCMhJUAkPiksJ04xNycpKzI=</ExpressionVal>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>9</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>unsignedLong</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>17</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>true</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:OriginalSystemReference/ns4:OwnerTableName</Identifier>
+          <FieldName>OwnerTableName</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J0haX0NVU1RfQUNDVF9TSVRFU19BTEwn</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:OriginalSystemReference/ns4:CreatedByModule</Identifier>
+          <FieldName>CreatedByModule</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMzYyYjUxZWEtOTY0MS00Njk0LWI4NTctODRlMWZlYzA4NjQxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:OriginalSystemReference</Identifier>
+          <FieldName>OriginalSystemReference</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:OriginalSystemReference/ns4:OrigSystem</Identifier>
+          <FieldName>OrigSystem</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnODI4NDdjMTItYmQ5MS00MmJiLThlM2QtZGI5Nzg4NTA4YzE1JywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:OriginalSystemReference/ns4:OrigSystemReference</Identifier>
+          <FieldName>OrigSystemReference</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VmFsIChUcmltICg8IyElQCQ+Z2V0Tm9kZU5hbWUoNS9SZWNvcmQvUGFydHlTaXRlSWQpPCMhJUAkPiksJ04xNycp</ExpressionVal>
+            <ExpectedType>N</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>N</MagicFieldType>
+          <MagicPicture>9</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>unsignedLong</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>17</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>true</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:OriginalSystemReference/ns4:OwnerTableName</Identifier>
+          <FieldName>OwnerTableName</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>J0haX0NVU1RfQUNDT1VOVFMn</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:OriginalSystemReference/ns4:CreatedByModule</Identifier>
+          <FieldName>CreatedByModule</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMzYyYjUxZWEtOTY0MS00Njk0LWI4NTctODRlMWZlYzA4NjQxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns4</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="XSDComplexField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation</Identifier>
+          <FieldName>CustAcctInformation</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <IsReplicatedField>false</IsReplicatedField>
+          <IsMultiSimple>false</IsMultiSimple>
+          <NameSpacePrefix>ns2</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NameSpace>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:customerGroup</Identifier>
+          <FieldName>customerGroup</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnY2Q3MWZhZDktMmQwYi00YjhkLTgzMWEtNjcyNDk1Y2E1NjIxJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:customerGroupCode</Identifier>
+          <FieldName>customerGroupCode</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMjc2ZTZlYWUtOTY1YS00MGE5LTliOWMtNGZiMzk1M2IzYTkwJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:customerGrandParent</Identifier>
+          <FieldName>customerGrandParent</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnODc1ODc4ZjAtNjFmMS00MDRlLWFmZjQtZjU4NjY4NDcwNDRkJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:customerGrandParentCode</Identifier>
+          <FieldName>customerGrandParentCode</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMWJmNGY0NmYtMTRhZC00MjM2LWEyMTgtZGFjMzY1M2QwNDJlJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>9</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:salesRep</Identifier>
+          <FieldName>salesRep</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnNjA0ZWMxZGMtMTRiYS00ODRmLWJlNTEtODNlZDEwYmQ3OWYyJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:warehouse</Identifier>
+          <FieldName>warehouse</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnOGUzY2I1YjEtMDUwZS00ZWI2LWEzMmQtNTVjY2M0YmQ4N2JhJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>9</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:marketing</Identifier>
+          <FieldName>marketing</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnYjM2MjU2MjYtZDRhMS00MTI2LWJlMjEtZGU4MDIwNDY5YmNhJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>9</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:paymentTerms</Identifier>
+          <FieldName>paymentTerms</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnNjRjMzJlYzQtZDJmMC00YmFkLTgzY2UtMDU3ZWVmNDg5ZTI4JywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:suppressReminder</Identifier>
+          <FieldName>suppressReminder</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnMTA1YmU0NDgtZTU3My00MWVmLThkZDgtNzVjNzk4ZGQ5Y2RmJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+        <Field xsi:type="SimpleXSDField">
+          <Identifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustAcctInformation/ns8:suppressStatement</Identifier>
+          <FieldName>suppressStatement</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>VHJpbSAoPCMhJUAkPmdldFZhck5hbWUoMSwnNDk2MWFjZmMtMTFlMS00YWVjLThiMDYtMjZmM2IxMWU0YmJlJywwLDApPCMhJUAkPik=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>string</ExternalFieldType>
+          <ExternalFieldPicture />
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <CreateAllways>false</CreateAllways>
+          <Required>true</Required>
+          <NameSpacePrefix>ns8</NameSpacePrefix>
+          <NameSpace>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NameSpace>
+          <MaxInstance>1</MaxInstance>
+          <MinInstance>1</MinInstance>
+          <Document />
+          <Enumeration />
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <XSD>
+        <XSDSubType>File</XSDSubType>
+        <XsdFileName>Files\RoleCall_FU\Fusion\Customer\CreateAccount\Request\schema0.xsd</XsdFileName>
+        <RootSelected>Envelope</RootSelected>
+        <isAppend>false</isAppend>
+        <isValidation>false</isValidation>
+        <RecursionDepth>1</RecursionDepth>
+        <AlwaysCreateNodes>true</AlwaysCreateNodes>
+        <DataDestination>Variable</DataDestination>
+        <DataExp>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnNzQ4NjE1ZTYtNWUzNS00OWI4LThlOWUtNzE4ODQ4NDM2NDNjJywwLDApPCMhJUAkPg==</ExpressionVal>
+          <ExpectedType>B</ExpectedType>
+          <Direction>O</Direction>
+        </DataExp>
+        <xmlFileEncoding>Project Encoding</xmlFileEncoding>
+        <UseStreamingParser>false</UseStreamingParser>
+        <TargetNamespace>http://schemas.xmlsoap.org/soap/envelope/</TargetNamespace>
+        <NameSpaces>
+          <XSDNameSpace>
+            <NS>ns4</NS>
+            <Alias>soap</Alias>
+            <NSVector>http://schemas.xmlsoap.org/soap/envelope/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns2</NS>
+            <Alias>xs</Alias>
+            <NSVector>http://www.w3.org/2001/XMLSchema</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns3</NS>
+            <Alias>ns2</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns7</NS>
+            <Alias>ns1</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/applicationModule/types/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns8</NS>
+            <Alias>ns9</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/customerAccountService/applicationModule/types/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns6</NS>
+            <Alias>ns8</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/flex/custAccount/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns0</NS>
+            <Alias>ns4</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns1</NS>
+            <Alias>ns7</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NSVector>
+          </XSDNameSpace>
+          <XSDNameSpace>
+            <NS>ns5</NS>
+            <Alias>ns6</Alias>
+            <NSVector>http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/</NSVector>
+          </XSDNameSpace>
+        </NameSpaces>
+        <DataFormats />
+      </XSD>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/PartySiteId</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:PartySiteId</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/PartySiteId</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:CustomerAccountSiteUse/ns2:OriginalSystemReference/ns4:OrigSystemReference</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/PartySiteId</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:CustomerAccountSite/ns2:OriginalSystemReference/ns4:OrigSystemReference</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/PartySiteId</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:OriginalSystemReference/ns4:OrigSystemReference</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>Record/PartyId</SourceIdentifier>
+      <SourceSchemaID>5</SourceSchemaID>
+      <DestinationIdentifier>soap:Envelope/soap:Body/ns1:createCustomerAccount/ns1:customerAccount/ns2:PartyId</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+  <ErrorFlowExpressionVal>PCMhJUAkPmdldEZsb3dOYW1lKDE5KTwjISVAJD4=</ErrorFlowExpressionVal>
+</Mapper>

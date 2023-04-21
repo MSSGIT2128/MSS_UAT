@@ -1,0 +1,387 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567898765434,
+            "Operation": "Create",
+            "Type": "Organization",
+            "Data": {
+                "CreatedByModule": "SIS",
+                "OrganizationProfile": {
+                    "PartyNumber": "C123456",
+                    "OrganizationName": "ABC Company",
+                    "JgzzFiscalCode": "ABC Company"
+                },
+                "PartyUsageAssignment": {
+                    "PartyUsageCode": "PARTY_OF_INTEREST",
+                    "EffectiveStartDate": "2020-01-01"
+                },
+                "PartySites": [
+                    {
+                        "LocationId": "300000001771248",
+                        "PartySiteNumber": "Test",
+                        "PartySiteName": "Test Party Site",
+                        "StartDateActive": "2020-01-01",
+                        "EffectiveStartDate": "2020-01-01",
+                        "PartySiteUse": {
+                            "SiteUseType": "BILL_TO"
+                        }
+                    },
+                    {
+                        "LocationId": "300000001771250",
+                        "PartySiteNumber": "Test2",
+                        "PartySiteName": "Test Party Site2",
+                        "StartDateActive": "2020-01-01",
+                        "EffectiveStartDate": "2020-01-01",
+                        "PartySiteUse": {
+                            "SiteUseType": "SHIP_TO"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567898765434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Organization"
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "CreatedByModule": "SIS",
+                    "OrganizationProfile": {
+                        "PartyNumber": "C123456",
+                        "OrganizationName": "ABC Company",
+                        "JgzzFiscalCode": "ABC Company"
+                    },
+                    "PartyUsageAssignment": {
+                        "PartyUsageCode": "PARTY_OF_INTEREST",
+                        "EffectiveStartDate": "2020-01-01"
+                    },
+                    "PartySites": [
+                        {
+                            "LocationId": "300000001771248",
+                            "PartySiteNumber": "Test",
+                            "PartySiteName": "Test Party Site",
+                            "StartDateActive": "2020-01-01",
+                            "EffectiveStartDate": "2020-01-01",
+                            "PartySiteUse": {
+                                "SiteUseType": "BILL_TO"
+                            }
+                        },
+                        {
+                            "LocationId": "300000001771250",
+                            "PartySiteNumber": "Test2",
+                            "PartySiteName": "Test Party Site2",
+                            "StartDateActive": "2020-01-01",
+                            "EffectiveStartDate": "2020-01-01",
+                            "PartySiteUse": {
+                                "SiteUseType": "SHIP_TO"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "CreatedByModule",
+                "OrganizationProfile",
+                "PartyUsageAssignment",
+                "PartySites"
+            ],
+            "properties": {
+                "CreatedByModule": {
+                    "$id": "#/properties/Data/properties/CreatedByModule",
+                    "type": "string",
+                    "title": "The CreatedByModule schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "SIS"
+                    ]
+                },
+                "OrganizationProfile": {
+                    "$id": "#/properties/Data/properties/OrganizationProfile",
+                    "type": "object",
+                    "title": "The OrganizationProfile schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "PartyNumber": "C123456",
+                            "OrganizationName": "ABC Company",
+                            "JgzzFiscalCode": "ABC Company"
+                        }
+                    ],
+                    "required": [
+                        "PartyNumber",
+                        "OrganizationName",
+                        "JgzzFiscalCode"
+                    ],
+                    "properties": {
+                        "PartyNumber": {
+                            "$id": "#/properties/Data/properties/OrganizationProfile/properties/PartyNumber",
+                            "type": "string",
+                            "title": "The PartyNumber schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "C123456"
+                            ]
+                        },
+                        "OrganizationName": {
+                            "$id": "#/properties/Data/properties/OrganizationProfile/properties/OrganizationName",
+                            "type": "string",
+                            "title": "The OrganizationName schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "ABC Company"
+                            ]
+                        },
+                        "JgzzFiscalCode": {
+                            "$id": "#/properties/Data/properties/OrganizationProfile/properties/JgzzFiscalCode",
+                            "type": "string",
+                            "title": "The JgzzFiscalCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "ABC Company"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "PartyUsageAssignment": {
+                    "$id": "#/properties/Data/properties/PartyUsageAssignment",
+                    "type": "object",
+                    "title": "The PartyUsageAssignment schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                        {
+                            "PartyUsageCode": "PARTY_OF_INTEREST",
+                            "EffectiveStartDate": "2020-01-01"
+                        }
+                    ],
+                    "required": [
+                        "PartyUsageCode",
+                        "EffectiveStartDate"
+                    ],
+                    "properties": {
+                        "PartyUsageCode": {
+                            "$id": "#/properties/Data/properties/PartyUsageAssignment/properties/PartyUsageCode",
+                            "type": "string",
+                            "title": "The PartyUsageCode schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "PARTY_OF_INTEREST"
+                            ]
+                        },
+                        "EffectiveStartDate": {
+                            "$id": "#/properties/Data/properties/PartyUsageAssignment/properties/EffectiveStartDate",
+                            "type": "string",
+                            "title": "The EffectiveStartDate schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": "",
+                            "examples": [
+                                "2020-01-01"
+                            ]
+                        }
+                    },
+                    "additionalProperties": true
+                },
+                "PartySites": {
+                    "$id": "#/properties/Data/properties/PartySites",
+                    "type": "array",
+                    "title": "The PartySites schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "LocationId": "300000001771248",
+                                "PartySiteNumber": "Test",
+                                "PartySiteName": "Test Party Site",
+                                "StartDateActive": "2020-01-01",
+                                "EffectiveStartDate": "2020-01-01",
+                                "PartySiteUse": {
+                                    "SiteUseType": "BILL_TO"
+                                }
+                            },
+                            {
+                                "LocationId": "300000001771250",
+                                "PartySiteNumber": "Test2",
+                                "PartySiteName": "Test Party Site2",
+                                "StartDateActive": "2020-01-01",
+                                "EffectiveStartDate": "2020-01-01",
+                                "PartySiteUse": {
+                                    "SiteUseType": "SHIP_TO"
+                                }
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/PartySites/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/PartySites/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "LocationId": "300000001771248",
+                                        "PartySiteNumber": "Test",
+                                        "PartySiteName": "Test Party Site",
+                                        "StartDateActive": "2020-01-01",
+                                        "EffectiveStartDate": "2020-01-01",
+                                        "PartySiteUse": {
+                                            "SiteUseType": "BILL_TO"
+                                        }
+                                    }
+                                ],
+                                "required": [
+                                    "LocationId",
+                                    "PartySiteNumber",
+                                    "PartySiteName",
+                                    "StartDateActive",
+                                    "EffectiveStartDate",
+                                    "PartySiteUse"
+                                ],
+                                "properties": {
+                                    "LocationId": {
+                                        "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/LocationId",
+                                        "type": "string",
+                                        "title": "The LocationId schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "300000001771248"
+                                        ]
+                                    },
+                                    "PartySiteNumber": {
+                                        "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/PartySiteNumber",
+                                        "type": "string",
+                                        "title": "The PartySiteNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Test"
+                                        ]
+                                    },
+                                    "PartySiteName": {
+                                        "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/PartySiteName",
+                                        "type": "string",
+                                        "title": "The PartySiteName schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Test Party Site"
+                                        ]
+                                    },
+                                    "StartDateActive": {
+                                        "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/StartDateActive",
+                                        "type": "string",
+                                        "title": "The StartDateActive schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-01-01"
+                                        ]
+                                    },
+                                    "EffectiveStartDate": {
+                                        "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/EffectiveStartDate",
+                                        "type": "string",
+                                        "title": "The EffectiveStartDate schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "2020-01-01"
+                                        ]
+                                    },
+                                    "PartySiteUse": {
+                                        "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/PartySiteUse",
+                                        "type": "object",
+                                        "title": "The PartySiteUse schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": {},
+                                        "examples": [
+                                            {
+                                                "SiteUseType": "BILL_TO"
+                                            }
+                                        ],
+                                        "required": [
+                                            "SiteUseType"
+                                        ],
+                                        "properties": {
+                                            "SiteUseType": {
+                                                "$id": "#/properties/Data/properties/PartySites/items/anyOf/0/properties/PartySiteUse/properties/SiteUseType",
+                                                "type": "string",
+                                                "title": "The SiteUseType schema",
+                                                "description": "An explanation about the purpose of this instance.",
+                                                "default": "",
+                                                "examples": [
+                                                    "BILL_TO"
+                                                ]
+                                            }
+                                        },
+                                        "additionalProperties": true
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

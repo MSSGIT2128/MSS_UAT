@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/creditMemos/creditMemoService/types/" xmlns:mstns="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/transactions/creditMemos/creditMemoService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app3="http://xmlns.oracle.com/apps/financials/receivables/transactions/creditMemos/creditMemoService/types/" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/transactions/creditMemos/creditMemoService/" xmlns:app1="http://www.w3.org/2005/08/addressing">
+  <xs:import namespace="http://www.w3.org/2005/08/addressing" schemaLocation="Response_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="Response.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/transactions/creditMemos/creditMemoService/" schemaLocation="Response_app2.xsd" />
+  <xs:element name="createApplyOnAccountCreditMemoResponse" msdata:Prefix="ns0">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="result" msdata:Prefix="ns2" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app2:Value" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

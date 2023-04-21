@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/types/" xmlns:app1="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/financials/receivables/customers/customerProfileService/" schemaLocation="CreateBUAssignment_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="CreateBUAssignment.xsd" />
+  <xs:element name="createReferenceAccountsForBillToSite" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="referenceAccounts" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element ref="app1:RequestId" minOccurs="0" />
+              <xs:element ref="app1:CustomerNumber" minOccurs="0" />
+              <xs:element ref="app1:CustomerAccountNumber" minOccurs="0" />
+              <xs:element ref="app1:CustomerSiteNumber" minOccurs="0" />
+              <xs:element ref="app1:BusinessUnit" minOccurs="0" />
+              <xs:element ref="app1:RevenueAccountCodeCombination" minOccurs="0" />
+			   <xs:element ref="app1:ReceivableAccountCodeCombination" minOccurs="0" />
+              <xs:element ref="app1:TaxAccountCodeCombination" minOccurs="0" />
+			    <xs:element ref="app1:FreightAccountCodeCombination" minOccurs="0" />
+              <xs:element ref="app1:UnearnedRevenueAccountCodeCombination" minOccurs="0" />
+              <xs:element ref="app1:UnbilledReceivableAccountCodeCombination" minOccurs="0" />
+              <xs:element ref="app1:AutoInvoiceClearingAccountCodeCombination" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

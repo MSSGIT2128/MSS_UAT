@@ -1,0 +1,27 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:pub="http://xmlns.oracle.com/oxp/service/PublicReportService">
+   <soap:Header/>
+   <soap:Body>
+      <pub:runReport>
+         <pub:reportRequest>
+            <pub:attributeFormat>xml</pub:attributeFormat>
+            <pub:flattenXML>false</pub:flattenXML>
+            <pub:parameterNameValues>
+                  <pub:item>
+                  <pub:name>P_ORG_NAME</pub:name>
+                  <pub:values>
+                      <pub:item>MSS Security Pty Limited</pub:item>
+                  </pub:values>
+                  </pub:item>
+                  <pub:item>
+                  <pub:name>P_FROM_DATE</pub:name>
+                  <pub:values>
+                      <pub:item>2021-01-28</pub:item>
+                  </pub:values>
+                  </pub:item>
+            </pub:parameterNameValues>
+            <pub:reportAbsolutePath>/Custom/Receivables/Reports/SIS Customer Details Report.xdo</pub:reportAbsolutePath>
+            <pub:sizeOfDataChunkDownload>-1</pub:sizeOfDataChunkDownload>
+         </pub:reportRequest>
+      </pub:runReport>
+   </soap:Body>
+</soap:Envelope>

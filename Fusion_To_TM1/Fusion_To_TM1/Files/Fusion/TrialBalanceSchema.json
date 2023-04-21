@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "onlyData": "true",
+            "finder": "AccountBalanceFinder;accountCombination=999-99999999-999-4321201-999-9999-999-99999999-999-999-9999,accountingPeriod=Sep-20,currency=INR,ledgerName=MSS_COA_AU,amountType=PTD,mode=Detail",
+            "fields": "LedgerName,PeriodName,Currency,DetailAccountCombination,Scenario,BeginningBalance,PeriodActivity,EndingBalance,AmountType,CurrencyType,ErrorDetail"
+        }
+    ],
+    "required": [
+        "onlyData",
+        "finder",
+        "fields"
+    ],
+    "properties": {
+        "onlyData": {
+            "$id": "#/properties/onlyData",
+            "type": "string",
+            "title": "The onlyData schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "true"
+            ]
+        },
+        "finder": {
+            "$id": "#/properties/finder",
+            "type": "string",
+            "title": "The finder schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "AccountBalanceFinder;accountCombination=999-99999999-999-4321201-999-9999-999-99999999-999-999-9999,accountingPeriod=Sep-20,currency=INR,ledgerName=MSS_COA_AU,amountType=PTD,mode=Detail"
+            ]
+        },
+        "fields": {
+            "$id": "#/properties/fields",
+            "type": "string",
+            "title": "The fields schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "LedgerName,PeriodName,Currency,DetailAccountCombination,Scenario,BeginningBalance,PeriodActivity,EndingBalance,AmountType,CurrencyType,ErrorDetail"
+            ]
+        }
+    },
+    "additionalProperties": true
+}

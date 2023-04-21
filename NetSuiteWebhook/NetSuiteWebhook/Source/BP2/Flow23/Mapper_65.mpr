@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MapperOrigin>DataMapperService</MapperOrigin>
+  <SourceSchemas>
+    <Schema xsi:type="JSonSchema">
+      <SchemaID>1</SchemaID>
+      <Order>0</Order>
+      <Name>JSON_1</Name>
+      <Description />
+      <SchemaLocation>Source</SchemaLocation>
+      <SchemaType>JSON</SchemaType>
+      <Fields>
+        <Field xsi:type="JsonComplexField">
+          <Identifier>The root schema</Identifier>
+          <FieldName>The root schema</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema</ActualPath>
+          <InternalComplexType>ObjectComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+        </Field>
+        <Field xsi:type="JsonComplexField">
+          <Identifier>The root schema/Data</Identifier>
+          <FieldName>Data</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema/Data</ActualPath>
+          <InternalComplexType>ObjectComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+        </Field>
+        <Field xsi:type="JsonArrayComplexField">
+          <Identifier>The root schema/Data/Lines</Identifier>
+          <FieldName>Lines</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema/Data/Lines</ActualPath>
+          <InternalComplexType>SimpleComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+          <IsTuple>false</IsTuple>
+        </Field>
+        <Field xsi:type="JsonComplexField">
+          <Identifier>The root schema/Data/Lines/Item</Identifier>
+          <FieldName>Item</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>2147483647</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema/Data/Lines</ActualPath>
+          <InternalComplexType>ObjectComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+        </Field>
+        <Field xsi:type="JsonComplexField">
+          <Identifier>The root schema/Data/Lines/Item/AnyOf_0</Identifier>
+          <FieldName>AnyOf_0</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>true</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>1</MaxInstance>
+          <MultiUpdates />
+          <Filter>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Filter>
+          <ActualPath>The root schema/Data/Lines</ActualPath>
+          <InternalComplexType>ObjectComplex</InternalComplexType>
+          <IsMultiTypeEnum>false</IsMultiTypeEnum>
+        </Field>
+        <Field xsi:type="JsonSimpleField">
+          <Identifier>The root schema/Data/Lines/Item/AnyOf_0/AccountCombination</Identifier>
+          <FieldName>AccountCombination</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>1000</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>String</ExternalFieldType>
+          <UserPicture>1000</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <IsArrayItem>false</IsArrayItem>
+          <MaxInstance>0</MaxInstance>
+          <ActualPath>The root schema/Data/Lines/AccountCombination</ActualPath>
+          <AdditionalJsonProperties>
+            <MaxLength />
+            <MaxItems />
+            <MinItems />
+            <Default />
+            <EnumValues />
+          </AdditionalJsonProperties>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <JSON>
+        <JsonFileName>Files\NS_FU\NetSuite\CreateARCreditMemoDistributionSchema.json</JsonFileName>
+        <UseStreamingParser>false</UseStreamingParser>
+        <DataDest>Variable</DataDest>
+        <DataDestinationExpression>
+          <ExpressionVal>PCMhJUAkPmdldFZhck5hbWUoMiwnMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDA5JywwLDApPCMhJUAkPg==</ExpressionVal>
+          <ExpectedType>B</ExpectedType>
+          <Direction>I</Direction>
+        </DataDestinationExpression>
+        <ValidateSchema>false</ValidateSchema>
+        <DataFormats />
+        <AlwaysCreateNodes>false</AlwaysCreateNodes>
+      </JSON>
+    </Schema>
+  </SourceSchemas>
+  <DestinationSchemas>
+    <Schema xsi:type="VariableSchema">
+      <SchemaID>2</SchemaID>
+      <Order>0</Order>
+      <Name>Variable_2</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>Variable</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>2</Identifier>
+          <FieldName>Instance</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>2f0a8112-406b-40e2-a9db-45a5a0a4e0b1</Identifier>
+          <FieldName>F.CodeCombination</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpectedType />
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>100</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <Variables>
+        <Variables>
+          <Variable>
+            <VarGUID>2f0a8112-406b-40e2-a9db-45a5a0a4e0b1</VarGUID>
+          </Variable>
+        </Variables>
+      </Variables>
+    </Schema>
+    <Schema xsi:type="VariableSchema">
+      <SchemaID>3</SchemaID>
+      <Order>0</Order>
+      <Name>Variable_3</Name>
+      <Description />
+      <SchemaLocation>Destination</SchemaLocation>
+      <SchemaType>Variable</SchemaType>
+      <Fields>
+        <Field xsi:type="ComplexField">
+          <Identifier>3</Identifier>
+          <FieldName>Instance</FieldName>
+          <NodeType>Complex</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Condition>
+            <ExpectedType>L</ExpectedType>
+            <Direction>I</Direction>
+          </Condition>
+          <ReplicatedCount>0</ReplicatedCount>
+          <MaxInstance>0</MaxInstance>
+          <MultiUpdates />
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>f6efc4e3-0856-4a0d-b2e0-b7cab0516515</Identifier>
+          <FieldName>F.Segment1</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDEsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>de0a3fe1-a3cf-4fe4-b170-f256b349b4df</Identifier>
+          <FieldName>F.Segment10</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDEwLCcuJyk=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>4271810c-f72f-462d-b594-8cc6e9c2c69a</Identifier>
+          <FieldName>F.Segment11</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDExLCcuJyk=</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>918ebce9-ff56-42e5-8e8f-057ab785a597</Identifier>
+          <FieldName>F.Segment2</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDIsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>1cdc83d1-1c10-433c-ab3b-17cb7eb4f49d</Identifier>
+          <FieldName>F.Segment3</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDMsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>54bf3bcc-0605-4f24-add8-4f925f5a2345</Identifier>
+          <FieldName>F.Segment4</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDQsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>561d4fe6-abd6-4a25-b1fe-f9706db87d7d</Identifier>
+          <FieldName>F.Segment5</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDUsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>f5eb776d-a6dc-43fc-9c46-821d09568f28</Identifier>
+          <FieldName>F.Segment6</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDYsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>1684965a-ae82-49e4-ab8a-9ea989a59224</Identifier>
+          <FieldName>F.Segment7</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDcsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>be90085c-9487-4454-b48c-e4590036cfd4</Identifier>
+          <FieldName>F.Segment8</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDgsJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+        <Field xsi:type="FieldVariable">
+          <Identifier>f7ea83d3-2995-4cbe-876b-a307efce49b7</Identifier>
+          <FieldName>F.Segment9</FieldName>
+          <NodeType>Simple</NodeType>
+          <IsVirtual>false</IsVirtual>
+          <Color>210</Color>
+          <Expression>
+            <ExpressionVal>U3RyVG9rZW4gKFRyaW0gKDwjISVAJD5nZXRWYXJOYW1lKDEsJzJmMGE4MTEyLTQwNmItNDBlMi1hOWRiLTQ1YTVhMGE0ZTBiMScsMCwwKTwjISVAJD4pLDksJy4nKQ==</ExpressionVal>
+            <ExpectedType>A</ExpectedType>
+            <Direction>I</Direction>
+          </Expression>
+          <MagicFieldType>A</MagicFieldType>
+          <MagicPicture>30</MagicPicture>
+          <isUnicode>false</isUnicode>
+          <ExternalFieldType>Alpha</ExternalFieldType>
+          <UserPicture>30</UserPicture>
+          <isNillable>false</isNillable>
+          <AlwaysUseCustomPicture>false</AlwaysUseCustomPicture>
+          <Encoding>1</Encoding>
+        </Field>
+      </Fields>
+      <Color>210</Color>
+      <Variables>
+        <Variables>
+          <Variable>
+            <VarGUID>f6efc4e3-0856-4a0d-b2e0-b7cab0516515</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>de0a3fe1-a3cf-4fe4-b170-f256b349b4df</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>4271810c-f72f-462d-b594-8cc6e9c2c69a</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>918ebce9-ff56-42e5-8e8f-057ab785a597</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>1cdc83d1-1c10-433c-ab3b-17cb7eb4f49d</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>54bf3bcc-0605-4f24-add8-4f925f5a2345</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>561d4fe6-abd6-4a25-b1fe-f9706db87d7d</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>f5eb776d-a6dc-43fc-9c46-821d09568f28</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>1684965a-ae82-49e4-ab8a-9ea989a59224</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>be90085c-9487-4454-b48c-e4590036cfd4</VarGUID>
+          </Variable>
+          <Variable>
+            <VarGUID>f7ea83d3-2995-4cbe-876b-a307efce49b7</VarGUID>
+          </Variable>
+        </Variables>
+      </Variables>
+    </Schema>
+  </DestinationSchemas>
+  <Connections>
+    <ConnectionData>
+      <SourceIdentifier>The root schema/Data/Lines/Item</SourceIdentifier>
+      <SourceSchemaID>1</SourceSchemaID>
+      <DestinationIdentifier>2</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+    <ConnectionData>
+      <SourceIdentifier>The root schema/Data/Lines/Item/AnyOf_0/AccountCombination</SourceIdentifier>
+      <SourceSchemaID>1</SourceSchemaID>
+      <DestinationIdentifier>2f0a8112-406b-40e2-a9db-45a5a0a4e0b1</DestinationIdentifier>
+      <DestinationSchemaID>2</DestinationSchemaID>
+    </ConnectionData>
+  </Connections>
+  <ColorNames>
+    <MapperColorItem>
+      <Color>203</Color>
+      <ColorDescription>Blue</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>205</Color>
+      <ColorDescription>Green</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>206</Color>
+      <ColorDescription>Purple</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>204</Color>
+      <ColorDescription>Yellow</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>202</Color>
+      <ColorDescription>Red</ColorDescription>
+    </MapperColorItem>
+    <MapperColorItem>
+      <Color>210</Color>
+      <ColorDescription>Default</ColorDescription>
+    </MapperColorItem>
+  </ColorNames>
+</Mapper>

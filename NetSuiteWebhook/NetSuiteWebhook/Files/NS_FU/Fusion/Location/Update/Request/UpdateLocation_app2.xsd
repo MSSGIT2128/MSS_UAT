@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/locationService/applicationModule/types/" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/cdm/foundation/parties/locationService/applicationModule/types/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app2="http://xmlns.oracle.com/apps/cdm/foundation/parties/locationService/applicationModule/types/" xmlns:app1="http://xmlns.oracle.com/apps/cdm/foundation/parties/locationService/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/locationService/" schemaLocation="UpdateLocation_app1.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="UpdateLocation.xsd" />
+  <xs:element name="updateLocation" msdata:Prefix="typ">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="location" msdata:Prefix="typ" minOccurs="0" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+			 <xs:element ref="app1:RequestId" minOccurs="0" />
+              <xs:element ref="app1:LocationId" minOccurs="0" />
+              <xs:element ref="app1:AddressEffectiveDate" minOccurs="0" />
+              <xs:element ref="app1:EffectiveDate" minOccurs="0" />
+              <xs:element ref="app1:Country" minOccurs="0" />
+              <xs:element ref="app1:Address1" minOccurs="0" />
+              <xs:element ref="app1:Address2" minOccurs="0" />
+              <xs:element ref="app1:Address3" minOccurs="0" />
+              <xs:element ref="app1:City" minOccurs="0" />
+              <xs:element ref="app1:PostalCode" minOccurs="0" />
+              <xs:element ref="app1:State" minOccurs="0" />
+              <xs:element ref="app1:CreatedByModule" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

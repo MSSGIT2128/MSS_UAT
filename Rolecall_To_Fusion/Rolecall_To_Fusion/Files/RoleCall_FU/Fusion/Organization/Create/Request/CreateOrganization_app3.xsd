@@ -1,0 +1,22 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:app3="http://xmlns.oracle.com/apps/cdm/foundation/parties/partyService/" xmlns:app1="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" xmlns:app2="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/">
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/applicationModule/types/" schemaLocation="CreateOrganization_app2.xsd" />
+  <xs:import namespace="http://schemas.xmlsoap.org/soap/envelope/" schemaLocation="CreateOrganization.xsd" />
+  <xs:import namespace="http://xmlns.oracle.com/apps/cdm/foundation/parties/organizationService/" schemaLocation="CreateOrganization_app1.xsd" />
+  <xs:element name="PartyUsageCode" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="EffectiveStartDate" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="CreatedByModule" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="LocationId" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="PartySiteNumber" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="PartySiteName" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="StartDateActive" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="OverallPrimaryFlag" msdata:Prefix="ns2" type="xs:string" />
+  <xs:element name="PartySiteUse" msdata:Prefix="ns2">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SiteUseType" msdata:Prefix="ns2" type="xs:string" minOccurs="0" />
+        <xs:element name="CreatedByModule" msdata:Prefix="ns2" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

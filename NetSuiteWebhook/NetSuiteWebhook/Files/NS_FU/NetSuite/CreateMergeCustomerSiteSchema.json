@@ -1,0 +1,232 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "http://example.com/example.json",
+	"type": "object",
+	"title": "The root schema",
+	"description": "The root schema comprises the entire JSON document.",
+	"default": {},
+	"examples": [
+		{
+			"RequestId": 654567898765434,
+			"Operation": "Create",
+			"Type": "MergeCustomerSite",
+			"Data": {
+				"CustomerAccountId": "300000001771282",
+				"CustomerAccountSite": {
+					"PartySiteId": "300000001771361",
+					"CreatedByModule": "SIS",
+					"SetId": "300000000003311",
+					"CustomerAccountSiteUse": {
+						"SiteUseCode": "BILL_TO",
+						"LocationId": "300000001771359",
+						"CreatedByModule": "SIS",
+						"SetId": "300000000003311"
+					}
+				}
+			}
+		}
+	],
+	"required": [
+		"RequestId",
+		"Operation",
+		"Type",
+		"Data"
+	],
+	"properties": {
+		"RequestId": {
+			"$id": "#/properties/RequestId",
+			"type": "integer",
+			"title": "The RequestId schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": 0,
+			"maximum": 999999999999,
+			"examples": [
+				654567898765434
+			]
+		},
+		"Operation": {
+			"$id": "#/properties/Operation",
+			"type": "string",
+			"title": "The Operation schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"Create"
+			]
+		},
+		"Type": {
+			"$id": "#/properties/Type",
+			"type": "string",
+			"title": "The Type schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": "",
+			"examples": [
+				"MergeCustomerSite"
+			]
+		},
+		"Data": {
+			"$id": "#/properties/Data",
+			"type": "object",
+			"title": "The Data schema",
+			"description": "An explanation about the purpose of this instance.",
+			"default": {},
+			"examples": [
+				{
+					"CustomerAccountId": "300000001771282",
+					"CustomerAccountSite": {
+						"PartySiteId": "300000001771361",
+						"CreatedByModule": "SIS",
+						"SetId": "300000000003311",
+						"CustomerAccountSiteUse": {
+							"SiteUseCode": "BILL_TO",
+							"LocationId": "300000001771359",
+							"CreatedByModule": "SIS",
+							"SetId": "300000000003311"
+						}
+					}
+				}
+			],
+			"required": [
+				"CustomerAccountId",
+				"CustomerAccountSite"
+			],
+			"properties": {
+				"CustomerAccountId": {
+					"$id": "#/properties/Data/properties/CustomerAccountId",
+					"type": "string",
+					"title": "The CustomerAccountId schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": "",
+					"examples": [
+						"300000001771282"
+					]
+				},
+				"CustomerAccountSite": {
+					"$id": "#/properties/Data/properties/CustomerAccountSite",
+					"type": "object",
+					"title": "The CustomerAccountSite schema",
+					"description": "An explanation about the purpose of this instance.",
+					"default": {},
+					"examples": [
+						{
+							"PartySiteId": "300000001771361",
+							"CreatedByModule": "SIS",
+							"SetId": "300000000003311",
+							"CustomerAccountSiteUse": {
+								"SiteUseCode": "BILL_TO",
+								"LocationId": "300000001771359",
+								"CreatedByModule": "SIS",
+								"SetId": "300000000003311"
+							}
+						}
+					],
+					"required": [
+						"PartySiteId",
+						"CreatedByModule",
+						"SetId",
+						"CustomerAccountSiteUse"
+					],
+					"properties": {
+						"PartySiteId": {
+							"$id": "#/properties/Data/properties/CustomerAccountSite/properties/PartySiteId",
+							"type": "string",
+							"title": "The PartySiteId schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"300000001771361"
+							]
+						},
+						"CreatedByModule": {
+							"$id": "#/properties/Data/properties/CustomerAccountSite/properties/CreatedByModule",
+							"type": "string",
+							"title": "The CreatedByModule schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"SIS"
+							]
+						},
+						"SetId": {
+							"$id": "#/properties/Data/properties/CustomerAccountSite/properties/SetId",
+							"type": "string",
+							"title": "The SetId schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": "",
+							"examples": [
+								"300000000003311"
+							]
+						},
+						"CustomerAccountSiteUse": {
+							"$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse",
+							"type": "object",
+							"title": "The CustomerAccountSiteUse schema",
+							"description": "An explanation about the purpose of this instance.",
+							"default": {},
+							"examples": [
+								{
+									"SiteUseCode": "BILL_TO",
+									"LocationId": "300000001771359",
+									"CreatedByModule": "SIS",
+									"SetId": "300000000003311"
+								}
+							],
+							"required": [
+								"SiteUseCode",
+								"LocationId",
+								"CreatedByModule",
+								"SetId"
+							],
+							"properties": {
+								"SiteUseCode": {
+									"$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/SiteUseCode",
+									"type": "string",
+									"title": "The SiteUseCode schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": "",
+									"examples": [
+										"BILL_TO"
+									]
+								},
+								"LocationId": {
+									"$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/LocationId",
+									"type": "string",
+									"title": "The LocationId schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": "",
+									"examples": [
+										"300000001771359"
+									]
+								},
+								"CreatedByModule": {
+									"$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/CreatedByModule",
+									"type": "string",
+									"title": "The CreatedByModule schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": "",
+									"examples": [
+										"SIS"
+									]
+								},
+								"SetId": {
+									"$id": "#/properties/Data/properties/CustomerAccountSite/properties/CustomerAccountSiteUse/properties/SetId",
+									"type": "string",
+									"title": "The SetId schema",
+									"description": "An explanation about the purpose of this instance.",
+									"default": "",
+									"examples": [
+										"300000000003311"
+									]
+								}
+							},
+							"additionalProperties": true
+						}
+					},
+					"additionalProperties": true
+				}
+			},
+			"additionalProperties": true
+		}
+	},
+	"additionalProperties": true
+}

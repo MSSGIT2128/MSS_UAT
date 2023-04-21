@@ -1,0 +1,652 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "RequestId": 654567898765434,
+            "Operation": "Create",
+            "Type": "Invoice",
+            "FusionId": "",
+            "Data": {
+                "DueDate": "2021-01-14",
+                "InvoiceCurrencyCode": "INR",
+                "TransactionNumber": "KA20/00190/WHF212903",
+                "TransactionDate": "2020-11-30",
+                "TransactionType": "Invoice",
+                "TransactionSource": "Manual",
+                "BillToCustomerNumber": "100000128",
+                "BillToSite": "12901",
+                "PaymentTerms": "45 Days",
+                "BusinessUnit": "Dusters Total Solutions Services Pvt. Ltd.",
+                "AccountingDate": "2020-11-30",
+                "BillToCustomerName": "Amazon Seller Services Private Limited-002268",
+                "receivablesInvoiceLines": [
+                    {
+                        "LineNumber": 1,
+                        "Description": "Combined Head Ofice - Services",
+                        "Quantity": 1,
+                        "UnitSellingPrice": 249.29,
+                        "receivablesInvoiceLineTaxLines": [
+                            {
+                                "TaxJurisdictionCode": "AU GST",
+                                "TaxRate": 10,
+                                "TaxAmount": 24.93,
+                                "TaxRateCode": "AU GST 10%",
+                                "TaxRegimeCode": "AU GST REGIME",
+                                "Tax": "AU GST"
+                            }
+                        ]
+                    }
+                ],
+                "receivablesInvoiceDistributions": [
+                    {
+                        "InvoiceLineNumber": null,
+                        "AccountClass": "Receivable",
+                        "AccountCombination": "100.999.1171301.999.027.40053.19000128.999999999.999.999.9999",
+                        "Percent": 100,
+                        "Amount": null
+                    },
+                    {
+                        "InvoiceLineNumber": 1,
+                        "AccountClass": "Revenue",
+                        "AccountCombination": "100.999.5143101.999.029.40010.19000809.999999999.999.999.9999",
+                        "Amount": 66.14,
+                        "Percent": null
+                    },
+                    {
+                        "InvoiceLineNumber": 1,
+                        "AccountClass": "Revenue",
+                        "AccountCombination": "100.999.5143101.999.029.40010.19000809.999999999.999.999.9999",
+                        "Amount": 183.15,
+                        "Percent": null
+                    }
+                ]
+            }
+        }
+    ],
+    "required": [
+        "RequestId",
+        "Operation",
+        "Type",
+        "FusionId",
+        "Data"
+    ],
+    "properties": {
+        "RequestId": {
+            "$id": "#/properties/RequestId",
+            "type": "integer",
+            "title": "The RequestId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                654567898765434
+            ]
+        },
+        "Operation": {
+            "$id": "#/properties/Operation",
+            "type": "string",
+            "title": "The Operation schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Create"
+            ]
+        },
+        "Type": {
+            "$id": "#/properties/Type",
+            "type": "string",
+            "title": "The Type schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "Invoice"
+            ]
+        },
+        "FusionId": {
+            "$id": "#/properties/FusionId",
+            "type": "string",
+            "title": "The FusionId schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                ""
+            ]
+        },
+        "Data": {
+            "$id": "#/properties/Data",
+            "type": "object",
+            "title": "The Data schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "DueDate": "2021-01-14",
+                    "InvoiceCurrencyCode": "INR",
+                    "TransactionNumber": "KA20/00190/WHF212903",
+                    "TransactionDate": "2020-11-30",
+                    "TransactionType": "Invoice",
+                    "TransactionSource": "Manual",
+                    "BillToCustomerNumber": "100000128",
+                    "BillToSite": "12901",
+                    "PaymentTerms": "45 Days",
+                    "BusinessUnit": "Dusters Total Solutions Services Pvt. Ltd.",
+                    "AccountingDate": "2020-11-30",
+                    "BillToCustomerName": "Amazon Seller Services Private Limited-002268",
+                    "receivablesInvoiceLines": [
+                        {
+                            "LineNumber": 1,
+                            "Description": "Combined Head Ofice - Services",
+                            "Quantity": 1,
+                            "UnitSellingPrice": 249.29,
+                            "receivablesInvoiceLineTaxLines": [
+                                {
+                                    "TaxJurisdictionCode": "AU GST",
+                                    "TaxRate": 10,
+                                    "TaxAmount": 24.93,
+                                    "TaxRateCode": "AU GST 10%",
+                                    "TaxRegimeCode": "AU GST REGIME",
+                                    "Tax": "AU GST"
+                                }
+                            ]
+                        }
+                    ],
+                    "receivablesInvoiceDistributions": [
+                        {
+                            "InvoiceLineNumber": null,
+                            "AccountClass": "Receivable",
+                            "AccountCombination": "100.999.1171301.999.027.40053.19000128.999999999.999.999.9999",
+                            "Percent": 100,
+                            "Amount": null
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "100.999.5143101.999.029.40010.19000809.999999999.999.999.9999",
+                            "Amount": 66.14,
+                            "Percent": null
+                        },
+                        {
+                            "InvoiceLineNumber": 1,
+                            "AccountClass": "Revenue",
+                            "AccountCombination": "100.999.5143101.999.029.40010.19000809.999999999.999.999.9999",
+                            "Amount": 183.15,
+                            "Percent": null
+                        }
+                    ]
+                }
+            ],
+            "required": [
+                "DueDate",
+                "InvoiceCurrencyCode",
+                "TransactionNumber",
+                "TransactionDate",
+                "TransactionType",
+                "TransactionSource",
+                "BillToCustomerNumber",
+                "BillToSite",
+                "PaymentTerms",
+                "BusinessUnit",
+                "AccountingDate",
+                "BillToCustomerName",
+                "receivablesInvoiceLines",
+                "receivablesInvoiceDistributions"
+            ],
+            "properties": {
+                "DueDate": {
+                    "$id": "#/properties/Data/properties/DueDate",
+                    "type": "string",
+                    "title": "The DueDate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2021-01-14"
+                    ]
+                },
+                "InvoiceCurrencyCode": {
+                    "$id": "#/properties/Data/properties/InvoiceCurrencyCode",
+                    "type": "string",
+                    "title": "The InvoiceCurrencyCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "INR"
+                    ]
+                },
+                "TransactionNumber": {
+                    "$id": "#/properties/Data/properties/TransactionNumber",
+                    "type": "string",
+                    "title": "The TransactionNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "KA20/00190/WHF212903"
+                    ]
+                },
+                "TransactionDate": {
+                    "$id": "#/properties/Data/properties/TransactionDate",
+                    "type": "string",
+                    "title": "The TransactionDate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-11-30"
+                    ]
+                },
+                "TransactionType": {
+                    "$id": "#/properties/Data/properties/TransactionType",
+                    "type": "string",
+                    "title": "The TransactionType schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Invoice"
+                    ]
+                },
+                "TransactionSource": {
+                    "$id": "#/properties/Data/properties/TransactionSource",
+                    "type": "string",
+                    "title": "The TransactionSource schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Manual"
+                    ]
+                },
+                "BillToCustomerNumber": {
+                    "$id": "#/properties/Data/properties/BillToCustomerNumber",
+                    "type": "string",
+                    "title": "The BillToCustomerNumber schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "100000128"
+                    ]
+                },
+                "BillToSite": {
+                    "$id": "#/properties/Data/properties/BillToSite",
+                    "type": "string",
+                    "title": "The BillToSite schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "12901"
+                    ]
+                },
+                "PaymentTerms": {
+                    "$id": "#/properties/Data/properties/PaymentTerms",
+                    "type": "string",
+                    "title": "The PaymentTerms schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "45 Days"
+                    ]
+                },
+                "BusinessUnit": {
+                    "$id": "#/properties/Data/properties/BusinessUnit",
+                    "type": "string",
+                    "title": "The BusinessUnit schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Dusters Total Solutions Services Pvt. Ltd."
+                    ]
+                },
+                "AccountingDate": {
+                    "$id": "#/properties/Data/properties/AccountingDate",
+                    "type": "string",
+                    "title": "The AccountingDate schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "2020-11-30"
+                    ]
+                },
+                "BillToCustomerName": {
+                    "$id": "#/properties/Data/properties/BillToCustomerName",
+                    "type": "string",
+                    "title": "The BillToCustomerName schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "Amazon Seller Services Private Limited-002268"
+                    ]
+                },
+                "receivablesInvoiceLines": {
+                    "$id": "#/properties/Data/properties/receivablesInvoiceLines",
+                    "type": "array",
+                    "title": "The receivablesInvoiceLines schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "LineNumber": 1,
+                                "Description": "Combined Head Ofice - Services",
+                                "Quantity": 1,
+                                "UnitSellingPrice": 249.29,
+                                "receivablesInvoiceLineTaxLines": [
+                                    {
+                                        "TaxJurisdictionCode": "AU GST",
+                                        "TaxRate": 10,
+                                        "TaxAmount": 24.93,
+                                        "TaxRateCode": "AU GST 10%",
+                                        "TaxRegimeCode": "AU GST REGIME",
+                                        "Tax": "AU GST"
+                                    }
+                                ]
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/receivablesInvoiceLines/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "LineNumber": 1,
+                                        "Description": "Combined Head Ofice - Services",
+                                        "Quantity": 1,
+                                        "UnitSellingPrice": 249.29,
+                                        "receivablesInvoiceLineTaxLines": [
+                                            {
+                                                "TaxJurisdictionCode": "AU GST",
+                                                "TaxRate": 10,
+                                                "TaxAmount": 24.93,
+                                                "TaxRateCode": "AU GST 10%",
+                                                "TaxRegimeCode": "AU GST REGIME",
+                                                "Tax": "AU GST"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "required": [
+                                    "LineNumber",
+                                    "Description",
+                                    "Quantity",
+                                    "UnitSellingPrice",
+                                    "receivablesInvoiceLineTaxLines"
+                                ],
+                                "properties": {
+                                    "LineNumber": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/LineNumber",
+                                        "type": "integer",
+                                        "title": "The LineNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "Description": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/Description",
+                                        "type": "string",
+                                        "title": "The Description schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Combined Head Ofice - Services"
+                                        ]
+                                    },
+                                    "Quantity": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/Quantity",
+                                        "type": "integer",
+                                        "title": "The Quantity schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            1
+                                        ]
+                                    },
+                                    "UnitSellingPrice": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/UnitSellingPrice",
+                                        "type": "number",
+                                        "title": "The UnitSellingPrice schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0.0,
+                                        "examples": [
+                                            249.29
+                                        ]
+                                    },
+                                    "receivablesInvoiceLineTaxLines": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines",
+                                        "type": "array",
+                                        "title": "The receivablesInvoiceLineTaxLines schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": [],
+                                        "examples": [
+                                            [
+                                                {
+                                                    "TaxJurisdictionCode": "AU GST",
+                                                    "TaxRate": 10,
+                                                    "TaxAmount": 24.93,
+                                                    "TaxRateCode": "AU GST 10%",
+                                                    "TaxRegimeCode": "AU GST REGIME",
+                                                    "Tax": "AU GST"
+                                                }
+                                            ]
+                                        ],
+                                        "additionalItems": true,
+                                        "items": {
+                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items",
+                                            "anyOf": [
+                                                {
+                                                    "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0",
+                                                    "type": "object",
+                                                    "title": "The first anyOf schema",
+                                                    "description": "An explanation about the purpose of this instance.",
+                                                    "default": {},
+                                                    "examples": [
+                                                        {
+                                                            "TaxJurisdictionCode": "AU GST",
+                                                            "TaxRate": 10,
+                                                            "TaxAmount": 24.93,
+                                                            "TaxRateCode": "AU GST 10%",
+                                                            "TaxRegimeCode": "AU GST REGIME",
+                                                            "Tax": "AU GST"
+                                                        }
+                                                    ],
+                                                    "required": [
+                                                        "TaxJurisdictionCode",
+                                                        "TaxRate",
+                                                        "TaxAmount",
+                                                        "TaxRateCode",
+                                                        "TaxRegimeCode",
+                                                        "Tax"
+                                                    ],
+                                                    "properties": {
+                                                        "TaxJurisdictionCode": {
+                                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0/properties/TaxJurisdictionCode",
+                                                            "type": "string",
+                                                            "title": "The TaxJurisdictionCode schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "AU GST"
+                                                            ]
+                                                        },
+                                                        "TaxRate": {
+                                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0/properties/TaxRate",
+                                                            "type": "integer",
+                                                            "title": "The TaxRate schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": 0,
+                                                            "examples": [
+                                                                10
+                                                            ]
+                                                        },
+                                                        "TaxAmount": {
+                                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0/properties/TaxAmount",
+                                                            "type": "number",
+                                                            "title": "The TaxAmount schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": 0.0,
+                                                            "examples": [
+                                                                24.93
+                                                            ]
+                                                        },
+                                                        "TaxRateCode": {
+                                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0/properties/TaxRateCode",
+                                                            "type": "string",
+                                                            "title": "The TaxRateCode schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "AU GST 10%"
+                                                            ]
+                                                        },
+                                                        "TaxRegimeCode": {
+                                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0/properties/TaxRegimeCode",
+                                                            "type": "string",
+                                                            "title": "The TaxRegimeCode schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "AU GST REGIME"
+                                                            ]
+                                                        },
+                                                        "Tax": {
+                                                            "$id": "#/properties/Data/properties/receivablesInvoiceLines/items/anyOf/0/properties/receivablesInvoiceLineTaxLines/items/anyOf/0/properties/Tax",
+                                                            "type": "string",
+                                                            "title": "The Tax schema",
+                                                            "description": "An explanation about the purpose of this instance.",
+                                                            "default": "",
+                                                            "examples": [
+                                                                "AU GST"
+                                                            ]
+                                                        }
+                                                    },
+                                                    "additionalProperties": true
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                },
+                "receivablesInvoiceDistributions": {
+                    "$id": "#/properties/Data/properties/receivablesInvoiceDistributions",
+                    "type": "array",
+                    "title": "The receivablesInvoiceDistributions schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            {
+                                "InvoiceLineNumber": null,
+                                "AccountClass": "Receivable",
+                                "AccountCombination": "100.999.1171301.999.027.40053.19000128.999999999.999.999.9999",
+                                "Percent": 100,
+                                "Amount": null
+                            },
+                            {
+                                "InvoiceLineNumber": 1,
+                                "AccountClass": "Revenue",
+                                "AccountCombination": "100.999.5143101.999.029.40010.19000809.999999999.999.999.9999",
+                                "Amount": 66.14,
+                                "Percent": null
+                            }
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items/anyOf/0",
+                                "type": "object",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": {},
+                                "examples": [
+                                    {
+                                        "InvoiceLineNumber": null,
+                                        "AccountClass": "Receivable",
+                                        "AccountCombination": "100.999.1171301.999.027.40053.19000128.999999999.999.999.9999",
+                                        "Percent": 100,
+                                        "Amount": null
+                                    }
+                                ],
+                                "required": [
+                                    "InvoiceLineNumber",
+                                    "AccountClass",
+                                    "AccountCombination",
+                                    "Percent",
+                                    "Amount"
+                                ],
+                                "properties": {
+                                    "InvoiceLineNumber": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items/anyOf/0/properties/InvoiceLineNumber",
+                                        "type": "null",
+                                        "title": "The InvoiceLineNumber schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    },
+                                    "AccountClass": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items/anyOf/0/properties/AccountClass",
+                                        "type": "string",
+                                        "title": "The AccountClass schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "Receivable"
+                                        ]
+                                    },
+                                    "AccountCombination": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items/anyOf/0/properties/AccountCombination",
+                                        "type": "string",
+                                        "title": "The AccountCombination schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": "",
+                                        "examples": [
+                                            "100.999.1171301.999.027.40053.19000128.999999999.999.999.9999"
+                                        ]
+                                    },
+                                    "Percent": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items/anyOf/0/properties/Percent",
+                                        "type": "integer",
+                                        "title": "The Percent schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": 0,
+                                        "examples": [
+                                            100
+                                        ]
+                                    },
+                                    "Amount": {
+                                        "$id": "#/properties/Data/properties/receivablesInvoiceDistributions/items/anyOf/0/properties/Amount",
+                                        "type": "null",
+                                        "title": "The Amount schema",
+                                        "description": "An explanation about the purpose of this instance.",
+                                        "default": null,
+                                        "examples": [
+                                            null
+                                        ]
+                                    }
+                                },
+                                "additionalProperties": true
+                            }
+                        ]
+                    }
+                }
+            },
+            "additionalProperties": true
+        }
+    },
+    "additionalProperties": true
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/apps/financials/generalLedger/journals/desktopEntry/journalImportService/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="BatchName" type="xs:string" />
+  <xs:element name="BatchDescription" type="xs:string"/>
+  <xs:element name="LedgerId" type="xs:string" />
+  <xs:element name="AccountingPeriodName" type="xs:string" />
+  <xs:element name="AccountingDate" type="xs:string" />
+  <xs:element name="UserSourceName" type="xs:string" />
+  <xs:element name="UserCategoryName" type="xs:string" />
+  <xs:element name="ErrorToSuspenseFlag" type="xs:string" />
+  <xs:element name="SummaryFlag" type="xs:string" />
+  <xs:element name="ImportDescriptiveFlexField" type="xs:string" />
+  <xs:element name="GlInterface"  >
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Reference4" type="xs:string" />
+        <xs:element name="Reference5" type="xs:string"/>
+        <xs:element name="LedgerId" type="xs:string" />
+        <xs:element name="PeriodName" type="xs:string" />
+        <xs:element name="AccountingDate" type="xs:string" />
+        <xs:element name="UserJeSourceName" type="xs:string" />
+        <xs:element name="UserJeCategoryName" type="xs:string" />
+        <xs:element name="Segment1" type="xs:string" />
+        <xs:element name="Segment2" type="xs:string" />
+        <xs:element name="Segment3" type="xs:string" />
+        <xs:element name="Segment4" type="xs:string" />
+        <xs:element name="Segment5" type="xs:string" />
+        <xs:element name="Segment6" type="xs:string" />
+        <xs:element name="Segment7" type="xs:string" />
+        <xs:element name="Segment8" type="xs:string" />
+        <xs:element name="Segment9" type="xs:string" />
+        <xs:element name="Segment10" type="xs:string" />
+        <xs:element name="Segment11" type="xs:string" />
+        <xs:element minOccurs="0" name="EnteredCrAmount">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="currencyCode" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="EnteredDrAmount">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="currencyCode" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Reference1" type="xs:string" />
+        <xs:element name="Reference2" type="xs:string"/>
+        <xs:element name="Attribute1" type="xs:string"/>
+        <xs:element name="Attribute2" type="xs:string"/>
+        <xs:element name="Attribute3" type="xs:string"/>
+        <xs:element name="Attribute4" type="xs:string"/>
+        <xs:element name="TransactionDate" type="xs:string" />
+        <xs:element name="GroupId" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
