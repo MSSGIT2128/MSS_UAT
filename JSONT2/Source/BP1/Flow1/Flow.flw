@@ -1,25 +1,82 @@
-﻿<?xml version="1.0" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Flow>
-    <Properties>
+  <Properties>
+    <ID>1</ID>
+    <Order>1</Order>
+    <Name>Flow-1</Name>
+    <isInactive>false</isInactive>
+    <isDisabled>false</isDisabled>
+    <isTwoPhase>false</isTwoPhase>
+    <isAutoStart>false</isAutoStart>
+    <MaxInstances>0</MaxInstances>
+    <isAutoRepeat>false</isAutoRepeat>
+    <PSSSubGUID>
+      <ExpectedType>A</ExpectedType>
+      <Direction>I</Direction>
+    </PSSSubGUID>
+    <isPSSSubOnce>false</isPSSSubOnce>
+    <TimeoutPolicy>6</TimeoutPolicy>
+    <TimeOutVal>0</TimeOutVal>
+    <HasDBTransaction>false</HasDBTransaction>
+    <DBTransactionString />
+    <RecoveryPolicy>6</RecoveryPolicy>
+    <isSecuredCall>false</isSecuredCall>
+    <ErrorFlow>
+      <BPID>0</BPID>
+      <FlowID>
+        <ExpectedType>N</ExpectedType>
+        <Direction>I</Direction>
+      </FlowID>
+    </ErrorFlow>
+    <LogicFlow>
+      <BPID>0</BPID>
+      <FlowID>
+        <ExpectedType>N</ExpectedType>
+        <Direction>I</Direction>
+      </FlowID>
+    </LogicFlow>
+    <CleanupFlow>
+      <BPID>0</BPID>
+      <FlowID>
+        <ExpectedType>N</ExpectedType>
+        <Direction>I</Direction>
+      </FlowID>
+    </CleanupFlow>
+    <Enablement>
+      <ResourceInfo>
+        <isDynamic>false</isDynamic>
+      </ResourceInfo>
+    </Enablement>
+  </Properties>
+  <DrawProperties>
+    <RootStepID>1</RootStepID>
+    <HasTrigger>false</HasTrigger>
+  </DrawProperties>
+  <Steps>
+    <row_Step>
+      <Properties>
+        <isGoTo>false</isGoTo>
+        <ParentStepID>0</ParentStepID>
+        <SortOrder>0</SortOrder>
         <ID>1</ID>
-        <Order>1</Order>
-        <Name>Flow-1</Name>
-        <isInactive>false</isInactive>
-        <isDisabled>false</isDisabled>
+        <Name>NOP</Name>
+        <IFCDefinition>22</IFCDefinition>
+        <ProcessMode>1</ProcessMode>
         <isTwoPhase>false</isTwoPhase>
-        <isAutoStart>false</isAutoStart>
-        <MaxInstances>0</MaxInstances>
-        <isAutoRepeat>false</isAutoRepeat>
-        <TimeoutPolicy>6</TimeoutPolicy>
-        <TimeOutVal>0</TimeOutVal>
-        <HasDBTransaction>false</HasDBTransaction>
-        <DBTransactionString></DBTransactionString>
-        <RecoveryPolicy>6</RecoveryPolicy>
-    </Properties>
-    <DrawProperties>
-        <RootStepID>0</RootStepID>
-        <HasTrigger>false</HasTrigger>
-    </DrawProperties>
+        <isWait4Comp>false</isWait4Comp>
+        <isSavePoint>false</isSavePoint>
+        <CallLogicFlow>false</CallLogicFlow>
+        <isReturnXML>false</isReturnXML>
+        <isTrigger>false</isTrigger>
+      </Properties>
+      <iBoltService />
+      <WebServiceMigrationInfo>
+        <NotMigrated>false</NotMigrated>
+        <OutAttachmentsWarning>false</OutAttachmentsWarning>
+        <ReturnValueError>false</ReturnValueError>
+      </WebServiceMigrationInfo>
+    </row_Step>
+  </Steps>
+  <Triggers />
+  <TextElements />
 </Flow>
-
-
